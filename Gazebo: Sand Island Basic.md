@@ -25,3 +25,22 @@ You will notice that the USV starts drifting along the x-axis.  That is due to t
 
 If you zoom in your will see the WAM-V model like this...
 ![Screenshot from 2018-01-25 11-00-30.png.70.png](https://bitbucket.org/repo/BgXLzgM/images/2349056053-Screenshot%20from%202018-01-25%2011-00-30.png.70.png)
+This visual and collision model is under development.  We are hoping to both improve the visual representation and make it more computationally efficient.
+
+The shoreline is a coarse approximation of the RobotX competition area, Sand Island, Honolulu, HI.  
+![map_colage.png](https://bitbucket.org/repo/BgXLzgM/images/869375701-map_colage.png)
+
+There navigation course task is represented by the two pairs of red and green buoys.
+![out.png](https://bitbucket.org/repo/BgXLzgM/images/3195009535-out.png)
+
+# Status
+
+Currently the following is implemented
+
+ * Buoy buoyancy using custom fork of standard Gazebo buoyancy plugin.
+ * No sensors
+ * USV Dynamics via usv_gazebo_plugins.  Parameters defined in usv_gazebo_plugins/urdf/wamv_gazebo_dynamics_plugin.xacro
+   * Hydrodynamic parameters based on publications from FAU and engineering judgement
+   * Wind implementation via same plugin
+  * Visual and collision meshes in wamv_description.  Better ones coming soon
+  * Buoy meshes in robotx_gazebo.
