@@ -5,5 +5,5 @@ We recommend following the tutorials in numerical order. At the end of these tut
 1. [System Setup](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup)
     * A guide for configuring your personal PC and installing software for VMRC.
 
-1. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/Gazebo:%20Sand%20Island%20Basic)
+1. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic)
     * A simple base world with a WAM-V model.
