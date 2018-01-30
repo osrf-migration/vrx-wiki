@@ -63,21 +63,3 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
     $ catkin_make
 ```
-
-## Run instructions ##
-
-* Open a new terminal and source the ROS `setup.bash` file:
-
-```
-#!bash
-
-    $ source /opt/ros/kinetic/setup.bash
-```
-
-* Start Gazebo:
-
-```
-#!bash
-
-    $ roslaunch robotx_gazebo sandisland.launch
-```
