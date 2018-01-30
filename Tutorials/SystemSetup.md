@@ -30,5 +30,5 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 * Download the [vmrc.repos]https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos) file into vmrc_ws:
 
 ```
-wget https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos
 ```
