@@ -8,7 +8,7 @@ These instructions contain information for building the VMRC environment in Gaze
 
 
 ```
-#!c++
+#!bash
 
     $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
     $ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
@@ -16,6 +16,7 @@ These instructions contain information for building the VMRC environment in Gaze
     $ sudo apt-get install mercurial cmake pkg-config python python-pip git gazebo7 libgazebo7-dev ros-kinetic-ros-base ros-kinetic-teleop-tools ros-kinetic-teleop-twist-keyboard ros-kinetic-gazebo-ros ros-kinetic-xacro ros-kinetic-joy libeigen3-dev wget
     $ pip install --upgrade pip
     $ pip install packaging
+    $ pip install vcstools
     $ sudo pip install appdirs
 ```
 
@@ -23,6 +24,8 @@ These instructions contain information for building the VMRC environment in Gaze
 workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
+#!bash
+
     $ mkdir -p vmrc_ws/src
     $ cd vmrc_ws
 ```
@@ -30,5 +33,51 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 * Download the [vmrc.repos](https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos) file into vmrc_ws:
 
 ```
+#!bash
+
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos
+```
+
+* Import the repositories from vmrc.repos:
+
+```
+#!bash
+
+    $ vcs import src < vmrc.repos
+```
+
+## Build instructions ##
+
+* Source the ROS `setup.bash` file:
+
+```
+#!bash
+
+    $ source /opt/ros/kinetic/setup.bash
+```
+
+* Build all the software:
+
+```
+#!bash
+
+    $ catkin_make
+```
+
+## Run instructions ##
+
+* Open a new terminal and source the ROS `setup.bash` file:
+
+```
+#!bash
+
+    $ source /opt/ros/kinetic/setup.bash
+```
+
+* Start Gazebo:
+
+```
+#!bash
+
+    $ roslaunch robotx_gazebo sandisland.launch
 ```
