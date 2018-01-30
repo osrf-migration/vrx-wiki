@@ -17,13 +17,13 @@ roslaunch robotx_gazebo sandisland.launch
 
 You should see a new Gazebo window something like this...
 
-![Screenshot from 2018-01-25 10-59-15_mr.png](https://bitbucket.org/repo/BgXLzgM/images/2097879520-Screenshot%20from%202018-01-25%2010-59-15_mr.png)
+![Screenshot from 2018-01-25 10-59-15_mr.png|640px](https://bitbucket.org/repo/BgXLzgM/images/2097879520-Screenshot%20from%202018-01-25%2010-59-15_mr.png)
 
 You will notice that the USV starts drifting along the x-axis.  That is due to the wind.  More on that later.
 
 If you zoom in your will see the WAM-V model like this...
 
-![Screenshot from 2018-01-25 11-00-30.png.70.png](https://bitbucket.org/repo/BgXLzgM/images/2349056053-Screenshot%20from%202018-01-25%2011-00-30.png.70.png)
+![Screenshot from 2018-01-25 11-00-30.png.70.png|640px](https://bitbucket.org/repo/BgXLzgM/images/2349056053-Screenshot%20from%202018-01-25%2011-00-30.png.70.png)
 
 This visual and collision model is under development.  We are hoping to both improve the visual representation and make it more computationally efficient.
 
