@@ -9,7 +9,25 @@ Please, check the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tuto
 
 # Run instructions
 
-To run the example, use the provide launch file:
+* Source the ROS setup.bash file:
+
+```
+#!bash
+    
+$ source /opt/ros/kinetic/setup.bash
+
+```
+
+* Source the `setup.bash` of our VMRC workspace:
+
+```
+#!bash
+    
+$ source ./devel/setup.bash
+
+```
+
+* Use the provide launch file to run the example:
 
 ```
 roslaunch robotx_gazebo sandisland.launch 
