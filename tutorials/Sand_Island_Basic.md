@@ -34,26 +34,3 @@ The shoreline is a coarse approximation of the RobotX competition area, Sand Isl
 There navigation course task is represented by the two pairs of red and green buoys.
 
 ![3195009535-out.png](https://bitbucket.org/repo/BgXLzgM/images/3465846643-3195009535-out.png)
-
-# Status
-
-Currently the following is implemented
-
- * Buoy buoyancy using custom fork of standard Gazebo buoyancy plugin.
- * No sensors
- * USV Dynamics via usv_gazebo_plugins.  Parameters defined in usv_gazebo_plugins/urdf/wamv_gazebo_dynamics_plugin.xacro
-   * Hydrodynamic parameters based on publications from FAU and engineering judgement
-   * Wind implementation via same plugin
-   * Thrust is linear with thrust command
-  * Visual and collision meshes in wamv_description.  Better ones coming soon
-  * Buoy meshes in robotx_gazebo.
-
-## Coming Soon
-
- * Improved meshes for WAM-V, buoys and other RobotX objects
- * Simulation of simple wave field forcing
- * Basic acoustics model
- * Tutorials on how to add sensors
- * Improved hydrodynamic parameter estimates of WAM-V
- * User defined thrust profile for propulsion
- * Docker container
