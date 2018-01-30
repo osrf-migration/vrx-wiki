@@ -1,0 +1,1 @@
+This tutorial will walk you through the setup required to make a computer ready to run VMRC. In order to run VMRC your computer will need a discrete graphics card and will need to satisfy the minimum [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/documentation/system_requirements).
