@@ -14,7 +14,7 @@ Please, check the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tuto
 ```
 #!bash
     
-$ source /opt/ros/kinetic/setup.bash
+    $ source /opt/ros/kinetic/setup.bash
 
 ```
 
@@ -23,14 +23,16 @@ $ source /opt/ros/kinetic/setup.bash
 ```
 #!bash
     
-$ source ./devel/setup.bash
+    $ source ./devel/setup.bash
 
 ```
 
 * Use the provide launch file to run the example:
 
 ```
-roslaunch robotx_gazebo sandisland.launch 
+#!bash
+
+    $ roslaunch robotx_gazebo sandisland.launch 
 ```
 
 You should see a new Gazebo window similar to this one:
