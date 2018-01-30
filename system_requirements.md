@@ -10,4 +10,4 @@ In order to run VMRC we recommend your computer has:
 - Gazebo 7.0.0 (<7.0.0 is not sufficient)
 - ROS Kinetic
 
-The [system setup tutorial](http://bitbucket.org/osrf/vmrc/wiki/Tutorials/SystemSetup) details the recommended process for installing Gazebo, ROS and VMRC.
+The [system setup tutorial](http://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup) details the recommended process for installing Gazebo, ROS and VMRC.
