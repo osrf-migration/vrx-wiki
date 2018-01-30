@@ -23,7 +23,7 @@ You will notice that the USV starts drifting along the x-axis.  That is due to t
 
 If you zoom in your will see the WAM-V model like this...
 
-![Screenshot from 2018-01-25 11-00-30.png.70.png](https://bitbucket.org/repo/BgXLzgM/images/2349056053-Screenshot%20from%202018-01-25%2011-00-30.png.70.png)
+![2349056053-Screenshot from 2018-01-25 11-00-30.png.70.png](https://bitbucket.org/repo/BgXLzgM/images/2394960890-2349056053-Screenshot%20from%202018-01-25%2011-00-30.png.70.png)
 
 This visual and collision model is under development.  We are hoping to both improve the visual representation and make it more computationally efficient.
 
@@ -33,7 +33,7 @@ The shoreline is a coarse approximation of the RobotX competition area, Sand Isl
 
 There navigation course task is represented by the two pairs of red and green buoys.
 
-![out.png](https://bitbucket.org/repo/BgXLzgM/images/3195009535-out.png)
+![3195009535-out.png](https://bitbucket.org/repo/BgXLzgM/images/3465846643-3195009535-out.png)
 
 # Status
 
