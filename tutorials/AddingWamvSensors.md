@@ -1,1 +1,0 @@
-Adding Sensors to the WAM-V Base
