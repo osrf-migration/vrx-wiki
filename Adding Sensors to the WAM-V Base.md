@@ -4,7 +4,7 @@ This tutorial illustrates adding sensors to the WAM-V simulation
 
 The [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic) tutorial demonstrated the basic functionality of simulating the WAM-V in the RobotX environment.  This base scenario did not include any sensors. 
 
-To customize the scenario you will likely want to add sensors to the simulation.  There are many ways to do this; this tutorial demonstrates doing so by extending the `robot_description` produced by `wamv_robotx.xacro` definition.  As part of this tutorial, a separate GIT repository ([nps_robotx](https://github.com/bsb808/nps_robotx) is used to accomplish this as a working example. Ideally you would not need to edit the repositories used in the [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic) tutorial, but would create your own new ROS package (by forking or simply copying) this example.
+To customize the scenario you will likely want to add sensors to the simulation.  There are many ways to do this; this tutorial demonstrates doing so by extending the `robot_description` produced by `wamv_robotx.xacro` definition.  As part of this tutorial, a separate GIT repository ([nps_robotx](https://github.com/bsb808/nps_robotx)) is used to accomplish this as a working example. Ideally you would not need to edit the repositories used in the [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic) tutorial, but would create your own new ROS package (by forking or simply copying) this example.
 
 # Workflow
 
