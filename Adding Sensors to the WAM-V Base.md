@@ -23,4 +23,5 @@ The launch file is an extension of the sandisland.launch file in the robotx_gaze
 
 ## Launch
 
-Now we can try our our new launch file with `roslaunch nps_robotx nps_sandisland.launch`.  The Gazebo visualization should be the same, but we should now see new ROS topics for our new sensors
+Now we can try our our new launch file with `roslaunch nps_robotx nps_sandisland.launch`.  The Gazebo visualization should be the same, but we should now see new ROS topics for our new sensors.  For example, in the rqt_topic window below you can see topics for GPS, IMU, camera and P3D ground truth...
+![Screenshot from 2018-02-09 10-12-55.png](https://bitbucket.org/repo/BgXLzgM/images/4243360240-Screenshot%20from%202018-02-09%2010-12-55.png)
