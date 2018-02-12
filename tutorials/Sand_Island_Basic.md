@@ -30,6 +30,7 @@ Please, check the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tuto
 ```
 #!bash
     
+    $ cd ~/vmrc_ws
     $ source ./devel/setup.bash
 
 ```
