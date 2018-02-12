@@ -20,30 +20,32 @@ These instructions contain information for building the VMRC environment in Gaze
     $ sudo pip install appdirs
 ```
 
-*  Now build a workspace for VMRC. If you are familiar with ROS catkin
+* Clone the `VMRC` repository:
+```
+#!bash
+
+    $ mkdir -p ~/workspace && cd ~/workspace
+    $ hg clone https://bitbucket.org/osrf/vmrc
+```
+
+
+* Now build a workspace for VMRC. If you are familiar with ROS catkin
 workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
 
     $ mkdir -p vmrc_ws/src
-    $ cd vmrc_ws
+    $ cd vmrc_ws/src
 ```
 
-* Download the [vmrc.repos](https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos) file into vmrc_ws:
-
-```
-#!bash
-
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos
-```
-
-* Import the repositories from vmrc.repos:
+* Create symbolic links to the ROS packages that we're using:
 
 ```
 #!bash
 
-    $ vcs import src < vmrc.repos
+    $ ln -s ~/workspace/vmrc/robotx_gazebo
+    $ ln -s ~/workspace/vmrc/wamv_description
 ```
 
 ## Build instructions ##
