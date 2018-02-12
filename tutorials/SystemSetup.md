@@ -62,6 +62,15 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
-
+    $ cd ~/vmrc_ws
     $ catkin_make
+```
+
+* Test:
+
+```
+#!bash
+    $ cd ~/vmrc_ws
+    $ source devel/setup.bash
+    $ roslaunch robotx_gazebo sandisland.launch 
 ```
