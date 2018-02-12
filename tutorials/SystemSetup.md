@@ -35,8 +35,8 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 ```
 #!bash
 
-    $ mkdir -p vmrc_ws/src
-    $ cd vmrc_ws/src
+    $ mkdir -p ~/vmrc_ws/src
+    $ cd ~/vmrc_ws/src
 ```
 
 * Create symbolic links to the ROS packages that we're using:
