@@ -75,7 +75,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ catkin_make
 ```
 
-* Test:
+## Test Run ##
 
 ```
 #!bash
