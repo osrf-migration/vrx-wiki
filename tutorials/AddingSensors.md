@@ -47,3 +47,14 @@ Now we can try our our new launch file with...
 
 The Gazebo visualization should be the same, but we should now see new ROS topics for our new sensors.  For example, in the rqt_topic window below you can see topics for GPS, IMU, camera and P3D ground truth...
 ![Screenshot from 2018-02-09 10-12-55.png](https://bitbucket.org/repo/BgXLzgM/images/4243360240-Screenshot%20from%202018-02-09%2010-12-55.png)
+
+## Perspective Camera Example
+
+One way to test our camera setup is to use the `rqt` tool to view the camera feed.  We have a pre-configured configuration file you can use with the following command...
+```
+rqt --perspective-file ~/vmrc_ws/src/nps_robotx/config/camera.perspective 
+```
+
+Now you should be able to see the global view in Gazebo and the USV viewpoint (based on the onboard camera) in rqt...
+
+![Screenshot from 2018-02-26 12-00-19a.png](https://bitbucket.org/repo/BgXLzgM/images/1314066845-Screenshot%20from%202018-02-26%2012-00-19a.png)
