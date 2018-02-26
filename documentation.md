@@ -2,5 +2,5 @@
 
 1. [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements)
     * The system requirements for VMRC.
-2. [Gazebo Plugins](https://bitbucket.org/osrf/vmrc/wiki/VMRC%20Gazebo%20Plugins)
+2. [Gazebo Plugins](https://bitbucket.org/osrf/vmrc/wiki/VMRCGazeboPlugins)
     * Description of environmental and model plugins used in VMRC
