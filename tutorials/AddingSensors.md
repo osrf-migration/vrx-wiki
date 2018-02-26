@@ -35,7 +35,9 @@ The WAM-V sensors are simulated using Gazebo model plugins.  These plugins need 
 
 ## Create a new launch file
 
-The launch file is an extension of the sandisland.launch file in the robotx_gazebo package.  By creating your own, you can change the robot_description to our new nps_robotx.xacro file (and perhaps add other functionality).
+The launch file is an extension of the sandisland.launch file in the robotx_gazebo package.  By creating your own, you can change the robot_description to our new `nps_robotx.xacro file` (and perhaps add other functionality).
+
+In the `nps_robotx` example repository, there is an `nps_sandisland.launch` file that serves as a working example showing how we can use the original launch file as a starting point and extend it with our own parameters.
 
 ## Launch
 
