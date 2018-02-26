@@ -6,6 +6,6 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 2. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
 
-3. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
+3. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
 
-3. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/edit/tutorials/AddingWamvSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
+3. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
