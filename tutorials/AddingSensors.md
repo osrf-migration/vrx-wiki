@@ -58,3 +58,5 @@ rqt --perspective-file ~/vmrc_ws/src/nps_robotx/config/camera.perspective
 Now you should be able to see the global view in Gazebo and the USV viewpoint (based on the onboard camera) in rqt...
 
 ![Screenshot from 2018-02-26 12-00-19a.png](https://bitbucket.org/repo/BgXLzgM/images/1314066845-Screenshot%20from%202018-02-26%2012-00-19a.png)
+
+We have also posted a video of what you should see if you have the simulation working with our new camera view: https://vimeo.com/257565186
