@@ -13,4 +13,23 @@ This tutorial briefly describes where the base parameter files, those that are i
 
 # Example: Changing the Wave Field #
 
-As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in 'robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro'
+As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in `robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro`.  When we open the file we see a section that looks like this...
+
+```
+	<!-- Waves x3 -->
+	<wave_n>3</wave_n>
+
+	<wave_amp0>0.06</wave_amp0>
+	<wave_period0>12.6</wave_period0>
+	<wave_direction0>-1 0</wave_direction0>
+
+	<wave_amp1>0.04</wave_amp1>
+	<wave_period1>3.7</wave_period1>
+	<wave_direction1>-0.7 0.7</wave_direction1>
+
+	<wave_amp2>0.03</wave_amp2>
+	<wave_period2>6.3</wave_period2>
+	<wave_direction2>0.7 0.7</wave_direction2>
+```
+
+This specifies our Gerstner wave field as having three components as specifying the amplitude, period and direction for each component.
