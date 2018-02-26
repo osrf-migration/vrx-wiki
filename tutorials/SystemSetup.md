@@ -1,4 +1,4 @@
-This tutorial will walk you through the setup required to make a computer ready to run VMRC. In order to run VMRC your computer will need a discrete graphics card and will need to satisfy the minimum [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements).
+This tutorial will walk you through the setup required to make a computer ready to run the VMRC simulations. In order to run VMRC your computer will need a discrete graphics card and will need to satisfy the minimum [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements).
 
 These instructions contain information for building the VMRC environment in Gazebo.
 
@@ -22,11 +22,10 @@ These instructions contain information for building the VMRC environment in Gaze
 
 Note - when upgrading the ```pip``` package, you may get a message such as...
 ```
-ou are using pip version 8.1.1, however version 9.0.1 is available.
+You are using pip version 8.1.1, however version 9.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 ```
-
-version 8.1.1 is sufficient.
+This is not a problem, version 8.1.1 is sufficient.
 
 * Clone the `VMRC` repository :
 ```
