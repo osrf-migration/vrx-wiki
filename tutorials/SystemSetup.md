@@ -20,7 +20,15 @@ These instructions contain information for building the VMRC environment in Gaze
     $ sudo pip install appdirs
 ```
 
-* Clone the `VMRC` repository:
+Note - when upgrading the ```pip``` package, you may get a message such as...
+```
+ou are using pip version 8.1.1, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+```
+
+version 8.1.1 is sufficient.
+
+* Clone the `VMRC` repository :
 ```
 #!bash
 
@@ -36,6 +44,8 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 #!bash
 
     $ mkdir -p ~/vmrc_ws/src
+    $ cd ~
+    $ catkin_init_workspace vmrc_ws
     $ cd ~/vmrc_ws/src
 ```
 
