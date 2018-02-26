@@ -11,6 +11,21 @@ This tutorial briefly describes where the base parameter files, those that are i
 | Propulsion characteristics (linear or nonlinear mapping and force limits) | robotx_gazebo/urdf/wamv_gazebo_thrust_plugin.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 | Wind velocity and windage coefficients | robotx_gazebo/urdf/wamv_gazebo_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 
+
+
+# Example: Changing the Wind #
+As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the ```robotx_gazebo/urdf/wamv_gazebo_wind_plugin.xacro``` file by specifying the velocity vector (in m/s) and the coefficients used to convert the apparent wind into force and torque. 
+
+If you edit the xacro file you will see a line like this...
+
+```
+<wind_velocity_vector>0 0 0 </wind_velocity_vector>
+```
+
+which in this case specifies the wind velocity as 0 m/s.  We can change the X and Y components of this vector to simulate the influence of wind on the vessel (the Z component is ignored).  We've posted a video where we experiment with a couple of cases: https://vimeo.com/257588911
+
+
+
 # Example: Changing the Wave Field #
 
 As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in `robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro`.  When we open the file we see a section that looks like this...
@@ -32,4 +47,10 @@ As an illustrative example, we'll go through testing the simulation with differe
 	<wave_direction2>0.7 0.7</wave_direction2>
 ```
 
-This specifies our Gerstner wave field as having three components as specifying the amplitude, period and direction for each component.
+This specifies our Gerstner wave field as having three components, where each component as a user-specified  amplitude, period and direction.
+
+When we start testing a new algorithm, we may want to set all of these to zero, so that there is no influence from the wave field.  We could achieve that by setting the amplitude of each component wave to zero - or we could set the `wave_n` parameter to zero so there are no components.
+
+Alternatively, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the amplitude of the waves and/or changing the wave period.
+
+We've posted a video showing how we would test with three different seastates - including how to break a buoy!
