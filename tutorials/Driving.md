@@ -35,6 +35,17 @@ rostopic pub --once /cmd_drive robotx_gazebo/UsvDrive '{left: 1.0, right: 1.0}'
 
 ## Teleop: Gamepad ##
 
+To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom `twist2drive_diff` node to publish UsvDrive messages on the `cmd_drive` topic using a Logitech F310 gamepad.  There is a launch file to add these nodes...
+
+```
+roslaunch robotx_gazebo usv_diffdrive.launch
+```
+
+For the default configuration, the left stick up/down axis (axis 1) is mapped to the left thruster and the right stick up/down axis (axis 3) is mapped to the right thruster.  Therefore, pushing both sticks forward should cause the WAM-V to drive forward. 
+
+If you are using the Logitech F310 with the default configuration, make sure the [Mode light](http://support.logitech.com/en_my/article/21691?product=a0qi00000069ueWAAQ) is unlit.
+
+If you are using a different input device compatible with the joy package, you can edit the [diffdrive.yaml](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/config/diffdrive.yaml) configuration file so that the pertinent axis of your device are used.
 
 
 
