@@ -33,6 +33,14 @@ rostopic pub --once /cmd_drive robotx_gazebo/UsvDrive '{left: 1.0, right: 1.0}'
 
 ## Teleop: Keyboard ##
 
+To use the keyboard, we use the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, along with a custom `twist2drive_keyboard.py` node to publish UsvDrive messages on the `cmd_drive` topic.  The `twist2drive_keyboard.py` node converts the Twist message publications from the teleop_twist_keyboard node into UsvDrive messages.  Forward velocity (twist.linear.x) is mapped to axial thrust (usvdrive.right+usvdrive.left) and rotational velocity (twist.linear.z) is mapped to differential thrust (usvdrive.right-usvdrive.left).
+
+A launch file example is included, which can be run with...
+
+```
+roslaunch robotx_gazebo usv_keydrive.launch
+```
+
 ## Teleop: Gamepad ##
 
 To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom `twist2drive_diff` node to publish UsvDrive messages on the `cmd_drive` topic using a Logitech F310 gamepad.  There is a launch file to add these nodes...
@@ -46,7 +54,3 @@ For the default configuration, the left stick up/down axis (axis 1) is mapped to
 If you are using the Logitech F310 with the default configuration, make sure the [Mode light](http://support.logitech.com/en_my/article/21691?product=a0qi00000069ueWAAQ) is unlit.
 
 If you are using a different input device compatible with the joy package, you can edit the [diffdrive.yaml](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/config/diffdrive.yaml) configuration file so that the pertinent axis of your device are used.
-
-
-
-## Custom Node ##
