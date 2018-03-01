@@ -11,3 +11,5 @@ In order to run VMRC we recommend your computer has:
 - ROS Kinetic
 
 The [system setup tutorial](http://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup) details the recommended process for installing Gazebo, ROS and VMRC.
+
+We also recommend having a gamepad for testing when driving the WAM-V around in the simulated world. In the examples we use a Logitech F310 ([walmart](https://www.walmart.com/ip/Logitech-F310-GamePad/16419686)).
