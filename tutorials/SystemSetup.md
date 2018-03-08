@@ -27,15 +27,6 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 ```
 This is not a problem, version 8.1.1 is sufficient.
 
-* Clone the `VMRC` repository :
-```
-#!bash
-
-    $ mkdir -p ~/workspace && cd ~/workspace
-    $ hg clone https://bitbucket.org/osrf/vmrc
-```
-
-
 * Now build a workspace for VMRC. If you are familiar with ROS catkin
 workspaces, this is a similar concept. The steps to setup the workspace are:
 
@@ -44,16 +35,21 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
     $ mkdir -p ~/vmrc_ws/src
     $ cd ~/vrmc_ws
-    $ catkin_init_workspace src
 ```
 
-* Create symbolic links to the ROS packages that we're using:
+* Download the [vmrc.repos](https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos) file into `vmrc_ws`:
+```
+#!bash
+ 
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos
+```
+
+* Import the repositories from vmrc.repos:
 
 ```
 #!bash
-    $ cd ~/vmrc_ws/src
-    $ ln -s ~/workspace/vmrc/robotx_gazebo
-    $ ln -s ~/workspace/vmrc/wamv_description
+
+    $ vcs import src < vmrc.repos
 ```
 
 ## Build instructions ##
