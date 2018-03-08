@@ -28,6 +28,7 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 This is not a problem, version 8.1.1 is sufficient.
 
 * Download the [vmrc.repos](https://bitbucket.org/osrf/vmrc/raw/default/vmrc.repos) file into `vmrc_ws`:
+
 ```
 #!bash
     $ mkdir -p ~/workspace && cd ~/workspace
@@ -55,6 +56,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 * Create symbolic links to the ROS packages that we're using:
 
+```
 #!bash
     $ cd ~/vmrc_ws/src
     $ ln -s ~/workspace/vmrc/robotx_gazebo
