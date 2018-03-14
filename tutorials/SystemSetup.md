@@ -50,7 +50,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 #!bash
 
     $ mkdir -p ~/vmrc_ws/src
-    $ cd ~/vrmc_ws
+    $ cd ~/vmrc_ws
     $ catkin_init_workspace src
 ```
 
