@@ -59,8 +59,8 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 ```
 #!bash
     $ cd ~/vmrc_ws/src
-    $ ln -s ~/workspace/vmrc/robotx_gazebo
-    $ ln -s ~/workspace/vmrc/wamv_description
+    $ ln -s ~/workspace/robotx_gazebo
+    $ ln -s ~/workspace/wamv_description
 ```
 
 ## Build instructions ##
