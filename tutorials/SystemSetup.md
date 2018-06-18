@@ -215,14 +215,14 @@ This command should print your GPU information.
 
 ```
 #!bash
-    $ ./build.sh vmrc
+    $ ./build.bash vmrc
 ```
 
 * Run your VMRC container:
 
 ```
 #!bash
-    $ ./run.sh vmrc
+    $ ./run.bash vmrc
 ```
 
 * Test your VMRC installation:
