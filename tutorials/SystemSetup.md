@@ -203,17 +203,18 @@ This command should print your GPU information.
 
 ```
 #!bash
-    $ mkdir /tmp/vmrc && cd /tmp/vmrc
+    $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
     $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/vmrc/Dockerfile
+    $ cd ..
     $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/build.bash
     $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
+    $ chmod u+x build.bash run.bash
 ```
 
 * Build your VMRC Docker image:
 
 ```
 #!bash
-    $ cd /tmp
     $ ./build.sh vmrc
 ```
 
@@ -221,7 +222,7 @@ This command should print your GPU information.
 
 ```
 #!bash
-    $ ./run.sh
+    $ ./run.sh vmrc
 ```
 
 * Test your VMRC installation:
