@@ -89,3 +89,101 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ source devel/setup.bash
     $ roslaunch robotx_gazebo sandisland.launch 
 ```
+
+# Setup instructions using Docker #
+
+It's possible to use Docker to simplify the installation process or if you prefer to leave your host system untouched. We have created a Docker image that you'll need to build following these instructions.
+
+## Install Docker ##
+
+Docker has two available versions: Community Edition (CE) and Enterprise Edition (EE). In this tutorial, we'll install the CE version.
+
+* Remove old versions of Docker (if installed):
+
+```
+#!bash
+    $ sudo apt-get remove docker docker-engine docker.io
+```
+
+* Install the following dependencies needed to setup an external package repository:
+
+
+```
+#!bash
+   $ sudo apt-get install \
+      apt-transport-https \
+      ca-certificates \
+      curl \
+      software-properties-common
+```
+
+* Add the official GPG key of Docker:
+
+```
+#!bash
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+* Add the stable package repository:
+
+```
+#!bash
+    $ sudo add-apt-repository \
+     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) \
+     stable"
+```
+
+* Now, we can install Docker:
+
+```
+#!bash
+    sudo apt-get update && apt-get install docker-ce
+```
+
+* Check your Docker installation:
+
+```
+#!bash
+    $ sudo docker run hello-world
+```
+
+You should see the message `Hello from Docker!` confirming that your installation was successfully completed.
+
+## Install Nvidia Docker ##
+
+* Remove old versions of Nvidia Docker:
+
+```
+#!bash
+    docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
+    sudo apt-get purge -y nvidia-docker
+```
+
+* Setup the Nvidia Docker repository:
+
+```
+#!bash
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
+  sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64/nvidia-docker.list | \
+  sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt-get update
+```
+
+* Next, install Nvidia Docker (version 2):
+
+```
+#!bash
+sudo apt-get install -y nvidia-docker2
+sudo pkill -SIGHUP dockerd
+```
+
+* Verify the installation:
+
+```
+#!bash
+docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+```
+
+This command should print your GPU information.
