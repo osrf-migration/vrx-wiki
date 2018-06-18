@@ -213,7 +213,7 @@ This command should print your GPU information.
 
 ```
 #!bash
-cd /tmp
+    $ cd /tmp
     $ ./build.sh vmrc
 ```
 
