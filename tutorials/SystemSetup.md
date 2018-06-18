@@ -156,34 +156,34 @@ You should see the message `Hello from Docker!` confirming that your installatio
 
 ```
 #!bash
-    docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
-    sudo apt-get purge -y nvidia-docker
+    $ docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
+    $ sudo apt-get purge -y nvidia-docker
 ```
 
 * Setup the Nvidia Docker repository:
 
 ```
 #!bash
-curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
+    $ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -
-curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64/nvidia-docker.list | \
+    $ curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64/nvidia-docker.list | \
   sudo tee /etc/apt/sources.list.d/nvidia-docker.list
-sudo apt-get update
+    $ sudo apt-get update
 ```
 
 * Next, install Nvidia Docker (version 2):
 
 ```
 #!bash
-sudo apt-get install -y nvidia-docker2
-sudo pkill -SIGHUP dockerd
+    $ sudo apt-get install -y nvidia-docker2
+    $ sudo pkill -SIGHUP dockerd
 ```
 
 * Verify the installation:
 
 ```
 #!bash
-docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+    $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
 
 This command should print your GPU information.
@@ -194,10 +194,10 @@ This command should print your GPU information.
 
 ```
 #!bash
-$ mkdir /tmp/vmrc && cd /tmp/vmrc
-$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/vmrc/Dockerfile
-$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/build.bash
-$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
+    $ mkdir /tmp/vmrc && cd /tmp/vmrc
+    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/vmrc/Dockerfile
+    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/build.bash
+    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
 ```
 
 * Build the Docker image:
@@ -205,14 +205,14 @@ $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
 ```
 #!bash
 cd /tmp
-./build.sh vmrc
+    $ ./build.sh vmrc
 ```
 
 * Run your container:
 
 ```
 #!bash
-./run.sh
+    $ ./run.sh
 ```
 
 * Test your VMRC installation:
@@ -220,5 +220,5 @@ cd /tmp
 
 ```
 #!bash
-$ roslaunch robotx_gazebo sandisland.launch
+    $ roslaunch robotx_gazebo sandisland.launch
 ```
