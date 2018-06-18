@@ -187,3 +187,38 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
 
 This command should print your GPU information.
+
+## Build the VMRC image ##
+
+* Download the Docker VMRC image from here and the build and run scripts:
+
+```
+#!bash
+$ mkdir /tmp/vmrc && cd /tmp/vmrc
+$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/vmrc/Dockerfile
+$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/build.bash
+$ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
+```
+
+* Build the Docker image:
+
+```
+#!bash
+cd /tmp
+./build.sh vmrc
+```
+
+* Run your container:
+
+```
+#!bash
+./run.sh
+```
+
+* Test your VMRC installation:
+
+
+```
+#!bash
+$ roslaunch robotx_gazebo sandisland.launch
+```
