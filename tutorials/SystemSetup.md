@@ -2,7 +2,7 @@ This tutorial will walk you through the setup required to make a computer ready 
 
 These instructions contain information for building the VMRC environment in Gazebo.
 
-## Setup instructions ##
+# Option 1: Install all software in your host system #
 
 * Setup and install dependencies:
 
@@ -90,7 +90,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ roslaunch robotx_gazebo sandisland.launch 
 ```
 
-# Setup instructions using Docker #
+# Option 2: Install all software using Docker #
 
 It's possible to use Docker to simplify the installation process or if you prefer to leave your host system untouched. We have created a Docker image that you'll need to build following these instructions.
 
