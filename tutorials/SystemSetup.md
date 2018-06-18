@@ -189,7 +189,7 @@ This command should print your GPU information.
 
 ## Build the VMRC image ##
 
-* Download the Docker VMRC image from here and the build and run scripts:
+* Download the Docker VMRC image and some scripts:
 
 ```
 #!bash
@@ -199,7 +199,7 @@ This command should print your GPU information.
     $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
 ```
 
-* Build the Docker image:
+* Build your VMRC Docker image:
 
 ```
 #!bash
@@ -207,7 +207,7 @@ cd /tmp
     $ ./build.sh vmrc
 ```
 
-* Run your container:
+* Run your VMRC container:
 
 ```
 #!bash
@@ -215,7 +215,6 @@ cd /tmp
 ```
 
 * Test your VMRC installation:
-
 
 ```
 #!bash
