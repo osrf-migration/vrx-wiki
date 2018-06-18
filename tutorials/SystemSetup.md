@@ -133,11 +133,21 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
      stable"
 ```
 
+Note for Ubuntu Bionic users: There's no stable package yet. Instead, run the following command:
+
+```
+#!bash
+    $ sudo add-apt-repository \
+     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) \
+     edge"
+```
+
 * Now, we can install Docker:
 
 ```
 #!bash
-    $ sudo apt-get update && apt-get install docker-ce
+    $ sudo apt-get update && sudo apt-get install docker-ce
 ```
 
 * Check your Docker installation:
