@@ -107,7 +107,6 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 
 * Install the following dependencies needed to setup an external package repository:
 
-
 ```
 #!bash
    $ sudo apt-get install \
@@ -138,7 +137,7 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 
 ```
 #!bash
-    sudo apt-get update && apt-get install docker-ce
+    $ sudo apt-get update && apt-get install docker-ce
 ```
 
 * Check your Docker installation:
