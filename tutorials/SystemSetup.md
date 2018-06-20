@@ -109,11 +109,7 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 
 ```
 #!bash
-   $ sudo apt-get install \
-      apt-transport-https \
-      ca-certificates \
-      curl \
-      software-properties-common
+   $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 ```
 
 * Add the official GPG key of Docker:
