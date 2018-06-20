@@ -130,10 +130,7 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 
 ```
 #!bash
-    $ sudo add-apt-repository \
-     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-     $(lsb_release -cs) \
-     edge"
+    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) edge"
 ```
 
 * Now, we can install Docker:
