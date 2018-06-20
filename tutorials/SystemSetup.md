@@ -123,10 +123,7 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 
 ```
 #!bash
-    $ sudo add-apt-repository \
-     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-     $(lsb_release -cs) \
-     stable"
+    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 **Note for Ubuntu Bionic (18.04 LTS) users only **: There's no stable package yet. Instead, run the following command:
@@ -145,6 +142,8 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 #!bash
     $ sudo apt-get update && sudo apt-get install docker-ce
 ```
+For Ubuntu 16.04, docker-ce should be roughly version 18.03.1 (as of June, 2018).
+
 
 * Check your Docker installation:
 
