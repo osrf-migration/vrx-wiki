@@ -129,7 +129,7 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
      stable"
 ```
 
-**Note for Ubuntu Bionic users only **: There's no stable package yet. Instead, run the following command:
+**Note for Ubuntu Bionic (18.04 LTS) users only **: There's no stable package yet. Instead, run the following command:
 
 ```
 #!bash
