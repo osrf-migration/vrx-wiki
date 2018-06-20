@@ -168,8 +168,7 @@ You should see the message `Hello from Docker!` confirming that your installatio
 * Setup the Nvidia Docker repository. Choose only one block based on your
 ```
 #!bash
-    $ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
-        sudo apt-key add -
+    $ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
     $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
     $ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
         sudo tee /etc/apt/sources.list.d/nvidia-docker.list
@@ -191,7 +190,9 @@ You should see the message `Hello from Docker!` confirming that your installatio
     $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
 
-This command should print your GPU information.
+This command should print your GPU information, for example...
+![Screenshot from 2018-06-20 08-21-43.png](https://bitbucket.org/repo/BgXLzgM/images/403079041-Screenshot%20from%202018-06-20%2008-21-43.png)
+
 
 ## Build the VMRC image ##
 
