@@ -64,6 +64,13 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 It's possible to use [Docker](https://www.docker.com/) to simplify the installation process or if you prefer to leave your host system untouched. We have created a Docker image that you'll need to build following these instructions.
 
+## Install Supporting Tools ##
+
+```
+#!bash
+    $ sudo apt install curl
+```
+
 ## Install Docker ##
 
 Docker has two available versions: Community Edition (CE) and Enterprise Edition (EE). In this tutorial, we'll install the CE version.
@@ -146,7 +153,12 @@ You should see the message `Hello from Docker!` confirming that your installatio
 ```
 #!bash
     $ sudo apt-get install -y nvidia-docker2
-    $ sudo pkill -SIGHUP dockerd
+```
+
+* Then, restart the Docker daemon 
+```
+#!bash
+    $ sudo service docker restart
 ```
 
 * Verify the installation:
