@@ -171,6 +171,22 @@ You should see the message `Hello from Docker!` confirming that your installatio
 This command should print your GPU information, for example...
 ![Screenshot from 2018-06-20 08-21-43.png](https://bitbucket.org/repo/BgXLzgM/images/403079041-Screenshot%20from%202018-06-20%2008-21-43.png)
 
+* Troubleshooting: permission error
+
+If this is the first time you've used docker on this machine, you may get an error similar to...
+```
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+```
+
+You will need to add your user account the docker group,
+```
+sudo usermod -a -G docker $USER
+```
+and then logout-log-back-in for the changes to take effect.
+
+
+
 
 ## Build the VMRC image ##
 
