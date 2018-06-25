@@ -11,3 +11,5 @@ We recommend following the tutorials in numerical order. At the end of these tut
 4. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
 
 5. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
+
+6. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting)
