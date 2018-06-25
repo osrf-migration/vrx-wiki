@@ -2,7 +2,7 @@
 
 We recommend following the tutorials in numerical order. At the end of these tutorials you will be familiar with Gazebo, ROS, and how to use VMRC.
 
-1. [System Setup](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup): Guides for configuring your personal PC and installing software for VMRC.
+1. [System Setup](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup): Guides for configuring your personal PC and installing software for VMRC.  Make sure to review the [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements) before you begin.
  
     Add some words here about which option below users should choose - pros and cons, etc.
 
