@@ -36,7 +36,8 @@ Please, check the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tuto
 ```
 #!bash
 
-    $ roslaunch robotx_gazebo sandisland.launch 
+    $ roslaunch robotx_gazebo sandisland.launch light_buoy:=false
+
 ```
 
 You should see a new Gazebo window similar to this one:
