@@ -165,10 +165,10 @@ See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) 
 ```
 #!bash
     $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
-    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/vmrc/Dockerfile
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
     $ cd ..
-    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/build.bash
-    $ wget https://bitbucket.org/osrf/vmrc/raw/docker/docker/run.bash
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/build.bash
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
     $ chmod u+x build.bash run.bash
 ```
 
