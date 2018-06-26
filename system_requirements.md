@@ -20,7 +20,7 @@ The VMRC software support is provided for the following software environment:
 - Gazebo 7.0.0 (<7.0.0 is not sufficient)
 - ROS Kinetic
 
-The system setup tutorials provides instructions for installing this environment directly on your host computer or by using a Docker container.
+The [system setup tutorials](https://bitbucket.org/osrf/vmrc/wiki/tutorials) provides instructions for installing this environment directly on your host computer or by using a Docker container.
 
 ### Peripherals ###
 
