@@ -156,7 +156,7 @@ nslookup: can't resolve 'google.com'
 ```
 then we have a network problem. The likely cause is that we can’t use the default DNS.
 
-See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting page Setup and Install) page, under the sections Setup->Docker->Networking.
+See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) page Setup and Install page, under the sections Setup->Docker->Networking.
 
 ## Build the VMRC image ##
 
