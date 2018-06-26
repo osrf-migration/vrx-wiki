@@ -2,6 +2,12 @@
 
 It's possible to use [Docker](https://www.docker.com/) to simplify the installation process or if you prefer to leave your host system untouched. We have created a Docker image that you'll need to build following these instructions.
 
+## Verify System Requirements ##
+
+ * Check the Hardware section of the [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements)
+ * While it may be possible to use Docker on non-Ubuntu Linux distributions, a Ubuntu-based OS is strongly encouraged.
+  * When using Docker you do not need to have ROS/Gazebo installed on the host!
+
 ## Install Supporting Tools ##
 
 ```
