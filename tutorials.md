@@ -3,8 +3,6 @@
 We recommend following the tutorials in numerical order. At the end of these tutorials you will be familiar with Gazebo, ROS, and how to use VMRC.
 
 1. [System Setup](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup): Guides for configuring your personal PC and installing software for VMRC.  Make sure to review the [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements) before you begin.
- 
-    Add some words here about which option below users should choose - pros and cons, etc.
 
     * [Install on Host](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupInstall): Install ROS, Gazebo and the current VMRC repositories on your Ubuntu host.  Use this option if your computer satisfies all of the hardware requirements in [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements) and you are willing to setup your system with the specific version of Ubuntu/ROS/Gazebo for VMRC. 
     * [Create Docker Container](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupDocker): Create a Docker container on your Linux host and install ROS, Gazebo and latest VMRC repositories within the container.  Use this option if you are using the same host for many development projects that make use of different software environments.
