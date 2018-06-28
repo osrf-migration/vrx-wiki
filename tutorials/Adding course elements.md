@@ -68,7 +68,7 @@ Now that we have a xacro file for our world, let's compile it into a valid xml f
 ```
 rosrun xacro xacro --inorder example_course.world.xacro > my_world.world
 ```
-If you have a catkin package setup, you can also have this automatically at compile time by modifying your CMakeLists.txt like this:
+If you have a catkin package setup, you can also have this happen automatically at compile time by modifying your CMakeLists.txt like this:
 ```
 find_package(catkin REQUIRED COMPONENTS xacro)
 catkin_package(CATKIN_DEPENDS xacro)
