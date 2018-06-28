@@ -10,7 +10,7 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
 
-1. [Adding Course Elements](https://bitbucket.org/osrf/vmrc/wiki/Adding%20course%20elements): Creating your course in gazebo
+1. [Adding Course Elements](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo
 
 1. [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
 
