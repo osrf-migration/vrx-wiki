@@ -59,6 +59,18 @@ $ roscat wamv_gazebo wamv_camera.xacro
   </xacro:macro>
 </robot>
 ```
-Notice the parameters *name, x, y, z, R, P ,Y* which are refereed to as variables within the macro. Some of them have defaults so may be included when the macro is used.
+Notice the parameters *name, x, y, z, R, P ,Y* which are refereed to as variables within the macro. Some of them have defaults so may be excluded when the macro is used.
 
-Here is an example which uses this macro.
+Here is an example URDF xacro which uses this macro:
+```
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="WAM-V">
+  ...
+  <!-- Include the macro -->
+  <xacro:include filename="$(find wamv_gazebo)/urdf/sensors/wamv_camera.xacro" />
+  <!-- Call the macro to add a front camera -->
+  <xacro:wamv_camera name="front_camera"  x="5" Y="1.57" />
+  ...
+</robot>
+```
