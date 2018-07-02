@@ -14,8 +14,11 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
 
-1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
-
 1. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
 
-1. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting)
+1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz
+
+1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
+
+
+1. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting): Diagnosing and fixing common problems with VMRC
