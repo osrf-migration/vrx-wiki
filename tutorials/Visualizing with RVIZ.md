@@ -29,6 +29,8 @@ RVIZ should open and display the WAM-V and a camera! Try [driving around](https:
 
 ![2018-06-28_11-56-12.gif](https://bitbucket.org/repo/BgXLzgM/images/4238727469-2018-06-28_11-56-12.gif)
 
+## Customizing RVIZ
+The example launch file above runs rviz with a preconfigured set of topics. You can add, remove, and edit topics and more from within the rviz GUI to better visualize your robot.
 
 ## Troubleshooting
 ### Change Fixed Frame
