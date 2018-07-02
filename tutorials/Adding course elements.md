@@ -63,22 +63,14 @@ Let's add few buoys into the world to make some obstacles to avoid. Put these li
     </include>
 ```
 
-### Generating world file from xacro
-Now that we have a xacro file for our world, let's compile it into a valid xml file that gazebo can read:
+### Running robotx_gazebo with a custom world
+Now that you have a new world file generated, you can launch the simulation again with this world:
+
+First, generate the compiled XML from the xacro file:
 ```
 rosrun xacro xacro --inorder example_course.world.xacro > my_world.world
 ```
-If you have a catkin package setup, you can also have this happen automatically at compile time by modifying your CMakeLists.txt like this:
-```
-find_package(catkin REQUIRED COMPONENTS xacro)
-catkin_package(CATKIN_DEPENDS xacro)
-xacro_add_files(
-  worlds/my_world.world.xacro
-    INORDER INSTALL DESTINATION worlds
-)
-```
-### Running custom world
-Now that you have a new world file generated, you can launch the simulation again with this world:
+Next, run the simulation with a custom world argument:
 ```
 roslaunch robotx_gazebo sandisland.launch world:=`pwd`/my_world.world
 ```
