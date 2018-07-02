@@ -4,7 +4,7 @@
 ## Generating XML from xacro
 Gazebo and most other programs which are configured with XML cannot parse xacro files directly. Instead, you must "compile" your xacro files into static XML. There are several ways you can do this:
 ### From Terminal
-To generate ```my_robot.urdf``` from ```my_robot.urdf.xacro```, run this command:
+To generate ```my_wamv.urdf``` from ```my_wamv.urdf.xacro```, run this command:
 
 ```$ rosrun xacro xacro --inorder my_wamv.urdf.xacro -o my_wamv.urdf```
 ### In CMakeLists.txt
