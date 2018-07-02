@@ -34,7 +34,7 @@ cat example_course.world.xacro
   </world>
 </sdf>
 ```
-Notice that this is an **.xacro** file. xacro is like a programmable xml file, allowing you to include other files, define functions (called macros), store variables, etc.
+Notice that this is an **.xacro** file. If you aren't familiar with xacro files, you should read [this](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files) tutorial first.
 
 Let's go through this file and make some changes. First, notice the first two lines within the **<world>** tag:
 ```
