@@ -45,7 +45,6 @@ Here is an example macro included to create a gazebo camera sensor with the ROS 
 $ roscat wamv_gazebo wamv_camera.xacro 
 ```
 ```
-$ roscat wamv_gazebo wamv_camera.xacro 
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="wamv_camera" params="name x:=0.5 y:=0 z:=1.5 R:=0 P:=0 Y:=0">
