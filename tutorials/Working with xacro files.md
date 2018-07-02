@@ -36,3 +36,29 @@ Launch files can also parse xacro and the compiled XML along to nodes at runtime
 </launch>
 ```
 when this is run, the ```robot_description``` ROS parameter will be set to the compiled xacro file in ```my_package/urdf/wamv_gazebo.urdf```.
+
+## Using Macros
+The VMRC packages contain many xacro macros for quickly composing XML files. You can read more about macros [here](http://wiki.ros.org/xacro#Macros). 
+
+Here is an example macro included to create a gazebo camera sensor with the ROS plugin:
+```
+$ roscat wamv_gazebo wamv_camera.xacro 
+```
+```
+$ roscat wamv_gazebo wamv_camera.xacro 
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="wamv_camera" params="name x:=0.5 y:=0 z:=1.5 R:=0 P:=0 Y:=0">
+    <link name="${name}_link"/>
+    <joint name="${name}_joint" type="fixed">
+      <origin xyz="${x} ${y} ${z}" rpy="${R} ${P} ${Y}"/>
+      <parent link="base_link"/>
+      <child link="${name}_link"/>
+    </joint>       
+    ...
+  </xacro:macro>
+</robot>
+```
+Notice the parameters *name, x, y, z, R, P ,Y* which are refereed to as variables within the macro. Some of them have defaults so may be included when the macro is used.
+
+Here is an example which uses this macro.
