@@ -66,7 +66,7 @@ Let's add few buoys into the world to make some obstacles to avoid. Put these li
 ### Running robotx_gazebo with a custom world
 Now that you have a new world file generated, you can launch the simulation again with this world:
 
-First, generate the compiled XML from the xacro file:
+First, generate the compiled XML from the xacro file using this or [another method](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files):
 ```
 rosrun xacro xacro --inorder example_course.world.xacro > my_world.world
 ```
