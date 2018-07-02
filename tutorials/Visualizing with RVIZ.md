@@ -4,7 +4,9 @@
 ## Launching Gazebo
 If you have not done so already, first run the simulation with the example URDF with sensors or the custom URDF [you created](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors):
 
-```roslaunch robotx_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_gazebo_sensors.urdf"```
+```
+roslaunch robotx_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_gazebo_sensors.urdf"
+```
 
 ## Publishing a TF tree
 For rviz depends on [TF](http://wiki.ros.org/tf) for understanding where to display everything. 
@@ -13,7 +15,9 @@ This is usually accomplished with the robot_state_publisher. This program will p
 
 If you are using the example wamv_gazebo_sensors.urdf, you can simply run:
 
-```$ roslaunch wamv_gazebo localization_example.launch```
+```
+$ roslaunch wamv_gazebo localization_example.launch
+```
 
 This will run robot_state_publisher along with a localization node which fuses the GPS and IMU into the robot's global pose and publishes it to the odom frame.
 
@@ -23,7 +27,10 @@ $ rosrun robot_state_publisher robot_state_publisher
 ```
 
 ## Running RVIZ
-```roslaunch wamv_gazebo rviz_example.launch```
+To open RVIZ with a configuration made for the WAM-V, run:
+```
+roslaunch wamv_gazebo rviz_example.launch
+```
 
 RVIZ should open and display the WAM-V and a camera! Try [driving around](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving) to see the robot move both in Gazebo and RVIZ.
 
@@ -33,6 +40,7 @@ RVIZ should open and display the WAM-V and a camera! Try [driving around](https:
 The example launch file above runs rviz with a preconfigured set of topics. You can add, remove, and edit topics and more from within the rviz GUI to better visualize your robot.
 
 ## Troubleshooting
+
 ### Change Fixed Frame
 The example RVIZ config starts with "odom" set as the frame everything is displayed in. If you are using the example URDF with a GPS and IMU and running the localization_example.launch, this frame should exsist. However, if you are using a custom URDF/localization which does not publish an odom frame, you can always switch the frame to base_link to display messages relative to the WAM-V:
 
