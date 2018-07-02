@@ -17,5 +17,22 @@ find_package(catkin REQUIRED COMPONENTS
   ...
 )
 ```
+Then add your files as targets:
+```
+xacro_add_files(
+  worlds/my_example_world.world.xacro
+  INORDER INSTALL DESTINATION worlds
+)
+```
+This will generate ```devel/share/worlds/your_project_name/my_example_world.world``` in your workspace.
 
 ### In launch file
+Launch files can also parse xacro and the compiled XML along to nodes at runtime. Here's an example:
+```
+<?xml version="1.0"?>
+<launch>
+  <arg name="urdf" default="$(find my_package)/urdf/wamv_gazebo.urdf"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg urdf)"/>
+</launch>
+```
+when this is run, the ```robot_description``` ROS parameter will be set to the compiled xacro file in ```my_package/urdf/wamv_gazebo.urdf```.
