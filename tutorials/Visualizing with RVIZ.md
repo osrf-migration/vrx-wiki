@@ -9,7 +9,7 @@ roslaunch robotx_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_
 ```
 
 ## Publishing a TF tree
-For rviz depends on [TF](http://wiki.ros.org/tf) for understanding where to display everything. 
+RVIZ depends on [TF](http://wiki.ros.org/tf) for understanding where to display everything. 
 
 This is usually accomplished with the robot_state_publisher. This program will publish all the fixed joints in your URDF to the TF tree along with non-fixed joints based on messages published to /JointStates (like the propeller rotations).
 
