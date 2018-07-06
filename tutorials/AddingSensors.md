@@ -4,7 +4,7 @@ This tutorial explains how to create your own robot description file (URDF) for 
 
 
 ## Prerequisites
-This guide assumes you already have installed ROS and the vmrc packages as covered in the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup).
+This guide assumes you already have installed ROS and the vmrc packages as covered in the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tutorials).
 
 
 ***
