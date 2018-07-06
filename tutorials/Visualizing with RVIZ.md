@@ -42,6 +42,6 @@ The example launch file above runs rviz with a preconfigured set of topics. You 
 ## Troubleshooting
 
 ### Change Fixed Frame
-The example RVIZ config starts with "odom" set as the frame everything is displayed in. If you are using the example URDF with a GPS and IMU and running the localization_example.launch, this frame should exsist. However, if you are using a custom URDF/localization which does not publish an odom frame, you can always switch the frame to base_link to display messages relative to the WAM-V:
+The example RVIZ config starts with "odom" set as the frame everything is displayed in. If you are using the example URDF with a GPS and IMU and running the localization_example.launch, this frame should exist. However, if you are using a custom URDF/localization which does not publish an odom frame, you can always switch the frame to base_link to display messages relative to the WAM-V:
 
 ![rvizswitchframe.png](https://bitbucket.org/repo/BgXLzgM/images/636844775-rvizswitchframe.png)
