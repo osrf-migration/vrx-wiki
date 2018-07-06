@@ -10,7 +10,7 @@ This guide assumes you already have installed ROS and the vmrc packages as cover
 ***
 
 ## Creating a URDF file
-A [URDF](http://wiki.ros.org/urdf) file is a format to describe a robot including joints, sensors, inertial properties, and more. The file is used by gazebo, rviz, and many other ROS packages. Several example URDF files for representing a WAM-V are included in the VMRC packages. 
+A [URDF](http://wiki.ros.org/urdf) file is a format to describe a robot including joints, sensors, inertial properties, and more. The file is used by Gazebo, rviz, and many other ROS packages. Several example URDF files for representing a WAM-V are included in the VMRC packages. 
 
 Let's copy an example locally as a starting point:
 
