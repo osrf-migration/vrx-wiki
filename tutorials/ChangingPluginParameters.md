@@ -6,10 +6,10 @@ This tutorial briefly describes where the base parameter files, those that are i
 
 | Description | File Location | Notes |
 |-------------|---------------|------ |
-| Hydrodynamic parameters (drag, added mass, etc.) | robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro | Current parameters based on FAU Publication https://doi.org/10.1016/j.oceaneng.2016.09.037 |
-| Wave characteristics (amplitude, period and direction for three constituents) |  robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro | Values correspond to same values used in visual texture |
-| Propulsion characteristics (linear or nonlinear mapping and force limits) | robotx_gazebo/urdf/wamv_gazebo_thrust_plugin.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
-| Wind velocity and windage coefficients | robotx_gazebo/urdf/wamv_gazebo_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
+| Hydrodynamic parameters (drag, added mass, etc.) | wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Current parameters based on FAU Publication https://doi.org/10.1016/j.oceaneng.2016.09.037 |
+| Wave characteristics (amplitude, period and direction for three constituents) |  wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Values correspond to same values used in visual texture |
+| Propulsion characteristics (linear or nonlinear mapping and force limits) | wamv_gazebo/urdf/dynamics/wamv_gazebo_thrust_plugin.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
+| Wind velocity and windage coefficients | wamv_gazebo/urdf/dynamics/wamv_gazebo_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 
 
 
