@@ -3,7 +3,7 @@
 In this tutorial we will demonstrate how to interface with the Gazebo thrust model plugin to move the WAM-V.  
 
 The effect of thrusters on the WAM-V is simulated by the [usv_gazebo_thrust_plugin](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/src/usv_gazebo_thrust_plugin.cc) Gazebo model plugin.  This plugin subscribes to a the custom ROS message, [UsvDrive](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/msg/UsvDrive.msg), on the `cmd_drive` topic. 
- The UsvDrive message defined as having two values to specify the left (port) and right (starboard) normalized thrust commands.  These commands are normalized between -1.0 to 1.0, where 1.0 is maximum forward force and 1.0 is maximum reverse force.  The mapping between the values in the UsvDrive message and the actual force applied to the model are discussed in [Theory of Operation](https://bitbucket.org/osrf/vmrc/wiki/VMRCGazeboPlugins) document.
+ The UsvDrive message defined as having two values to specify the left (port) and right (starboard) normalized thrust commands.  These commands are normalized between -1.0 to 1.0, where 1.0 is maximum forward force and -1.0 is maximum reverse force.  The mapping between the values in the UsvDrive message and the actual force applied to the model are discussed in [Theory of Operation](https://bitbucket.org/osrf/vmrc/wiki/VMRCGazeboPlugins) document.
 
 To move the WAM-V we need to have a ROS node the publishes on UsvDrive messages on the `cmd_drive` topic.  There are a variety of ways we can do this.  The rest of the tutorial will provide examples.
 
@@ -20,7 +20,7 @@ In the examples we'll illustrate publishing UsvDrive messages.  We first start t
 We can use the `rostopic pub` utility to publish a message 
 
 ```
-rostopic pub --once /cmd_drive robotx_gazebo/UsvDrive '{left: 0.5, right: -0.5}'
+rostopic pub --once /cmd_drive usv_gazebo_plugins/UsvDrive "left: 0.0 right: 0.0"
 ```
 
 This will publish one message and cause the WAM-V to rotate about the z-axis.  The command will timeout after a pre-determined amount of time (the default is 1.0 s, but can be changed in the [wamv_gazebo_thrust_plugin.xacro](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/urdf/wamv_gazebo_thrust_plugin.xacro) SDF file).
