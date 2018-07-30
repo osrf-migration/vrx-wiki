@@ -27,9 +27,9 @@ This will publish one message and cause the WAM-V to rotate about the z-axis.  T
 
 ## Teleop: Keyboard ##
 
-To use the keyboard, we use the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, along with a custom `twist2drive_keyboard.py` node to publish UsvDrive messages on the `cmd_drive` topic.  The `twist2drive_keyboard.py` node converts the Twist message publications from the teleop_twist_keyboard node into UsvDrive messages.  Forward velocity (twist.linear.x) is mapped to axial thrust (usvdrive.right+usvdrive.left) and rotational velocity (twist.linear.z) is mapped to differential thrust (usvdrive.right-usvdrive.left).
+To use the keyboard, we use the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, along with a custom [twist2drive_keyboard.py](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/nodes/twist2drive_keyboard.py) node to convert the Twist messages to two Float32 messages for the left and right thrusters. Forward velocity (twist.linear.x) is mapped to axial thrust (right+left) and rotational velocity (twist.linear.z) is mapped to differential thrust (usvdrive.right-usvdrive.left).
 
-A launch file example is included, which can be run with...
+A launch file example is included...
 
 ```
 roslaunch robotx_gazebo usv_keydrive.launch
@@ -37,10 +37,10 @@ roslaunch robotx_gazebo usv_keydrive.launch
 
 ## Teleop: Gamepad ##
 
-To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom `twist2drive_diff` node to publish UsvDrive messages on the `cmd_drive` topic using a Logitech F310 gamepad.  There is a launch file to add these nodes...
+To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom [twist2drive_diff](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/nodes/twist2drive_diff.py) node to convert Twist messages from the standard telelop to two Float32 messages for the thruster plugin.  The example is...
 
 ```
-roslaunch robotx_gazebo usv_diffdrive.launch
+roslaunch robotx_gazebo usv_joydrive.launch
 ```
 
 For the default configuration, the left stick up/down axis (axis 1) is mapped to the left thruster and the right stick up/down axis (axis 3) is mapped to the right thruster.  Therefore, pushing both sticks forward should cause the WAM-V to drive forward. 
