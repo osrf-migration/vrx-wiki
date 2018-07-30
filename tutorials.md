@@ -14,6 +14,8 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
 
+1. [Propulsion Configuration](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations and methods for creating custom configurations.
+
 1. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
 
 1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz
