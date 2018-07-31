@@ -60,13 +60,13 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
 
       <model name="robotx_dock_2016_base">
     <%
-layout = [
-  'X  X  X  X',
-  'X  X  X  X',
-  'XXXXXXXXXX',
-]
-%>
-<%= ERB.new(File.read('dock_generator.erb'),
+    layout = [
+    'X  X  X  X',
+    'X  X  X  X',
+    'XXXXXXXXXX',
+    ]
+    %>
+    <%= ERB.new(File.read('dock_generator.erb'),
                       nil, '-', 'dock').result(binding) %>
       </model>
     </sdf>
