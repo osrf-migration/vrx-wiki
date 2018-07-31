@@ -8,16 +8,19 @@ The image below illustrates a few possible thruster configurations.
 
 # "H": Differential Thrust with Two, Fixed Stern Thrusters #
 
-The default configuration is the "H" configuration with two, fixed stern thrusters.  
+The default configuration is the "H" configuration with two, fixed stern thrusters. 
+ 
 ![wamv_full_H.png](https://bitbucket.org/repo/BgXLzgM/images/3341119966-wamv_full_H.png)
 
-![wamv_full_t.png](https://bitbucket.org/repo/BgXLzgM/images/3753451461-wamv_full_t.png)
 
 # "T": Differential Thrust with An Additional Lateral/Bow Thruster #
 
 ```
 roslaunch robotx_gazebo sandisland.launch thrust_config:=T
 ```
+
+![wamv_full_t.png](https://bitbucket.org/repo/BgXLzgM/images/3753451461-wamv_full_t.png)
+
 
 
 # "X": Holonomic Thruster Configuration with Four Fixed Thrusters
