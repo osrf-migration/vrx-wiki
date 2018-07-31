@@ -33,7 +33,7 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
 
     <?xml version="1.0"?>
     <model>
-      <name>robotx_dock_2016</name>
+      <name>my_dock_base</name>
       <version>1.0</version>
       <sdf version="1.6">model.sdf</sdf>
 
@@ -43,12 +43,12 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
       </author>
 
       <description>
-        My custom dock.
+        My custom dock base.
       </description>
     </model>
 ```
 
-* Next, create the `model.sdf.erb` file nside the `my_dock_base` directory and edit it with your favorite editor:
+* Next, create the `model.sdf.erb` file inside the `my_dock_base` directory and edit it with your favorite editor:
 
 ```
 #!bash
@@ -61,9 +61,15 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
       <model name="robotx_dock_2016_base">
     <%
     layout = [
-    'X  X  X  X',
-    'X  X  X  X',
-    'XXXXXXXXXX',
+    'X  X',
+    'X  X',
+    'X  X',
+    'XXXXXXX',
+    'XXXX',
+    'XXXXXXX',
+    'X  X',
+    'X  X',
+    'X  X',
     ]
     %>
     <%= ERB.new(File.read('dock_generator.erb'),
