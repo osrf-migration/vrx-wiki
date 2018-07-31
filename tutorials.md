@@ -22,5 +22,6 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
 
+1. [How to create a custom dock](https://bitbucket.org/osrf/vmrc/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
 
 1. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting): Diagnosing and fixing common problems with VMRC
