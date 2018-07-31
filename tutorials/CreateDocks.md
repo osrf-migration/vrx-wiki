@@ -76,5 +76,6 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
                       nil, '-', 'dock').result(binding) %>
       </model>
     </sdf>
-
 ```
+
+The `layout` variable controls the layout of the dock. Feel free to modify this variable to your own needs. Every `X` will be transformed into a 4x4 grid dock block. Try not to use a large number of blocks, as these will be converted into visuals that might impact the performance of the simulation.
