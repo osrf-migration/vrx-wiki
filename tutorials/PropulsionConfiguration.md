@@ -10,22 +10,22 @@ The topics below illustrate how to run three of the four configurations.  The "D
 
 # "H": Differential Thrust with Two, Fixed Stern Thrusters #
 
-The default configuration is the "H" configuration with two, fixed stern thrusters. See the [Driving] (https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving) tutorial.
+The default configuration is the "H" configuration with two, fixed stern thrusters. See the [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving) tutorial.
  
 ![wamv_full_H.png](https://bitbucket.org/repo/BgXLzgM/images/3341119966-wamv_full_H.png)
 
 
 # "T": Differential Thrust with An Additional Lateral/Bow Thruster #
 
-To add a single lateral thruster requires the following steps:
+To add a single lateral thruster requires the following changes:
 
-1. Define new URDF/xacro definition that includes https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro
+  * Define new URDF/xacro definition  https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro that includes
 
-  1. New visual definition that adds additional thruster, eg., https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_description/urdf/wamv_t_thrusters.urdf.xacro
+    1. New visual definition that adds additional thruster, eg., https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_description/urdf/wamv_t_thrusters.urdf.xacro
 
-  2. New definition of plugins and sensors https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/macros_t.xacro that includes 
+    2. New definition of plugins and sensors https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/macros_t.xacro that includes 
 
-    1. New thrust plugin definition that has an additional thruster section to the configuration of the thruster plugin to specify the link where force is applied, thrust command topic name, etc. https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/dynamics/wamv_gazebo_thrust_plugin_t.xacro
+        * New thrust plugin definition that has an additional thruster section to the configuration of the thruster plugin to specify the link where force is applied, thrust command topic name, etc. https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/dynamics/wamv_gazebo_thrust_plugin_t.xacro
 
 As an example, we can call this new setup by specifying the "T" thrust configuration...
 
