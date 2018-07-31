@@ -79,3 +79,29 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
 ```
 
 The `layout` variable controls the layout of the dock. Feel free to modify this variable to your own needs. Every `X` will be transformed into a 4x4 grid dock block. Try not to use a large number of blocks, as these will be converted into visuals that might impact the performance of the simulation.
+
+* Open the `robotx_gazebo/CMakeLists.txt` file and add your model:
+
+```
+#!bash
+
+# Dock base files that need to be processed with erb
+set (dock_base_erb_files
+  models/dock_2016_base/model.sdf.erb
+  models/dock_2018_base/model.sdf.erb
+
+  # THIS IS THE ONLY LINE THAT NEEDS TO BE ADDED.
+  models/my_dock_base/model.sdf.erb
+)
+```
+
+* Generate your new dock:
+
+```
+#!bash
+
+$ cd ~/vmrc_ws/
+$ catkin_make
+```
+
+* Launch your simulation and insert your new dock by clicking on `Insert->my_dock_base`.
