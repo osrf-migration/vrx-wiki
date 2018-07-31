@@ -85,14 +85,14 @@ The `layout` variable controls the layout of the dock. Feel free to modify this 
 ```
 #!bash
 
-# Dock base files that need to be processed with erb
-set (dock_base_erb_files
-  models/dock_2016_base/model.sdf.erb
-  models/dock_2018_base/model.sdf.erb
+    # Dock base files that need to be processed with erb
+    set (dock_base_erb_files
+      models/dock_2016_base/model.sdf.erb
+      models/dock_2018_base/model.sdf.erb
 
-  # THIS IS THE ONLY LINE THAT NEEDS TO BE ADDED.
-  models/my_dock_base/model.sdf.erb
-)
+      # THIS IS THE ONLY LINE THAT NEEDS TO BE ADDED.
+      models/my_dock_base/model.sdf.erb
+    )
 ```
 
 * Generate your new dock:
@@ -100,8 +100,8 @@ set (dock_base_erb_files
 ```
 #!bash
 
-$ cd ~/vmrc_ws/
-$ catkin_make
+    $ cd ~/vmrc_ws/
+    $ catkin_make
 ```
 
 * Launch your simulation and insert your new dock by clicking on `Insert->my_dock_base`.
