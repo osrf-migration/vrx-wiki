@@ -104,4 +104,6 @@ The `layout` variable controls the layout of the dock. Feel free to modify this 
     $ catkin_make
 ```
 
-* Launch your simulation and insert your new dock by clicking on `Insert->my_dock_base`.
+* Launch your simulation and insert your new dock by clicking on `Insert->my_dock_base`:
+
+![my_dock.png](https://bitbucket.org/repo/BgXLzgM/images/109597433-my_dock.png)
