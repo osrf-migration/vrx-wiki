@@ -6,3 +6,5 @@
     * Description of environmental and model plugins used in VMRC
 1. [Worlds](https://bitbucket.org/osrf/vmrc/wiki/documentation/Worlds)
     * Existing example worlds
+1. [Docker Development](https://bitbucket.org/osrf/vmrc/wiki/documentation/Docker%20Development)
+    * Instructions for Docker image developers.
