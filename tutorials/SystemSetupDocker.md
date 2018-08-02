@@ -162,42 +162,38 @@ See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) 
 
 ## Build the VMRC image ##
 
-* Download the appropriate vmrc Dockerfile, depending on whether you are using the Nvidia runtime. For the Nvidia enabled version:
+* Create a build directory for the image:
+
+        $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
+
+* Download the appropriate vmrc Dockerfile, depending on whether you are using the Nvidia runtime. 
+
+    * For the Nvidia enabled version:
+
+            $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc_nvidia/Dockerfile
+
+    * Otherwise, if you are running without an Nvidia GPU, use:
+
+            $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
+
+* Download the run and build scripts to the parent of your build directory:
 
 ```
 #!bash
-    $ mkdir -p ~/vmrc_docker/vmrc_nvidia && cd ~/vmrc_docker/vmrc_nvidia
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc_nvidia/Dockerfile
     $ cd ..
-```
-Otherwise, if you are running without an Nvidia GPU, use:
-```
-#!bash
-    $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
-    $ cd ..
-```
-* Download the run and build scripts:
-```
-#!bash
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/build.bash
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
     $ chmod u+x build.bash run.bash
 ```
 
 * Build your VMRC Docker image:
-
-```
-#!bash
-    $ ./build.bash vmrc_nvidia
-```
+        $ ./build.bash vmrc
 
 * Run your VMRC container:
-
-```
-#!bash
-    $ ./run.bash -n vmrc
-```
+    * To use the default Docker runtime (no Nvidia):
+            $ ./run.bash vmrc
+    * For the nvidia runtime, use the -n flag:
+            $ ./run.bash -n vmrc
 
 * Test your VMRC installation:
 
