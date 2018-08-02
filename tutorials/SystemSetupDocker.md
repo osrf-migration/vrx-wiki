@@ -74,6 +74,8 @@ You should see the message `Hello from Docker!` confirming that your installatio
 
 ## Install Nvidia Docker ##
 
+This is an optional step, but highly recommended if you have an Nvidia GPU available. If not, skip this section and proceed directly to "Build the VMRC image" below.
+
 * Remove old versions of [Nvidia Docker](https://github.com/NVIDIA/nvidia-docker):
 
 ```
@@ -164,8 +166,8 @@ See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) 
 
 ```
 #!bash
-    $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
+    $ mkdir -p ~/vmrc_docker/vmrc_nvidia && cd ~/vmrc_docker/vmrc_nvidia
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc_nvidia/Dockerfile
     $ cd ..
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/build.bash
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
@@ -176,14 +178,14 @@ See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) 
 
 ```
 #!bash
-    $ ./build.bash vmrc
+    $ ./build.bash vmrc_nvidia
 ```
 
 * Run your VMRC container:
 
 ```
 #!bash
-    $ ./run.bash vmrc
+    $ ./run.bash -n vmrc
 ```
 
 * Test your VMRC installation:
