@@ -187,12 +187,16 @@ See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) 
 ```
 
 * Build your VMRC Docker image:
+
         $ ./build.bash vmrc
 
 * Run your VMRC container:
     * To use the default Docker runtime (no Nvidia):
+
             $ ./run.bash vmrc
+
     * For the nvidia runtime, use the -n flag:
+
             $ ./run.bash -n vmrc
 
 * Test your VMRC installation:
