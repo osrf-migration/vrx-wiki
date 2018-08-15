@@ -15,7 +15,7 @@ These instructions contain information for building the VMRC environment in Gaze
     $ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
     $ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
     $ sudo apt-get update
-    $ sudo apt-get install mercurial cmake pkg-config python git gazebo7 libeigen3-dev libgazebo7-dev ros-kinetic-gazebo-plugins ros-kinetic-gazebo-ros ros-kinetic-hector-gazebo-plugins ros-kinetic-joy ros-kinetic-robot-localization ros-kinetic-ros-base ros-kinetic-teleop-tools ros-kinetic-teleop-twist-keyboard ros-kinetic-velodyne-simulato ros-kinetic-xacro wget
+    $ sudo apt-get install cmake mercurial gazebo7 git libeigen3-dev libgazebo7-dev pkg-config python ros-kinetic-gazebo-plugins ros-kinetic-gazebo-ros ros-kinetic-hector-gazebo-plugins ros-kinetic-joy ros-kinetic-joy-teleop ros-kinetic-robot-localization ros-kinetic-ros-base ros-kinetic-teleop-tools ros-kinetic-teleop-twist-keyboard ros-kinetic-velodyne-simulator ros-kinetic-xacro ruby wget
 ```
 
 * Now build a workspace for VMRC. If you are familiar with ROS catkin
