@@ -10,18 +10,18 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
 
-1. [Adding Course Elements](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo
+1. [Adding Course Elements](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo.
 
 1. [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
 
 1. [Propulsion Configuration](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations and methods for creating custom configurations.
 
-1. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.)
+1. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.).
 
-1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz
+1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
 
 1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
 
 1. [How to create a custom dock](https://bitbucket.org/osrf/vmrc/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
 
-1. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting): Diagnosing and fixing common problems with VMRC
+1. [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting): Diagnosing and fixing common problems with VMRC.
