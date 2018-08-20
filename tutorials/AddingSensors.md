@@ -20,28 +20,8 @@ $ mkdir example_vmrc_package
 $ cd example_vmrc_package/
 $ roscp wamv_gazebo wamv_gazebo_sensors.urdf.xacro my_wamv.urdf.xacro
 ```
-This file contains something like this:
-```
-cat my_wamv.urdf.xacro
-```
-```
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro"
-       name="WAM-V">
-  <!-- Basic frame of WAM-V -->
-  <xacro:include filename="$(find wamv_gazebo)/urdf/wamv_gazebo.urdf.xacro" />
+The [original xacro file](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) defines the base WAM-V, the propulsion configuration, and then adds some example sensors using xacro tags.
 
-  <!-- ADD SENSORS -->
-  <!-- Add a front camera -->
-  <xacro:wamv_camera name="front_camera"/>
-  <!-- Add simulated GPS -->
-  <xacro:wamv_gps name="gps_wamv"/>
-  <!-- Add Simulated IMU -->
-  <xacro:wamv_imu name="imu_wamv"/>
-  <!-- Add P3D ground truth -->
-  <xacro:wamv_p3d name="p3d_wamv"/>
-</robot>
-```
 Notice that this is a **.xacro** file. If you aren't familiar with xacro files, you should read [this](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files) tutorial first.
 
 Let's look at the contents within the **<robot>** tag, which describes the robot. The first line includes wamv_gazebo.urdf.xacro. This adds the basic WAM-V mesh and joints along with the plugins for dynamics. You will likely want to keep this in, unless you are using a different model or dynamics simulation.
@@ -77,5 +57,13 @@ You can open rviz/rqt to see your new sensors:
 
 ![newcameras.png](https://bitbucket.org/repo/BgXLzgM/images/2924402190-newcameras.png)
 
-### Next steps:
-To visualize sensors in ROS, check out the [RVIZ tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ)
+## Changing the Propulsion Configuration
+
+In this tutorial you explicitly specify the urdf argument as input to the [sandisland.launch](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/launch/sandisland.launch) file.  This overrides the method used in the [Propulsion Configuration Tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration) to specify the thruster layout.  
+
+The original [wamv_gazebo_sensors.urdf.xacro](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) file includes examples for how to specify the 'T' and 'X' propulsion configuration within your new custom URDF file.
+
+
+## Next steps:
+
+ * To visualize sensors in ROS, check out the [RVIZ tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ)
