@@ -63,6 +63,17 @@ In this tutorial you explicitly specify the urdf argument as input to the [sandi
 
 The original [wamv_gazebo_sensors.urdf.xacro](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) file includes examples for how to specify the 'T' and 'X' propulsion configuration within your new custom URDF file.
 
+For example, if you want to change from the two-aft thruster configuration to the 'T' configuration, substitute the line in `my_wamv.urdf.xacro` from 
+
+```
+<xacro:wamv_gazebo thruster_layout="$(find wamv_gazebo)/urdf/thruster_layouts/wamv_aft_thrusters.xacro"/>
+```
+
+to 
+
+```
+<xacro:wamv_gazebo thruster_layout="$(find wamv_gazebo)/urdf/thruster_layouts/wamv_t_thrusters.xacro"/>
+```
 
 ## Next steps:
 
