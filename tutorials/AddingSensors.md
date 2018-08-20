@@ -75,6 +75,16 @@ to
 <xacro:wamv_gazebo thruster_layout="$(find wamv_gazebo)/urdf/thruster_layouts/wamv_t_thrusters.xacro"/>
 ```
 
+Then repeat the execution steps:
+```
+$ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
+```
+
+```
+$ roslaunch robotx_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
+```
+
+
 ## Next steps:
 
  * To visualize sensors in ROS, check out the [RVIZ tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ)
