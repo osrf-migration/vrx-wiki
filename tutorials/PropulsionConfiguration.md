@@ -8,10 +8,18 @@ The image below illustrates a few possible thruster configurations.
  
 The topics below illustrate how to run three of the four configurations.  The "Differential Thrust. Variable Angle" configuration is not currently supported.
 
-# "H": Differential Thrust with Two, Fixed Stern Thrusters #
+## "H": Differential Thrust with Two, Fixed Stern Thrusters #
 
 The default configuration is the "H" configuration with two, fixed stern thrusters. See the [Driving](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Driving) tutorial.
  
+If you run the example simulation without any command line options
+
+```
+roslaunch robotx_gazebo sandisland.launch 
+```
+
+The thruster configuration should like similar to the image below.
+
 ![wamv_full_H.png](https://bitbucket.org/repo/BgXLzgM/images/3341119966-wamv_full_H.png)
 
 
@@ -19,19 +27,16 @@ The default configuration is the "H" configuration with two, fixed stern thruste
 
 To add a single lateral thruster requires the following changes:
 
-  * Define new URDF/xacro definition  https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro that includes
+  * Define new URDF/xacro definition of the WAM-V https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro  This description includes a new thruster layout:
+    1. A thruster layout definition that includes both the visual and thruster plugin parameters https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_t_thrusters.xacro
 
-    1. New visual definition that adds additional thruster, eg., https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_description/urdf/wamv_t_thrusters.urdf.xacro
-
-    2. New definition of plugins and sensors https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/macros_t.xacro that includes 
-
-        * New thrust plugin definition that has an additional thruster section to the configuration of the thruster plugin to specify the link where force is applied, thrust command topic name, etc. https://bitbucket.org/osrf/vmrc/src/holonomic-example/wamv_gazebo/urdf/dynamics/wamv_gazebo_thrust_plugin_t.xacro
-
-As an example, we can call this new setup by specifying the "T" thrust configuration...
+This example is already available in the repository and can be specified using the `thrust_config` command line option...
 
 ```
 roslaunch robotx_gazebo sandisland.launch thrust_config:=T
 ```
+
+To generate a WAM-V propulsion/thruster configuration that looks like the image below.
 
 ![wamv_full_t.png](https://bitbucket.org/repo/BgXLzgM/images/3753451461-wamv_full_t.png)
 
