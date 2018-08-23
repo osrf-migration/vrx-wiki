@@ -10,7 +10,7 @@ In order to run VMRC we recommend your computing hardware has:
 - 8 Gb of RAM
 - Discrete Graphics Card, e.g. Nvidia GTX 650
 
-The system will run wit out the GPU, but it the Gazebo simulation will run much faster with access to a GPU.
+The system will run without the GPU, but it the Gazebo simulation will run much faster with access to a GPU.
 
 ### Software ###
 
