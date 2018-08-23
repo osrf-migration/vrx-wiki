@@ -163,19 +163,19 @@ This is an optional step to build a local copy of the Docker image from our Dock
 
     * To use the default Docker runtime (no Nvidia):
 
-            $ ./run.bash osrf/vmrc
+            $ ./run.bash osrf/vmrc:current
 
     * For the nvidia runtime, use the -n flag:
 
-            $ ./run.bash -n osrf/vmrc_nvidia
+            $ ./run.bash -n osrf/vmrc:nvidia_current
 
-* Alternately, if you built your own local Docker container using the instructions in the previous step:
+* Alternately, if you built your own local Docker container using the instructions in the previous step...
 
-    * The following will run your local image using the default runtime
+    * the following will run your local image using the default runtime:
 
             $ ./run.bash vmrc
 
-    * Or you can add the -n flag to use the nvidia runtime:
+    * or you can add the -n flag to use the nvidia runtime:
 
             $ ./run.bash -n vmrc
 
