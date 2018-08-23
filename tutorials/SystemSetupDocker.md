@@ -173,11 +173,11 @@ This is an optional step to build a local copy of the Docker image from our Dock
 
             $ ./run.bash vmrc
 
-for the default runtime or
+        for the default runtime or
 
             $ ./run.bash -n vmrc
 
-if you built the nvidia version.
+        if you built the nvidia version.
 
 * Note that if this is the first time running the image and you did not build it on your machine, the script will first pull the image from the repository to your machine, which may take a moment.
 
