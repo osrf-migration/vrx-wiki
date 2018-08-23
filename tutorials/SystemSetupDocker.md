@@ -169,17 +169,15 @@ This is an optional step to build a local copy of the Docker image from our Dock
 
             $ ./run.bash -n osrf/vmrc_nvidia
 
-* Alternately, if you built your own local Docker container using the instructions in the previous step, you can run it using either:
-```
+* Alternately, if you built your own local Docker container using the instructions in the previous step:
+
+    * The following will run your local image using the default runtime
 
             $ ./run.bash vmrc
-```
 
-            for the default runtime or
-```
+    * Or you can add the -n flag to use the nvidia runtime:
+
             $ ./run.bash -n vmrc
-```
-            if you built the nvidia version.
 
 * Note that if this is the first time running the image and you did not build it on your machine, the script will first pull the image from the repository to your machine, which may take a moment.
 
