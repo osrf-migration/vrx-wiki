@@ -118,6 +118,7 @@ This command should print your GPU information, for example...
 ![Screenshot from 2018-06-20 08-21-43.png](https://bitbucket.org/repo/BgXLzgM/images/403079041-Screenshot%20from%202018-06-20%2008-21-43.png)
 
 ## Build the VMRC image ##
+This is an optional step to build a local copy of the Docker image from our Dockerfile. If you just want to use the most recent version available in the osrf DockerHub repository, you can skip directly to "Run the VMRC image," below.
 
 * Create a build directory for the image:
 
@@ -133,28 +134,54 @@ This command should print your GPU information, for example...
 
             $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
 
-* Download the run and build scripts to the parent of your build directory:
+* Download the build script to the parent of your build directory:
 
 ```
 #!bash
     $ cd ..
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/build.bash
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
-    $ chmod u+x build.bash run.bash
+    $ chmod u+x build.bash
 ```
 
 * Build your VMRC Docker image:
 
         $ ./build.bash vmrc
 
-* Run your VMRC container:
+
+## Run the VMRC image ##
+
+* Create a vmrc docker directory (if you haven't already) and download the run script:
+
+```
+#!bash
+    $ mkdir -p ~/vmrc_docker && cd ~/vmrc_docker
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
+    $ chmod u+x run.bash
+```
+
+* Run the VMRC container provided on Docker Hub:
+
     * To use the default Docker runtime (no Nvidia):
 
-            $ ./run.bash vmrc
+            $ ./run.bash osrf/vmrc
 
     * For the nvidia runtime, use the -n flag:
 
+            $ ./run.bash -n osrf/vmrc_nvidia
+
+* Alternately, if you built your own local Docker container using the instructions in the previous step, you can run it using either:
+
+            $ ./run.bash vmrc
+
+for the default runtime or
+
             $ ./run.bash -n vmrc
+
+if you built the nvidia version.
+
+* Note that if this is the first time running the image and you did not build it on your machine, the script will first pull the image from the repository to your machine, which may take a moment.
+
+* If all has gone well, the command will drop you into a bash prompt running as the user "developer" inside the container. 
 
 * Test your VMRC installation:
 
@@ -162,6 +189,7 @@ This command should print your GPU information, for example...
 #!bash
     $ roslaunch robotx_gazebo sandisland.launch
 ```
+
 
 ## Troubleshooting: ##
 
