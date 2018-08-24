@@ -1,6 +1,6 @@
 ## Install Nvidia Docker ##
 
-This is an optional step, but highly recommended if you have an Nvidia GPU available. If not, skip this section and proceed directly to "Build the VMRC image" below.
+This is an optional step, but highly recommended if you have an Nvidia GPU available.
 
 * Remove old versions of [Nvidia Docker](https://github.com/NVIDIA/nvidia-docker):
 
