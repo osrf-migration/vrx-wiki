@@ -1,6 +1,6 @@
-# Option 2: Install all software using Docker #
+# Run Using Docker #
 
-It's possible to use [Docker](https://www.docker.com/) to simplify the installation process or if you prefer to leave your host system untouched. The quickest way to get up and running with this method is to run our pre-built Docker image from Docker Hub.
+The quickest way to get up and running with this method is to run our pre-built Docker image from Docker Hub.
 
 1. [Install Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installDocker)
     * [Install Nvidia Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installNvidiaDocker) (additional instructions for Nvidia users)
