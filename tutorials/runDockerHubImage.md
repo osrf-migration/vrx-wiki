@@ -1,4 +1,4 @@
-## Run the VMRC image ##
+## Run the VMRC image from Docker Hub ##
 
 * Create a vmrc docker directory (if you haven't already) and download the run script:
 
