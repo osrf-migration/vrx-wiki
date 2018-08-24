@@ -8,7 +8,10 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
     * [Run Using Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupDocker): Install Docker on your Linux host and run ROS, Gazebo and the latest VMRC code within a Docker container.  Use this option if you are using the same host for many development projects that make use of different software environments, or just prefer to leave your host system untouched.
 
-1. [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
+1. Examples:
+
+  * [Sand Island Basic](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
+  * [VMRC](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ExampleVmrc): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX.  Also illustrates using Rviz.
 
 1. [Adding Course Elements](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo.
 
