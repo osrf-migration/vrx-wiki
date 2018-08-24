@@ -23,7 +23,7 @@
 
 * If all has gone well, the command will drop you into a bash prompt running as the user "developer" inside the container. 
 
-* Test your VMRC installation:
+## Test your VMRC installation: ##
 
 ```
 #!bash
