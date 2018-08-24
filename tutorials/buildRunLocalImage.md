@@ -1,4 +1,4 @@
-## Build the VMRC image ##
+## Build the VMRC image using latest repository code ##
 
 * Create a build directory for the image:
 
