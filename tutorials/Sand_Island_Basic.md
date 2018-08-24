@@ -1,6 +1,6 @@
 # Overview
 
-This tutorial is the "hello world" of running the Gazebo WAM-V model with the associated plugins.  The model is the base setup, the Sand Island world with a simple environment (wind+waves) and a vehicle-only model and thrust plugin.  
+This tutorial is the "hello world" of running the Gazebo WAM-V model with the associated plugins.  The model is the base setup: the Sand Island world with a simple environment (wind+waves) and a vehicle-only model and thrust plugin.  
 
 A description of the model implementation (hydrodynamics, waves, wind and propulsion simulation) is available at https://github.com/bsb808/robotx_docs/blob/master/theoryofoperation/theory_of_operation.pdf
 
