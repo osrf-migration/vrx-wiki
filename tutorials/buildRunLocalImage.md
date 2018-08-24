@@ -1,5 +1,4 @@
 ## Build the VMRC image ##
-This is an optional step to build a local copy of the Docker image from our Dockerfile. If you just want to use the most recent version available in the osrf DockerHub repository, you can skip directly to "Run the VMRC image," below.
 
 * Create a build directory for the image:
 
