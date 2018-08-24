@@ -48,6 +48,6 @@
     $ roslaunch robotx_gazebo sandisland.launch
 ```
 
-* If everything is working properly, Gazebo should launch.
+* If everything is working properly, Gazebo should launch Sand Island world with a simple environment.
 
 * If you encounter errors, try the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) Setup and Install page.
