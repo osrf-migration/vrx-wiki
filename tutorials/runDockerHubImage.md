@@ -11,11 +11,11 @@
 
 * Run the VMRC container provided on Docker Hub:
 
-    * To use the default Docker runtime (no Nvidia):
+    * Option1: To use the default Docker runtime (no Nvidia):
 
             $ ./run.bash osrf/vmrc:current
 
-    * For the nvidia runtime, use the -n flag:
+    * Option2: For the Nvidia runtime, use the -n flag:
 
             $ ./run.bash -n osrf/vmrc:nvidia_current
 
