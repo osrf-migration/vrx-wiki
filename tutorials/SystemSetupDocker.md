@@ -4,7 +4,7 @@ It's possible to use [Docker](https://www.docker.com/) to simplify the installat
 
 1. [Install Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installDocker)
     * [Install Nvidia Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installNvidiaDocker) (additional instructions for Nvidia users)
-1. Download and run current Docker image from Docker Hub
+1. [Download and Run](https://bitbucket.org/osrf/vmrc/wiki/tutorials/runDockerHubImage) current VMRC Docker image from Docker Hub
 
 Use the above option if you want a stable setup with minimal steps to get running, but without the latest changes to the source code. (Best if you are a user and don't plan to contribute to the project.)
 
@@ -12,4 +12,4 @@ Alternately, you can follow a modified path to build your own local Docker image
 
 1. [Install Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installDocker)
     * [Install Nvidia Docker](https://bitbucket.org/osrf/vmrc/wiki/tutorials/installNvidiaDocker) (additional instructions for Nvidia users)
-1. Build and run current Docker image from Docker Hub
+1. [Build and Run](https://bitbucket.org/osrf/vmrc/wiki/tutorials/buildRunLocalImage) a local image using the latest source code.
