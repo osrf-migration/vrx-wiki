@@ -10,13 +10,27 @@ This example illustrates a specific configuration similar to what some of the Ro
   * IMU
   * 3D LiDAR
 
-## Run the example
+## Simulation
+
+Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 
 ```
 roslaunch robotx_gazebo vmrc.launch 
 ```
 
-## Visualize the sensor data
+## Robot Localization
+
+Visualization (and a number of other capabilities) benefit from having a fixed local frame.  The GPS sensor provides localization in a fixed frame, but having a local "odom" frame helps us avoid having to visualize the entire globe!
+
+We can use the [robot_localization](http://wiki.ros.org/robot_localization) package to fuse the GPS and IMU data to generate a position solution, and TF transforms, withing the local odom frame, where the location of the local frame is specified by the user.  
+
+```
+roslaunch wamv_gazebo localization_example.launch
+```
+
+## Visualization
+
+Start Rviz with example configuration file to read URDF and sensors.
 
 ```
 roslaunch wamv_gazebo rviz_vmrc.launch 
