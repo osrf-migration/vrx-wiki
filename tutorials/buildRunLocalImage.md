@@ -24,7 +24,7 @@
     $ chmod u+x build.bash run.bash
 ```
 
-* Build your VMRC Docker image:
+* Build your VMRC Docker image.  This step downloads, installs and compiles number of packages, so it will take some time,e.g., 10's of minutes to an hour depending on internet connection speed.
 
         $ ./build.bash vmrc
 
