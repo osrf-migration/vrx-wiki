@@ -14,13 +14,14 @@
 
             $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
 
-* Download the build script to the parent of your build directory:
+* Download the build and run scripts to the parent of your build directory:
 
 ```
 #!bash
     $ cd ..
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/build.bash
-    $ chmod u+x build.bash
+    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
+    $ chmod u+x build.bash run.bash
 ```
 
 * Build your VMRC Docker image:
@@ -30,36 +31,13 @@
 
 ## Run the VMRC image ##
 
-* Create a vmrc docker directory (if you haven't already) and download the run script:
+* To use the default Docker runtime (no Nvidia):
 
-```
-#!bash
-    $ mkdir -p ~/vmrc_docker && cd ~/vmrc_docker
-    $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
-    $ chmod u+x run.bash
-```
+        $ ./run.bash vmrc
 
-* Run the VMRC container provided on Docker Hub:
-
-    * To use the default Docker runtime (no Nvidia):
-
-            $ ./run.bash osrf/vmrc:current
-
-    * For the nvidia runtime, use the -n flag:
-
-            $ ./run.bash -n osrf/vmrc:nvidia_current
-
-* Alternately, if you built your own local Docker container using the instructions in the previous step...
-
-    * the following will run your local image using the default runtime:
-
-            $ ./run.bash vmrc
-
-    * or you can add the -n flag to use the nvidia runtime:
+* For the nvidia runtime, use the -n flag:
 
             $ ./run.bash -n vmrc
-
-* Note that if this is the first time running the image and you did not build it on your machine, the script will first pull the image from the repository to your machine, which may take a moment.
 
 * If all has gone well, the command will drop you into a bash prompt running as the user "developer" inside the container. 
 
