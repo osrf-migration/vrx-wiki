@@ -6,11 +6,11 @@
 
 * Download the appropriate vmrc Dockerfile, depending on whether you are using the Nvidia runtime. 
 
-    * For the Nvidia enabled version:
+    * Option 1: For the Nvidia enabled version:
 
             $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc_nvidia/Dockerfile
 
-    * Otherwise, if you are running without an Nvidia GPU, use:
+    * Option 2: Otherwise, if you are running without an Nvidia GPU, use:
 
             $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/vmrc/Dockerfile
 
