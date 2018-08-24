@@ -9,7 +9,7 @@
     $ chmod u+x run.bash
 ```
 
-* Run the VMRC container provided on Docker Hub:
+* Run the VMRC container provided on [Docker Hub](https://hub.docker.com/r/osrf/vmrc/tags/).  This step will attempt to run the current image.  If the image isn't already on your system (it is the first time it is run, or there is an update) docker will download the image.  The images are large (~1 GB), so beware this may take some time.
 
     * Option1: To use the default Docker runtime (no Nvidia):
 
