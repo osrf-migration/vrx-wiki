@@ -31,11 +31,11 @@
 
 ## Run the VMRC image ##
 
-* To use the default Docker runtime (no Nvidia):
+* Option 1: To use the default Docker runtime (no Nvidia):
 
         $ ./run.bash vmrc
 
-* For the nvidia runtime, use the -n flag:
+* Option 2: For the nvidia runtime, use the -n flag:
 
             $ ./run.bash -n vmrc
 
