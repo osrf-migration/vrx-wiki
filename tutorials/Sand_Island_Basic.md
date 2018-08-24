@@ -8,7 +8,8 @@ Follow-on tutorials describe how to customize this base for particular vehicle a
 
 # Setup
 
-Please, check the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup) before running this tutorial.
+Please make sure you've set up your system using one of the options suggested in the [System Setup]
+(https://bitbucket.org/osrf/vmrc/wiki/tutorials/) tutorial before running this tutorial.
 
 # Run instructions
 
