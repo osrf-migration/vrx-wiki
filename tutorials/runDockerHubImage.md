@@ -35,16 +35,7 @@
 
 #### Permission Error ####
 
-If this is the first time you've used docker on this machine, when you run the above command you may get an error similar to...
-```
-docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/create: dial unix /var/run/docker.sock: connect: permission denied. See 'docker run --help'.
-```
 
-You will need to add your user account the docker group,
-```
-sudo usermod -a -G docker $USER
-```
-and then logout-log-back-in for the changes to take effect.
 
 #### Test Docker Network Access ####
 
