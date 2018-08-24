@@ -30,39 +30,6 @@
     $ roslaunch robotx_gazebo sandisland.launch
 ```
 
+* If everything is working properly, Gazebo should launch.
 
-## Troubleshooting: ##
-
-#### Permission Error ####
-
-
-
-#### Test Docker Network Access ####
-
-Run the command...
-```
-docker run busybox nslookup google.com
-```
-
-If the system returns something like…
-```
-$ docker run busybox nslookup google.com
-Server:    172.20.20.11
-Address 1: 172.20.20.11 lee.ern.nps.edu
-
-Name:      google.com
-Address 1: 2607:f8b0:4005:804::200e sfo07s13-in-x0e.1e100.net
-Address 2: 216.58.195.78 sfo07s16-in-f78.1e100.net
-```
-then the system has network access and we can proceed with building the VMRC container.
-
-If the system hangs for a long time (~5 min) and returns something like
-```
-Server:    8.8.8.8
-Address 1: 8.8.8.8
-
-nslookup: can't resolve 'google.com'
-```
-then we have a network problem. The likely cause is that we can’t use the default DNS.
-
-See the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) page Setup and Install page, under the sections Setup->Docker->Networking.
+* If you encounter errors, try the [Troubleshooting](https://bitbucket.org/osrf/vmrc/wiki/Troubleshooting) Setup and Install page.
