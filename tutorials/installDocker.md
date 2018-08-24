@@ -60,7 +60,9 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 For Ubuntu 16.04, docker-ce should be roughly version 18.03.1 (as of June, 2018).
 
 
-* Check your Docker installation:
+## Check your Docker installation:
+
+ * First try running a docker container using sudo
 
 ```
 #!bash
@@ -68,3 +70,21 @@ For Ubuntu 16.04, docker-ce should be roughly version 18.03.1 (as of June, 2018)
 ```
 
 You should see the message `Hello from Docker!` confirming that your installation was successfully completed.
+
+  * Next try running as a normal user
+
+```
+#!bash
+    $ docker run hello-world
+```
+
+You should see the message `Hello from Docker!` confirming that your installation was successfully completed.
+
+If you see an error that starts with text such as
+
+```
+#!bash
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/dock
+```
+
+Then try adding yourself to the docker user group `sudo usermod -a -G docker $USER`.  Unfortunately you'll need to logoff and login for this change to complete.  Then retry running the hello-world test.
