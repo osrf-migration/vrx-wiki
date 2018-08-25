@@ -46,7 +46,7 @@ You should see a new Gazebo window similar to this one:
 
 You may notice that the USV starts drifting along the x-axis.  That is due to the wind.  More on that later.
 
-If you zoom in your will see the WAM-V model like this:
+If you zoom in you will see the WAM-V model like this:
 
 ![Screenshot from 2018-02-26 08-55-16.png](https://bitbucket.org/repo/BgXLzgM/images/4154749175-Screenshot%20from%202018-02-26%2008-55-16.png)
 
