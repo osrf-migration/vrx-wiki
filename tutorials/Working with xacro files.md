@@ -27,7 +27,7 @@ xacro_add_files(
 This will generate ```devel/share/worlds/your_project_name/my_example_world.world``` in your workspace.
 
 ### In launch file
-Launch files can also parse xacro and the compiled XML along to nodes at runtime. Here's an example:
+Launch files can also parse xacro and pass the compiled XML along to nodes at runtime. Here's an example:
 ```
 <?xml version="1.0"?>
 <launch>
