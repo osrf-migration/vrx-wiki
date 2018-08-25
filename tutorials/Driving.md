@@ -4,7 +4,7 @@ In this tutorial we will demonstrate how to interface with the Gazebo thrust mod
 
 The effect of thrusters on the WAM-V is simulated by the [usv_gazebo_thrust_plugin](https://bitbucket.org/osrf/vmrc/src/default/usv_gazebo_plugins/src/usv_gazebo_thrust_plugin.cc) Gazebo model plugin.  The plugin is configured using "thruster" tags within the SDF description.  For this example, we are using the [default configuration](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/dynamics/wamv_gazebo_thrust_plugin.xacro) which defines two thrusters - one at the end of each of the WAM-V hulls.  Within each thruster definition the "cmdTopic" tag specifies the ROS topic to which the plugin is subscribed.  Messages of type [std_msgs/Float32](http://docs.ros.org/kinetic/api/std_msgs/html/msg/Float32.html) are used to describe each thruster input. Each command is a normalized value between -1.0 to 1.0, where 1.0 is maximum forward force and -1.0 is maximum reverse force.  The mapping between this normalized thruster command and the actual force applied to the model is discussed in [Theory of Operation](https://bitbucket.org/osrf/vmrc/wiki/VMRCGazeboPlugins) document.
 
-To move the WAM-V we need to have a ROS node the publishes on messages on the topics `left_thrust_cmd` and  `right_thrust_cmd`  
+To move the WAM-V we need to have a ROS node that publishes on messages on the topics `left_thrust_cmd` and  `right_thrust_cmd`  
 
 # Examples #
 
