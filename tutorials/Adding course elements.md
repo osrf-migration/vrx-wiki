@@ -2,7 +2,7 @@
 The robotx_gazebo package has a basic robotx course with water, sky, coastline, and some of the challenges in fixed positions. It is easy to create your own static course or even add new challenges into a running simulation.
 
 ## Prerequisites
-This guide assumes you already have installed ROS and the vmrc packages as covered in the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetup).
+This guide assumes you already have installed ROS and the vmrc packages as covered in the [setup instructions](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupInstall).
 
 ***
 ## Creating a world file
