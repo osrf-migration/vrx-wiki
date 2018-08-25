@@ -45,7 +45,7 @@ The first line imports xacro macros defined in robotx_gazebo, including the one 
 
 The remainder of the file is simply adding different challenges into the course. You can see a list of models / challenges included in robotx_gazebo [here](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/README.md).
 
-Let's add few buoys into the world to make some obstacles to avoid. Put these lines after the other **<include>** tags.
+Let's add a few buoys into the world to make some obstacles to avoid. Put these lines after the other **<include>** tags.
 ```
     <include>
       <!-- Small buoy found in robotx_gazebo -->
