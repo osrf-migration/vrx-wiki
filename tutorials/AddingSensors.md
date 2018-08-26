@@ -55,7 +55,7 @@ Next, run the simulation with a custom urdf argument:
 ```
 $ roslaunch robotx_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
 ```
-You can open rviz/rqt to see your new sensors:
+You can open rviz/rqt to see your new sensors (for help on how to do this, see the [RVIZ tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ):
 
 ![newcameras.png](https://bitbucket.org/repo/BgXLzgM/images/2924402190-newcameras.png)
 
