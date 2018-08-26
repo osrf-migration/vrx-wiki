@@ -40,7 +40,7 @@ A couple things to notice about this:
 
 * A common property "stereo_x" is used so the value is not copied in multiple places
 * The x,y,z and P (pitch) set where the cameras are located relative to the WAM-V base link
-* A python expression ```${radians(15)}``` was used to convert 15 degrees to radians
+* A Python expression ```${radians(15)}``` was used to convert 15 degrees to radians
 
 
 
