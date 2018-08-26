@@ -23,7 +23,7 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
 
-1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
+1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vmrc/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
 
 1. [How to create a custom dock](https://bitbucket.org/osrf/vmrc/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
 
