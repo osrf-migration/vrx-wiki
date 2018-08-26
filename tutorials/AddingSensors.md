@@ -47,7 +47,7 @@ A couple things to notice about this:
 ### Running robotx_gazebo with a custom WAM-V URDF
 Now that you have a custom URDF modeling your WAM-V, let's run the simulation!
 
-First, generate the compiled XML from the xacro file using this or [another method](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files):
+First, generate the compiled XML from the xacro file using the command below (or [another method](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files)):
 ```
 $ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
 ```
