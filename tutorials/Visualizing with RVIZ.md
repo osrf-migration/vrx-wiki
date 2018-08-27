@@ -13,13 +13,17 @@ RVIZ depends on [TF](http://wiki.ros.org/tf) for understanding where to display 
 
 This is usually accomplished with the robot_state_publisher. This program will publish all the fixed joints in your URDF to the TF tree along with non-fixed joints based on messages published to /JointStates (like the propeller rotations).
 
-If you are using the example wamv_gazebo_sensors.urdf, you can simply run:
+There are (at least) two options for doing this:
 
+### Option 1: Using the default URDF
+
+If you are using the example wamv_gazebo_sensors.urdf, you can simply run:
 ```
 $ roslaunch wamv_gazebo localization_example.launch
 ```
-
 This will run robot_state_publisher along with a localization node which fuses the GPS and IMU into the robot's global pose and publishes it to the odom frame.
+
+### Option 2: Using custom URDF
 
 If you are using a custom URDF without the standard GPS/IMU configuration, you can run the robot_state_publisher alone:
 ```
