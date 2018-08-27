@@ -37,7 +37,7 @@ roslaunch robotx_gazebo usv_keydrive.launch
 
 ## Teleop: Gamepad ##
 
-To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom [twist2drive_diff](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/nodes/twist2drive_diff.py) node to convert Twist messages from the standard telelop to two Float32 messages for the thruster plugin.  The example is...
+To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom [twist2thrust.py]( https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/nodes/twist2thrust.py) node to convert Twist messages from the standard telelop to two Float32 messages for the thruster plugin.  The example is...
 
 ```
 roslaunch robotx_gazebo usv_joydrive.launch
