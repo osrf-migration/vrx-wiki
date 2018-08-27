@@ -37,3 +37,5 @@ Start Rviz with example configuration file to read URDF and sensors.
 ```
 roslaunch wamv_gazebo rviz_vmrc.launch 
 ```
+
+![unnamed.png](https://bitbucket.org/repo/BgXLzgM/images/2380721822-unnamed.png)
