@@ -18,7 +18,7 @@ Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 roslaunch robotx_gazebo vmrc.launch 
 ```
 
-![vmrc_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/3907951928-vmrc_sensors.png)
+![vmrc_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/159286262-vmrc_sensors.png)
 
 ## Robot Localization
 
