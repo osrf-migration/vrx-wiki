@@ -5,7 +5,7 @@ This example illustrates a specific configuration similar to what some of the Ro
 * Fixed stern thrusters and a single lateral thuster - the ['T' propulsion configuration](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration)
 * A standard set of onboard sensors
   * Two forward facing cameras (stereo)
-  * One lateral camera pointing right
+  * One starboard facing camera
   * GPS
   * IMU
   * 3D LiDAR
@@ -17,6 +17,8 @@ Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 ```
 roslaunch robotx_gazebo vmrc.launch 
 ```
+
+![vmrc_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/3907951928-vmrc_sensors.png)
 
 ## Robot Localization
 
