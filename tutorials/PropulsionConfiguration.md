@@ -27,10 +27,10 @@ The thruster configuration should like similar to the image below.
 
 To add a single lateral thruster requires the following changes:
 
-  * Define new URDF/xacro definition of the WAM-V https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro  This description includes a new thruster layout:
-    1. A thruster layout definition that includes both the visual and thruster plugin parameters https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_t_thrusters.xacro
+  1. Define new URDF/xacro definition of the WAM-V that includes both the base vehicle (without thrusters) and then adds thrusters to the vessel.  For this example, the new definition is [wamv_gazebo_t.urdf.xacro](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_t.urdf.xacro).  
+  1. This WAM-V definition file includes a propulsion layout definition.  For this example, the new thruster layout is defined in [wamv_t_thruster.xacro](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_t_thrusters.xacro)
 
-This example is already available in the repository and can be specified using the `thrust_config` command line option...
+This example is already available in the repository and can be specified using the `thrust_config` command line option of the launch file ...
 
 ```
 roslaunch robotx_gazebo sandisland.launch thrust_config:=T
