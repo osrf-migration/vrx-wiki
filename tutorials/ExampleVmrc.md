@@ -24,7 +24,7 @@ roslaunch robotx_gazebo vmrc.launch
 
 Visualization (and a number of other capabilities) benefit from having a fixed local frame.  The GPS sensor provides localization in a fixed frame, but having a local "odom" frame helps us avoid having to visualize the entire globe!
 
-We can use the [robot_localization](http://wiki.ros.org/robot_localization) package to fuse the GPS and IMU data to generate a position solution, and TF transforms, within the local odom frame, where the location of the local frame is specified by the user.  
+We can use the [robot_localization](http://wiki.ros.org/robot_localization) package to fuse the GPS and IMU data to generate a position solution, and TF transforms, within the local odom frame, where the location of the local frame is specified by the user. To try this out, start Gazebo with the command above, then open a new terminal or tab and run:
 
 ```
 roslaunch wamv_gazebo localization_example.launch
@@ -32,7 +32,7 @@ roslaunch wamv_gazebo localization_example.launch
 
 ## Visualization
 
-Start Rviz with example configuration file to read URDF and sensors.
+After executing both commands above, open a separate terminal and start Rviz with example configuration file to read URDF and sensors.
 
 ```
 roslaunch wamv_gazebo rviz_vmrc.launch 
