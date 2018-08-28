@@ -32,7 +32,7 @@ roslaunch wamv_gazebo localization_example.launch
 
 ## Visualization
 
-After executing both commands above, open a separate terminal and start Rviz with example configuration file to read URDF and sensors.
+After executing both commands above, open a third terminal and start Rviz with example configuration file to read URDF and sensors.
 
 ```
 roslaunch wamv_gazebo rviz_vmrc.launch 
