@@ -1,5 +1,5 @@
 # Overview
-[RVIZ](http://wiki.ros.org/rviz) is a standard ROS tool for visualizing messages. This tutorial explains how to run rviz to display the WAM-V and sensors.
+[RVIZ](http://wiki.ros.org/rviz) is a standard ROS tool for visualizing messages. This tutorial explains how to run rviz to display the WAM-V and sensors that you are simulating with Gazebo.
 
 ## Launching Gazebo
 If you have not done so already, first run the simulation with the example URDF with sensors or the custom URDF [you created](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors):
@@ -7,6 +7,7 @@ If you have not done so already, first run the simulation with the example URDF 
 ```
 roslaunch robotx_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_gazebo_sensors.urdf"
 ```
+Leave this simulation running for the remainder of the tutorial. In the steps below, you will use the robot_state_publisher to make the simulated data available to rviz.
 
 ## Publishing a TF tree
 RVIZ depends on [TF](http://wiki.ros.org/tf) for understanding where to display everything. 
@@ -31,7 +32,7 @@ $ rosrun robot_state_publisher robot_state_publisher
 ```
 
 ## Running RVIZ
-To open RVIZ with a configuration made for the WAM-V, run:
+To open RVIZ with a configuration made for the WAM-V, open a third terminal and run:
 ```
 roslaunch wamv_gazebo rviz_example.launch
 ```
