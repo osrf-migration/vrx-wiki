@@ -22,8 +22,7 @@ If you edit the xacro file you will see a line like this...
 <wind_velocity_vector>0 0 0 </wind_velocity_vector>
 ```
 
-which in this case specifies the wind velocity as 0 m/s.  We can change the X and Y components of this vector to simulate the influence of wind on the vessel (the Z component is ignored).  We've posted a video where we experiment with a couple of cases: https://vimeo.com/257588911
-
+which in this case specifies the wind velocity as 0 m/s.  We can change the X and Y components of this vector to simulate the influence of wind on the vessel (the Z component is ignored).  We've posted a [video](https://vimeo.com/257588911) where we experiment with a couple of cases.
 
 
 # Example: Changing the Wave Field #
@@ -53,4 +52,4 @@ When we start testing a new algorithm, we may want to set all of these to zero, 
 
 Alternatively, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the amplitude of the waves and/or changing the wave period.
 
-We've posted a video showing how we would test with three different seastates - including how to break a buoy!
+We've posted a [video](https://vimeo.com/257586610) showing how we would test with three different seastates - including how to break a buoy!
