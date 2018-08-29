@@ -47,7 +47,7 @@ As an illustrative example, we'll go through testing the simulation with differe
 	<wave_direction2>0.7 0.7</wave_direction2>
 ```
 
-This specifies our Gerstner wave field as having three components, where each component as a user-specified  amplitude, period and direction.
+This specifies our Gerstner wave field as having three components, where each component has a user-specified  amplitude, period and direction.
 
 When we start testing a new algorithm, we may want to set all of these to zero, so that there is no influence from the wave field.  We could achieve that by setting the amplitude of each component wave to zero - or we could set the `wave_n` parameter to zero so there are no components.
 
