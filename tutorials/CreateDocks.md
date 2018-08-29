@@ -4,7 +4,7 @@ In this tutorial we will demonstrate how to create new docks with your own dimen
 
 The `robotx_gazebo` ROS package contains multiple models related with docks:
 
-* dock_block: The basic floating building block. Basically, a dock is created by combining multiple of these blocks together.
+* dock_block: The basic floating building block. Basically, a dock is created by combining these blocks together.
 * dock_block_2x2: A 2x2 grid of dock blocks.
 * dock_block_3x3: A 3x3 grid of dock blocks.
 * dock_block_4x4: A 4x4 grid of dock blocks.
