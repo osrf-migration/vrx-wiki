@@ -8,7 +8,7 @@ Follow-on tutorials describe how to customize this base for particular vehicle a
 
 # Setup
 
-Please make sure you've set up your system using the [Host-Based Installation](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupInstall) tutorial before running this tutorial.
+Please make sure you've set up your system using the instructions for [Host-Based Installation](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupInstall) or [Container-Based Installation](https://bitbucket.org/osrf/vmrc/wiki/tutorials/SystemSetupDocker) before running this tutorial.
 
 # Run instructions
 
