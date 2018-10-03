@@ -2,7 +2,7 @@
 
 * Create a build directory for the image:
 
-        $ mkdir -p ~/vmrc_docker/vmrc && cd ~/vmrc_docker/vmrc
+        $ mkdir -p ~/vmrc/docker/vmrc && cd ~/vmrc/docker/vmrc
 
 * Download the appropriate vmrc Dockerfile, depending on whether you are using the Nvidia runtime. 
 
