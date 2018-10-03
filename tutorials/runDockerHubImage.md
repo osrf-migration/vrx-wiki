@@ -4,7 +4,7 @@
 
 ```
 #!bash
-    $ mkdir -p ~/vmrc_docker && cd ~/vmrc_docker
+    $ mkdir -p ~/vmrc/docker && cd ~/vmrc/docker
     $ wget https://bitbucket.org/osrf/vmrc/raw/default/docker/run.bash
     $ chmod u+x run.bash
 ```
