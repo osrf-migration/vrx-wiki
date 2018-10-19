@@ -37,7 +37,7 @@
 
 * Option 2: For the nvidia runtime, use the -n flag:
 
-        $ ./run.bash -n vmrc_nvidia
+        $ ./run.bash -n vmrc
 
 * If all has gone well, the command will drop you into a bash prompt running as the user "developer" inside the container. 
 
