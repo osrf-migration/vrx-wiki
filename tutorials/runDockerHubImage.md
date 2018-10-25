@@ -27,7 +27,7 @@
 
 ```
 #!bash
-    $ roslaunch robotx_gazebo sandisland.launch
+    $ roslaunch vmrc_gazebo sandisland.launch
 ```
 
 * If everything is working properly, Gazebo should launch Sand Island world with a simple environment.
