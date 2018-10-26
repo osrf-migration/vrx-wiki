@@ -50,8 +50,6 @@ Docker has two available versions: Community Edition (CE) and Enterprise Edition
 #!bash
     $ sudo apt-get update && sudo apt-get install docker-ce
 ```
-For Ubuntu 16.04, docker-ce should be roughly version 18.03.1 (as of June, 2018).
-
 
 ## Check your Docker installation:
 
