@@ -39,7 +39,8 @@ This is an optional step, but highly recommended if you have an Nvidia GPU avail
 #!bash
     $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
-**Note for Ubuntu 18.10 users:** You should run the following command:
+
+* [**Ubuntu 18.04 users**] Verify the installation:
 
 ```
 #!bash
