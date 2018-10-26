@@ -39,6 +39,12 @@ This is an optional step, but highly recommended if you have an Nvidia GPU avail
 #!bash
     $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
+**Note for Ubuntu 18.10 users:** You should run the following command:
+
+```
+#!bash
+    $ docker run --runtime=nvidia --rm nvidia/cuda:9.1-devel nvidia-smi
+```
 
 This command should print your GPU information, for example...
 ![Screenshot from 2018-06-20 08-21-43.png](https://bitbucket.org/repo/BgXLzgM/images/403079041-Screenshot%20from%202018-06-20%2008-21-43.png)
