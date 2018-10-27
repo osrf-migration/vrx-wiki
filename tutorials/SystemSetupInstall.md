@@ -71,10 +71,27 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 #!bash
     $ cd ~/vmrc_ws
     $ catkin_make
-    $ source devel/setup.bash
 ```
 
 # Test Run
+
+* Source the ROS `setup.bash` file:
+
+```
+#!bash
+    $ source /opt/ros/kinetic/setup.bash
+```
+
+* Only needed if you built from source:
+
+* Source the ROS `setup.bash` file:
+
+```
+#!bash
+    $ source  ~/vmrc_ws/devel/setup.bash
+```
+
+* Launch the VMRC simulation:
 
 ```
 #!bash
