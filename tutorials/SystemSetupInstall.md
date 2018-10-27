@@ -82,9 +82,8 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ source /opt/ros/kinetic/setup.bash
 ```
 
-* Only needed if you built from source:
+* **Only needed if you built from source:**
 
-* Source the ROS `setup.bash` file:
 
 ```
 #!bash
