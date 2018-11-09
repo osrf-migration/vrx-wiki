@@ -2,6 +2,9 @@
 
 This is the entry point for teams participating in the VMRC. 
 
+## [Competition](https://bitbucket.org/osrf/vmrc/wiki/competition)
+VMRC competition-specific information: tasks, rules, technical notes, etc.
+
 ## [Documentation](https://bitbucket.org/osrf/vmrc/wiki/documentation)
 Specifications of the Virtual Maritime RobotX Challenge (VMRC) and the software.
 
