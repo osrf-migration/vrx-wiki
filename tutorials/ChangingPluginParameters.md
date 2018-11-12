@@ -8,13 +8,13 @@ This tutorial briefly describes where the base parameter files that are included
 |-------------|---------------|------ |
 | Hydrodynamic parameters (drag, added mass, etc.) | wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Current parameters based on FAU Publication https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 | Wave characteristics (amplitude, period and direction for three constituents) |  wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Values correspond to same values used in visual texture |
-| Propulsion characteristics (linear or nonlinear mapping and force limits) | wamv_gazebo/urdf/dynamics/wamv_gazebo_thruster_config.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
+| Propulsion characteristics (linear or nonlinear mapping and force limits) | wamv_gazebo/urdf/thruster_layouts//wamv_gazebo_thruster_config.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 | Wind velocity and windage coefficients | wamv_gazebo/urdf/dynamics/wamv_gazebo_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 
 
 
 # Example: Changing the Wind #
-As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the ```robotx_gazebo/urdf/wamv_gazebo_wind_plugin.xacro``` file by specifying the velocity vector (in m/s) and the coefficients used to convert the apparent wind into force and torque. 
+As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the ```wamv_gazebo/urdf/dynamics/wamv_gazebo_wind_plugin.xacro``` file by specifying the velocity vector (in m/s) and the coefficients used to convert the apparent wind into force and torque. 
 
 If you edit the xacro file you will see a line like this...
 
@@ -27,7 +27,7 @@ which in this case specifies the wind velocity as 0 m/s.  We can change the X an
 
 # Example: Changing the Wave Field #
 
-As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in `robotx_gazebo/urdf/wamv_gazebo_dynamics_plugin.xacro`.  When we open the file we see a section that looks like this...
+As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in `wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro`.  When we open the file we see a section that looks like this...
 
 ```
 	<!-- Waves x3 -->
