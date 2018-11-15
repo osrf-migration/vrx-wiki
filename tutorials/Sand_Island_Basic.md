@@ -36,7 +36,7 @@ Please make sure you've set up your system using the instructions for [Host-Base
 ```
 #!bash
 
-    $ roslaunch robotx_gazebo sandisland.launch light_buoy:=false
+    $ roslaunch vmrc_gazebo sandisland.launch light_buoy:=false
 
 ```
 
