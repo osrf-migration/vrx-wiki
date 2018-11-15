@@ -5,7 +5,7 @@
 If you have not done so already, first run the simulation with the example URDF with sensors or the custom URDF [you created](https://bitbucket.org/osrf/vmrc/wiki/tutorials/AddingSensors):
 
 ```
-roslaunch robotx_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_gazebo_sensors.urdf"
+roslaunch vmrc_gazebo sandisland.launch "urdf:=\$(find wamv_gazebo)/urdf/wamv_gazebo_sensors.urdf"
 ```
 Leave this simulation running for the remainder of the tutorial. In the steps below, you will use the robot_state_publisher to make the simulated data available to rviz.
 
