@@ -15,7 +15,7 @@ The default configuration is the "H" configuration with two, fixed stern thruste
 If you run the example simulation without any command line options
 
 ```
-roslaunch robotx_gazebo sandisland.launch 
+roslaunch vmrc_gazebo sandisland.launch 
 ```
 
 The thruster configuration should like similar to the image below.
@@ -33,7 +33,7 @@ To add a single lateral thruster requires the following changes:
 This example is already available in the repository and can be specified using the `thrust_config` command line option of the launch file ...
 
 ```
-roslaunch robotx_gazebo sandisland.launch thrust_config:=T
+roslaunch vmrc_gazebo sandisland.launch thrust_config:=T
 ```
 
 To generate a WAM-V propulsion/thruster configuration that looks like the image below.
@@ -48,7 +48,7 @@ Using the same process describe above, we can add a new set of URDF descriptions
 
 
 ```
-roslaunch robotx_gazebo sandisland.launch thrust_config:=X
+roslaunch vmrc_gazebo sandisland.launch thrust_config:=X
 ```
 
 ![wamv_full_x.png](https://bitbucket.org/repo/BgXLzgM/images/1776480031-wamv_full_x.png)
