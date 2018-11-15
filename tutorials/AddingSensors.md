@@ -44,7 +44,7 @@ A couple things to notice about this:
 
 
 
-### Running robotx_gazebo with a custom WAM-V URDF
+### Running vmrc_gazebo with a custom WAM-V URDF
 Now that you have a custom URDF modeling your WAM-V, let's run the simulation!
 
 First, generate the compiled XML from the xacro file using the command below (or [another method](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Working%20with%20xacro%20files)):
@@ -53,7 +53,7 @@ $ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
 ```
 Next, run the simulation with a custom urdf argument:
 ```
-$ roslaunch robotx_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
+$ roslaunch vmrc_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
 ```
 You can open rviz/rqt to see your new sensors (for help on how to do this, see the [RVIZ tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/Visualizing%20with%20RVIZ)):
 
@@ -61,7 +61,7 @@ You can open rviz/rqt to see your new sensors (for help on how to do this, see t
 
 ## Changing the Propulsion Configuration
 
-In this tutorial you explicitly specify the urdf argument as input to the [sandisland.launch](https://bitbucket.org/osrf/vmrc/src/default/robotx_gazebo/launch/sandisland.launch) file.  This overrides the method used in the [Propulsion Configuration Tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration) to specify the thruster layout.  
+In this tutorial you explicitly specify the urdf argument as input to the [sandisland.launch](https://bitbucket.org/osrf/vmrc/src/default/vmrc_gazebo/launch/sandisland.launch) file.  This overrides the method used in the [Propulsion Configuration Tutorial](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration) to specify the thruster layout.  
 
 The original [wamv_gazebo_sensors.urdf.xacro](https://bitbucket.org/osrf/vmrc/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) file includes examples for how to specify the 'T' and 'X' propulsion configuration within your new custom URDF file.
 
@@ -83,7 +83,7 @@ $ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
 ```
 
 ```
-$ roslaunch robotx_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
+$ roslaunch vmrc_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
 ```
 
 
