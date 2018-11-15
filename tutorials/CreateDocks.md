@@ -2,7 +2,7 @@
 
 In this tutorial we will demonstrate how to create new docks with your own dimensions and shapes. 
 
-The `robotx_gazebo` ROS package contains multiple models related with docks:
+The `vmrc_gazebo` ROS package contains multiple models related with docks:
 
 * dock_block: The basic floating building block. Basically, a dock is created by combining these blocks together.
 * dock_block_2x2: A 2x2 grid of dock blocks.
@@ -22,7 +22,7 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
 ```
 #!bash
 
-   $ mkdir -p ~/vmrc_ws/src/robotx_gazebo/models/my_dock_base && cd ~/vmrc_ws/src/robotx_gazebo/models/my_dock_base
+   $ mkdir -p ~/vmrc_ws/src/vmrc_gazebo/models/my_dock_base && cd ~/vmrc_ws/src/vmrc_gazebo/models/my_dock_base
 ```
 
 * Create the `model.config` file inside the `my_dock_base` directory and edit it with your favorite editor:
@@ -80,7 +80,7 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
 
 The `layout` variable controls the layout of the dock. Feel free to modify this variable to your own needs. Every `X` will be transformed into a 4x4 grid dock block. Try not to use a large number of blocks, as these will be converted into visuals that might impact the performance of the simulation.
 
-* Open the `robotx_gazebo/CMakeLists.txt` file and add your model:
+* Open the `vmrc_gazebo/CMakeLists.txt` file and add your model:
 
 ```
 #!bash
