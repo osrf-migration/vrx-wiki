@@ -15,7 +15,7 @@ This example illustrates a specific configuration similar to what some of the Ro
 Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 
 ```
-roslaunch robotx_gazebo vmrc.launch 
+roslaunch vmrc_gazebo vmrc.launch 
 ```
 
 ![vmrc_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/159286262-vmrc_sensors.png)
