@@ -18,7 +18,7 @@ Localization (GPS+IMU), station-keeping in wind/waves
 
 Pose (stationkeeping),  Course, waypoint, line, path, trajectory
 
-### 3) Target Localization and Characterization from Fixed Location ### 
+### 3) Target Localization and Characterization from Fixed Location ###
 
 buoys, totems, placards, etc.
 
