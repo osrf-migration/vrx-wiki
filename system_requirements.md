@@ -1,10 +1,10 @@
-# System Requirements for Running VMRC #
+# System Requirements for Running VRX #
 
 ## Recommended system setup
 
 ### Hardware ###
 
-In order to run VMRC we recommend your computing hardware has:
+In order to run VRX we recommend your computing hardware has:
 
 - Modern multi-core CPU, e.g. Intel Core i5
 - 8 Gb of RAM
@@ -14,13 +14,13 @@ The system will run without the GPU, but it the Gazebo simulation will run much 
 
 ### Software ###
 
-The VMRC software support is provided for the following software environment:
+The VRX software support is provided for the following software environment:
 
 - Ubuntu Desktop 16.04 Xenial (64-bit)
 - Gazebo 7.0.0 (<7.0.0 is not sufficient)
 - ROS Kinetic
 
-The [system setup tutorials](https://bitbucket.org/osrf/vmrc/wiki/tutorials) provides instructions for installing this environment directly on your host computer or by using a Docker container.
+The [system setup tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials) provides instructions for installing this environment directly on your host computer or by using a Docker container.
 
 ### Peripherals ###
 

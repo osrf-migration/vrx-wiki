@@ -27,7 +27,7 @@ This is an optional step, but highly recommended if you have an Nvidia GPU avail
     $ sudo apt-get install -y nvidia-docker2
 ```
 
-* Then, restart the Docker daemon 
+* Then, restart the Docker daemon
 ```
 #!bash
     $ sudo service docker restart

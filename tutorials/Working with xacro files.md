@@ -1,5 +1,5 @@
 # What is xacro?
-[Xacro](http://wiki.ros.org/xacro) is like a programmable xml file, allowing you to include other files, define functions (called macros), store variables, etc. The VMRC packages make heavy use of xacro to reduce code reuse and make composing new models/worlds easy.
+[Xacro](http://wiki.ros.org/xacro) is like a programmable xml file, allowing you to include other files, define functions (called macros), store variables, etc. The VRX packages make heavy use of xacro to reduce code reuse and make composing new models/worlds easy.
 
 ## Generating XML from xacro
 Gazebo and most other programs which are configured with XML cannot parse xacro files directly. Instead, you must "compile" your xacro files into static XML. There are several ways you can do this:
@@ -38,11 +38,11 @@ Launch files can also parse xacro and pass the compiled XML along to nodes at ru
 when this is run, the ```robot_description``` ROS parameter will be set to the compiled xacro file in ```my_package/urdf/wamv_gazebo.urdf```.
 
 ## Using Macros
-The VMRC packages contain many xacro macros for quickly composing XML files. You can read more about macros [here](http://wiki.ros.org/xacro#Macros). 
+The VRX packages contain many xacro macros for quickly composing XML files. You can read more about macros [here](http://wiki.ros.org/xacro#Macros).
 
 Here is an example macro included to create a gazebo camera sensor with the ROS plugin:
 ```
-$ roscat wamv_gazebo wamv_camera.xacro 
+$ roscat wamv_gazebo wamv_camera.xacro
 ```
 ```
 <?xml version="1.0"?>
@@ -53,7 +53,7 @@ $ roscat wamv_gazebo wamv_camera.xacro
       <origin xyz="${x} ${y} ${z}" rpy="${R} ${P} ${Y}"/>
       <parent link="base_link"/>
       <child link="${name}_link"/>
-    </joint>       
+    </joint>
     ...
   </xacro:macro>
 </robot>
