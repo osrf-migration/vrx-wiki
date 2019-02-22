@@ -2,7 +2,7 @@
 
 1. [System Requirements](https://bitbucket.org/osrf/vrx/wiki/system_requirements)
     * The system requirements for VRX.
-2. [Gazebo Plugins](https://bitbucket.org/osrf/vrx/wiki/vrxGazeboPlugins)
+2. [Gazebo Plugins](https://bitbucket.org/osrf/vrx/wiki/VRXGazeboPlugins)
     * Description of environmental and model plugins used in VRX
 1. [Worlds](https://bitbucket.org/osrf/vrx/wiki/documentation/Worlds)
     * Existing example worlds
