@@ -1,8 +1,8 @@
-# VMRC Example #
+# VRX Example #
 
 This example illustrates a specific configuration similar to what some of the RobotX teams used in 2018.  It includes:
 
-* Fixed stern thrusters and a single lateral thuster - the ['T' propulsion configuration](https://bitbucket.org/osrf/vmrc/wiki/tutorials/PropulsionConfiguration)
+* Fixed stern thrusters and a single lateral thuster - the ['T' propulsion configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration)
 * A standard set of onboard sensors
   * Two forward facing cameras (stereo)
   * One starboard facing camera
@@ -15,10 +15,10 @@ This example illustrates a specific configuration similar to what some of the Ro
 Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 
 ```
-roslaunch vmrc_gazebo vmrc.launch 
+roslaunch vrx_gazebo vrx.launch
 ```
 
-![vmrc_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/159286262-vmrc_sensors.png)
+![vrx_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/159286262-vrx_sensors.png)
 
 ## Robot Localization
 
@@ -35,7 +35,7 @@ roslaunch wamv_gazebo localization_example.launch
 After executing both commands above, open a third terminal and start Rviz with example configuration file to read URDF and sensors.
 
 ```
-roslaunch wamv_gazebo rviz_vmrc.launch 
+roslaunch wamv_gazebo rviz_vrx.launch
 ```
 
 ![unnamed.png](https://bitbucket.org/repo/BgXLzgM/images/2380721822-unnamed.png)
