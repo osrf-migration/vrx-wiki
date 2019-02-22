@@ -14,7 +14,7 @@ This tutorial briefly describes where the base parameter files that are included
 
 
 # Example: Changing the Wind #
-As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the ```wamv_gazebo/urdf/dynamics/wamv_gazebo_wind_plugin.xacro``` file by specifying the velocity vector (in m/s) and the coefficients used to convert the apparent wind into force and torque. 
+As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the ```wamv_gazebo/urdf/dynamics/wamv_gazebo_wind_plugin.xacro``` file by specifying the velocity vector (in m/s) and the coefficients used to convert the apparent wind into force and torque.
 
 If you edit the xacro file you will see a line like this...
 

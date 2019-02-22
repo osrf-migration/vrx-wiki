@@ -1,6 +1,6 @@
-This tutorial will walk you through the setup required to make a computer ready to run the VMRC simulations. In order to run VMRC your computer will need a discrete graphics card and will need to satisfy the minimum [System Requirements](https://bitbucket.org/osrf/vmrc/wiki/system_requirements).
+This tutorial will walk you through the setup required to make a computer ready to run the VRX simulations. In order to run VRX your computer will need a discrete graphics card and will need to satisfy the minimum [System Requirements](https://bitbucket.org/osrf/vrx/wiki/system_requirements).
 
-These instructions contain information for building the VMRC environment in Gazebo.
+These instructions contain information for building the VRX environment in Gazebo.
 
 # Install all prerequisites in your host system #
 
@@ -33,26 +33,26 @@ These instructions contain information for building the VMRC environment in Gaze
 ```
 #!bash
 
-    $ sudo apt install ros-kinetic-vmrc-gazebo
+    $ sudo apt install ros-kinetic-vrx-gazebo
 ```
 
-# Option 2: Build VMRC from source
+# Option 2: Build VRX from source
 
-* Now build a workspace for VMRC. If you are familiar with ROS catkin
+* Now build a workspace for VRX. If you are familiar with ROS catkin
 workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
 
-    $ mkdir -p ~/vmrc_ws/src
-    $ cd ~/vmrc_ws/src
+    $ mkdir -p ~/vrx_ws/src
+    $ cd ~/vrx_ws/src
 ```
 
-* Clone the VMRC repository:
+* Clone the VRX repository:
 
 ```
 #!bash
-    $ hg clone https://bitbucket.org/osrf/vmrc
+    $ hg clone https://bitbucket.org/osrf/vrx
 ```
 
 ## Build instructions ##
@@ -69,7 +69,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
-    $ cd ~/vmrc_ws
+    $ cd ~/vrx_ws
     $ catkin_make
 ```
 
@@ -87,12 +87,12 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
-    $ source  ~/vmrc_ws/devel/setup.bash
+    $ source  ~/vrx_ws/devel/setup.bash
 ```
 
-* Launch the VMRC simulation:
+* Launch the vrx simulation:
 
 ```
 #!bash
-    $ roslaunch vmrc_gazebo sandisland.launch 
+    $ roslaunch vrx_gazebo sandisland.launch
 ```

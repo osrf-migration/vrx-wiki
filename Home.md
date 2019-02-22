@@ -1,20 +1,20 @@
-# Virtual Maritime RobotX Challenge (VMRC)
+# Virtual RobotX (VRX)
 
-This is the entry point for teams participating in the VMRC. 
+This is the entry point for teams participating in the VRX.
 
-## [Competition](https://bitbucket.org/osrf/vmrc/wiki/competition)
-VMRC competition-specific information: tasks, rules, technical notes, etc.
+## [Competition](https://bitbucket.org/osrf/vrx/wiki/competition)
+VRX competition-specific information: tasks, rules, technical notes, etc.
 
-## [Documentation](https://bitbucket.org/osrf/vmrc/wiki/documentation)
-Specifications of the Virtual Maritime RobotX Challenge (VMRC) and the software.
+## [Documentation](https://bitbucket.org/osrf/vrx/wiki/documentation)
+Specifications of the Virtual RobotX challenge (VRX) and the software.
 
-## [Tutorials](https://bitbucket.org/osrf/vmrc/wiki/tutorials)
-A set of tutorials to help you get started with the Virtual Maritime RobotX Challenge (VMRC).
+## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
+A set of tutorials to help you get started with Virtual RobotX (VRX).
 
-## [News](https://bitbucket.org/osrf/vmrc/wiki/updates.md)
-Details of changes to the VMRC software and documentation.
+## [News](https://bitbucket.org/osrf/vrx/wiki/updates.md)
+Details of changes to the VRX software and documentation.
 
 ## Additional resources
 [Maritime RobotX Website (General information)](https://www.robotx.org/)
 
-[The VMRC issue tracker for submitting and following bugs, feature requests and enhancements](https://bitbucket.org/osrf/vmrc/issues?status=new&status=open)
+[The VRX issue tracker for submitting and following bugs, feature requests and enhancements](https://bitbucket.org/osrf/vrx/issues?status=new&status=open)
