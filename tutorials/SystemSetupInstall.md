@@ -25,10 +25,12 @@ These instructions contain information for building the VRX environment in Gazeb
     $ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
     $ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
     $ sudo apt update
-    $ sudo apt install cmake mercurial gazebo9 git libeigen3-dev libgazebo9-dev pkg-config python ros-melodic-gazebo-plugins ros-melodic-gazebo-ros ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-joy-teleop ros-melodic-robot-localization ros-melodic-ros-base ros-melodic-teleop-tools ros-melodic-teleop-twist-keyboard ros-melodic-velodyne-simulator ros-melodic-xacro ruby wget
+    $ DIST=melodic
+    $ GAZ=gazebo9
+    $ sudo apt install cmake mercurial git  ruby wget libeigen3-dev ${GAZ} lib${GAZ}-dev pkg-config python ros-${DIST}-gazebo-plugins ros-${DIST}-gazebo-ros ros-${DIST}-hector-gazebo-plugins ros-${DIST}-joy ros-${DIST}-joy-teleop ros-${DIST}-robot-localization ros-${DIST}-ros-base ros-${DIST}-teleop-tools ros-${DIST}-teleop-twist-keyboard ros-${DIST}-velodyne-simulator ros-${DIST}-xacro
 ```
 
-# Option 1: Run our pre-built package
+# Option 1: Install our pre-built package
 
 ```
 #!bash
@@ -90,7 +92,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ source  ~/vrx_ws/devel/setup.bash
 ```
 
-* Launch the vrx simulation:
+* Launch the vrx simulation with a simple world:
 
 ```
 #!bash
