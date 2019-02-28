@@ -15,6 +15,7 @@ A set of tutorials to help you get started with Virtual RobotX (VRX).
 Details of changes to the VRX software and documentation.
 
 ## Additional resources
-[Maritime RobotX Website (General information)](https://www.robotx.org/)
 
-[The VRX issue tracker for submitting and following bugs, feature requests and enhancements](https://bitbucket.org/osrf/vrx/issues?status=new&status=open)
+ * [Maritime RobotX Website (General information)](https://www.robotx.org/)
+ * [The VRX issue tracker](https://bitbucket.org/osrf/vrx/issues?status=new&status=open) for submitting and following bugs, feature requests and enhancements
+ * [VRX Software Changelog](https://bitbucket.org/osrf/vrx/src/default/Changelog.md) for brief history of VRX development.
