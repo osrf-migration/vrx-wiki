@@ -17,7 +17,7 @@ Please make sure you've set up your system using the instructions for [Host-Base
 ```
 #!bash
 
-    $ source /opt/ros/kinetic/setup.bash
+    $ source /opt/ros/melodic/setup.bash
 
 ```
 
