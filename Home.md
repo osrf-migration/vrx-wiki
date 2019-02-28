@@ -11,8 +11,6 @@ Specifications of the Virtual RobotX challenge (VRX) and the software.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with Virtual RobotX (VRX).
 
-## [News](https://bitbucket.org/osrf/vrx/wiki/updates.md)
-Details of changes to the VRX software and documentation.
 
 ## Additional resources
 
