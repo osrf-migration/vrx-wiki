@@ -4,7 +4,7 @@ These instructions contain information for building the VRX environment in Gazeb
 
 # Install all prerequisites in your host system #
 
-* Because the simulation uses some relatively new (as of summer 2018) features in ROS and Gazebo, it is highly recommended that you upgrade the packages installed on your system:
+* Because the simulation uses some relatively new (as of winter 2019) features in ROS and Gazebo, it is highly recommended that you upgrade the packages installed on your system:
 
 ```
 #!bash
@@ -25,7 +25,7 @@ These instructions contain information for building the VRX environment in Gazeb
     $ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
     $ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
     $ sudo apt update
-    $ sudo apt install cmake mercurial gazebo7 git libeigen3-dev libgazebo7-dev pkg-config python ros-kinetic-gazebo-plugins ros-kinetic-gazebo-ros ros-kinetic-hector-gazebo-plugins ros-kinetic-joy ros-kinetic-joy-teleop ros-kinetic-robot-localization ros-kinetic-ros-base ros-kinetic-teleop-tools ros-kinetic-teleop-twist-keyboard ros-kinetic-velodyne-simulator ros-kinetic-xacro ruby wget
+    $ sudo apt install cmake mercurial gazebo9 git libeigen3-dev libgazebo9-dev pkg-config python ros-melodic-gazebo-plugins ros-melodic-gazebo-ros ros-melodic-hector-gazebo-plugins ros-melodic-joy ros-melodic-joy-teleop ros-melodic-robot-localization ros-melodic-ros-base ros-melodic-teleop-tools ros-melodic-teleop-twist-keyboard ros-melodic-velodyne-simulator ros-melodic-xacro ruby wget
 ```
 
 # Option 1: Run our pre-built package
@@ -33,7 +33,7 @@ These instructions contain information for building the VRX environment in Gazeb
 ```
 #!bash
 
-    $ sudo apt install ros-kinetic-vrx-gazebo
+    $ sudo apt install ros-melodic-vrx-gazebo
 ```
 
 # Option 2: Build VRX from source
@@ -62,7 +62,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 ```
 #!bash
 
-    $ source /opt/ros/kinetic/setup.bash
+    $ source /opt/ros/melodic/setup.bash
 ```
 
 * Build all the software:
@@ -79,7 +79,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ```
 #!bash
-    $ source /opt/ros/kinetic/setup.bash
+    $ source /opt/ros/melodic/setup.bash
 ```
 
 * **Only needed if you built from source:**
