@@ -17,8 +17,7 @@ Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 ```
 roslaunch vrx_gazebo vrx.launch
 ```
-
-![vrx_sensors.png](https://bitbucket.org/repo/BgXLzgM/images/159286262-vrx_sensors.png)
+![Screenshot from 2019-02-28 09-59-08.png](https://bitbucket.org/repo/BgXLzgM/images/3111603850-Screenshot%20from%202019-02-28%2009-59-08.png)
 
 ## Robot Localization
 
