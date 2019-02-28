@@ -31,13 +31,13 @@
 
 ## Run the vrx image ##
 
-* Option 1: To use the default Docker runtime (no Nvidia):
-
-        $ ./run.bash vrx
-
-* Option 2: For the nvidia runtime, use the -n flag:
+* Option 1: For the Nvidia enabled version, use the `-n` flag:
 
         $ ./run.bash -n vrx
+
+* Option 2: Otherwise, if you are running without an Nvidia GPU, use:
+
+        $ ./run.bash vrx
 
 * If all has gone well, the command will drop you into a bash prompt running as the user "developer" inside the container.
 
