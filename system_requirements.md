@@ -10,7 +10,7 @@ In order to run VRX we recommend your computing hardware has:
 - 8 Gb of RAM
 - Discrete Graphics Card, e.g. Nvidia GTX 650
 
-The system will run without the GPU, but it the Gazebo simulation will run much faster with access to a GPU.
+The system will run without the GPU, but it the Gazebo simulation will run much faster (should run in real-time) with access to a GPU.  Without a GPU the simulation is likely to run slower than real-time.
 
 ### Software ###
 
