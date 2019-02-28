@@ -36,13 +36,13 @@ Please make sure you've set up your system using the instructions for [Host-Base
 ```
 #!bash
 
-    $ roslaunch vrx_gazebo sandisland.launch light_buoy:=false
+    $ roslaunch vrx_gazebo sandisland.launch 
 
 ```
 
 You should see a new Gazebo window similar to this one:
 
-![Screenshot from 2018-01-25 10-59-15_mr.png](https://bitbucket.org/repo/BgXLzgM/images/2097879520-Screenshot%20from%202018-01-25%2010-59-15_mr.png)
+![Screenshot from 2019-02-28 09-52-58_mr.png](https://bitbucket.org/repo/BgXLzgM/images/250474638-Screenshot%20from%202019-02-28%2009-52-58_mr.png)
 
 You may notice that the USV starts drifting along the x-axis.  That is due to the wind.  More on that later.
 
