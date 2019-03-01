@@ -18,7 +18,7 @@ We can use the `rostopic pub` utility to publish individual messages
 rostopic pub --once /right_thrust_cmd std_msgs/Float32 "data: 1.0"
 ```
 
-This will publish one message and cause the WAM-V to rotate about the z-axis.  The command will timeout after a pre-determined amount of time (the default is 1.0 s, but can be changed in the [wamv_gazebo_thrust_plugin.xacro](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro) SDF file).
+This will publish one message and cause the WAM-V to rotate about the z-axis.  The command will timeout after a pre-determined amount of time (the default is 1.0 s, but can be changed in the [wamv_gazebo_thruster_config.xacro](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro) SDF file).
 
 
 ## Teleop: Keyboard ##
