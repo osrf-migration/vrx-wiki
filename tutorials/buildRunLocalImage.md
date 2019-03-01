@@ -30,7 +30,7 @@ This step downloads, installs and compiles number of packages, so it will take s
 
 * Option 1: For the Nvidia enabled version, use the `-n` flag:
 
-        $ ./run.bash -n vrx
+        $ ./run.bash -n vrx_nvidia
 
 * Option 2: Otherwise, if you are running without an Nvidia GPU, use:
 
