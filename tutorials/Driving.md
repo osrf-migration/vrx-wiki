@@ -25,7 +25,7 @@ This will publish one message and cause the WAM-V to rotate about the z-axis.  T
 
 To use the keyboard, we use the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, along with a custom [twist2thrust.py]( https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/nodes/twist2thrust.py) node to convert the Twist messages to two Float32 messages for the left and right thrusters. Forward velocity (twist.linear.x) is mapped to axial thrust (right+left) and rotational velocity (twist.linear.z) is mapped to differential thrust (usvdrive.right-usvdrive.left).
 
-A launch file example is included...
+A launch file example is included:
 
 ```
 roslaunch vrx_gazebo usv_keydrive.launch
