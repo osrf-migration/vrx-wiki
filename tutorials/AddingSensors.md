@@ -18,7 +18,7 @@ Let's copy an example locally as a starting point:
 ```
 $ mkdir example_vrx_package
 $ cd example_vrx_package/
-$ roscp wamv_gazebo wamv_gazebo_sensors.urdf.xacro my_wamv.urdf.xacro
+$ roscp wamv_gazebo wamv_gazebo.urdf.xacro my_wamv.urdf.xacro
 ```
 
 Notice that the file you copied is a **.xacro** file. If you aren't familiar with xacro files, you should read [this](https://bitbucket.org/osrf/vrx/wiki/tutorials/Working%20with%20xacro%20files) tutorial first.
