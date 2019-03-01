@@ -59,34 +59,6 @@ You can open rviz/rqt to see your new sensors (for help on how to do this, see t
 
 ![newcameras.png](https://bitbucket.org/repo/BgXLzgM/images/2924402190-newcameras.png)
 
-## Changing the Propulsion Configuration
-
-In this tutorial you explicitly specify the urdf argument as input to the [sandisland.launch](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/launch/sandisland.launch) file.  This overrides the method used in the [Propulsion Configuration Tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) to specify the thruster layout.
-
-The original [wamv_gazebo_sensors.urdf.xacro](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) file includes examples for how to specify the 'T' and 'X' propulsion configuration within your new custom URDF file.
-
-For example, if you want to change from the two-aft thruster configuration to the 'T' configuration, substitute the line in `my_wamv.urdf.xacro` from
-
-```
-<xacro:wamv_gazebo thruster_layout="$(find wamv_gazebo)/urdf/thruster_layouts/wamv_aft_thrusters.xacro"/>
-```
-
-to
-
-```
-<xacro:wamv_gazebo thruster_layout="$(find wamv_gazebo)/urdf/thruster_layouts/wamv_t_thrusters.xacro"/>
-```
-
-Then repeat the execution steps:
-```
-$ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
-```
-
-```
-$ roslaunch vrx_gazebo sandisland.launch urdf:=`pwd`/my_wamv.urdf
-```
-
-
 ## Next steps:
 
  * To visualize sensors in ROS, check out the [RVIZ tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RVIZ)
