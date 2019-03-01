@@ -23,7 +23,7 @@ $ roscp wamv_gazebo wamv_gazebo.urdf.xacro my_wamv.urdf.xacro
 
 Notice that the file you copied is a **.xacro** file. If you aren't familiar with xacro files, you should read [this](https://bitbucket.org/osrf/vrx/wiki/tutorials/Working%20with%20xacro%20files) tutorial first.
 
-The [original xacro file](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/wamv_gazebo_sensors.urdf.xacro) defines the base WAM-V, the propulsion configuration, and then adds some example sensors using xacro tags.
+The [original xacro file](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro) defines the base WAM-V, the propulsion configuration, and then adds some example sensors using xacro tags.
 
 
 Let's look at the contents within the **<robot>** tag, which describes the robot. The first line includes wamv_gazebo.urdf.xacro. This adds the basic WAM-V mesh and joints along with the plugins for dynamics. You will likely want to keep this in, unless you are using a different model or dynamics simulation.
