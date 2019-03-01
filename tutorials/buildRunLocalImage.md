@@ -1,33 +1,28 @@
 ## Build the VRX image using latest repository code ##
 
-* Create a build directory for the image:
-
-        $ mkdir -p ~/vrx/docker/vrx && cd ~/vrx/docker/vrx
-
-* Download the appropriate vrx Dockerfile, depending on whether you are using the Nvidia runtime.
-
-    * Option 1: For the Nvidia enabled version:
-
-            $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/vrx_nvidia/Dockerfile
-
-    * Option 2: Otherwise, if you are running without an Nvidia GPU, use:
-
-            $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/vrx/Dockerfile
-
-* Download the build and run scripts to the parent of your build directory:
-
+* Create a build directory for the image and download the build, run and Docker files
+ 
 ```
 #!bash
-    $ cd ..
+    $ mkdir -p ~/vrx/docker/vrx && 
+    $ cd ~/vrx/docker
     $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/build.bash
     $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/run.bash
     $ chmod u+x build.bash run.bash
+    $ cd ~/vrx/docker/vrx
+    $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/vrx/Dockerfile
 ```
 
-* Build your vrx Docker image.  This step downloads, installs and compiles number of packages, so it will take some time, e.g., 10's of minutes to an hour depending on internet connection speed.
+
+## Build your vrx Docker image.  This step downloads, installs and compiles number of packages, so it will take some time, e.g., 10's of minutes to an hour depending on internet connection speed.
+
+* Option 1: For the Nvidia enabled version, use the `-n` flag:
+
+        $ ./build.bash -n vrx
+
+* Option 2: Otherwise, if you are running without an Nvidia GPU, use:
 
         $ ./build.bash vrx
-
 
 ## Run the vrx image ##
 
