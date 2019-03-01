@@ -4,17 +4,19 @@
  
 ```
 #!bash
-    $ mkdir -p ~/vrx/docker/vrx && 
-    $ cd ~/vrx/docker
-    $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/build.bash
-    $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/run.bash
-    $ chmod u+x build.bash run.bash
-    $ cd ~/vrx/docker/vrx
-    $ wget https://bitbucket.org/osrf/vrx/raw/default/docker/vrx/Dockerfile
+
+mkdir -p ~/vrx/docker/vrx 
+cd ~/vrx/docker/vrx
+wget https://bitbucket.org/osrf/vrx/raw/default/docker/vrx/Dockerfile
+cd ~/vrx/docker
+wget https://bitbucket.org/osrf/vrx/raw/default/docker/build.bash
+wget https://bitbucket.org/osrf/vrx/raw/default/docker/run.bash
+chmod u+x build.bash run.bash
 ```
 
+## Build your vrx Docker image ##
 
-## Build your vrx Docker image.  This step downloads, installs and compiles number of packages, so it will take some time, e.g., 10's of minutes to an hour depending on internet connection speed.
+This step downloads, installs and compiles number of packages, so it will take some time, e.g., 10's of minutes to an hour depending on internet connection speed.
 
 * Option 1: For the Nvidia enabled version, use the `-n` flag:
 
