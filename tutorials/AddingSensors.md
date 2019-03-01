@@ -28,7 +28,7 @@ The [original xacro file](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo
 
 Let's look at the contents within the **<robot>** tag, which describes the robot. The first line includes wamv_gazebo.urdf.xacro. This adds the basic WAM-V mesh and joints along with the plugins for dynamics. You will likely want to keep this in, unless you are using a different model or dynamics simulation.
 
-After that several macros are added for a GPS, IMU, and ground truth pose. These macros are found in [wamv_gazebo](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/sensors) for common sensors. You can of course create your own, following those as examples.
+After that several macros are added for a GPS, IMU, and ground truth pose. These macros are found in the [sensors directory](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/sensors) for common sensors. You can of course create your own, following those as examples.
 
 Let's add a stereo camera pair to the robot. Add the following lines after the other sensors:
 ```
