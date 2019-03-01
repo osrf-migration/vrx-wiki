@@ -49,7 +49,7 @@ Now that you have a custom URDF modeling your WAM-V, let's run the simulation!
 
 First, generate the compiled XML from the xacro file using the command below (or [another method](https://bitbucket.org/osrf/vrx/wiki/tutorials/Working%20with%20xacro%20files)):
 ```
-$ rosrun xacro xacro --inorder my_wamv.urdf.xacro > my_wamv.urdf
+$ rosrun xacro xacro my_wamv.urdf.xacro > my_wamv.urdf
 ```
 Next, run the simulation with a custom urdf argument:
 ```
