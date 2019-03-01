@@ -92,6 +92,6 @@ Next, run the simulation with a custom world argument:
 ```
 roslaunch vrx_gazebo sandisland.launch world:=`pwd`/my_world.world
 ```
-If everything went well, you should see 3 new objects added into Gazebo:
+If everything went well, you should see three new objects added into Gazebo:
 
 ![customobjects.png](https://bitbucket.org/repo/BgXLzgM/images/3874067301-customobjects.png)
