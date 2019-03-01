@@ -1,6 +1,6 @@
 # Overview
 
-This tutorial explains how to create your own robot description file (URDF) for a custom WAM-V with your choice of sensors. These sensors will use gazebo to simulate a camera, lidar, gps, imu, etc and publish the corresponding topics to ROS.
+This tutorial explains how to create your own robot description file (URDF) for a custom WAM-V with your choice of sensors. These sensors will use gazebo to simulate a camera, lidar, GPS, IMU, etc. and publish the corresponding topics to ROS.
 
 
 ## Prerequisites
