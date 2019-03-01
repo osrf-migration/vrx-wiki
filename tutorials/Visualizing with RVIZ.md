@@ -2,10 +2,10 @@
 [RVIZ](http://wiki.ros.org/rviz) is a standard ROS tool for visualizing messages. This tutorial explains how to run rviz to display the WAM-V and sensors that you are simulating with Gazebo.
 
 ## Launching Gazebo
-If you have not done so already, first run the simulation with the example URDF with sensors or the custom URDF [you created](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors):
+If you have not done so already, first run the simulation with a front camera and the IMU:
 
 ```
-roslaunch vrx_gazebo vrx.launch
+roslaunch vrx_gazebo vmrc.launch camera_enabled:=true gps_enabled:=true imu_enabled:=true
 ```
 Leave this simulation running for the remainder of the tutorial. In the steps below, you will use the robot_state_publisher to make the simulated data available to rviz.
 
@@ -18,7 +18,7 @@ There are (at least) two options for doing this:
 
 ### Option 1: Using the default URDF
 
-If you are using the example wamv_gazebo_sensors.urdf, you can simply run:
+If you are using the example wamv_gazebo.urdf, you can simply run:
 ```
 $ roslaunch wamv_gazebo localization_example.launch
 ```
