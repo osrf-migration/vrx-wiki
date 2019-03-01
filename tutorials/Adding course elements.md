@@ -19,18 +19,36 @@ cat example_course.world.xacro
 ```
 <?xml version="1.0" ?>
 <!-- World containing sandisland model and some course challenges -->
-<sdf version="1.4" xmlns:xacro="http://ros.org/wiki/xacro">
+<sdf version="1.6" xmlns:xacro="http://ros.org/wiki/xacro">
   <world name="robotx_example_course">
-    <xacro:include filename="$(find vrx_gazebo)/worlds/macros.xacro" />
+    <xacro:include filename="$(find vrx_gazebo)/worlds/sandisland.xacro" />
     <xacro:sandisland />
+
     <include>
       <uri>model://robotx_navigation_challenge</uri>
       <pose>15 0 2 0 0 0</pose>
     </include>
     <include>
       <uri>model://robotx_light_buoy</uri>
-      <pose>60 0 0 0 0 0</pose>
+      <pose>60 0 0.25 0 0 0</pose>
     </include>
+    <include>
+      <uri>model://robotx_2016_qualifying_pinger_transit</uri>
+      <pose>55 -50 0 0 0 -1.3</pose>
+    </include>
+
+    <!-- The 2016 dock with the three placards -->
+    <include>
+      <uri>model://dock_2016</uri>
+      <pose>80 -8.75 0 0 0 0</pose>
+    </include>
+
+    <!-- The 2018 dock with the two placards -->
+    <include>
+      <uri>model://dock_2018</uri>
+      <pose>120 -2.75 0 0 0 0</pose>
+    </include>
+
   </world>
 </sdf>
 ```
@@ -38,10 +56,10 @@ Notice that this is an **.xacro** file. If you aren't familiar with xacro files,
 
 Let's go through this file and make some changes. First, notice the first two lines within the **<world>** tag:
 ```
-<xacro:include filename="$(find vrx_gazebo)/worlds/macros.xacro" />
+<xacro:include filename="$(find vrx_gazebo)/worlds/sandisland.xacro" />
 <xacro:sandisland />
 ```
-The first line imports xacro macros defined in vrx_gazebo, including the one used on the next line. The second line calls the sandisland macro, which sets up an empty sand island environment (only water, sky, and coastline). You will likely want to include these lines in your world files unless you are simulating a location other than sandisland.
+The first line imports the *sandisland* macro defined in vrx_gazebo. The second line calls the sandisland macro, which sets up an empty sand island environment (only water, sky, and coastline). You will likely want to include these lines in your world files unless you are simulating a location other than sandisland.
 
 The remainder of the file is simply adding different challenges into the course. You can see a list of models / challenges included in vrx_gazebo [here](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/README.md).
 
