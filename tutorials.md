@@ -8,7 +8,7 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
     * [Run Using Docker](https://bitbucket.org/osrf/vrx/wiki/tutorials/SystemSetupDocker): Install Docker on your Linux host and run ROS, Gazebo and the latest VRX code within a Docker container.  Use this option if you are using the same host for many development projects that make use of different software environments, or just prefer to leave your host system untouched.
 
-1. Examples:
+1. Examples Environments:
 
     * [Sand Island Basic](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
     * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using Rviz.
