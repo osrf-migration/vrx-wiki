@@ -17,16 +17,20 @@ rostopic echo /vrx/task/info
 ## 1. Station-Keeping ##
 
 1. Start the Gazebo example: `roslaunch vrx_gazebo station_keeping.launch`
-1. Subscribe to the task-specific information provided by the [stationkeeping plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh):
-    1. The station-keeping goal: ` rostopic echo /vrx/station_keeping/goal`
-    1. The position error values:
-        1. `rostopic echo /vrx/station_keeping/pose_error`
-        1. `rostopic echo /vrx/station_keeping/rms_error`
+1. Subscribe to the task-specific information provided by the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh):
+    * The station-keeping goal: ` rostopic echo /vrx/station_keeping/goal`
+    * The position error values:
+        * `rostopic echo /vrx/station_keeping/pose_error`
+        * `rostopic echo /vrx/station_keeping/rms_error`
 
+## 2. Wayfinding ##
 
-
-
-## Wayfinding ##
+1. Start the Gazebo example: ` roslaunch vrx_gazebo wayfinding.launch`
+1. Subscribe to the task-specific information provided by the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh):
+    * The waypoint goals as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html): ` rostopic info /vrx/wayfinding/waypoints`
+    * The position error values:
+        * `rostopic echo /vrx/wayfinding/mean_error`
+        * `rostopic echo /vrx/wayfinding/min_errors`
 
 ## Perception ##
 
