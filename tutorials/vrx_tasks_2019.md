@@ -32,7 +32,13 @@ rostopic echo /vrx/task/info
         * `rostopic echo /vrx/wayfinding/mean_error`
         * `rostopic echo /vrx/wayfinding/min_errors`
 
-## Perception ##
+## 3. Perception ##
+
+1. Start the Gazebo example: `roslaunch vrx_gazebo perception_task.launch`
+1. View the camera feeds from the front of the WAM-V `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective` (See a [video](https://vimeo.com/user5784414/review/321818142/3d90192ee0) of buoys appearing in the field of view.) 
+1. Publish a landmark identification and localization solution `rostopic pub -r 1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{head
+er: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, lo
+ngitude: -157.8901, altitude: 0.0}}}'`
 
 ## Navigation Channel ##
 
