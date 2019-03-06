@@ -13,18 +13,17 @@ We recommend following the tutorials in numerical order. At the end of these tut
     * [Sand Island Basic](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
     * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using Rviz.
 
-1. [Adding Course Elements](https://bitbucket.org/osrf/vrx/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo.
+1. Simulation Interfaces: Connecting to VRX API
+ 
+    * [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
 
-1. [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
+1. Customizing WAM-V and Environment:
 
-1. [Propulsion Configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations and methods for creating custom configurations.
-
-1. [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.).
-
-1. [Visualizing with RVIZ](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
-
-1. [Changing Simulation Parameters](https://bitbucket.org/osrf/vrx/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
-
-1. [Creating a Custom Dock](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
+    * [Adding Course Elements](https://bitbucket.org/osrf/vrx/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo.
+    * [Propulsion Configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations and methods for creating custom configurations.
+    * [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.).
+    * [Visualizing with RVIZ](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
+    * [Changing Simulation Parameters](https://bitbucket.org/osrf/vrx/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
+    * [Creating a Custom Dock](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
 
 1. [Troubleshooting](https://bitbucket.org/osrf/vrx/wiki/Troubleshooting): Diagnosing and fixing common problems with VRX.
