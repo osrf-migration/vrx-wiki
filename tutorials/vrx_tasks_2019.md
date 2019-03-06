@@ -14,9 +14,15 @@ The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/
 rostopic echo /vrx/task/info 
 ```
 
-## Station-Keeping ##
+## 1. Station-Keeping ##
 
 1. Start the Gazebo example: `roslaunch vrx_gazebo station_keeping.launch`
+1. Subscribe to the task-specific information provided by the [stationkeeping plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh):
+    1. The station-keeping goal: ` rostopic echo /vrx/station_keeping/goal`
+    1. The position error values:
+        1. `rostopic echo /vrx/station_keeping/pose_error`
+        1. `rostopic echo /vrx/station_keeping/rms_error`
+
 
 
 
