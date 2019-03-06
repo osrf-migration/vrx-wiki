@@ -40,6 +40,23 @@ rostopic echo /vrx/task/info
 er: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, lo
 ngitude: -157.8901, altitude: 0.0}}}'`
 
-## Navigation Channel ##
+## 4. Navigation Channel ##
 
-## Scan-the-Code and Dock ##
+1. Start the Gazebo example: `roslaunch vrx_gazebo navigation_task.launch verbose:=true`
+    * Note that Gazebo messages such as "New gate crossed!" will be printed to the terminal.
+1. Use a gamepad to drive the USV through the course (see Driving tutorial) `roslaunch vrx_gazebo usv_joydrive.launch`
+
+
+## 5. Scan-the-Code and Dock ##
+
+There are two variants of this task.  In the first variant the correct dock is specified via a ROS message.  In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
+
+### 5a. Dock specified via ROS message ###
+
+1. Start the Gazebo example: `roslaunch vrx_gazebo scan_and_dock_a.launch verbose:=true`
+1. Subscribe to the ROS message that specifies the color and shape of corresponding to the placard on the intended dock: `rostopic echo /vrx/scan_dock/placard_symbol`
+1. Use a gamepad to dock `roslaunch vrx_gazebo usv_joydrive.launch`
+
+### 5b. Dock specified via Scan-the-Code ###
+
+1. Start the Gazebo example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
