@@ -50,12 +50,12 @@ ngitude: -157.8901, altitude: 0.0}}}'`
 
 There are two variants of this task.  In the first variant the correct dock is specified via a ROS message.  In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
 
-### 5a. Dock specified via ROS message ###
+### 5a. Dock Specified via ROS message ###
 
 1. Start the Gazebo example: `roslaunch vrx_gazebo scan_and_dock_a.launch verbose:=true`
 1. Subscribe to the ROS message that specifies the color and shape of corresponding to the placard on the intended dock: `rostopic echo /vrx/scan_dock/placard_symbol`
 1. Use a gamepad to dock `roslaunch vrx_gazebo usv_joydrive.launch`
 
-### 5b. Dock specified via Scan-the-Code ###
+### 5b. Dock Specified via Scan-the-Code ###
 
 1. Start the Gazebo example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
