@@ -1,9 +1,6 @@
 # Virtual RobotX (VRX)
 
-This is the entry point for teams participating in the VRX.
-
-## [Competition](https://bitbucket.org/osrf/vrx/wiki/competition)
-VRX competition-specific information: tasks, rules, technical notes, etc.
+This is the entry point for teams participating in the VRX.  For programmatic information (registration, rules, technical guide, etc.) see the [RobotX VRX]( https://www.robotx.org/index.php/about/about-virtual-robotx) main page.
 
 ## [Documentation](https://bitbucket.org/osrf/vrx/wiki/documentation)
 Specifications of the Virtual RobotX challenge (VRX) and the software.
