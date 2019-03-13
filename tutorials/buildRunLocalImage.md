@@ -34,4 +34,4 @@ If all has gone well, the final command will drop you into a bash prompt running
 * If you encounter errors, try the [Troubleshooting](https://bitbucket.org/osrf/vrx/wiki/Troubleshooting) Setup and Install page.
 
 ## Next Steps ##
-If you plan to use the container you built as your development environment, you may want to follow the steps in the Customize Your Docker Run Script tutorial to make your vrx repository accessible within the container.
+If you plan to use the container you built as your primary environment for running or developing code for VRX, you may want to work through the [Working With Your Docker Image](https://bitbucket.org/osrf/vrx/wiki/tutorials/workingWithDocker) tutorial to make your vrx repository accessible within the container.
