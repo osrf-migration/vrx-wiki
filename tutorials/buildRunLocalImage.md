@@ -2,7 +2,7 @@
 
 Run the appropriate set of commands below, depending on whether Nvidia support is required. Note that for both versions, executing the build script in the second command will download, install and compile a number of packages, so it will take some time, e.g., 10's of minutes to an hour depending on internet connection speed.
 
-### Build Image Without Nvidia Support ###
+### 1. Building Without Nvidia Support ###
 
 For users running without an Nvidia GPU, the commands to build the VRX image are:
 
@@ -11,7 +11,7 @@ For users running without an Nvidia GPU, the commands to build the VRX image are
         $ docker/run.bash vrx
 
 
-### Build Nvidia-enabled Image ###
+### 2. Building With Nvidia Support ###
 
 To build the Nvidia-enabled version, run:
 
