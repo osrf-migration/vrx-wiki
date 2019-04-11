@@ -86,7 +86,7 @@ Now that you have created a new world file, you can launch the simulation again 
 
 First, generate the compiled XML from the xacro file using this or [another method](https://bitbucket.org/osrf/vrx/wiki/tutorials/Working%20with%20xacro%20files):
 ```
-rosrun xacro xacro example_course.world.xacro > my_world.world
+rosrun xacro xacro --inorder example_course.world.xacro > my_world.world
 ```
 Next, run the simulation with a custom world argument:
 ```
