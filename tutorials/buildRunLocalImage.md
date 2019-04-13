@@ -35,6 +35,7 @@ If all has gone well, the final command will drop you into a bash prompt running
 
 ## Building for Ubuntu Xenial / ROS Kinetic / Gazebo 7 ##
 By default, the above steps build the Ubuntu Bionic / ROS Melodic / Gazebo 9 stack. It is possible to build the Xenial/Kinetic/Gazebo 7 stack if needed. 
+
 * To do this without Nvidia support, run: 
 
         $ hg clone https://bitbucket.org/osrf/vrx
