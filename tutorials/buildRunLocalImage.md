@@ -33,5 +33,19 @@ If all has gone well, the final command will drop you into a bash prompt running
 
 * If you encounter errors, try the [Troubleshooting](https://bitbucket.org/osrf/vrx/wiki/Troubleshooting) Setup and Install page.
 
+## Building for Ubuntu Xenial / ROS Kinetic / Gazebo 7 ##
+By default, the above steps build the Ubuntu Bionic / ROS Melodic / Gazebo 9 stack. It is possible to build the Xenial/Kinetic/Gazebo 7 stack if needed. 
+* To do this without Nvidia support, run: 
+
+        $ hg clone https://bitbucket.org/osrf/vrx
+        $ docker/build.bash -k .
+        $ docker/run.bash vrx_gaz7
+
+* For the Nvidia-enabled version, run:
+
+        $ hg clone https://bitbucket.org/osrf/vrx
+        $ docker/build.bash -K .
+        $ docker/run.bash vrx_nvidia_gaz7
+
 ## Next Steps ##
 If you plan to use the container you built as your primary environment for running or developing code for VRX, you may want to work through the [Working With Your Docker Image](https://bitbucket.org/osrf/vrx/wiki/tutorials/workingWithDocker) tutorial to make your vrx repository accessible within the container.
