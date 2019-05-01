@@ -176,6 +176,7 @@ ign launch -f install/subt_ign/share/subt_ign/launch/competition.ign -v 4 &
 ign launch -f install/subt_ign/share/subt_ign/launch/team.ign -v 4
 ```
 
+![ign_gazebo_drones.png](https://bitbucket.org/repo/BgXLzgM/images/3896321365-ign_gazebo_drones.png)
 
 # Stop SubT
 
