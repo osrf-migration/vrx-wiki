@@ -101,7 +101,6 @@ repositories:
       type: hg
       url: https://bitbucket.org/osrf/sdformat
       version: sdf8
-
    subt:
       type: hg
       url: https://bitbucket.org/osrf/subt
