@@ -137,6 +137,7 @@ Now you are ready to build the whole set of libraries:
 ```
 #!c++
 
+. /opt/ros/melodic/setup.bash
 colcon build
 ```
 
