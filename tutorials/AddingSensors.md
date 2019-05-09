@@ -4,7 +4,13 @@ This tutorial explains how to create your own robot description file (URDF) for 
 
 
 ## Prerequisites
-This guide assumes you already have installed ROS and the VRX packages as covered in the [setup instructions](https://bitbucket.org/osrf/vrx/wiki/tutorials).
+This guide assumes you already have installed ROS and the VRX packages as covered in the [setup instructions](https://bitbucket.org/osrf/vrx/wiki/tutorials). It also assumes that you sourced your `setup.bash` from the VRX workspace:
+
+E.g.:
+```
+cd ~/vrx_ws
+source ./devel/setup.bash
+```
 
 
 ***
