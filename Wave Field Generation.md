@@ -15,7 +15,7 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
         * ~/request ([gazebo::msgs::Request](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/request.proto))
         * ~/wave ([gazebo::msgs::Param_V](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/param_v.proto))  - Allows for setting the values of the WaveParameters instance via gazebo topic.  The WaveMsgPublisher utility is supplied to support.
     * Published Gazebo Topics
-        * ~/response (gazebo::msgs::Response)
+        * ~/response ([gazebo::msgs::Response](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/response.proto))
   1. **WavefieldVisualPlugin:VisualPlugin**  Requests wave parameters from the WavefieldModelPlugin via Gazebo message. Uses rendering API to set input parameters to OpenGL shader GernstnerWaves.frag.
   1. A second **WavefieldVisualPlugin:VisualPlugin** for below the water surface. Uses the same parameters and shader.
 
