@@ -9,14 +9,21 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
   1. **WavefieldModelPlugin:ModelPlugin** 
     * Includes instances of 
         * WavefieldEntity:gazebo::physics::Base which includes an instance of
-            * WaveParameters, defined in Wavefield.hh, which holds the current values to define the wave field (number, angle, scale, etc.)
- and a Wavefield object. Wave field parameters are passed to the Wavefield object. Subscribes to Gazebo message on ~/request. When receives message, responds on ~/response with wave field parameters.
+            * WaveParameters (defined in Wavefield.hh) holds the current values to define the wave field (number, angle, scale, etc.)
     * Subscribed Gazebo Topics:
-        * ~/request ([gazebo::msgs::Request](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/request.proto))
+        * ~/request ([gazebo::msgs::Request](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/request.proto))  Responds with a Param_V of all of the wave parameters (number, angle, scale, etc.)
         * ~/wave ([gazebo::msgs::Param_V](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/param_v.proto))  - Allows for setting the values of the WaveParameters instance via gazebo topic.  The WaveMsgPublisher utility is supplied to support.
     * Published Gazebo Topics
         * ~/response ([gazebo::msgs::Response](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/response.proto))
-  1. **WavefieldVisualPlugin:VisualPlugin**  Requests wave parameters from the WavefieldModelPlugin via Gazebo message. Uses rendering API to set input parameters to OpenGL shader GernstnerWaves.frag.
+  1. **WavefieldVisualPlugin:VisualPlugin**  
+     * On initialization, requests wave parameters from the WavefieldModelPlugin via Gazebo ~/request message.
+     * Uses rendering API to set wave parameters to OpenGL shader GernstnerWaves.vert.  Note that it appears that the GernstnerWaves.vert is hardcoded to 3 component waves.
+     * Subscribed Gazebo Topics:
+         * ~/response ([gazebo::msgs::Response](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/response.proto)). When receives a response from the model plugin, sets parameters to the vertex shader.
+         * ~/wave ([gazebo::msgs::Param_V](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/param_v.proto))  - Allows for setting the values of the WaveParameters instance via gazebo topic.  The WaveMsgPublisher utility is supplied to support.
+         * ~/world_stats 
+    * Published Gazebo Topics
+         * ~/request ([gazebo::msgs::Request](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/request.proto)) Requests wave_param wave parameters.
   1. A second **WavefieldVisualPlugin:VisualPlugin** for below the water surface. Uses the same parameters and shader.
 
 # Examples
