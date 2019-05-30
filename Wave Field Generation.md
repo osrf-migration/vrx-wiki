@@ -17,7 +17,9 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
         * ~/response ([gazebo::msgs::Response](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/response.proto))
   1. **WavefieldVisualPlugin:VisualPlugin**  
      * On initialization, requests wave parameters from the WavefieldModelPlugin via Gazebo ~/request message.
-     * Uses rendering API to set wave parameters to OpenGL shader GernstnerWaves.vert.  Note that it appears that the GernstnerWaves.vert is hardcoded to 3 component waves.
+     * During the visual plugin update, uses rendering API to set wave parameters to OpenGL shader GernstnerWaves.vert. 
+         * Done using the Visual::SetMaterialShaderParam to pass the simulation time value to the GernstnerWaves.vert vertex shader program where the wave model is run to generate the 3D wave field shape.  This feature doesn't seem to be terribly well documented, but here is the [PR](https://bitbucket.org/osrf/gazebo/pull-requests/2863/add-visual-setmaterialshaderparam-function/diff) that implemented the feature and an example.
+         * Note that it appears that the GernstnerWaves.vert is hardcoded to 3 component waves.
      * Subscribed Gazebo Topics:
          * ~/response ([gazebo::msgs::Response](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/response.proto)). When receives a response from the model plugin, sets parameters to the vertex shader.
          * ~/wave ([gazebo::msgs::Param_V](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/param_v.proto))  - Allows for setting the values of the WaveParameters instance via gazebo topic.  The WaveMsgPublisher utility is supplied to support.
