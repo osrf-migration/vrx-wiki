@@ -1,4 +1,6 @@
-## Quick Start Instructions:
+#[WIP]
+
+# Quick Start Instructions:
 1. launch the example world:
 ```roslaunch vrx_gazebo sandisland.launch```
 2. look at the WAM-V in sand island. It currently has the default sensor configuration.
@@ -7,7 +9,7 @@
 ```mkdir ~/my_wamv```
 ```cd ~/my_wamv```
 
-5. make a yaml file of the sensors you want and where you want them (see example yaml sensor configuration file) EG:
+5. make a yaml file of the sensors you want and where you want them (see example yaml sensor configuration) EG:
 ```gedit sensor_config.yaml```
 
 6. run the script to generate your wamv's urdf with these newly specified sensors:
@@ -38,3 +40,37 @@ of times a macro is called for compliance ie: only ONE lidar allowed. It also ch
 macro call for compliance ie: all sensors must be in a bounding box around the WAM-V.
 	
 If the sensor configuration passes, then the script auto fills out xacro_target, calls: rosrun xacro xacro to generate the urdf at wamv_target using wamv_gazebo/urdf/wamv_gazebo.urdf.xacro and the sensors xacro at xacro_target
+
+
+#Example Yaml Sensor Configuration File
+```
+wamv_camera:
+    - name: front_camera
+      x: 0.75
+      y: 0.3
+      z: 2
+      P: ${radians(15)}
+    - name: front_left_camera
+      x: 0.75
+      y: 0.1
+      P: ${radians(15)}
+    - name: front_right_camera
+      x: 0.75
+      y: -0.1
+      P: ${radians(15)}
+    - name: middle_right_camera
+      y: 0.1
+      x: 0.75
+      P: ${radians(15)}
+wamv_gps:
+    - name: gps_wamv
+      x: -0.85
+wamv_imu:
+    - name: imu_wamv
+      y: -0.2
+wamv_p3d:
+    - name: p3d_wamv
+wamv_3d_lidar:
+    - name: lidar_wamv
+      P: ${radians(8)}
+```
