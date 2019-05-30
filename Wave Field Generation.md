@@ -28,6 +28,17 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
          * ~/request ([gazebo::msgs::Request](https://bitbucket.org/osrf/gazebo/src/default/gazebo/msgs/request.proto)) Requests wave_param wave parameters.
   1. A second **WavefieldVisualPlugin:VisualPlugin** for below the water surface. Uses the same parameters and shader.
 
+## WAM-V USV Model ##
+
+
+  1. **UsvDynamicsPlugin:ModelPlugin** 
+    * Uses the `wave_model` parameter to specify a model, by name, that includes an instance of the WavefieldModelPlugin
+    * On Update
+        * Uses the WavefieldModelPlugin API to get WaveParameters pointer so that this plugin is using the same parameters as used by the visual plugin.
+            * This is done on each update, which seems like overkill.  If we consider the wave parameters to be constant for a simulation run this could be simplified.
+        * Calls a the static WavefieldSampler::ComputDepthDirectly function (see Wavefield.hh/cc) to implement the geometry of the wave height model at specific grid points.
+
+
 # Examples
 
 Not sure why the command line tools doesn't work https://bitbucket.org/osrf/gazebo/pull-requests/2907/add-cogazebo::transport::requestmmand-to-send-a-request-with-gz/diff
