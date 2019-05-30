@@ -30,13 +30,20 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
 
 ## WAM-V USV Model ##
 
-
   1. **UsvDynamicsPlugin:ModelPlugin** 
     * Uses the `wave_model` parameter to specify a model, by name, that includes an instance of the WavefieldModelPlugin
     * On Update
         * Uses the WavefieldModelPlugin API to get WaveParameters pointer so that this plugin is using the same parameters as used by the visual plugin.
             * This is done on each update, which seems like overkill.  If we consider the wave parameters to be constant for a simulation run this could be simplified.
         * Calls a the static WavefieldSampler::ComputDepthDirectly function (see Wavefield.hh/cc) to implement the geometry of the wave height model at specific grid points.
+
+## Buoys and Obstacle Models (E.g, surmark950400) ##
+
+
+  1. **UsvDynamicsPlugin:ModelPlugin** 
+    * Same implementation for wave height as done for the UsvDynamicsPlugin
+        * Uses the `wave_model` parameter to specify a model, by name, that includes an instance of the WavefieldModelPlugin. Then on update retrieves the current WaveParameters pointer via the WavefieldModelPlugin and determines the water level at simulation time for the point location of the link via the WavefieldSampler::ComputDepthDirectly function.
+   
 
 
 # Examples
