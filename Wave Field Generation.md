@@ -44,7 +44,36 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
     * Same implementation for wave height as done for the UsvDynamicsPlugin
         * Uses the `wave_model` parameter to specify a model, by name, that includes an instance of the WavefieldModelPlugin. Then on update retrieves the current WaveParameters pointer via the WavefieldModelPlugin and determines the water level at simulation time for the point location of the link via the WavefieldSampler::ComputDepthDirectly function.
    
+# Specifying Wave Parameters
 
+A wave field is constructed based a summation of waves.  The parameters of those waves can be set at the beginning of an simulation through parameters in the `wave_gazebo/world_models/ocean_model/model.sdf` file, e.g.,
+
+```
+ <wave>
+        <number>3</number>
+        <scale>2.0</scale>
+        <angle>0.4</angle>
+        <steepness>0.0</steepness>
+        <amplitude>1.0</amplitude>
+        <period>7.0</period>
+        <direction>-1.0 -1.0</direction>
+ </wave>
+```
+or by sending parameters via gazebo transport as a wave parameters message.
+```
+ ~/vrx_ws/devel/lib/wave_gazebo_plugins/WaveMsgPublisher \
+  --number 3 \
+  --scale 2 \
+  --angle 0.4 \
+  --direction -1 -1 \
+  --steepness 1 \
+  --period 7 \
+  --amplitude .1
+```
+
+These values are stored as a WaveParameters class (see Wavefield.cc/hh).  
+
+The WaveParameters::WaveParametersPrivate::Recalculate() method determines the actual wave components from the parameters above.
 
 # Examples
 
