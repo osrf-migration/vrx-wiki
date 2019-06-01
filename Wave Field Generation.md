@@ -79,3 +79,10 @@ The WaveParameters::WaveParametersPrivate::Recalculate() method determines the a
 
 Not sure why the command line tools doesn't work https://bitbucket.org/osrf/gazebo/pull-requests/2907/add-cogazebo::transport::requestmmand-to-send-a-request-with-gz/diff
 Perhaps not in Gazebo 7?
+
+## Buoy example
+
+```
+roslaunch wave_gazebo ocean_world_buoys.launch verbose:=true paused:=true
+```
+Includes wavegauge marker to visualize physical wave height.
