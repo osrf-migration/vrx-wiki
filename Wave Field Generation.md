@@ -46,7 +46,19 @@ The `wave_gazebo/world_models/ocean_waves` model includes three plugins:
    
 # Specifying Wave Parameters
 
-A wave field is constructed based a summation of waves.  The parameters of those waves can be set at the beginning of an simulation through parameters in the `wave_gazebo/world_models/ocean_model/model.sdf` file, e.g.,
+A wave field is constructed based a summation of waves.  
+
+The user-specified parameters are as follows:
+
+  * **number (N)**: The number of component waves.  Currently the visual implementation in GernstnerWaves.vert is limited to no more than three, so N <= 3.
+  * **scale (s)**: The scale factor used to generate component waves, typically 2.0.
+  * **amplitude (A)**: The amplitude of the median wave.
+  * **angle (a)**: Incremental angle relative to specified mean direction for generating individual component waves.
+  * **steepness (q)**: Steepness factor for Gernstner Waves - see Tessendorf, Simulating Ocean Waves
+  * **period (T)**: Mean period
+  * **direction (d)**: Mean direction of wave field
+
+The parameters of those waves can be set at the beginning of an simulation through parameters in the `wave_gazebo/world_models/ocean_model/model.sdf` file, e.g.,
 
 ```
  <wave>
@@ -74,6 +86,8 @@ or by sending parameters via gazebo transport as a wave parameters message.
 These values are stored as a WaveParameters class (see Wavefield.cc/hh).  
 
 The WaveParameters::WaveParametersPrivate::Recalculate() method determines the actual wave components from the parameters above.
+
+
 
 # Examples
 
