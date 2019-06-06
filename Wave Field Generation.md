@@ -80,7 +80,12 @@ or by sending parameters via gazebo transport as a wave parameters message.
   --direction -1 -1 \
   --steepness 1 \
   --period 7 \
-  --amplitude .1
+  --amplitude .1 \
+  --tau 2
+```
+or
+```
+rosrun wave_gazebo_plugins WaveMsgPublisher   --number 3   --scale 2   --angle 0.4   --direction -1 -1   --steepness 1   --period 7   --amplitude .1   --tau 1000
 ```
 
 These values are stored as a WaveParameters class (see Wavefield.cc/hh).  
