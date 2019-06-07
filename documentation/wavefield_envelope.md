@@ -56,4 +56,4 @@ roslaunch wave_gazebo ocean_world_buoys.launch
 ```
 with the wavefield period of 8.0 s and gain of 1.0.  This results in three component waves with period/amplitude of 12.0/0.14, 8.0/0.7, 5.3/0.46.  
 
-In (this video)[https://vimeo.com/user5784414/review/341005805/e3d13287be) we can see that the physical wave height, as indicated by the wave gauge model, varies from the visual wave height by roughly +/-0.4 m.  Note that this sea condition has the ocean surface with a wave height (peak to trough) of roughly 2.0 m which is much more than we expect for RobotX.
+In [this video](https://vimeo.com/user5784414/review/341005805/e3d13287be) we can see that the physical wave height, as indicated by the wave gauge model, varies from the visual wave height by roughly +/-0.4 m.  Note that this sea condition has the ocean surface with a wave height (peak to trough) of roughly 2.0 m which is much more than we expect for RobotX.
