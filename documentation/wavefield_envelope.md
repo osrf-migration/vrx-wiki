@@ -38,4 +38,22 @@ Based on running the simulation in a variety of conditions, we arrive at the fol
 
 ![wavefield_envelope.png](https://bitbucket.org/repo/BgXLzgM/images/2265349497-wavefield_envelope.png)  
 
+[This video](https://vimeo.com/user5784414/review/341005740/d3f7eb30ed) illustrates some of the wave conditions within the envelope.
+
 ## Beyond Period and Gain Limits ##
+
+### Wavefield Visual and Physics Sync ###
+
+The process for generating both the visual representation of the wave field and the physical forces associated with the waves is described on at https://bitbucket.org/osrf/vrx/wiki/documentation/wavefield_generation
+
+This method appears to work well low seastates, but as the ocean dynamics increase there is increasing differences between the visualization (which is important for simulated camera rendering) and the physical motion.  One way that we have attempted to measure the differences is with a wavegauge plugin and visual model.  The image below shows the wavegauge model.  The center red section is 0.2 m long and each of the black and white sections is 0.1 m in length.  The wavegauge plugin sets the position of this object to the current wave height as calculated by the wave model - the same model used to generate the physical forces.  So, this model is an indicator of the physical wave height to enable visualizing the difference between the physical and visual wave height.
+
+![wave_gauge.png](https://bitbucket.org/repo/BgXLzgM/images/1580853313-wave_gauge.png)
+
+We can run a simple test 
+```
+roslaunch wave_gazebo ocean_world_buoys.launch  
+```
+with the wavefield period of 8.0 s and gain of 1.0.  This results in three component waves with period/amplitude of 12.0/0.14, 8.0/0.7, 5.3/0.46.  
+
+In (this video)[https://vimeo.com/user5784414/review/341005805/e3d13287be) we can see that the physical wave height, as indicated by the wave gauge model, varies from the visual wave height by roughly +/-0.4 m.  Note that this sea condition has the ocean surface with a wave height (peak to trough) of roughly 2.0 m which is much more than we expect for RobotX.
