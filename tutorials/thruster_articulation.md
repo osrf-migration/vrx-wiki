@@ -8,4 +8,4 @@ Words about what and why
 
 ## Demonstration ##
 
-How to run an example.
+How to run an example - list basic commands and key configurations.
