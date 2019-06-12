@@ -10,7 +10,7 @@ We could write all 6 world files COMPLETELY by hand, but that would be tedious,
 so lets write them with xacro macros (see xacro tutorial if this is new to you).
 
 But what if in the future it turns out that your robot needs to work in 3
-different weather conditions and 3 NOT 2 lighting conditions. Now, to test all these factors independently from one another we need to manually write the xacro macro calls for 27=(3*3*3) worlds!!!
+different weather conditions and 3 NOT 2 lighting conditions. Now, to test all these factors independently from one another we need to manually write the xacro macro calls for 27 worlds!!!
 
 That is far too tedious, if only we had a program to generate all 27 of those
 world files!
