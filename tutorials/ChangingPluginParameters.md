@@ -23,7 +23,30 @@ If you edit the xacro file you will see a line like this...
 ```
 
 which in this case specifies the wind velocity as 0 m/s.  We can change the X and Y components of this vector to simulate the influence of wind on the vessel (the Z component is ignored).  We've posted a [video](https://vimeo.com/257588911) where we experiment with a couple of cases.
+#[WIP]#
+# Example: Changing the Wind #
+As an illustrative example, we'll go through testing our simulation with different wind conditions.  The wind is specified in the world file being run.
+If you view the sandisland.world.xacro file you will see lines like this...
 
+```
+<xacro:include filename="$(find vrx_gazebo)/worlds/xacros/gazebo_wind_plugin.xacro"/>
+<xacro:usv_wind_gazebo>
+  <wind_objs>
+    <wind_obj>         
+      <name>wamv</name>
+      <link_name>base_link</link_name>
+      <coeff_vector>0.5 0.5 0.33</coeff_vector>
+    </wind_obj>
+  </wind_objs>
+</xacro:usv_wind_gazebo>
+```
+NOTE: see vrx_gazebo/worlds/xacros/gazebo_wind_plugin.xacro for all parameters and default values
+
+which in this case specifies the wind velocity as 10 m/s(default). It also specifies that wamv model is the only wind object (model to be effected by the wind), the link of wamv which will be pushed on is base_link and its coefficient vector is .5 .5 .33.
+
+Any number of wind_obj's may be added under wind_objs.
+Only one link per model is supported.
+ 
 
 # Example: Changing the Wave Field #
 
