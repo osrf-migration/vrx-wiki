@@ -46,7 +46,8 @@ which in this case specifies the wind velocity as 10 m/s(default). It also speci
 
 Any number of wind_obj's may be added under wind_objs.
 Only one link per model is supported.
- 
+
+NOTE: For another example, see vrx_gazebo/worlds/wind_test.world.xacro
 
 # Example: Changing the Wave Field #
 
