@@ -44,7 +44,7 @@ Based on running the simulation in a variety of conditions, we arrive at the fol
 
 ### Wavefield Visual and Physics Sync ###
 
-The process for generating both the visual representation of the wave field and the physical forces associated with the waves is described on at https://bitbucket.org/osrf/vrx/wiki/documentation/wavefield_generation
+The process for generating both the visual representation of the wave field and the physical forces associated with the waves is described at https://bitbucket.org/osrf/vrx/wiki/documentation/wavefield_generation
 
 This method appears to work well low seastates, but as the ocean dynamics increase there is increasing differences between the visualization (which is important for simulated camera rendering) and the physical motion.  One way that we have attempted to measure the differences is with a wavegauge plugin and visual model.  The image below shows the wavegauge model.  The center red section is 0.2 m long and each of the black and white sections is 0.1 m in length.  The wavegauge plugin sets the position of this object to the current wave height as calculated by the wave model - the same model used to generate the physical forces.  So, this model is an indicator of the physical wave height to enable visualizing the difference between the physical and visual wave height.
 
