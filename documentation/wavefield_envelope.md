@@ -38,7 +38,7 @@ Based on running the simulation in a variety of conditions, we arrive at the fol
 
 ![wavefield_envelope.png](https://bitbucket.org/repo/BgXLzgM/images/2265349497-wavefield_envelope.png)  
 
-[This video](https://vimeo.com/user5784414/review/341005740/d3f7eb30ed) illustrates some of the wave conditions within the envelope.
+[This video](https://vimeo.com/341005740) illustrates some of the wave conditions within the envelope.
 
 ## Beyond Period and Gain Limits ##
 
