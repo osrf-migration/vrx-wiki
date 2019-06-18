@@ -1,3 +1,32 @@
+#Creating Many Test Worlds#
+#Tutorial#
+Lets start with a though experiment.
+
+Lets say we have code for a robot written and are able to simulate this robot in
+Gazebo. Lets also say we need to test this code on doing 3 tasks in bright and
+dark lighting conditions.
+
+We could write all 6 world files COMPLETELY by hand, but that would be tedious,
+so lets write them with xacro macros (see xacro tutorial if this is new to you).
+
+But what if in the future it turns out that your robot needs to work in 3
+different weather conditions and 3 NOT 2 lighting conditions. Now, to test all these factors independently rom one another we need to manually write the xacro macro calls for 27 worlds!!!
+
+That is far too tedious, if only we had a program to generate all 27 of those
+world files!
+
+Good News, we do!
+
+1.Create a directory some where to hold some things ie:
+
+mkdir ~/generated_worlds
+cd generated_worlds/
+
+2.Create a yaml according to the yaml filling instructions (also see example):
+gedit worlds.yaml
+
+(example as applied to Robot X)
+```
 ########worlds.yaml###########
 #we need to decide what is constant between all of our simulations. We will call this 'axis' constant
 constant:
@@ -10,7 +39,7 @@ constant:
         sandisland:
         #sandisland has no parameters, but all macros MUST have a (-) indented on the line below to show that there is at least ONE instance of them(even if it is empty, more on this later)
             -
-    #every axis MUST have a sequence feild (even if it is empty)(more on what sequence does later)
+    #every axis MUST have a sequence field (even if it is empty)(more on what sequence does later)
     sequence:
 
 #now lets pick soething that will varry independently of all other things we want to test between the simulations, say strength of the wind 
@@ -24,7 +53,7 @@ environment:
             #we want the time of day to start at 8am(8) and go three hours between steps to end at 8pm(20)
             # so we want to test times 8, 11, 14, 17, and  20
             #we can express this as a function based on the index of this axis(n)! NOTE: n starts at 0 and goes to steps-1.
-            #NOTE: in order to specify a string evaluated parameterter (as opposed to the default: functional) use "'<my_string>'"
+            #NOTE: in order to specify a string is evaluated parameter (as opposed to the default: functional) use "'<my_string>'"
             #NOTE: this parameter will always evaluate to the same string(except when a sequence override is present)
         - /**wind_objs: "'
           <wind_obj>
@@ -73,3 +102,42 @@ tasks:
 #ALL of them will have the sandisland macro
 #They will test the nav_challenge at 5 times of the day
 #They will test the light_buoy at 5 times of a day
+
+
+```
+
+#Quick Start Instructions#
+1.Create a directory some where to hold some things ie:
+
+`mkdir ~/generated_worlds`
+`cd generated_worlds/`
+
+2.Create a yaml according to the yaml filling instructions (also see example):
+
+`gedit worlds.yaml`
+
+3.Make a new directory to hold the world xacros for convenience:
+
+`mkdir world_xacros/`
+
+4.Same for worlds:
+
+`mkdir worlds/`
+
+5.Run the script:
+
+`roslaunch vrx_gazebo generate_worlds.launch requested:=/home/<username>/generated_worlds/worlds.yaml world_xacro_target:=/home/<username>/generated_worlds/world_xacros/ world_target:=/home/<username>/generated_worlds/worlds/ --screen`
+
+
+6.See the success message: All  <n>  worlds generated
+
+7.Examine the generated xacros under world_xacros/ and make sure they are what
+you want (these are meant to be more human readable than the .worlds files):
+
+`gedit world_xacros/world0.world.xacro`
+
+
+8.Run one of your new worlds:
+
+
+`roslaunch vrx_gazebo sandisland.launch world:=/home/<username>/generated_worlds/worlds/world0.world`
