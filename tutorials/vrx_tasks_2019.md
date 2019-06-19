@@ -2,7 +2,7 @@
 
 [TOC]
 
-The individual tasks for the 2019 VRX competition (link to document coming soon!) are supported by example simulation worlds and Gazebo plugins to evaluate and score task performance.  Below are examples that illustrate the implementation of the these tasks.  For descriptions of the task, the application interface (API) for each task and the scoring, please see the Description of Tasks and Technical Guide documents (again, links coming soon).
+The individual tasks for the 2019 VRX competition (link to document coming soon!) are supported by examples of simulation worlds and Gazebo plugins to evaluate and score task performance.  Below are examples that illustrate the implementation of the these tasks.  For descriptions of the task, the application interface (API) for each task and the scoring, please see the Description of Tasks and Technical Guide documents (again, links coming soon).
 
 ## General Instructions ##
 
