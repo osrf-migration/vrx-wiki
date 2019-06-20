@@ -8,7 +8,8 @@ For each of the individual tasks in the 2019 VRX competition (link to document c
 
 ### Initial State ###
 After launch, all examples given below should begin with the wamv floating on the water near the
-shore, in a state similar to the following:
+shore, as shown:
+
 ![start600.png](https://bitbucket.org/repo/BgXLzgM/images/599749426-start600.png)
 
 Additional course elements will vary from task to task.
