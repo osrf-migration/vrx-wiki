@@ -8,7 +8,11 @@ For each of the individual tasks in the 2019 VRX competition (link to document c
 
 ### Monitoring Task Status ###
 
-The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) status message includes, task state {Initial, Ready, Running, Finished}, current score and timing information (details of the API are in the Technical Guide (link coming soon)).  Recommended that you monitor the status during simulation, e.g.,
+The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) status message includes:
+* task state {Initial, Ready, Running, Finished},
+* current score and 
+* timing information. 
+Details of the API are in the Technical Guide (link coming soon).  We recommend that you monitor the task status during simulation, e.g.,
 
 ```
 rostopic echo /vrx/task/info 
