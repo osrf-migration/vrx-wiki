@@ -47,7 +47,7 @@ between the goal pose and the actual pose of the vehicle over the duration of th
     * The position error values:
         * `rostopic echo /vrx/station_keeping/pose_error`
         * `rostopic echo /vrx/station_keeping/rms_error`
-1. For implementation details, See Descriptions of Tasks (link coming) for implementation details, or refer to the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh)
+1. For implementation details, See Descriptions of Tasks (link coming), or refer to the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh)
 
 ### 2. Wayfinding ###
 
@@ -60,7 +60,7 @@ between the goal pose and the actual pose of the vehicle over the duration of th
     * The position error values:
         * `rostopic echo /vrx/wayfinding/mean_error`
         * `rostopic echo /vrx/wayfinding/min_errors`
-1. For implementation details, See Descriptions of Tasks (link coming) for implementation details, or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh)
+1. For implementation details, See Descriptions of Tasks (link coming), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh)
 
 ### 3. Perception ###
 
