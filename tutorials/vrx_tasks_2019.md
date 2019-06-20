@@ -4,6 +4,10 @@
 
 For each of the individual tasks in the 2019 VRX competition (link to document coming soon!) we provide examples of simulation worlds and Gazebo plugins to evaluate and score task performance.  Instructions for running these examples are given below. Please see the Description of Tasks and Technical Guide documents (again, links coming soon) for descriptions of each task, its application interface (API) and the scoring.
 
+## Descriptions of Tasks ##
+
+The individual tasks are described in the competition documents posted on the [Documentation Wiki](https://bitbucket.org/osrf/vrx/wiki/documentation)
+
 ## General Instructions: ##
 
 ### Initial State ###
