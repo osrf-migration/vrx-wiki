@@ -56,9 +56,10 @@ of launching your environment and subscribing to any available task-specific mes
 1. Subscribe to the task-specific topics provided by the wayfindind scoring plugin:
     * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html)): 
         * `rostopic echo /vrx/wayfinding/waypoints`
-    * The current error values for all waypoints:
-        * The minimum errors achieved for each waypoint so far: `rostopic echo /vrx/wayfinding/min_errors`
-        * The mean of the above errors: `rostopic echo /vrx/wayfinding/mean_error`
+    * The current minimum errors achieved for each waypoint so far: 
+        * `rostopic echo /vrx/wayfinding/min_errors`
+    * The current mean of the minimum errors: 
+        * `rostopic echo /vrx/wayfinding/mean_error`
 1. For implementation details, see "4.1.2. Task 2: Wayfinding" in the Competition and Task Descriptions  (link coming), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh)
 
 ### 3. Perception ###
