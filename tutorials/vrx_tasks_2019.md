@@ -40,7 +40,7 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: Navigate to the goal pose and hold station. The best solutions will minimize the difference between the goal pose and the actual pose of the vehicle over the duration of the task.
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
-1. Subscribe to the task-specific information provided by the stationkeeping scoring plugin:
+1. Subscribe to the task-specific topics provided by the stationkeeping scoring plugin:
     * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html)): 
         * `rostopic echo /vrx/station_keeping/goal`
     * The position error values:
@@ -53,7 +53,7 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: Navigate through each of the published waypoints, such that vehicle achieves, as closely as possible, the positions and orientations specified.
 
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
-1. Subscribe to the task-specific information provided by the :
+1. Subscribe to the task-specific topics provided by the wayfindind scoring plugin:
     * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html)): 
         * `rostopic echo /vrx/wayfinding/waypoints`
     * The position error values:
