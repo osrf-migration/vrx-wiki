@@ -37,8 +37,7 @@ of launching your environment and subscribing to any available task-specific mes
 
 ### 1. Station-Keeping ###
 
-**Summary**: Navigate to the goal pose and hold station. The best solutions will minimize the difference
-between the goal pose and the actual pose of the vehicle over the duration of the task.
+**Summary**: Navigate to the goal pose and hold station. The best solutions will minimize the difference between the goal pose and the actual pose of the vehicle over the duration of the task.
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
 1. Subscribe to the task-specific information provided by the stationkeeping scoring plugin:
@@ -51,7 +50,7 @@ between the goal pose and the actual pose of the vehicle over the duration of th
 
 ### 2. Wayfinding ###
 
-**Summary**: Navigate through each of the published waypoints.
+**Summary**: Navigate through each of the published waypoints, such that vehicle achieves, as closely as possible, the positions and orientations specified.
 
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
 1. Subscribe to the task-specific information provided by the :
