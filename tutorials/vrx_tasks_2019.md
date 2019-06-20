@@ -19,6 +19,9 @@ Task status is published to `/vrx/task/info` (further details of the API are in 
 rostopic echo /vrx/task/info 
 ```
 ## Individual Tasks ##
+The following quick start instructions walk you through the initial process
+of launching your environment and subscribing to any available task-specific messages.
+
 ### 1. Station-Keeping ###
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
