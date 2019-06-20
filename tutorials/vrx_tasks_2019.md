@@ -42,7 +42,7 @@ of launching your environment and subscribing to any available task-specific mes
         * `rostopic echo /vrx/station_keeping/rms_error`
 1. Objective: Navigate to the goal pose and hold station. The best solutions will minimize the difference
 between the goal pose and the actual pose of the vehicle over the duration of the task.
-    * See Descriptions of Tasks (link coming) for implementation details, or refer to the scoring plugin.
+    * See Descriptions of Tasks (link coming) for implementation details, or refer to the stationkeeping scoring plugin.
 
 ### 2. Wayfinding ###
 
