@@ -10,11 +10,11 @@ For each of the individual tasks in the 2019 VRX competition (link to document c
 
 The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) status message includes:
 
-* task state {Initial, Ready, Running, Finished},
-* current score and 
-* timing information. 
+* task state {Initial, Ready, Running, Finished}
+* current score
+* timing information
 
-Details of the API are in the Technical Guide (link coming soon).  We recommend that you monitor the task status during simulation. For example, by running:
+Task status is published to `/vrx/task/info` (further details of the API are in the Technical Guide (link coming soon)).  We recommend that you monitor the task status during simulation. One way to do this, for example, is to run:
 
 ```
 rostopic echo /vrx/task/info 
@@ -22,7 +22,7 @@ rostopic echo /vrx/task/info
 
 ## 1. Station-Keeping ##
 
-1. Start the Gazebo example: `roslaunch vrx_gazebo station_keeping.launch`
+1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
 1. Subscribe to the task-specific information provided by the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh):
     * The station-keeping goal: ` rostopic echo /vrx/station_keeping/goal`
     * The position error values:
