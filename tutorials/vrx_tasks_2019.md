@@ -35,7 +35,8 @@ of launching your environment and subscribing to any available task-specific mes
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
 1. Subscribe to the task-specific information provided by the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh):
-    * The station-keeping goal: `rostopic echo /vrx/station_keeping/goal`
+    * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html): 
+        * `rostopic echo /vrx/station_keeping/goal`
     * The position error values:
         * `rostopic echo /vrx/station_keeping/pose_error`
         * `rostopic echo /vrx/station_keeping/rms_error`
@@ -44,7 +45,7 @@ of launching your environment and subscribing to any available task-specific mes
 
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
 1. Subscribe to the task-specific information provided by the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh):
-    * The list of waypoints as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html): 
+    * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html)): 
         * `rostopic echo /vrx/wayfinding/waypoints`
     * The position error values:
         * `rostopic echo /vrx/wayfinding/mean_error`
