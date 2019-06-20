@@ -51,13 +51,16 @@ between the goal pose and the actual pose of the vehicle over the duration of th
 
 ### 2. Wayfinding ###
 
+**Summary**: Navigate through each of the published waypoints.
+
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
-1. Subscribe to the task-specific information provided by the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh):
+1. Subscribe to the task-specific information provided by the :
     * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html)): 
         * `rostopic echo /vrx/wayfinding/waypoints`
     * The position error values:
         * `rostopic echo /vrx/wayfinding/mean_error`
         * `rostopic echo /vrx/wayfinding/min_errors`
+1. For implementation details, See Descriptions of Tasks (link coming) for implementation details, or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh)
 
 ### 3. Perception ###
 
