@@ -14,7 +14,7 @@ The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/
 * current score and 
 * timing information. 
 
-Details of the API are in the Technical Guide (link coming soon).  We recommend that you monitor the task status during simulation. For example, by running
+Details of the API are in the Technical Guide (link coming soon).  We recommend that you monitor the task status during simulation. For example, by running:
 
 ```
 rostopic echo /vrx/task/info 
