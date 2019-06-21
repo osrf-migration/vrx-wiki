@@ -78,7 +78,7 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: Traverse a navigation channel specified by red and green markers, avoiding obstacles.
 
 1. Start the example: `roslaunch vrx_gazebo navigation_task.launch verbose:=true`
-1. Use a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
+1. In preparation for developing an automated solution, we recommend using a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
     * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
     * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. There are no ROS topics specific to this task. However, relevant Gazebo messages such as "New gate crossed!" will be printed to the terminal.
