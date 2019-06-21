@@ -75,10 +75,12 @@ of launching your environment and subscribing to any available task-specific mes
 
 ### 4. Navigation Channel ###
 
-1. Start the example: `roslaunch vrx_gazebo navigation_task.launch verbose:=true`
-    * Note that Gazebo messages such as "New gate crossed!" will be printed to the terminal.
-1. Use a gamepad to drive the USV through the course (see Driving tutorial) `roslaunch vrx_gazebo usv_joydrive.launch`
+**Summary**: Traverse a navigation channel specified by red and green markers, avoiding obstacles.
 
+1. Start the example: `roslaunch vrx_gazebo navigation_task.launch verbose:=true`
+1. Use a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)) `roslaunch vrx_gazebo usv_joydrive.launch`
+    * Note that Gazebo messages such as "New gate crossed!" will be printed to the terminal.
+1. For further details, see "4.3.1. Task 4: Traverse Navigation Channel" in the Competition and Task Descriptions  (link coming), or refer to the [navigation scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/navigation_scoring_plugin.hh).
 
 ### 5. Scan-the-Code and Dock ###
 
