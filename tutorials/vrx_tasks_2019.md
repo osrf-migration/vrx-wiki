@@ -41,7 +41,7 @@ of launching your environment and subscribing to any available task-specific mes
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
 1. Subscribe to the task-specific topics provided by the stationkeeping scoring plugin:
-    * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html)): 
+    * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message): 
         * `rostopic echo /vrx/station_keeping/goal`
     * The current position error values:
         * `rostopic echo /vrx/station_keeping/pose_error`
@@ -54,7 +54,7 @@ of launching your environment and subscribing to any available task-specific mes
 
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
 1. Subscribe to the task-specific topics provided by the wayfindind scoring plugin:
-    * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html)): 
+    * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html) message): 
         * `rostopic echo /vrx/wayfinding/waypoints`
     * The current minimum errors achieved for each waypoint so far: 
         * `rostopic echo /vrx/wayfinding/min_errors`
@@ -64,13 +64,14 @@ of launching your environment and subscribing to any available task-specific mes
 
 ### 3. Perception ###
 
-**Summary**: In this task, the vehicle remains in a fixed location and markers will appear in the field of view. The objective is to use perceptive sensors to identify the markers and report their locations.
+**Summary**: In this task, the vehicle remains in a fixed location and markers will appear in the field of view (see this [video](https://vimeo.com/321818142) for a demonstration of the expected behavior). The objective is to use perceptive sensors to identify the markers and report their locations.
 
 1. Start the example: `roslaunch vrx_gazebo perception_task.launch`
 1. View the camera feeds from the front of the WAM-V: 
 `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
-    * See a [video](https://vimeo.com/321818142) of buoys appearing in the field of view.
-1. Publish a landmark identification and localization solution `rostopic pub -r 1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{header: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, longitude: -157.8901, altitude: 0.0}}}'`
+1. Publish landmark identification and localization solutions as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message to the `/vrx/perception/landmark` topic:
+`rostopic pub -r 1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{header: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, longitude: -157.8901, altitude: 0.0}}}'`
+1. For further details, see "4.2.3. Task 3: Landmark Localization and Characterization" in the Competition and Task Descriptions  (link coming), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh)
 
 ### 4. Navigation Channel ###
 
