@@ -46,7 +46,7 @@ of launching your environment and subscribing to any available task-specific mes
     * The current position error values:
         * `rostopic echo /vrx/station_keeping/pose_error`
         * `rostopic echo /vrx/station_keeping/rms_error`
-1. For implementation details, see "4.1.1. Task 1: Station-Keeping" in the Competition and Task Descriptions (link coming), or refer to the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh)
+1. For implementation details, see "4.1.1. Task 1: Station-Keeping" in the Competition and Task Descriptions (link coming), or refer to the [stationkeeping scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/stationkeeping_scoring_plugin.hh).
 
 ### 2. Wayfinding ###
 
@@ -60,7 +60,7 @@ of launching your environment and subscribing to any available task-specific mes
         * `rostopic echo /vrx/wayfinding/min_errors`
     * The current mean of the minimum errors: 
         * `rostopic echo /vrx/wayfinding/mean_error`
-1. For implementation details, see "4.1.2. Task 2: Wayfinding" in the Competition and Task Descriptions  (link coming), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh)
+1. For implementation details, see "4.1.2. Task 2: Wayfinding" in the Competition and Task Descriptions  (link coming), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh).
 
 ### 3. Perception ###
 
@@ -70,8 +70,8 @@ of launching your environment and subscribing to any available task-specific mes
 1. View the camera feeds from the front of the WAM-V: 
     `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
 1. Publish landmark identification and localization solutions as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message to the `/vrx/perception/landmark` topic:
-`rostopic pub -r 1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{header: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, longitude: -157.8901, altitude: 0.0}}}'`
-1. For further details, see "4.2.3. Task 3: Landmark Localization and Characterization" in the Competition and Task Descriptions  (link coming), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh)
+    `rostopic pub -r 1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{header: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, longitude: -157.8901, altitude: 0.0}}}'`
+1. For further details, see "4.2.3. Task 3: Landmark Localization and Characterization" in the Competition and Task Descriptions  (link coming), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh).
 
 ### 4. Navigation Channel ###
 
