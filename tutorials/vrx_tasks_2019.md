@@ -86,7 +86,11 @@ of launching your environment and subscribing to any available task-specific mes
 
 ### 5. Scan-the-Code and Dock ###
 
-There are two variants of this task.  In the first variant the correct dock is specified via a ROS message.  In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
+**Summary**: Given multiple docking bays, choose the correct one, dock safely, then exit the dock.
+
+There are two variants of this task.  
+* In the first variant the correct dock is specified via a ROS message.  
+* In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
 
 #### 5a. Dock Specified via ROS message ####
 
