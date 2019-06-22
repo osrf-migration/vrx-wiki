@@ -105,5 +105,8 @@ There are two variants of this task.
 #### 5b. Dock Specified via Scan-the-Code ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
+1. View the camera feeds from the front of the WAM-V: 
+    `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
+1. Publish the sequence of three colors displayed on the scan-the-code buoy landmark identification and localization solutions.
 
 For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the Competition and Task Descriptions  (link coming), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
