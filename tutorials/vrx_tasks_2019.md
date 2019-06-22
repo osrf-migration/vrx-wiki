@@ -101,6 +101,7 @@ There are two variants of this task.
 1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
     * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
     * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
+1. Dock in the bay displaying the symbol published by to the `placard_symbol` topic.
 
 #### 5b. Dock Specified via Scan-the-Code ####
 
