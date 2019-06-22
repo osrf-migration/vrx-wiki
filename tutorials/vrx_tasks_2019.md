@@ -114,8 +114,9 @@ There are two variants of this task.
 1. Approach the scan-the-code buoy and identify the sequence of three colors displayed.
 1. Transmit the correct sequence to the color sequence server:
     * `rosservice call /vrx/scan_dock/color_sequence "blue" "red" "green"`
-    * The service name is `/vrx/scan_dock/color_sequence`
-    * Allowable values are "red", "green", "blue" and "yellow"
+    * Notes:
+        * The service name is `/vrx/scan_dock/color_sequence`
+        * Allowable values are "red", "green", "blue" and "yellow"
 1. Dock in the bay displaying the symbol that corresponds to the correct color sequence.
 
 For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the Competition and Task Descriptions  (link coming), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
