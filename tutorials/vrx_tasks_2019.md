@@ -96,9 +96,14 @@ There are two variants of this task.
 #### 5a. Dock Specified via ROS message ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock_a.launch verbose:=true`
-1. Subscribe to the ROS message that specifies the color and shape of corresponding to the placard on the intended dock: `rostopic echo /vrx/scan_dock/placard_symbol`
-1. Use a gamepad to dock `roslaunch vrx_gazebo usv_joydrive.launch`
+1. Subscribe to the ROS topic that specifies the color and shape of the placard on the target docking bay:
+    * `rostopic echo /vrx/scan_dock/placard_symbol`
+1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
+    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
+    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 
 #### 5b. Dock Specified via Scan-the-Code ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
+
+For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the Competition and Task Descriptions  (link coming), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
