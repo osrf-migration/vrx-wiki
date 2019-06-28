@@ -84,16 +84,16 @@ of launching your environment and subscribing to any available task-specific mes
 1. There are no ROS topics specific to this task. However, relevant Gazebo messages such as "New gate crossed!" will be printed to the terminal.
 1. For further details, see "4.3.1. Task 4: Traverse Navigation Channel" in the Competition and Task Descriptions  (link coming), or refer to the [navigation scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/navigation_scoring_plugin.hh).
 
-### 5. Scan-the-Code and Dock ###
+### 5 and 6: Dock and Scan-and-Dock ###
 
 **Summary**: Given multiple docking bays, choose the correct one, dock safely, then exit the dock.
 
-There are two variants of this task.
+There are two variants of this challenge.
 
 * In the first variant the correct dock is specified via a ROS message.  
 * In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
 
-#### 5a. Dock Specified via ROS message ####
+#### 5. Dock: Correct Dock Specified via ROS message ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock_a.launch verbose:=true`
 1. Subscribe to the ROS topic that specifies the color and shape of the placard on the target docking bay:
@@ -103,7 +103,7 @@ There are two variants of this task.
     * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. Dock in the bay displaying the symbol published by to the `placard_symbol` topic.
 
-#### 5b. Dock Specified via Scan-the-Code ####
+#### 5. Scan-and-Dock: Correct Dock Specified via Scan-the-Code ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
 1. View the camera feeds from the front of the WAM-V: 
