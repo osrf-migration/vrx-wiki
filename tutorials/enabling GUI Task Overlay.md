@@ -14,7 +14,7 @@ If you compiled vrx from source:
 2. uncomment line 35 of the file so it looks like
 `<plugin name="GUITaskWidget" filename="libgui_task_widget.so"/>`
 
-3. recompile vrx in order to regenerate the worlds from the xacro files.
+3. recompile vrx with catkin_make in order to regenerate the worlds from the xacro files.
 
 4. Now, all worlds that use the sandisland.xacro (every world in vrx repo) will have the gui plugin enabled.
 
