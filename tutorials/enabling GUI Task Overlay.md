@@ -45,3 +45,5 @@ so that it looks like
 `roslaunch vrx_gazebo navigation_task.launch`
 
 6. You should see an overly that looks like the one in the screen shot above
+
+7. To add the gui overlay to more vrx worlds, repeat the steps 2 through 6 but with a world file of your choice instead of navigation_task.world
