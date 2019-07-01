@@ -21,9 +21,10 @@ We recommend following the tutorials in numerical order. At the end of these tut
 1. Customizing WAM-V and Environment:
 
     * [Adding Course Elements](https://bitbucket.org/osrf/vrx/wiki/tutorials/Adding%20course%20elements): Creating your own course in gazebo.
-    * [Propulsion Configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations and methods for creating custom configurations.
-        * [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation): How to control the thrust angle.
-    * [Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors): Example of customizing the base USV by adding sensors (GPS, camera, etc.).
+    * [Creating a Custom WAM-V Thruster and Sensor Configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/Creating%20a%20custom%20WAM-V%20Thruster%20and%20Sensor%20Configuration%20For%20Competition): How to create a custom WAM-V with your own thruster and sensor configuration yaml file. 
+        * [Existing Propulsion Configurations](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations.
+        * [Manually Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors): Example of manually customizing the base USV by adding sensors (GPS, camera, etc.).
+    * [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation): How to control the thrust angle.
     * [Visualizing with RVIZ](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
     * [Changing Simulation Parameters](https://bitbucket.org/osrf/vrx/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
     * [Creating a Custom Dock](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
