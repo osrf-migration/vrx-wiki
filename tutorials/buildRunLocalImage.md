@@ -7,6 +7,7 @@ Run the appropriate set of commands below, depending on whether Nvidia support i
 For users running without an Nvidia GPU, the commands to build the VRX image are:
 
         $ hg clone https://bitbucket.org/osrf/vrx
+        $ cd vrx
         $ docker/build.bash .
         $ docker/run.bash vrx
 
@@ -16,6 +17,7 @@ For users running without an Nvidia GPU, the commands to build the VRX image are
 To build the Nvidia-enabled version, run:
 
         $ hg clone https://bitbucket.org/osrf/vrx
+        $ cd vrx
         $ docker/build.bash -n .
         $ docker/run.bash -n vrx_nvidia
 
@@ -39,12 +41,14 @@ By default, the above steps build the Ubuntu Bionic / ROS Melodic / Gazebo 9 sta
 * To do this without Nvidia support, run: 
 
         $ hg clone https://bitbucket.org/osrf/vrx
+        $ cd vrx
         $ docker/build.bash -k .
         $ docker/run.bash vrx_gaz7
 
 * For the Nvidia-enabled version, run:
 
         $ hg clone https://bitbucket.org/osrf/vrx
+        $ cd vrx
         $ docker/build.bash -K .
         $ docker/run.bash vrx_nvidia_gaz7
 
