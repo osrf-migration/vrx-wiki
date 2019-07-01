@@ -82,7 +82,7 @@ Note:
 
 * The thruster angle is controlled by a pre-tuned PID controller at the rotating joint. It does not move the angle immediately to the position being subscribed to, but uses a PID controller to send force commands to the joint to reach the desired angle quickly and accurately. The PID constants can be tuned for different desired use.
 
-* As of June 17, 2019, thruster angle control implementation for `usv_keydrive.launch` and `usv_joydrive.launch` is currently under development.
+* As of June 30, 2019, the thruster angles can be controlled by `usv_keydrive.launch` or `usv_joydrive.launch`. Read [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving) for more information.
 
 #Example WAM-V Gazebo Thruster Configuration File
 ```
