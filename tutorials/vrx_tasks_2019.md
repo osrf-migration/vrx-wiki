@@ -95,7 +95,7 @@ There are two variants of this challenge.
 
 #### 5. Dock: Correct Dock Specified via ROS message ####
 
-1. Start the example: `roslaunch vrx_gazebo scan_and_dock_a.launch verbose:=true`
+1. Start the example: `roslaunch vrx_gazebo dock.launch verbose:=true`
 1. Subscribe to the ROS topic that specifies the color and shape of the placard on the target docking bay:
     * `rostopic echo /vrx/scan_dock/placard_symbol`
 1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
@@ -103,9 +103,9 @@ There are two variants of this challenge.
     * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. Dock in the bay displaying the symbol published by to the `placard_symbol` topic.
 
-#### 5. Scan-and-Dock: Correct Dock Specified via Scan-the-Code ####
+#### 6. Scan-and-Dock: Correct Dock Specified via Scan-the-Code ####
 
-1. Start the example: `roslaunch vrx_gazebo scan_and_dock_b.launch verbose:=true`
+1. Start the example: `roslaunch vrx_gazebo scan_and_dock.launch verbose:=true`
 1. View the camera feeds from the front of the WAM-V: 
     `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
 1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
