@@ -1,5 +1,5 @@
 # Overview
-This is a script designed to generate a custom WAM-V with a set of thrusters and sensors specified from a user-generated thruster YAML file and a user-generated sensor YAML file. Supported thrusters and sensors can be seen in `wamv_description/urdf/thrusters/` and `wamv_gazebo/urdf/sensors/` (currently we have only 1 thruster type). This script also makes sure that the requested thruster and sensor configurations are in compliance (as of June 6, 2019, all possible thruster and sensor configurations are in compliance).
+This is a script designed to generate a custom WAM-V with a set of thrusters and sensors specified from a user-generated thruster YAML file and a user-generated sensor YAML file. Supported thrusters and sensors can be seen in `wamv_description/urdf/thrusters/` and `wamv_gazebo/urdf/sensors/` (currently we have only one thruster type). This script also makes sure that the requested thruster and sensor configurations are in compliance (as of June 6, 2019, all possible thruster and sensor configurations are in compliance).
 
 # Quick Start Instructions:
 1. Launch the example world:
@@ -8,7 +8,7 @@ This is a script designed to generate a custom WAM-V with a set of thrusters and
        $ roslaunch vrx_gazebo sandisland.launch
     ```
 
-2. Look at the WAM-V in sand island. It currently has the default thruster configuration and sensor configuration for sandisland.launch (as of June 6, 2019, default is H thruster configuration and no sensors). You can click View => Transparent to see the thrusters.
+2. Look at the WAM-V in sand island. It currently has the default thruster configuration and sensor configuration for sandisland.launch (as of June 6, 2019, default is [H thruster configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) and no sensors). In Gazebo, click View => Transparent to see the thrusters.
 
     ![Default_Sensors_And_Thrusters.png](https://bitbucket.org/repo/BgXLzgM/images/2154255799-Default_Sensors_And_Thrusters.png)
 
@@ -18,11 +18,11 @@ This is a script designed to generate a custom WAM-V with a set of thrusters and
        $ mkdir ~/my_wamv
        $ cd ~/my_wamv
     ```
-5. Make a yaml file of the thrusters you want and where you want them (see example yaml thruster configuration) eg:
+5. Make a yaml file of the thrusters you want and where you want them (see example yaml thruster configuration below) eg:
     ```
        $ gedit thruster_config.yaml
     ```
-6. Make a yaml file of the sensors you want and where you want them (see example yaml sensor configuration) eg:
+6. Make a yaml file of the sensors you want and where you want them (see example yaml sensor configuration below) eg:
     ```
        $ gedit sensor_config.yaml
     ```
@@ -33,11 +33,11 @@ This is a script designed to generate a custom WAM-V with a set of thrusters and
 
     Parameters Explained:
 
-    * `thruster_yaml`: the root path of your yaml thruster configuration file
+    * `thruster_yaml`: input, the full path of the thruster YAML configuration file
 
-    * `sensor_yaml`: the root path of your yaml sensor configuration file
+    * `sensor_yaml`: input, the full path of the sensor YAML configuration file
 
-    * `wamv_target`: the root path to the urdf of your WAM-V, which will be generated
+    * `wamv_target`: output, the full path to the WAM-V URDF, which will be generated
 
 8. See the following confirmation message in the terminal with no errors present 
     ```
@@ -64,7 +64,7 @@ This is a script designed to generate a custom WAM-V with a set of thrusters and
 # Description:
 `generate_wamv.launch` is a simple script that allows thruster and sensor configurations to be submitted by YAML (as opposed to urdf) while making sure that the thrusters and sensors are in compliance as defined by compliance.py.
 
-It operates by generating macro calls specified by the user-generated yaml. It checks the number of times a macro is called for compliance ie: we could limit the number of allowed thrusters/sensors ie: all thrusters/sensors must be in a bounding box around the WAM-V. 
+It operates by generating macro calls specified by the user-generated YAML configuration files. It checks the number of times a macro is called for compliance i.e., we could limit the number of allowed thrusters/sensors ie: all thrusters/sensors must be in a bounding box around the WAM-V.   See the VRX Technical Guide for specifics on the constraints for the VRX competition, available at the [Documentation Wiki](https://bitbucket.org/osrf/vrx/wiki/documentation).
 	
 If the thruster/sensor configuration passes, the script creates two xacro files. One is a thruster xacro file in the same directory as the thruster yaml file with the same file name, but with a .xacro extension. The second is a sensor xacro file in the same directory as the sensor yaml file with the same file name, but with a .xacro extension. 
 
