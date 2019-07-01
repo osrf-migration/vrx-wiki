@@ -31,6 +31,8 @@ A launch file example is included:
 roslaunch vrx_gazebo usv_keydrive.launch
 ```
 
+As of June 30 2019, we have added thruster articulation control functionality to `usv_keydrive.launch`. If thruster articulation is on (look at the [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation) page for information about setting this up), you are also able to control the thruster angles relative to the WAM-V.
+
 ## Teleop: Gamepad ##
 
 To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom [twist2thrust.py]( https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/nodes/twist2thrust.py) node to convert Twist messages from the standard telelop to two Float32 messages for the thruster plugin.  The example is...
@@ -40,6 +42,8 @@ roslaunch vrx_gazebo usv_joydrive.launch
 ```
 
 For the default configuration, the left stick up/down axis (axis 1) is mapped to the left thruster and the right stick up/down axis (axis 3) is mapped to the right thruster.  Therefore, pushing both sticks forward should cause the WAM-V to drive forward.
+
+As of June 30 2019, we have added thruster articulation control functionality to `usv_joydrive.launch`. If thruster articulation is on (look at the [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation) page for information about setting this up), you are also able to control the thruster angles relative to the WAM-V.
 
 If you are using the Logitech F310 with the default configuration, make sure the [Mode light](http://support.logitech.com/en_my/article/21691?product=a0qi00000069ueWAAQ) is unlit.
 
