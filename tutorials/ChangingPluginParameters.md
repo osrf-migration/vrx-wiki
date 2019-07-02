@@ -35,11 +35,20 @@ Any number of wind_obj's may be added under wind_objs. Only one link per model i
 
 To change the wind plugin parameters we can do a combination of the following:
 
- * Change the default wind parameters [vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro]/xacros/(https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro)
+ * Change the default wind parameters [vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro)
  * Override the default parameters when calling the macro in the [vrx_gazebo/worlds/sandisland.world.xacro](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/sandisland.world.xacro) file.
  * Change the models affected by wind or their coefficients in [vrx_gazebo/worlds/sandisland.world.xacro](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/sandisland.world.xacro).
  * Note: Make sure to run `catkin_make` after any changes to process the XML macros.
 
+For development purposes, the instantaneous wind speed is published as a ROS message.  After starting the simulation (`roslaunch vrx_gazebo sandisland.launch`) the wind velocity can be published using rqt_topic (`rqt_plot /vrx/debug/wind/speed/data').  Below are some examples to illustrate how the wind parameters affect the time history:
+
+## 
+| Wind Parameters | Time History |
+|-----------------|--------------|
+| mean_vel = 8; var_gain = 0; var_time = 1 | ![Screenshot from 2019-07-02 13-25-52.png](https://bitbucket.org/repo/BgXLzgM/images/4044523634-Screenshot%20from%202019-07-02%2013-25-52.png) |
+| mean_vel = 0; var_gain = 8; var_time = 1 | ![Screenshot from 2019-07-02 13-29-55.png](https://bitbucket.org/repo/BgXLzgM/images/1790020888-Screenshot%20from%202019-07-02%2013-29-55.png) |
+| mean_vel = 0; var_gain = 8; var_time = 10 | ![Screenshot from 2019-07-02 13-32-09.png](https://bitbucket.org/repo/BgXLzgM/images/2800119210-Screenshot%20from%202019-07-02%2013-32-09.png) |
+| mean_vel = 8; var_gain = 8; var_time = 1 | ![Screenshot from 2019-07-02 13-34-08.png](https://bitbucket.org/repo/BgXLzgM/images/1533815556-Screenshot%20from%202019-07-02%2013-34-08.png) |
 
 NOTE: For another example, see vrx_gazebo/worlds/wind_test.world.xacro
 
