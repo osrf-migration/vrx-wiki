@@ -10,8 +10,10 @@ We recommend following the tutorials in numerical order. At the end of these tut
 
 1. Example Environments:
 
+These tutorials illustrate bringing up example environments within Gazebo
+
     * [Sand Island Basic](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic): A simple base world with a WAM-V model.
-    * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using Rviz.
+    * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using RVIZ.
     * [VRX Tasks 2019](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_tasks_2019): Individual tasks for 2019 VRX competition
 
 1. Simulation Interfaces: Connecting to VRX API
