@@ -1,5 +1,5 @@
 # Overview
-This is a script designed to generate a custom WAM-V with a set of thrusters and sensors specified from a user-generated thruster YAML file and a user-generated sensor YAML file. Supported thrusters and sensors can be seen in `wamv_description/urdf/thrusters/` and `wamv_gazebo/urdf/sensors/` (currently we have only one thruster type). This script also makes sure that the requested thruster and sensor configurations are in compliance (as of June 6, 2019, all possible thruster and sensor configurations are in compliance).
+This is a script designed to generate a custom WAM-V with a set of thrusters and sensors specified from a user-generated thruster YAML file and a user-generated sensor YAML file. Supported thrusters and sensors can be seen in `wamv_description/urdf/thrusters/` and `wamv_gazebo/urdf/sensors/` (currently we have only one thruster type). This script also makes sure that the requested thruster and sensor configurations are in compliance.
 
 # Quick Start Instructions:
 1. Launch the example world:
