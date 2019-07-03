@@ -1,10 +1,10 @@
 # Overview
 
-This tutorial outlines the process for creating a Dockerhub image for submission for the VRX competition. This is required for creating a container that will run your team's system to control your virtual autonomous boat for the automated evaluation.
+This tutorial outlines the process for creating a Dockerhub image to be submitted for the VRX competition. This is required for creating a container that will run a VRX team's system to control their virtual autonomous boat for the automated evaluation.
 
-A Docker image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files. A Docker container is a runtime instance of an image. Without Docker, evaluating your software on our machines would require that our environment matches perfectly for your system to run as expected, which is very prone to error. With Docker, if your system works reliably on your machine, it will work reliably on ours. 
+A Docker image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files. A Docker container is a runtime instance of an image. Without Docker, evaluating a VRX team's software on different machines would require that the environment matches perfectly for the VRX team's system to run as expected, which is very prone to error. With Docker, if a VRX team's system works reliably on their machine, it will work reliably on any machine. 
 
-If you would like to learn more about what Docker images and containers are, Docker has excellent [tutorials and explanations](https://docs.docker.com/get-started/).
+To learn more about what Docker images and containers are, Docker has excellent [tutorials and explanations](https://docs.docker.com/get-started/).
 
 # Quick Start Instructions:
 
@@ -16,7 +16,7 @@ If you would like to learn more about what Docker images and containers are, Doc
 
 From here, there are two main options to create your Docker image. The first option is simpler and more intuitive for first-time Docker users. The second option is cleaner and less prone to error, but is more advanced.
 
-## Option 1: Pull `ros:melodic-ros-base` and manually run desired commands to 
+## Option 1: Pull the ROS Melodic Docker image and manually run desired commands to setup the system
 
 1. Run `docker run --name my_container -it ros:melodic-ros-base`. This will pull the `ros:melodic-ros-base` image from DockerHub and create a container of that image called `my_container. `-it` is added so that when this is complete, it starts an interactive Bash session for you to run commands. This may take a few minutes to run.
 
@@ -128,7 +128,7 @@ Then run `chmod +x run_my_system.bash` to make it executable.
 
 5. Run `docker run <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG> "/run_my_system.bash"` This will create a container with the image you created in the previous step, and then run `/run_my_system.bash`.
 
-6. Run `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "<FULL NAME>" <Container_ID> <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG>`. Your username must match the username of your Dockerhub account. The image repository name is the repository name that the image will be saved to on Dockerhub. The tag and colon are optional to help you version your images. Example: `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "Tyler Lum" a0e1e92cb6a5 tylerlum/vrx-competitor-example:v1.2019` or `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "Tyler Lum" a0e1e92cb6a5 tylerlum/vrx-competitor-example`
+6. Run `docker ps -a` and take note of your container id. Then run `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "<FULL NAME>" <Container_ID> <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG>`. Your username must match the username of your Dockerhub account. The image repository name is the repository name that the image will be saved to on Dockerhub. The tag and colon are optional to help you version your images. Example: `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "Tyler Lum" a0e1e92cb6a5 tylerlum/vrx-competitor-example:v1.2019` or `docker commit -m "Start off ros-melodic-base, add run_my_system simple script" -a "Tyler Lum" a0e1e92cb6a5 tylerlum/vrx-competitor-example`
 
 7. Run `docker login`
 
