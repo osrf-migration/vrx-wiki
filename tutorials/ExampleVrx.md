@@ -17,7 +17,7 @@ Start Gazebo and spawn WAM-V with propulsion and sensor configuration.
 ```
 roslaunch vrx_gazebo vrx.launch
 ```
-![Screenshot from 2019-02-28 09-59-08.png](https://bitbucket.org/repo/BgXLzgM/images/3111603850-Screenshot%20from%202019-02-28%2009-59-08.png)
+![vrx.jpg](https://bitbucket.org/repo/BgXLzgM/images/36623667-vrx.jpg)
 
 ## Robot Localization
 
@@ -37,4 +37,4 @@ After executing both commands above, open a third terminal and start Rviz with e
 roslaunch wamv_gazebo rviz_vrx.launch
 ```
 
-![unnamed.png](https://bitbucket.org/repo/BgXLzgM/images/2380721822-unnamed.png)
+![rviz_vrx.png](https://bitbucket.org/repo/BgXLzgM/images/3910159308-rviz_vrx.png)
