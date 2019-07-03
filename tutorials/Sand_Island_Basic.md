@@ -31,12 +31,12 @@ Please make sure you've set up your system using the instructions for [Host-Base
 
 ```
 
-* Use the provide launch file to run the example:
+* Use the provided launch file to run the example:
 
 ```
 #!bash
 
-    $ roslaunch vrx_gazebo sandisland.launch 
+    $ roslaunch vrx_gazebo sandisland.launch
 
 ```
 
@@ -54,6 +54,6 @@ The shoreline is a coarse approximation of the RobotX competition area, Sand Isl
 
 ![map_colage.png](https://bitbucket.org/repo/BgXLzgM/images/869375701-map_colage.png)
 
-There navigation course task is represented by the two pairs of red and green buoys.
+The navigation course task is represented by the two pairs of red and green buoys.
 
 ![3195009535-out.png](https://bitbucket.org/repo/BgXLzgM/images/3465846643-3195009535-out.png)
