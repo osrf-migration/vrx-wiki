@@ -97,11 +97,6 @@ engine:
 #Example Yaml Sensor Configuration File
 ```
 wamv_camera:
-    - name: front_camera
-      x: 0.75
-      y: 0.3
-      z: 2
-      P: ${radians(15)}
     - name: front_left_camera
       x: 0.75
       y: 0.1
