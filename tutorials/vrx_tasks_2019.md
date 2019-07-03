@@ -29,7 +29,7 @@ The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/
 Task status is published to `/vrx/task/info` (further details of the API are in the Technical Guide (link coming soon)).  We recommend that you monitor the task status during simulation. One way to do this, for example, is to run:
 
 ```
-rostopic echo /vrx/task/info 
+rostopic echo /vrx/task/info
 ```
 ## Individual Tasks ##
 The following quick start instructions walk you through the initial process
@@ -41,7 +41,7 @@ of launching your environment and subscribing to any available task-specific mes
 
 1. Start the example: `roslaunch vrx_gazebo station_keeping.launch`
 1. Subscribe to the task-specific topics provided by the stationkeeping scoring plugin:
-    * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message): 
+    * The station-keeping goal (given as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message):
         * `rostopic echo /vrx/station_keeping/goal`
     * The current position error values:
         * `rostopic echo /vrx/station_keeping/pose_error`
@@ -53,10 +53,10 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: Navigate through each of the published waypoints, such that vehicle achieves, as closely as possible, the positions and orientations specified.
 
 1. Start the example: `roslaunch vrx_gazebo wayfinding.launch`
-1. Subscribe to the task-specific topics provided by the wayfindind scoring plugin:
-    * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html) message): 
+1. Subscribe to the task-specific topics provided by the wayfinding scoring plugin:
+    * The list of waypoints (given as a [geographic_msgs/GeoPath](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPath.html) message):
         * `rostopic echo /vrx/wayfinding/waypoints`
-    * The current minimum errors achieved for each waypoint so far: 
+    * The current minimum errors achieved for each waypoint so far:
         * `rostopic echo /vrx/wayfinding/min_errors`
     * The current mean of the minimum errors: 
         * `rostopic echo /vrx/wayfinding/mean_error`
@@ -67,13 +67,13 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: In this task, the vehicle remains in a fixed location and markers will appear in the field of view (see this [video](https://vimeo.com/321818142) for a demonstration of the expected behavior). The objective is to use perceptive sensors to identify the markers and report their locations.
 
 1. Start the example: `roslaunch vrx_gazebo perception_task.launch`
-1. View the camera feeds from the front of the WAM-V: 
+1. View the camera feeds from the front of the WAM-V:
     `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
 1. Trials will begin. Identify the type and location of the markers that appear during each trial.
 1. Publish landmark identification and localization solutions as a [geographic_msgs/GeoPoseStamped](http://docs.ros.org/api/geographic_msgs/html/msg/GeoPoseStamped.html) message to the `/vrx/perception/landmark` topic:
     `rostopic pub -1 /vrx/perception/landmark geographic_msgs/GeoPoseStamped '{header: {stamp: now, frame_id: "red_mark"}, pose: {position: {latitude: 21.30996, longitude: -157.8901, altitude: 0.0}}}'`
 1. Submission criteria:
-    * Each trial will last for 5 seconds. 
+    * Each trial will last for 5 seconds.
     * Solutions must be submitted before the end of the trial.
     * Only the first submission for each trial will be considered.
 1. For further details, including a table of 3D objects that may appear during trials, see "4.2.3. Task 3: Landmark Localization and Characterization" in the Competition and Task Descriptions  (link coming), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh).
@@ -111,7 +111,7 @@ There are two variants of this challenge.
 #### 6. Scan-and-Dock: Correct Dock Specified via Scan-the-Code ####
 
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock.launch verbose:=true`
-1. View the camera feeds from the front of the WAM-V: 
+1. View the camera feeds from the front of the WAM-V:
     `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
 1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
     * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`

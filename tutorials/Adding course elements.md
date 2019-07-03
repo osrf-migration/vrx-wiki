@@ -1,5 +1,5 @@
 # Overview
-The vrx_gazebo package has a basic robotx course with water, sky, coastline, and some of the challenges in fixed positions. It is easy to create your own static course or even add new challenges into a running simulation.
+The vrx_gazebo package has a basic RobotX course with water, sky, coastline, and some of the challenges in fixed positions. It is easy to create your own static course or even add new challenges into a running simulation.
 
 ## Prerequisites
 This guide assumes you already have installed ROS and the vrx packages as covered in the [setup instructions](https://bitbucket.org/osrf/vrx/wiki/tutorials/SystemSetupInstall).
