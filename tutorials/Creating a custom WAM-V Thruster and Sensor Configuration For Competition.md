@@ -122,7 +122,8 @@ wamv_imu:
       y: -0.2
 wamv_p3d:
     - name: p3d_wamv
-wamv_3d_lidar:
+lidar:
     - name: lidar_wamv
+      type: 16_beam
       P: ${radians(8)}
 ```
