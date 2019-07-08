@@ -2,7 +2,7 @@
 
 [TOC]
 
-For each of the individual tasks in the 2019 VRX competition we provide examples of simulation worlds and Gazebo plugins to evaluate and score task performance.  Instructions for running these examples are given below. Please see the [Description of Tasks](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf) and [Technical Guide](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Technical%20Guide_v1.1.pdf) documents (again, links coming soon) for descriptions of each task, its application interface (API) and the scoring.
+For each of the individual tasks in the 2019 VRX competition we provide examples of simulation worlds and Gazebo plugins to evaluate and score task performance.  Instructions for running these examples are given below. Please see the [Description of Tasks](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf) and [Technical Guide](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Technical%20Guide_v1.1.pdf) documents for descriptions of each task, its application interface (API) and the scoring.
 
 ## Descriptions of Tasks ##
 
@@ -26,7 +26,7 @@ The [vrx_gazebo/Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/
 * current score
 * timing information
 
-Task status is published to `/vrx/task/info` (further details of the API are in the Technical Guide (link coming soon)).  We recommend that you monitor the task status during simulation. One way to do this, for example, is to run:
+Task status is published to `/vrx/task/info` (further details of the API are in the [Technical Guide](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Technical%20Guide_v1.1.pdf)).  We recommend that you monitor the task status during simulation. One way to do this, for example, is to run:
 
 ```
 rostopic echo /vrx/task/info
@@ -60,7 +60,7 @@ of launching your environment and subscribing to any available task-specific mes
         * `rostopic echo /vrx/wayfinding/min_errors`
     * The current mean of the minimum errors: 
         * `rostopic echo /vrx/wayfinding/mean_error`
-1. For implementation details, see "4.1.2. Task 2: Wayfinding" in the Competition and Task Descriptions  (link coming), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh).
+1. For implementation details, see "4.1.2. Task 2: Wayfinding" in the [Competition and Task Descriptions] (https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [wayfinding scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/wayfinding_scoring_plugin.hh).
 
 ### 3. Perception ###
 
@@ -76,7 +76,7 @@ of launching your environment and subscribing to any available task-specific mes
     * Each trial will last for 5 seconds.
     * Solutions must be submitted before the end of the trial.
     * Only the first submission for each trial will be considered.
-1. For further details, including a table of 3D objects that may appear during trials, see "4.2.3. Task 3: Landmark Localization and Characterization" in the Competition and Task Descriptions  (link coming), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh).
+1. For further details, including a table of 3D objects that may appear during trials, see "4.2.3. Task 3: Landmark Localization and Characterization" in the [Competition and Task Descriptions] (https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [perception scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/perception_scoring_plugin.hh).
 
 ### 4. Navigation Channel ###
 
@@ -87,7 +87,7 @@ of launching your environment and subscribing to any available task-specific mes
     * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
     * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. There are no ROS topics specific to this task. However, relevant Gazebo messages such as "New gate crossed!" will be printed to the terminal.
-1. For further details, see "4.3.1. Task 4: Traverse Navigation Channel" in the Competition and Task Descriptions  (link coming), or refer to the [navigation scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/navigation_scoring_plugin.hh).
+1. For further details, see "4.3.1. Task 4: Traverse Navigation Channel" in the [Competition and Task Descriptions] (https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [navigation scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/navigation_scoring_plugin.hh).
 
 ### 5 and 6: Dock and Scan-and-Dock ###
 
@@ -124,4 +124,4 @@ There are two variants of this challenge.
         * Allowable values are "red", "green", "blue" and "yellow"
 1. Dock in the bay displaying the symbol that corresponds to the correct color sequence.
 
-For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the Competition and Task Descriptions  (link coming), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
+For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the [Competition and Task Descriptions] (https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
