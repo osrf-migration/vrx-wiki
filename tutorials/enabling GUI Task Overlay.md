@@ -6,6 +6,8 @@ Note: Inorder to have full functionality, a scoring plugin and the wind plugin m
 
 Note: This plugin uses the /vrx/debug ros topics to function. In competition, THESE WILL NOT BE AVAILABLE.
 
+Note: This feature is only available for Gazebo 8 and up.
+
 #Compiling from source:
 If you compiled vrx from source:
 
