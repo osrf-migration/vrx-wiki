@@ -122,7 +122,7 @@ Next, let's see how compliance works. As of July 10, 2019 there are 3 main compl
 * All sensors must be contained within one of the sensor bounding boxes. All thrusters must be contained within one of the thruster bounding boxes. The details of the bounding boxes can be found [here](TODO add link once merged). The image below shows the position of the bounding boxes. 
 TODO: add image of bounding boxes
 
-* The number of each sensor and thruster in the configuration must be within the limit defined [here](TODO add link once merged). 
+* The number of each sensor and thruster in the configuration must be within the limit defined [here for sensors](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/numeric.yaml) and [here for thrusters](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/numeric.yaml). 
 
 * For thrusters, there can only be one thruster in each bounding box. This is to prevent teams from stacking thrusters together in one location, which is physically infeasible.
 
@@ -168,9 +168,10 @@ WAM-V urdf file sucessfully generated. File location: /home/tylerlum/my_wamv/my_
 
 The URDF file is still created, but these error messages show why your configuration is not compliant. Next, launch the example world with your WAM-V:
 
-    ```
-       $ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv_3.urdf
-    ```
+```
+$ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv_3.urdf
+```
+
 Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters. Please note the missing cameras and additional thruster.
 
 ![Five Cameras.png](https://bitbucket.org/repo/BgXLzgM/images/4030317114-Five%20Cameras.png)
