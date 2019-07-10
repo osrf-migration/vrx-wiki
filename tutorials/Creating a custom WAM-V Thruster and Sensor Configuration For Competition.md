@@ -206,6 +206,8 @@ Next, it calls a xacro command to generate the urdf at `wamv_target` using [this
 
 Supported thrusters and sensors can be seen in [allowed thrusters](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/numeric.yaml) and [allowed sensors](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/numeric.yaml) (currently as of July 10, 2019 we have only one thruster type).
 
+TODO: Add example of not defining parameters (use default), say that only name is REQUIRED, description about default parameters, where to find them, etc
+
 #Examples
 ### Example Compliant Yaml Thruster Configuration File 1 
 ```
