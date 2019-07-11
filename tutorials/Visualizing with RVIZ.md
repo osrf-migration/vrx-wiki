@@ -5,7 +5,7 @@
 If you have not done so already, first run the simulation with a front camera and the IMU:
 
 ```
-roslaunch vrx_gazebo vmrc.launch camera_enabled:=true gps_enabled:=true imu_enabled:=true
+roslaunch vrx_gazebo vrx.launch camera_enabled:=true gps_enabled:=true imu_enabled:=true
 ```
 Leave this simulation running for the remainder of the tutorial. In the steps below, you will use the robot_state_publisher to make the simulated data available to rviz.
 
