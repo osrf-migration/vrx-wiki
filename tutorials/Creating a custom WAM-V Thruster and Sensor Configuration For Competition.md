@@ -57,8 +57,10 @@ In addition, this script also makes sure that the requested thruster and sensor 
 8. See the following confirmation message in the terminal with no errors present 
 
     ```
-       WAM-V urdf file sucessfully generated. File location: <wamv_target>
+       WAM-V urdf file successfully generated. File location: <wamv_target>
     ```
+
+    When you see this message, you can press CTRL+C to continue.
 
 9. Launch the example world with your WAM-V:
 
@@ -106,8 +108,10 @@ Next, let's customize the WAM-V further.
 4. See the following confirmation message in the terminal with no errors present 
 
     ```
-       WAM-V urdf file sucessfully generated. File location: <wamv_target>
+       WAM-V urdf file successfully generated. File location: <wamv_target>
     ```
+
+    When you see this message, you can press CTRL+C to continue.
 
 5. Launch the example world with your WAM-V:
 
@@ -145,28 +149,30 @@ Next, let's see how compliance works.
 
 ```
 /home/tylerlum/vrx_ws/src/vrx/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/bounding_boxes.yaml
-[ERROR] [1562799557.237759]: engine second_right is out of bounds
-[ERROR] [1562799557.239173]: engine second_right is at xyz=(-2.373776, -1.027135, 0.318237), it must fit in at least one of the following boxes:
-[ERROR] [1562799557.240699]:   <Box name:thruster_compliance_port_aft x:[-1.75, -2.75] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:0>
-[ERROR] [1562799557.242496]:   <Box name:thruster_compliance_star_for x:[1.5, 0.5] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:1>
-[ERROR] [1562799557.244069]:   <Box name:thruster_compliance_port_for x:[1.5, 0.5] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:1>
-[ERROR] [1562799557.245253]:   <Box name:thruster_compliance_star_aft x:[-1.75, -2.75] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:0>
-[ERROR] [1562799557.246448]:   <Box name:thruster_compliance_middle x:[1.5, -1.0] y:[0.5,-0.5] z:[0.6,-0.6] remaining_space:1>
+[ERROR] [1562803818.309181]: engine second_right is out of bounds
+[ERROR] [1562803818.310337]: engine second_right is at xyz=(-2.373776, -1.027135, 0.318237), it must fit in at least one of the following boxes with remaining space:
+[ERROR] [1562803818.311344]:   <Box name:thruster_compliance_port_aft x:[-1.75, -2.75] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:0>
+[ERROR] [1562803818.312320]:   <Box name:thruster_compliance_star_for x:[1.5, 0.5] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:1>
+[ERROR] [1562803818.313589]:   <Box name:thruster_compliance_port_for x:[1.5, 0.5] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:1>
+[ERROR] [1562803818.315214]:   <Box name:thruster_compliance_star_aft x:[-1.75, -2.75] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:0>
+[ERROR] [1562803818.316969]:   <Box name:thruster_compliance_middle x:[1.5, -1.0] y:[0.5,-0.5] z:[0.6,-0.6] remaining_space:1>
 /home/tylerlum/vrx_ws/src/vrx/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/bounding_boxes.yaml
-[ERROR] [1562799557.271779]: Too many wamv_camera requested
-[ERROR] [1562799557.272903]:   maximum of 3 wamv_camera allowed
+[ERROR] [1562803818.340480]: Too many wamv_camera requested
+[ERROR] [1562803818.342388]:   maximum of 3 wamv_camera allowed
 xacro: in-order processing became default in ROS Melodic. You can drop the option.
 
-WAM-V urdf file sucessfully generated. File location: /home/tylerlum/my_wamv/my_wamv_3.urdf
+WAM-V urdf file successfully generated. File location: /home/tylerlum/my_wamv/my_wamv_3.urdf
 ```
 
-The URDF file is still created, but these error messages show why your configuration is not compliant. Next, launch the example world with your WAM-V:
+The URDF file is still created, but these error messages show why your configuration is not compliant. There are too many cameras and two thrusters that are too close together (more details about this in the Compliance section). When you see this message, you can press CTRL+C to continue.
+
+Next, launch the example world with your WAM-V:
 
 ```
 $ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv_3.urdf
 ```
 
-Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters. Please note the missing cameras and additional thruster.
+Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and thrusters. Please note the multiple cameras.
 
 ![Five Cameras.png](https://bitbucket.org/repo/BgXLzgM/images/4030317114-Five%20Cameras.png)
 
@@ -183,10 +189,14 @@ TODO: add image of bounding boxes
 
 Please note that if you call `generate_wamv.launch` on non-compliant configuration YAML files, red error messages will be printed but the URDF file will still be created and be able to be used as usual. However, it is not a valid configuration for the VRX competition. 
 
+Please note that the compliance tests from `compliance.py` is a first test. It is not extensive and may be updated. If your configuration does not pass the test, it is probably not a valid configuration for the VRX competition. If your configuration does pass the test, it is probably a valid configuration for the VRX competition, but please keep your designs to physically feasible solutions. See the VRX Technical Guide for specifics on the constraints for the VRX competition, available at the [Documentation Wiki](https://bitbucket.org/osrf/vrx/wiki/documentation).
+
+If you have any issues or concerns with how compliance works, please create an issue [here](https://bitbucket.org/osrf/vrx/issues?status=new&status=open) and we will help to resolve the issue.
+
 # Details of Implementation
 `generate_wamv.launch` is a simple script that takes in thruster and sensor configurations YAML files as inputs and outputs a urdf file to be used in simulation. It also checks to see if the thrusters and sensors are in compliance as defined by `compliance.py`.
 
-It operates by generating macro calls specified by the user-generated YAML configuration files. It currently checks for compliance by ensuring that all sensors and thrusters are in a valid bounding box region and that there are a valid number of each item. See the VRX Technical Guide for specifics on the constraints for the VRX competition, available at the [Documentation Wiki](https://bitbucket.org/osrf/vrx/wiki/documentation).
+It operates by generating macro calls specified by the user-generated YAML configuration files. It currently checks for compliance by ensuring that all sensors and thrusters are in a valid bounding box region and that there are a valid number of each item. 
 	
 If the thruster/sensor configuration passes, the script creates two xacro files. One is a thruster xacro file in the same directory as the thruster yaml file with the same file name, but with a .xacro extension. The second is a sensor xacro file in the same directory as the sensor yaml file with the same file name, but with a .xacro extension. 
 
