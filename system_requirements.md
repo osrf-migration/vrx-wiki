@@ -14,10 +14,12 @@ The system will run without the GPU, but the Gazebo simulation will run much fas
 
 ### Software ###
 
+The [system setup tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials) provide instructions for installing this environment directly on your host computer or by using a Docker container.
+
 The VRX software support is provided for the following software environment:
 
 - Ubuntu Desktop 18.04 Bionic (64-bit)
-- Gazebo 9.0.0 (<9.0.0 is not sufficient)
+- Gazebo 9.9.0+ (<9.9.0 is not sufficient)
 - ROS Melodic
 
 The [system setup tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials) provides instructions for installing this environment directly on your host computer or by using a Docker container.
