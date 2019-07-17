@@ -22,8 +22,6 @@ The VRX software support is provided for the following software environment:
 - Gazebo 9.9.0+ (<9.9.0 is not sufficient)
 - ROS Melodic
 
-The [system setup tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials) provides instructions for installing this environment directly on your host computer or by using a Docker container.
-
 ### Peripherals ###
 
 We also recommend having a gamepad for testing when driving the WAM-V in the simulated world. In the examples we use a Logitech F310 ([walmart](https://www.walmart.com/ip/Logitech-F310-GamePad/16419686)).
