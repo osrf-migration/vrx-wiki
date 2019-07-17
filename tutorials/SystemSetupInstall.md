@@ -84,7 +84,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ source /opt/ros/melodic/setup.bash
 ```
 
-* **Only needed if you built from source:**
+* **Only needed if you built from source*:**
 
 
 ```
@@ -98,3 +98,5 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 #!bash
     $ roslaunch vrx_gazebo sandisland.launch
 ```
+
+*****Remember to run the first two commands in this section every time you open a new terminal, if you built from source.
