@@ -76,7 +76,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ## Build instructions ##
 
-* Source the ROS `setup.bash` file*****:
+* Source the ROS `setup.bash` file:
 
 ```
 #!bash
@@ -94,7 +94,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ## To test:
 
-* Source the VRX `setup.bash` file:
+* Source the VRX `setup.bash` file*****:
 
 ```
 #!bash
