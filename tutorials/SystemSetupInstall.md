@@ -38,6 +38,23 @@ These instructions contain information for preparing your system environment.
     $ sudo apt install ros-melodic-vrx-gazebo
 ```
 
+## Test run
+
+* Source the ROS `setup.bash` file*:
+
+```
+#!bash
+    $ source /opt/ros/melodic/setup.bash
+```
+
+* Launch the vrx simulation with a simple world:
+
+```
+#!bash
+    $ roslaunch vrx_gazebo sandisland.launch
+```
+
+
 # Option 2: Build VRX from source
 
 * Now build a workspace for VRX. If you are familiar with ROS catkin
@@ -75,17 +92,9 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ catkin_make
 ```
 
-# Test Run
+## Test Run
 
-* Source the ROS `setup.bash` file:
-
-```
-#!bash
-    $ source /opt/ros/melodic/setup.bash
-```
-
-* **Only needed if you built from source*:**
-
+* Source the VRX `setup.bash` file:
 
 ```
 #!bash
@@ -99,4 +108,4 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ roslaunch vrx_gazebo sandisland.launch
 ```
 
-*****Remember to run the first two commands in this section every time you open a new terminal, if you built from source.
+*****Remember to run this command every time you open a new terminal.
