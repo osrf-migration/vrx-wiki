@@ -47,7 +47,7 @@ These instructions contain information for preparing your system environment.
     $ source /opt/ros/melodic/setup.bash
 ```
 
-* Launch the vrx simulation with a simple world:
+* Launch the VRX simulation with a simple world:
 
 ```
 #!bash
@@ -101,7 +101,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ source  ~/vrx_ws/devel/setup.bash
 ```
 
-* Launch the vrx simulation with a simple world:
+* Launch the VRX simulation with a simple world:
 
 ```
 #!bash
