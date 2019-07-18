@@ -38,7 +38,7 @@ These instructions contain information for preparing your system environment.
     $ sudo apt install ros-melodic-vrx-gazebo
 ```
 
-## Test run
+## To test:
 
 * Source the ROS `setup.bash` file*:
 
@@ -92,7 +92,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
     $ catkin_make
 ```
 
-## Test Run
+## To test:
 
 * Source the VRX `setup.bash` file:
 
