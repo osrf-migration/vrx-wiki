@@ -31,6 +31,9 @@ Please make sure you've set up your system using the instructions for [Host-Base
 
 ```
 
+Follow these instructions every time you start a new tutorial/open a new terminal.
+
+
 * Use the provided launch file to run the example:
 
 ```
