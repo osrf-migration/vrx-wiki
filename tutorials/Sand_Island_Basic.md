@@ -49,7 +49,7 @@ You should see a new Gazebo window similar to this one:
 
 You may notice that the USV starts drifting along the x-axis.  That is due to the wind.  More on that later.
 
-If you zoom in you will see the WAM-V model like this:
+If you zoom in you will see the WAM-V model like this (use the scroll wheel for controlling the zoom):
 
 ![Screenshot from 2018-02-26 08-55-16.png](https://bitbucket.org/repo/BgXLzgM/images/4154749175-Screenshot%20from%202018-02-26%2008-55-16.png)
 
@@ -60,3 +60,5 @@ The shoreline is a coarse approximation of the RobotX competition area, Sand Isl
 The navigation course task is represented by the two pairs of red and green buoys.
 
 ![3195009535-out.png](https://bitbucket.org/repo/BgXLzgM/images/3465846643-3195009535-out.png)
+
+For an introduction to the Gazebo Graphical User Interface follow [this tutorial](http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b2).
