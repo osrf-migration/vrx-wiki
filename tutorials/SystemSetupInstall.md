@@ -40,7 +40,7 @@ These instructions contain information for preparing your system environment.
 
 ## To test:
 
-* Source the ROS `setup.bash` file*:
+* Source the ROS `setup.bash` file*****:
 
 ```
 #!bash
@@ -76,7 +76,7 @@ workspaces, this is a similar concept. The steps to setup the workspace are:
 
 ## Build instructions ##
 
-* Source the ROS `setup.bash` file:
+* Source the ROS `setup.bash` file*****:
 
 ```
 #!bash
