@@ -21,7 +21,7 @@ Please make sure you've set up your system using the instructions for [Host-Base
 
 ```
 
-* Source the `setup.bash` of our VRX workspace:
+* Only needed if you built from source:
 
 ```
 #!bash
