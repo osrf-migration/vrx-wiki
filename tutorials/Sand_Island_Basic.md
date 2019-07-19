@@ -45,13 +45,13 @@ Follow the previous instructions every time you start a new tutorial/open a new 
 
 You should see a new Gazebo window similar to this one:
 
-![Screenshot from 2019-02-28 09-52-58_mr.png](https://bitbucket.org/repo/BgXLzgM/images/250474638-Screenshot%20from%202019-02-28%2009-52-58_mr.png)
+![Screenshot from 2019-07-19 10-47-27.png](https://bitbucket.org/repo/BgXLzgM/images/653091278-Screenshot%20from%202019-07-19%2010-47-27.png)
 
 You may notice that the USV starts drifting along the x-axis.  That is due to the wind.  More on that later.
 
-If you zoom in you will see the WAM-V model like this (use the scroll wheel for controlling the zoom):
+If you zoom in you will see the WAM-V model like this (use the scroll wheel for controlling the zoom, and click and hold it to adjust the angle):
 
-![Screenshot from 2018-02-26 08-55-16.png](https://bitbucket.org/repo/BgXLzgM/images/4154749175-Screenshot%20from%202018-02-26%2008-55-16.png)
+![Screenshot from 2019-07-19 10-58-18.png](https://bitbucket.org/repo/BgXLzgM/images/942399769-Screenshot%20from%202019-07-19%2010-58-18.png)
 
 The shoreline is a coarse approximation of the RobotX competition area, Sand Island, Honolulu, HI.
 
