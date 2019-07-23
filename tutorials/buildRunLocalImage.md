@@ -24,7 +24,7 @@ To build the Nvidia-enabled version, run:
 
 If all has gone well, the final command will drop you into a bash prompt running as the user "developer" inside the container.
 
-## Test your vrx installation: ##
+## Test your VRX installation: ##
 
 ```
 #!bash
