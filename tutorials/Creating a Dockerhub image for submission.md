@@ -158,6 +158,52 @@ Then run `chmod +x ros_entrypoint.bash` to make it executable.
 
 * Optional: If you want to keep your repository private, you can click on your repository, then click Settings, then Make Private. To ensure that your Docker image can be evaluated, you can click Collaborators and add the desired Docker ID. Exact details about submission and Docker ID are coming soon. 
 
+# Working with your container
+
+To see what is inside of your container, you can run:
+
+```
+docker run --name my_container <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG>
+```
+
+Then in a different terminal, you can run:
+
+```
+docker exec -it my_container bash
+```
+
+This allows you to enter the running container and investigate:
+
+```
+source /opt/ros/melodic/setup.bash
+rostopic list
+
+/left_thrust_cmd
+/right_thrust_cmd
+/rosout
+/rosout_agg
+
+rostopic echo /left_thrust_cmd
+
+data: 2.0
+---
+data: 2.0
+---
+
+```
+
+You can exit with 
+
+```
+exit
+``` 
+
+To kill the container from outside the container, you can run:
+
+```
+docker kill my_container
+```
+
 # Description
 
 More details coming soon.
