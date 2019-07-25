@@ -125,3 +125,24 @@ References:
 
  * https://stackoverflow.com/questions/24151129/docker-network-calls-fail-during-image-build-on-corporate-network
  * https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/
+
+# Adding a package  - with network trouble
+
+We want to add a package - say iputils-ping so that we can use the ping command
+
+# Network trouble
+
+As described above, we can't connect to the network because of presumed firewall issues.
+
+ 1. Start container - within container...
+ 2. Manually add the DNS addresses: `vim /etc/resolv.conf` and add nameserver entries as above.
+ 3. `sudo apt install iputils-ping nano `
+
+# ROS key issues
+
+When we try `sudo apt update` we get errors such as 
+```
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: http://packages.ros.org/ros/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F42ED6FBAB17C654
+```
+
+Which is a non-docker specific issue described here: https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/
