@@ -34,7 +34,7 @@ $ rosrun robot_state_publisher robot_state_publisher
 ## Running RVIZ
 To open RVIZ with a configuration made for the WAM-V, open a third terminal and run:
 ```
-roslaunch wamv_gazebo rviz_example.launch
+roslaunch wamv_gazebo rviz_vrx.launch
 ```
 
 RVIZ should open and display the WAM-V and a camera! Try [driving around](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving) to see the robot move both in Gazebo and RVIZ.
