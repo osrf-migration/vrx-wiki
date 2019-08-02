@@ -11,7 +11,7 @@ We recommend following the tutorials in numerical order. At the end of these tut
 1. Example Environments: These tutorials illustrate bringing up example environments within Gazebo as a starting point for development.
 
     * [Sand Island Basic](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic): A simple base world, similar to the RobotX venue, with a WAM-V model.
-    * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using RVIZ.
+    * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using RViz.
     * [VRX Tasks 2019](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_tasks_2019): Individual tasks for 2019 VRX competition
 
 1. Simulation Interfaces: Connecting to VRX API
@@ -25,7 +25,7 @@ We recommend following the tutorials in numerical order. At the end of these tut
         * [Existing Propulsion Configurations](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration): Examples of existing thruster configurations.
         * [Manually Adding Sensors to the WAM-V Base](https://bitbucket.org/osrf/vrx/wiki/tutorials/AddingSensors): Example of manually customizing the base USV by adding sensors (GPS, camera, etc.).
     * [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation): How to control the thrust angle.
-    * [Visualizing with RVIZ](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RVIZ): See the WAM-V and sensors in rviz.
+    * [Visualizing with RViz](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RViz): See the WAM-V and sensors in RViz.
     * [Changing Simulation Parameters](https://bitbucket.org/osrf/vrx/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
     * [Creating a Custom Dock](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
 
