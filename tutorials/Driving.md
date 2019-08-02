@@ -4,13 +4,15 @@ In this tutorial we will demonstrate how to interface with the Gazebo thrust mod
 
 # Examples #
 
-In the examples we'll illustrate publishing messages the thrusters simulated by the plugin.  We first start the simulation, as we did in the [Sand Island Basic Tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic), with the command
+In the following examples, we'll illustrate how to publish messages to the thrusters simulated by the plugin.  We first start the simulation, as we did in the [Sand Island Basic Tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic), with the command:
 
 ```
     $ roslaunch vrx_gazebo sandisland.launch
 ```
 
-## rostopic pub ##
+Open a new terminal and source the appropriate `setup.bash` as we describe in the [installation tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/SystemSetupInstall). Now, choose one of the following teleoperation options to control the WAM-V. 
+
+## Teleop option 1: rostopic pub ##
 
 We can use the `rostopic pub` utility to publish individual messages
 
@@ -21,7 +23,7 @@ rostopic pub --once /right_thrust_cmd std_msgs/Float32 "data: 1.0"
 This will publish one message and cause the WAM-V to rotate about the z-axis.  The command will timeout after a pre-determined amount of time (the default is 1.0 s, but can be changed in the [wamv_gazebo_thruster_config.xacro](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro) SDF file).
 
 
-## Teleop: Keyboard ##
+## Teleop option 2: Keyboard ##
 
 To use the keyboard, we use the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, along with a custom [twist2thrust.py]( https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/nodes/twist2thrust.py) node to convert the Twist messages to two Float32 messages for the left and right thrusters. Forward velocity (twist.linear.x) is mapped to axial thrust (right+left) and rotational velocity (twist.linear.z) is mapped to differential thrust (usvdrive.right-usvdrive.left).
 
@@ -33,7 +35,7 @@ roslaunch vrx_gazebo usv_keydrive.launch
 
 As of June 30 2019, we have added thruster articulation control functionality to `usv_keydrive.launch`. If thruster articulation is on (look at the [Thruster Articulation](https://bitbucket.org/osrf/vrx/wiki/tutorials/thruster_articulation) page for information about setting this up), you are also able to control the thruster angles relative to the WAM-V.
 
-## Teleop: Gamepad ##
+## Teleop option 3: Gamepad ##
 
 To use a gamepad, we use the [joy](http://wiki.ros.org/joy) and [joy_teleop](http://wiki.ros.org/joy_teleop) packages, along with a custom [twist2thrust.py]( https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/nodes/twist2thrust.py) node to convert Twist messages from the standard teleop to two Float32 messages for the thruster plugin.  The example is...
 
