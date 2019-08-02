@@ -31,6 +31,14 @@ Task status is published to `/vrx/task/info` (further details of the API are in 
 ```
 rostopic echo /vrx/task/info
 ```
+
+## Driving instructions
+
+In preparation for developing an automated solution, we recommend using a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
+    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
+    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
+
+
 ## Individual Tasks ##
 The following quick start instructions walk you through the initial process
 of launching your environment and subscribing to any available task-specific messages.
@@ -83,9 +91,6 @@ of launching your environment and subscribing to any available task-specific mes
 **Summary**: Traverse a navigation channel specified by red and green markers, avoiding obstacles.
 
 1. Start the example: `roslaunch vrx_gazebo navigation_task.launch verbose:=true`
-1. In preparation for developing an automated solution, we recommend using a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
-    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
-    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. There are no ROS topics specific to this task. However, relevant Gazebo messages such as "New gate crossed!" will be printed to the terminal.
 1. For further details, see "4.3.1. Task 4: Traverse Navigation Channel" in the [Competition and Task Descriptions](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [navigation scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/navigation_scoring_plugin.hh).
 
@@ -103,9 +108,6 @@ There are two variants of this challenge.
 1. Start the example: `roslaunch vrx_gazebo dock.launch verbose:=true`
 1. Subscribe to the ROS topic that specifies the color and shape of the placard on the target docking bay:
     * `rostopic echo /vrx/scan_dock/placard_symbol`
-1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
-    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
-    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. Dock in the bay displaying the symbol published by to the `placard_symbol` topic.
 
 #### 6. Scan-and-Dock: Correct Dock Specified via Scan-the-Code ####
@@ -113,9 +115,6 @@ There are two variants of this challenge.
 1. Start the example: `roslaunch vrx_gazebo scan_and_dock.launch verbose:=true`
 1. View the camera feeds from the front of the WAM-V:
     `rosrun rqt_gui rqt_gui --perspective-file ~/vrx_ws/src/vrx/vrx_gazebo/config/front_stereo.perspective`
-1. In preparation for developing an automated solution, we recommend completing the task manually using a gamepad or keyboard (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
-    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
-    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 1. Approach the scan-the-code buoy and identify the sequence of three colors displayed.
 1. Transmit the correct sequence to the color sequence server:
     * `rosservice call /vrx/scan_dock/color_sequence "blue" "red" "green"`
