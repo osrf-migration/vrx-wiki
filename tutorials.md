@@ -1,6 +1,6 @@
 # Tutorials for the Virtual RobotX Challenge (VRX)
 
-We recommend following the tutorials in numerical order. At the end of these tutorials you will be familiar with Gazebo, ROS, and how to use VRX.
+We recommend following the tutorials in numerical order as each one builds off the last. At the end of these tutorials you will be familiar with Gazebo, ROS, and how to use VRX.
 
 1. System Setup: Guides for configuring your personal PC and installing software for VRX.  Make sure to review the [System Requirements](https://bitbucket.org/osrf/vrx/wiki/system_requirements) before you begin.
 
