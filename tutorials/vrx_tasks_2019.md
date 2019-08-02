@@ -35,8 +35,9 @@ rostopic echo /vrx/task/info
 ## Driving instructions
 
 In preparation for developing an automated solution, we recommend using a gamepad or keyboard to drive the USV through the course (see [Driving tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving)):
-    * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
-    * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
+
+  * Gamepad: `roslaunch vrx_gazebo usv_joydrive.launch`
+  * Keyboard: `roslaunch vrx_gazebo usv_keydrive.launch`
 
 
 ## Individual Tasks ##
