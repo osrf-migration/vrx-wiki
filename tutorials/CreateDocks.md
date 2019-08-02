@@ -25,8 +25,13 @@ The docks are created using [erb templates](https://en.wikipedia.org/wiki/ERuby)
    $ mkdir -p ~/vrx_ws/src/vrx_gazebo/models/my_dock_base && cd ~/vrx_ws/src/vrx_gazebo/models/my_dock_base
 ```
 
-* Create the `model.config` file inside the `my_dock_base` directory and edit it with your favorite editor:
+* Create and edit the `model.config` file inside the `my_dock_base` directory:
 
+```
+gedit model.config
+```
+
+Paste and save the content:
 
 ```
 #!bash
@@ -104,6 +109,12 @@ The `layout` variable controls the layout of the dock. Feel free to modify this 
     $ catkin_make
 ```
 
-* Launch your simulation and insert your new dock by clicking on `Insert->my_dock_base`:
+* Launch your simulation:
+
+```
+     roslaunch vrx_gazebo sandisland.launch
+```
+
+* Insert your new dock by clicking on `Insert->my_dock_base`:
 
 ![my_dock.png](https://bitbucket.org/repo/BgXLzgM/images/109597433-my_dock.png)
