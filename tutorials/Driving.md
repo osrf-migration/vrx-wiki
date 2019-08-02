@@ -1,6 +1,6 @@
 # Overview #
 
-In this tutorial we will demonstrate how to interface with the Gazebo thrust model plugin to move the WAM-V.  For this example we will be using the [propulsion configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) of two, aft, fixed thrusters.  With this configration, to move the WAM-V we need to have a ROS node that publishes messages on the topics `left_thrust_cmd` and  `right_thrust_cmd` to exercise the left and right thrusters respectively.  The examples below provide possible ways for generating these messages for manual (teleoperated) control.
+In this tutorial we will demonstrate how to interface with the Gazebo thrust model plugin to move the WAM-V.  For this example we will be using the [propulsion configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) of two, aft, fixed thrusters.  With this configuration, to move the WAM-V we need to have a ROS node that publishes messages on the topics `left_thrust_cmd` and  `right_thrust_cmd` to exercise the left and right thrusters respectively.  The examples below provide possible ways for generating these messages for manual (teleoperated) control.
 
 # Examples #
 
