@@ -10,7 +10,7 @@ To learn more about what Docker images and containers are, Docker has excellent 
 
 # Quick Start Instructions:
 
-* Docker is required to run the automated evaluation. Please follow the [VRX Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installDocker) and the [Nvidia Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installNvidiaDocker) if you are
+* Docker is required to create a Dockerhub image. Please follow the [VRX Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installDocker) and the [Nvidia Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installNvidiaDocker) if you are
 using an Nvidia GPU.
 
 * Create a Dockerhub account [here](https://hub.docker.com/signup) if you do not already have one. Take note of your username.
