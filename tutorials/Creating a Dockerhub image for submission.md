@@ -10,9 +10,8 @@ To learn more about what Docker images and containers are, Docker has excellent 
 
 # Quick Start Instructions:
 
-* Docker is required to create a Docker image and run the automated evaluation. Please follow the [Docker CE for Ubuntu tutorial's](https://docs.docker.com/install/linux/docker-ce/ubuntu) __Prerequisites__ and __Install Docker CE__ sections.
-
-* Continue to the [Docker post-install instructions](https://docs.docker.com/engine/installation/linux/linux-postinstall/) and complete the __Manage Docker as a non-root user__ section to avoid having to run the commands on this page using `sudo`.
+* Docker is required to run the automated evaluation. Please follow the [VRX Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installDocker) and the [Nvidia Docker install tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/installNvidiaDocker) if you are
+using an Nvidia GPU.
 
 * Create a Dockerhub account [here](https://hub.docker.com/signup) if you do not already have one. Take note of your username.
 
