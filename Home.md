@@ -8,13 +8,13 @@ VRX documents, system requirements and theory of operation for Gazebo plugins.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
-## [Qualifier (Hello World!)](https://bitbucket.org/osrf/vrx/wiki/events/19/qualifier)
+## Qualifier (Hello World!)
 Details of the released qualification tasks for VRX.
 
 ## [Dress rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal)
 Details of the rehearsal tasks for VRX.
 
-## [Finals](https://bitbucket.org/osrf/vrx/wiki/events/19/finals)
+## Finals
 Details of how the VRX Finals will run.
 
 ## Additional resources
