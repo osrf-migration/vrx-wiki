@@ -24,7 +24,7 @@ Submissions will be made though the vrx-events repository. All registered teams 
 
 ### Fork the vrx-events repository
 
-1 . Click on [this link](https://bitbucket.org/osrf/vrx-events/fork)
+1 . Click on [this link](https://bitbucket.org/osrf/vrx-events/fork).
 
 2 . You can choose a custom name for the repository, but here we will leave the default value `vrx-events`.
 
