@@ -28,7 +28,7 @@ Submissions will be made though the vrx-events repository. All registered teams 
 1. You can choose a custom name for the repository, but here we will leave the default value `vrx-events`.
 1. After you finish the fork process, you should have a copy of `vrx-events` on https://bitbucket.org/<yourname>/vrx-events.
 
-*Note:* Throughout these tutorials, substitute <yourname> with your Bitbucket account username.
+**Note:** Throughout these tutorials, substitute <yourname> with your Bitbucket account username.
 
 ### Clone the vrx-events repository
 
@@ -61,7 +61,7 @@ cd ~/vrx-events
 cd <year>/<event>
 ```
 
-*Note:* Substitute <year> and <event> with the year and event that you plan to participate.
+**Note:** Substitute <year> and <event> with the year and event that you plan to participate.
 
 1. Create a directory with your team name under the current event:
 
@@ -69,7 +69,7 @@ cd <year>/<event>
 mkdir <teamname>
 ```
 
-*Note:* Substitute <teamname> with your team name.
+**Note:** Substitute <teamname> with your team name.
 
 1. Copy all files required for the evaluation.
 
