@@ -6,8 +6,16 @@ This is the entry point for teams participating in the VRX.  For programmatic in
 VRX documents, system requirements and theory of operation for Gazebo plugins. 
 
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
-A set of tutorials to help you get started with VRX
+A set of tutorials to help you get started with VRX.
 
+## [Qualifier (Hello World!](https://bitbucket.org/osrf/vrx/wiki/events/19/qualifier)
+Details of the released qualification tasks for VRX.
+
+## [Dress rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal)
+Details of the rehearsal tasks for VRX.
+
+## [Finals](https://bitbucket.org/osrf/vrx/wiki/events/19/finals)
+Details of how the VRX Finals will run.
 
 ## Additional resources
 
