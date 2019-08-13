@@ -41,13 +41,13 @@ sudo apt update
 sudo apt install mercurial
 ```
 
-1. Now we use mercurial to "clone" our fork. What the clone command does is copy all the code across all branches from the internet to your computer:
+2. Now we use mercurial to "clone" our fork. What the clone command does is copy all the code across all branches from the internet to your computer:
 
 ```
 hg clone https://bitbucket.org/<yourname>/vrx-docker
 ```
 
-1. Now you should have a local copy of `vrx-events` under `~/vrx-events`. Let's move to that folder:
+3. Now you should have a local copy of `vrx-events` under `~/vrx-events`. Let's move to that folder:
 
 ```
 cd ~/vrx-events
@@ -63,7 +63,7 @@ cd <year>/<event>
 
 **Note:** Substitute <year> and <event> with the year and event that you plan to participate.
 
-1. Create a directory with your team name under the current event:
+2. Create a directory with your team name under the current event:
 
 ```
 mkdir <teamname>
@@ -71,7 +71,7 @@ mkdir <teamname>
 
 **Note:** Substitute <teamname> with your team name.
 
-1. Copy all files required for the evaluation.
+3. Copy all files required for the evaluation.
 
 
 ### Submit your pull request
