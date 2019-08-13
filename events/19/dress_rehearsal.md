@@ -34,20 +34,20 @@ Submissions will be made though the vrx-events repository. All registered teams 
 
 Great, now you have a copy of the VRX events repository, but it's not very convenient to interact with it through the browser. You want to have it in your computer. You will use the mercurial command line tool to pull that code from the internet to your computer as follows:
 
-* Make sure you have mercurial (hg) installed:
+Make sure you have mercurial (hg) installed:
 
 ```
 sudo apt update
 sudo apt install mercurial
 ```
 
-* Now we use mercurial to "clone" our fork. What the clone command does is copy all the code across all branches from the internet to your computer:
+Now we use mercurial to "clone" our fork. What the clone command does is copy all the code across all branches from the internet to your computer:
 
 ```
 hg clone https://bitbucket.org/<yourname>/vrx-docker
 ```
 
-* Now you should have a local copy of `vrx-events` under `~/vrx-events`. Let's move to that folder:
+Now you should have a local copy of `vrx-events` under `~/vrx-events`. Let's move to that folder:
 
 ```
 cd ~/vrx-events
@@ -55,7 +55,7 @@ cd ~/vrx-events
 
 ### Add your submission files
 
-* Navigate to the event where you plan to participate (e.g.: `2019/rehearsal`)
+Navigate to the event where you plan to participate (e.g.: `2019/rehearsal`)
 
 ```
 cd <year>/<event>
@@ -63,7 +63,7 @@ cd <year>/<event>
 
 **Note:** Substitute <year> and <event> with the year and event that you plan to participate.
 
-* Create a directory with your team name under the current event:
+Create a directory with your team name under the current event:
 
 ```
 mkdir <teamname>
@@ -71,12 +71,12 @@ mkdir <teamname>
 
 **Note:** Substitute <teamname> with your team name.
 
-* Copy all files required for the evaluation.
+Copy all files required for the evaluation.
 
 
 ### Submit your pull request
 
-* Open a pull request for vrx-events on this link:
+Open a pull request for vrx-events on this link:
 
 https://bitbucket.org/osrf/vrx-events/pull-requests/new
 
