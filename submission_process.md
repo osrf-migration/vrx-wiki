@@ -59,30 +59,30 @@ cd <teamname>
 
 **Note:** Substitute <teamname> with your team name.
 
-3 . Copy all files required for the evaluation.
+3 . Copy all files required for the evaluation. Follow the instructions detailed in the event page for the complete list of files to be submitted.
 
 
 ### Submit your pull request
 
-1. In preparation for your pull request, create a branch, e.g.:
+1 . In preparation for your pull request, create a branch, e.g.:
 
 ```
 hg branch 2019_rehearsal_team_osrf
 ```
 
-2. Add your files on the next commit, e.g.:
+2 . Add your files on the next commit, e.g.:
 
 ```
 hg add *
 ```
 
-3. Verify the changed files:
+3 . Verify the changed files:
 
 ```
 hg status
 ```
 
-4. Commit and push your changes to your fork:
+4 . Commit and push your changes to your fork:
 
 hg ci -m"Team OSRF submission for 2019/rehearsal event." -u"Carlos Aguero"
 hg push --new
