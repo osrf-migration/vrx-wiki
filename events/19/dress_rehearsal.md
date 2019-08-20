@@ -1,7 +1,7 @@
-# VRX 2019 Dress Rehearsal
+# VRX 2019 Phase 2 - Dress Rehearsal
 
 
-For the VRX Dress Rehearsal, teams will submit their system so that it can be run against previously-unseen scenarios.
+For the 2019 Phase 2 - Dress Rehearsal, teams will submit their system so that it can be run against previously-unseen scenarios.
 Teams have already been exposed to all of the tasks that will be present in the Dress Rehearsal scenarios.
 A single system must be designed to solve any of the VRX 2019 tasks.
 
