@@ -19,9 +19,9 @@ Submissions will be made though the [vrx-events](https://bitbucket.org/osrf/vrx-
 
 ### Clone the vrx-events repository
 
-Great, now you have a copy of the VRX events repository, but it's not very convenient to interact with it through the browser. You want to have it in your computer. You will use the mercurial command line tool to pull that code from the internet to your computer as follows:
+Great, now you have a copy of the VRX events repository, but it's not very convenient to interact with it through the browser. You want to have it in your computer. You will use the `mercurial` command line tool to pull that code from the internet to your computer as follows:
 
-1 . Make sure you have mercurial (hg) installed:
+1 . Make sure you have `mercurial` (`hg`) installed:
 
 ```
 sudo apt update
