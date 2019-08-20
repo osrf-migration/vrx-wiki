@@ -7,7 +7,7 @@ This is the case even if there were no changes since a team's previous submissio
 
 Submissions will be made though the [vrx-events](https://bitbucket.org/osrf/vrx-events) repository. All registered teams must:
 
-### Fork the vrx-events repository
+### Fork the `vrx-events` repository
 
 1 . Click on [this link](https://bitbucket.org/osrf/vrx-events/fork).
 
@@ -17,7 +17,7 @@ Submissions will be made though the [vrx-events](https://bitbucket.org/osrf/vrx-
 
 **Note:** Throughout these tutorials, substitute <yourname> with your Bitbucket account username.
 
-### Clone the vrx-events repository
+### Clone the `vrx-events` repository
 
 Great, now you have a copy of the VRX events repository, but it's not very convenient to interact with it through the browser. You want to have it in your computer. You will use the `mercurial` command line tool to pull that code from the internet to your computer as follows:
 
@@ -63,7 +63,7 @@ mkdir <teamname>
 
 ### Submit your pull request
 
-1 . Open a pull request for vrx-events on this link:
+1 . Open a pull request for `vrx-events` on this link:
 
 https://bitbucket.org/osrf/vrx-events/pull-requests/new
 
