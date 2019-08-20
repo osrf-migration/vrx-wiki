@@ -1,7 +1,7 @@
 # Submission process
 
 Each team's system will be evaluated automatically against 18 scenarios.
-The submission process is outlined on [the automated evaluation page](https://bitbucket.org/osrf/vrx-docker/src/default/).
+The submission process is outlined on the [automated evaluation page](https://bitbucket.org/osrf/vrx-docker/src/default/).
 Teams must submit their submission files in order to be considered as a participant in the event.
 This is the case even if there were no changes since a team's previous submission to a different event.
 
