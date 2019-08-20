@@ -15,4 +15,10 @@ To ensure that your system can adapt to previously-unseen scenarios, teams shoul
 
 ## Submission process
 
-See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submission_process) in the wiki.
+We expect to receive three files from each competitor prior to this event: 
+
+* `dockerhub_image.txt`: Contains the name of the image to be pulled from DockerHub.
+* `thruster_config.yaml`: Defines the WAM-V thruster configuration.
+* `sensor_config.yaml`: Defines the WAM-V sensor configuration.
+
+See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submission_process) in the wiki for instructions about how to submit these files.
