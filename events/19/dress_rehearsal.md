@@ -1,8 +1,8 @@
-# VRX 2019 Finals
+# VRX 2019 Dress rehearsal
 
 
-For the VRX Finals, teams will submit their system so that it can be run against previously-unseen scenarios.
-Teams have already been exposed to all of the tasks that will be present in the Finals scenarios.
+For the VRX Dress Rehearsal, teams will submit their system so that it can be run against previously-unseen scenarios.
+Teams have already been exposed to all of the tasks that will be present in the Dress Rehearsal scenarios.
 A single system must be designed to solve any of the VRX 2019 tasks.
 
 ## What to expect
