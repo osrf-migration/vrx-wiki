@@ -10,11 +10,11 @@ A set of tutorials to help you get started with VRX.
 
 ## 2019 events
 
- * Qualifier (Hello World!): Details of the released qualification tasks for VRX.
+ * Phase 1 - Hello World: Details of the released qualification tasks for VRX.
 
- * [Dress rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
+ * [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
 
- * Finals: Details of how the VRX Finals will run.
+ * Phase 3 - VRX Challenge: Details of how the VRX Finals will run.
 
 ## [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
