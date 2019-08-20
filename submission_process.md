@@ -84,8 +84,10 @@ hg status
 
 4 . Commit and push your changes to your fork:
 
+```
 hg ci -m"Team OSRF submission for 2019/rehearsal event." -u"Carlos Aguero"
 hg push --new
+```
 
 5 . Open a pull request for `vrx-events` on this link:
 
