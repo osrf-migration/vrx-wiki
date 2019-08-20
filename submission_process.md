@@ -73,11 +73,31 @@ hg branch 2019_rehearsal_team_osrf
 2. Add your files on the next commit, e.g.:
 
 ```
-hg add team_osrf/*
+hg add *
 ```
 
-1 . Open a pull request for `vrx-events` on this link:
+3. Verify the changed files:
 
-https://bitbucket.org/osrf/vrx-events/pull-requests/new
+```
+hg status
+```
+
+4. Commit and push your changes to your fork:
+
+hg ci -m"Team OSRF submission for 2019/rehearsal event." -u"Carlos Aguero"
+hg push --new
+
+5 . Open a pull request for `vrx-events` on this link:
+
+https://bitbucket.org/<teamname>/vrx-events/pull-requests/new
+
+**Note:** Substitute <teamname> with your team name.
+
+Make sure to select your branch on the left box and target your pull request against the `osrf/vrx-events` repository to the `default` branch.
+
 
 Be sure to include the year, name of the event and your team name in the title. E.g.: 2019/rehearsal/team_osrf
+
+Click on the `Create pull request` button and wait for your pull request to be approved and merged.
+
+![vrx-events_pr_example.png](https://bitbucket.org/repo/BgXLzgM/images/297094918-vrx-events_pr_example.png)
