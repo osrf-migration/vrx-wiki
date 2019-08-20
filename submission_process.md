@@ -31,7 +31,7 @@ sudo apt install mercurial
 2 . Now we use mercurial to "clone" our fork. What the clone command does is copy all the code across all branches from the internet to your computer:
 
 ```
-hg clone https://bitbucket.org/<yourname>/vrx-docker
+hg clone https://bitbucket.org/<yourname>/vrx-events
 ```
 
 3 . Now you should have a local copy of `vrx-events` under `~/vrx-events`. Let's move to that folder:
@@ -54,6 +54,7 @@ cd <year>/<event>
 
 ```
 mkdir <teamname>
+cd <teamname>
 ```
 
 **Note:** Substitute <teamname> with your team name.
@@ -62,6 +63,18 @@ mkdir <teamname>
 
 
 ### Submit your pull request
+
+1. In preparation for your pull request, create a branch, e.g.:
+
+```
+hg branch 2019_rehearsal_team_osrf
+```
+
+2. Add your files on the next commit, e.g.:
+
+```
+hg add team_osrf/*
+```
 
 1 . Open a pull request for `vrx-events` on this link:
 
