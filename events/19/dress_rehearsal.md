@@ -20,7 +20,7 @@ The submission process is outlined on [the automated evaluation page](https://bi
 Teams must submit their submission files in order to be considered as a participant in the event.
 This is the case even if there were no changes since a team's previous submission to a different event.
 
-Submissions will be made though the vrx-events repository. All registered teams must:
+Submissions will be made though the [vrx-events](https://bitbucket.org/osrf/vrx-events) repository. All registered teams must:
 
 ### Fork the vrx-events repository
 
