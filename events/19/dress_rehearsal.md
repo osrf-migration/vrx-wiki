@@ -1,4 +1,4 @@
-# VRX 2019 Dress rehearsal
+# VRX 2019 Dress Rehearsal
 
 
 For the VRX Dress Rehearsal, teams will submit their system so that it can be run against previously-unseen scenarios.
