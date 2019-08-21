@@ -28,4 +28,4 @@ See the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission
 
 ## Prizes
 
-While there is no official prizes for this first phase, if there are outstanding entries
+While there is no official prizes for this first phase, if there are outstanding entries we hope to be able to recognize them appropriately.
