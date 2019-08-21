@@ -1,4 +1,4 @@
-# Phase 1: Hello World!
+# Phase 1: Hello World
 
 This simple check encourages teams to start early and is a means to identify technical issues with the simulation environment. The goal of this phase is for teams to demonstrate running VRX simulation environment locally, on their own computers, and to demonstrate early prototype solutions to the VRX tasks.
 
