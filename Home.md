@@ -10,7 +10,7 @@ A set of tutorials to help you get started with VRX.
 
 ## 2019 events
 
- * Phase 1 - Hello World: Details of the released qualification tasks for VRX.
+ * [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
 
  * [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
 
