@@ -17,14 +17,12 @@ Videos should be limited to no more than 5 minutes in length.
 
 ## Submission process
 
-In future phases of the challenge teams will following this [submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process).  In the spirit of prototyping, teams should following the same directions for their submission to this phase.
+In the spirit of prototyping, we ask that teams submit the link to their video using the same process you will use to submit your solutions in future phases of the challenge. Please see the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for detailed instructions.
 
 We expect to receive a single file from each competitor:
  
- * `video_link.txt`: Contains just URL to the team's online video submission
+ * `video_link.txt`: Contains only the URL to the team's online video submission
 
-
-See the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for instructions about how to submit these files.
 
 ## Important dates*****
 
