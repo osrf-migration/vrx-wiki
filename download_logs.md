@@ -17,6 +17,7 @@ Create a directory to store your log files:
 
 ```
 mkdir ~/vrx_logs
+cd ~/vrx_logs
 ```
 
 Now, sync your recently created local folder with the remote directory in the S3 bucket:
