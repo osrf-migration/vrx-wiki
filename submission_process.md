@@ -91,9 +91,9 @@ hg push --new
 
 5 . Open a pull request for `vrx-events` on this link:
 
-https://bitbucket.org/<teamname>/vrx-events/pull-requests/new
+https://bitbucket.org/<yourname>/vrx-events/pull-requests/new
 
-**Note:** Substitute <teamname> with your team name.
+**Note:** Substitute <yourname> with your Bitbucket account username.
 
 Make sure to select your branch on the left box and target your pull request against the `osrf/vrx-events` repository to the `default` branch.
 
