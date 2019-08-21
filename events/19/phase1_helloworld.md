@@ -26,6 +26,16 @@ We expect to receive a single file from each competitor:
 
 See the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for instructions about how to submit these files.
 
+## Important dates
+
+| Date                    | Description                            |
+|-------------------------|----------------------------------------|
+| September 23, 23:59 PST | Deadline for submitting your video     |
+| September 24, 23:49 PST | Deadline for submitting a correction   |
+| October    4            | Results published                      |
+
+Note: We'll allocate an extra day in the schedule (September 24) for fixing any problems related with the content of `video_link.txt` (e.g.: A typo writing the URL of the video). Teams are not allowed to modify the video after the deadline on September 23.
+
 ## Prizes
 
 While there is no official prizes for this first phase, if there are outstanding entries we hope to be able to recognize them appropriately.
