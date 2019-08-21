@@ -22,3 +22,15 @@ We expect to receive three files from each competitor prior to this event:
 * `sensor_config.yaml`: Defines the WAM-V sensor configuration.
 
 See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submission_process) in the wiki for instructions about how to submit these files.
+
+## Important dates*****
+
+| Date                          | Description                            |
+|-------------------------------|----------------------------------------|
+| 2019, October   21, 23:59 PST | Deadline for submitting your solution  |
+| 2019, October   22, 23:59 PST | Deadline for submitting a correction   |
+| 2019, October   28            | Results published                      |
+
+Note: We'll allocate an extra day in the schedule (October 22) for fixing any problems related with the content of the submission files (e.g.: A noncompliant sensor or thruster configuration, a typo pointing to the DockerHub image, a problem with DockerHub permissions not letting Open Robotics to download your solution image). Teams are not allowed to modify the DockerHub image after the deadline on October 21.
+
+*** Note:** These dates are still provisional.
