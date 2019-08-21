@@ -20,7 +20,7 @@ mkdir ~/vrx_logs
 cd ~/vrx_logs
 ```
 
-Now, sync your recently created local folder with the remote directory in the S3 bucket:
+Now, sync your recently created local folder with a remote directory in the S3 bucket:
 
 ```
 aws s3 sync s3://vrx-events/<year>/<event> . --no-sign-request --exclude "*" --include "*<teamname>*"
