@@ -19,7 +19,10 @@ A set of tutorials to help you get started with VRX.
 ## [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
 
-## Additional resources
+## Download logs
+
+## [Additional resources](https://bitbucket.org/osrf/vrx/wiki/download_logs)
+How to download your log files after an event.
 
  * [Maritime RobotX Website (General information)](https://www.robotx.org/)
  * [The VRX issue tracker](https://bitbucket.org/osrf/vrx/issues?status=new&status=open) for submitting and following bugs, feature requests and enhancements
