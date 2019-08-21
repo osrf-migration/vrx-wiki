@@ -26,7 +26,7 @@ We expect to receive a single file from each competitor:
 
 See the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for instructions about how to submit these files.
 
-## Important dates
+## Important dates*****
 
 | Date                          | Description                            |
 |-------------------------------|----------------------------------------|
@@ -35,6 +35,8 @@ See the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission
 | 2019, October    4            | Results published                      |
 
 Note: We'll allocate an extra day in the schedule (September 24) for fixing any problems related with the content of `video_link.txt` (e.g.: A typo writing the URL of the video). Teams are not allowed to modify the video after the deadline on September 23.
+
+*** Note:** These dates are provisional.
 
 ## Prizes
 
