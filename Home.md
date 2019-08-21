@@ -19,7 +19,8 @@ A set of tutorials to help you get started with VRX.
 ## [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
 
-## Download logs
+## [Download logs](https://bitbucket.org/osrf/vrx/wiki/download_logs)
+How to download your log files after an event.
 
 ## [Additional resources](https://bitbucket.org/osrf/vrx/wiki/download_logs)
 How to download your log files after an event.
