@@ -4,7 +4,7 @@ This simple check encourages teams to start early and is a means to identify tec
 
 ## Video Deliverable
 
-The deliverable for this stage of the VRX challenge is an online video.  The content of the video is intentionally open-ended.  We encourage you to think creatively about how you present your current status. The only requirement is that your video demonstrate that your team has been able to setup the VRX environment locally.  To take it to the next level, we suggest teams consider including more information about there status and to show off what they have been able to achieve.  Consider the submission a highlight video of your team's status.  
+The deliverable for this stage of the VRX challenge is an online video.  The content of the video is intentionally open-ended.  We encourage you to think creatively about how you present your current status. The only requirement is that your video demonstrate that your team has been able to setup the VRX environment locally.  To take it to the next level, we suggest teams consider including more information about their status and to show off what they have been able to achieve.  Consider the submission a highlight video of your team's status.  
 
 Videos should be limited to no more than 5 minutes in length.
 
