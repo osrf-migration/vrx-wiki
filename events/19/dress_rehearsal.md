@@ -1,4 +1,4 @@
-# VRX 2019 Phase 2 - Dress Rehearsal
+# Phase 2 - Dress Rehearsal
 
 
 For the 2019 Phase 2 - Dress Rehearsal, teams will submit their system so that it can be run against previously-unseen scenarios.
