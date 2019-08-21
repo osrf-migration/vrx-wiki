@@ -26,9 +26,7 @@ Now, sync your recently created local folder with the remote directory in the S3
 aws s3 sync s3://vrx-events/<year>/<event> . --no-sign-request --exclude "*" --include "*<teamname>*"
 ```
 
-**Note:** Substitute <year>, <event>, and <teamname> with the year, event, and team name that you are interested.
-
-E.g.:
+**Note:** Substitute <year>, <event>, and <teamname> with the year, event, and team name that you are interested. E.g.:
 
 ```
 aws s3 sync s3://vrx-events/2019/rehearsal . --no-sign-request --exclude "*" --include "*team_osrf*"
