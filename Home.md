@@ -8,7 +8,7 @@ VRX documents, system requirements and theory of operation for Gazebo plugins.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
-## 2019 events
+## VRX Challenge 2019 Events
 
  * [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
 
@@ -16,14 +16,13 @@ A set of tutorials to help you get started with VRX.
 
  * Phase 3 - VRX Challenge: Details of how the VRX Finals will run.
 
-## [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
+ * [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
 
-## [Download logs](https://bitbucket.org/osrf/vrx/wiki/download_logs)
+ * [Download logs](https://bitbucket.org/osrf/vrx/wiki/download_logs)
 How to download your log files after an event.
 
-## [Additional resources](https://bitbucket.org/osrf/vrx/wiki/download_logs)
-How to download your log files after an event.
+## Additional Resources
 
  * [Maritime RobotX Website (General information)](https://www.robotx.org/)
  * [The VRX issue tracker](https://bitbucket.org/osrf/vrx/issues?status=new&status=open) for submitting and following bugs, feature requests and enhancements
