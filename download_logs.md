@@ -2,7 +2,7 @@
 
 The [VRX automated evaluation tool](https://bitbucket.org/osrf/vrx-docker/src/default/) runs and scores team submissions for a given event. This tool also generates multiple log files, including Gazebo log files that can be used to playback the simulations.
 
-## Install `aws`
+## Install `aws` tool
 
 All logs are uploaded to the AWS S3 `vrx-events` bucket. You'll need a command line tool to interact with AWS S3 and download your log files:
 
