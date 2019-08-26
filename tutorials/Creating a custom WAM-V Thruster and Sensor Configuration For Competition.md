@@ -252,7 +252,27 @@ Next, it calls a xacro command to generate the urdf at `wamv_target` using [this
 
 Supported thrusters and sensors can be seen in [allowed thrusters](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/numeric.yaml) and [allowed sensors](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/numeric.yaml) (currently as of July 10, 2019 we have only one thruster type).
 
-TODO: Add example of not defining parameters (use default), say that only name is REQUIRED, description about default parameters, where to find them, etc
+## Thrusters and Sensors Default and Required Parameters
+
+All sensors and thrusters have numerous parameters. As of August 2019, these include `name`, `prefix`, `position`, `orientation`, `x`, `y`, `z`, `R`, `P`, `Y`, `post_Y`, depending on the sensor or thruster. You can view the parameters for sensors [here](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/sensors/) and the parameters for thrusters [here](https://bitbucket.org/osrf/vrx/src/default/wamv_description/urdf/thrusters/). 
+
+As of Aug 2019, you can click on `wamv_camera.xacro` and you will see:
+
+```
+<xacro:macro name="wamv_camera" params="name x:=0.5 y:=0 z:=1.5 R:=0 P:=0 Y:=0 post_Y:=0">
+```
+
+This means that `name` is a required parameter, and the others all have defaults. 
+
+As of Aug 2019, you can click on `engine.xacro` and you will see:
+
+```
+<xacro:macro name="engine" params="prefix position:='0 0 0' orientation:='0 0 0'">
+```
+
+This means that `prefix` is a required parameter, and that `position` and `orientation` have defaults.
+
+`position`, `orientation`, and `xyzRPY` define the exact pose of the sensor/thruster you want with respect to the WAM-V. `post_Y` is only for sensors and simply changes the angle at which the post is sitting underneath the given sensor.
 
 # Examples
 
