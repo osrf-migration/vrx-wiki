@@ -84,7 +84,7 @@ Note:
 
 * As of June 30, 2019, the thruster angles can be controlled by `usv_keydrive.launch` or `usv_joydrive.launch`. Read [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving) for more information.
 
-#Example WAM-V Gazebo Thruster Configuration File
+# Example WAM-V Gazebo Thruster Configuration File
 ```
 <?xml version="1.0"?>
 <plugin xmlns:xacro="http://ros.org/wiki/xacro">
