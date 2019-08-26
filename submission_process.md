@@ -42,7 +42,7 @@ cd ~/vrx-events
 
 ### Add your submission files
 
-1 . Navigate to the event where you plan to participate (e.g.: `2019/rehearsal`)
+1 . Navigate to the event where you plan to participate (e.g.: `2019/phase2_dress_rehearsal`)
 
 ```
 cd <year>/<event>
