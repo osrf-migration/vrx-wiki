@@ -1,5 +1,7 @@
-#Creating Many Test Worlds#
-#Tutorial#
+# Creating Many Test Worlds
+
+# Tutorial
+
 Lets start with a thought experiment.
 
 Let's say we have code for a robot ready and we are able to simulate this robot in
@@ -17,16 +19,184 @@ world files!
 
 Good News, we do!
 
-1.Create a directory some where to hold some things ie:
+# Quick Start Instructions
+
+1.Create a directory to hold store our files ie:
 
 `mkdir ~/generated_worlds`
 
-`cd generated_worlds/`
+`cd ~/generated_worlds`
 
-2.Create a yaml according to the yaml filling instructions (also see example):
-`gedit worlds.yaml`
+2.Create a yaml (copy RobotX Nav Challenge Example below):
 
-(example as applied to Robot X)
+`gedit ~/generated_worlds/worlds.yaml`
+
+3.Make a new directory to hold the world xacros for convenience:
+
+`mkdir ~/generated_worlds/world_xacros/`
+
+4.Same for worlds:
+
+`mkdir ~/generated_worlds/worlds/`
+
+5.Run the script (assuming `$HOME=/home/<username>`):
+
+`roslaunch vrx_gazebo generate_worlds.launch requested:=$HOME/generated_worlds/worlds.yaml world_xacro_target:=$HOME/generated_worlds/world_xacros/ world_target:=$HOME/generated_worlds/worlds/ --screen`
+
+
+6.See the success message:
+
+```
+All  8  worlds generated
+================================================================================REQUIRED process [world_gen-2] has died!
+process has finished cleanly
+log file: /home/tylerlum/.ros/log/ab466cb2-c83b-11e9-a434-dcfb48e97aeb/world_gen-2*.log
+Initiating shutdown!
+================================================================================
+```
+
+7.Examine the generated xacros under world_xacros/ and make sure they are what
+you want (these are meant to be more human readable than the .worlds files):
+
+`gedit ~/generated_worlds/world_xacros/worlds0.world.xacro`
+
+
+8.Run one of your new worlds:
+
+
+`roslaunch vrx_gazebo sandisland.launch world:=$HOME/generated_worlds/worlds/worlds0.world`
+
+# RobotX Nav Challenge (Aug 2019)
+
+```
+constant:
+    steps: 1
+    macros:
+        sandisland_minus_scene: 
+            -
+    sequence:
+
+tasks:
+    steps: 1
+    macros:
+        nav_challenge:
+            -
+    sequence:
+        0:
+            nav_challenge:
+                - name: nav_challenge
+                  uri: navigation_course
+                  /**gates: "
+                  <gate>
+                    <left_marker>red_bound_0</left_marker>
+                    <right_marker>green_bound_0</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_1</left_marker>
+                    <right_marker>green_bound_1</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_2</left_marker>
+                    <right_marker>green_bound_2</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_3</left_marker>
+                    <right_marker>green_bound_3</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_4</left_marker>
+                    <right_marker>green_bound_4</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_5</left_marker>
+                    <right_marker>green_bound_5</right_marker>
+                  </gate>
+                  <gate>
+                    <left_marker>red_bound_6</left_marker>
+                    <right_marker>green_bound_6</right_marker>
+                  </gate>"
+waves:
+    steps: 2
+    macros:
+        ocean_waves:
+            -
+    sequence:
+        0:
+            ocean_waves:
+                - gain: 1.0
+                  period: 1.0
+        1:
+            ocean_waves:
+                - gain: 0.4
+                  period: 8.0
+wind:
+    steps: 2
+    macros:
+        usv_wind_gazebo:
+            -
+    sequence:
+        0:
+            usv_wind_gazebo:
+                - mean_vel: 0.0
+                  var_gain: 0
+                  var_time: 2
+                  seed: 10
+                  /**wind_objs: "
+                  <wind_obj>
+
+                  <name>wamv</name>
+
+                  <link_name>base_link</link_name>
+
+                  <coeff_vector>.5 .5 .33</coeff_vector>
+
+                  </wind_obj>"
+        1:
+            usv_wind_gazebo:
+                - mean_vel: 8.0
+                  var_gain: 8.0
+                  var_time: 20
+                  seed: 10
+                  /**wind_objs: "
+                  <wind_obj>
+
+                  <name>wamv</name>
+
+                  <link_name>base_link</link_name>
+
+                  <coeff_vector> .5 .5 .33</coeff_vector>
+
+                  </wind_obj>"
+scene:
+    steps: 2
+    macros:
+        scene_macro:
+            -
+    sequence:
+        0:
+            scene_macro:
+                - /**fog: "
+                  <color> 0.7 0.7 0.7 1 </color>
+
+                  <density> 0.0 </density>"
+                  /**ambient: "1 1 1 1"
+        1:
+            scene_macro:
+                - /**fog: "
+                  <color> 0.9 0.9 0.9 1 </color>
+
+                  <density> 0.1 </density>"
+                  /**ambient: "0.3 0.3 0.3 1"
+
+
+```
+
+# RobotX Example 
+
+Note: this example is not currently working. It contains more detailed descriptions of the various parts of the world yaml.
+
+You can view working examples [here](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/yamls/)
+
 ```
 ########worlds.yaml###########
 #we need to decide what is constant between all of our simulations. We will call this 'axis' constant
@@ -106,40 +276,3 @@ tasks:
 
 
 ```
-
-#Quick Start Instructions#
-1.Create a directory to hold store our files ie:
-
-`mkdir ~/generated_worlds`
-
-`cd generated_worlds/`
-
-2.Create a yaml according to the yaml-filling instructions (also see example):
-
-`gedit ~/generated_worlds/worlds.yaml`
-
-3.Make a new directory to hold the world xacros for convenience:
-
-`mkdir ~/generated_worlds/world_xacros/`
-
-4.Same for worlds:
-
-`mkdir ~/generated_worlds/worlds/`
-
-5.Run the script:
-
-`roslaunch vrx_gazebo generate_worlds.launch requested:=/home/<username>/generated_worlds/worlds.yaml world_xacro_target:=/home/<username>/generated_worlds/world_xacros/ world_target:=/home/<username>/generated_worlds/worlds/ --screen`
-
-
-6.See the success message: All  <n>  worlds generated
-
-7.Examine the generated xacros under world_xacros/ and make sure they are what
-you want (these are meant to be more human readable than the .worlds files):
-
-`gedit ~/generated_worlds/world_xacros/world0.world.xacro`
-
-
-8.Run one of your new worlds:
-
-
-`roslaunch vrx_gazebo sandisland.launch world:=/home/<username>/generated_worlds/worlds/world0.world`
