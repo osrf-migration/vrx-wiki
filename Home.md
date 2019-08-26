@@ -8,13 +8,13 @@ VRX documents, system requirements and theory of operation for Gazebo plugins.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
-## VRX Challenge 2019 Events
+## VRX Challenge 2019 Events and Deadlines
 
- * [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
+ * September 23, 23:59 PST, [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
 
- * [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
+ * October 21, 23:59 PST, [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
 
- * Phase 3 - VRX Challenge: Details of how the VRX Finals will run.
+ * November 22, 23:59 PST, Phase 3 - VRX Challenge: Details of how the VRX Finals will run.
 
  * [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
