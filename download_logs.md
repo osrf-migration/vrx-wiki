@@ -29,7 +29,7 @@ aws s3 sync s3://vrx-events/<year>/<event> . --no-sign-request --exclude "*" --i
 **Note:** Substitute <year>, <event>, and <teamname> with the year, event, and team name that you are interested. E.g.:
 
 ```
-aws s3 sync s3://vrx-events/2019/rehearsal . --no-sign-request --exclude "*" --include "*team_osrf*"
+aws s3 sync s3://vrx-events/2019/phase2_dress_rehearsal . --no-sign-request --exclude "*" --include "*team_osrf*"
 ```
 
 **Note:** Be patient as these log files might take a while to download.
