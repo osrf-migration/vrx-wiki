@@ -40,10 +40,10 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
     Later, we will edit this file to customize your WAM-V.
 
-7. Run the script to generate your WAM-V's URDF with these newly specified thrusters and sensors.
+7. Run the script to generate your WAM-V's URDF with these newly specified thrusters and sensors. Note: on most systems, `$HOME` is `/home/<username>`. If this is not the case, you can change all uses of `$HOME` to `/home/<username>`.
 
     ```
-       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=/home/<username>/my_wamv/thruster_config.yaml  sensor_yaml:=/home/<username>/my_wamv/sensor_config.yaml wamv_target:=/home/<username>/my_wamv/my_wamv.urdf
+       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv.urdf
     ```
 
     Parameters Explained:
@@ -65,7 +65,7 @@ In addition, this script also makes sure that the requested thruster and sensor 
 9. Launch the example world with your WAM-V:
 
     ```
-       $ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv.urdf
+       $ roslaunch vrx_gazebo sandisland.launch urdf:=$HOME/my_wamv/my_wamv.urdf
     ```
 
 10. Look at the WAM-V in sand island. It should have your thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters.
@@ -102,7 +102,7 @@ Next, let's customize the WAM-V further.
 3. Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
 
     ```
-       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=/home/<username>/my_wamv/thruster_config.yaml  sensor_yaml:=/home/<username>/my_wamv/sensor_config.yaml wamv_target:=/home/<username>/my_wamv/my_wamv_2.urdf
+       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv_2.urdf
     ```
 
 4. See the following confirmation message in the terminal with no errors present 
@@ -116,7 +116,7 @@ Next, let's customize the WAM-V further.
 5. Launch the example world with your WAM-V:
 
     ```
-       $ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv_2.urdf
+       $ roslaunch vrx_gazebo sandisland.launch urdf:=$HOME/my_wamv/my_wamv_2.urdf
     ```
 
 6. Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters. Please note the missing cameras and additional thruster.
@@ -142,7 +142,7 @@ Next, let's see how compliance works.
 3. Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
 
     ```
-       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=/home/<username>/my_wamv/thruster_config.yaml  sensor_yaml:=/home/<username>/my_wamv/sensor_config.yaml wamv_target:=/home/<username>/my_wamv/my_wamv_3.urdf
+       $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv_3.urdf
     ```
 
 4. See the following messages in the terminal
@@ -169,7 +169,7 @@ The URDF file is still created, but these error messages show why your configura
 Next, launch the example world with your WAM-V:
 
 ```
-$ roslaunch vrx_gazebo sandisland.launch urdf:=/home/<username>/my_wamv/my_wamv_3.urdf
+$ roslaunch vrx_gazebo sandisland.launch urdf:=$HOME/my_wamv/my_wamv_3.urdf
 ```
 
 Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and thrusters. Please note the multiple cameras.
@@ -218,7 +218,8 @@ Supported thrusters and sensors can be seen in [allowed thrusters](https://bitbu
 
 TODO: Add example of not defining parameters (use default), say that only name is REQUIRED, description about default parameters, where to find them, etc
 
-#Examples
+# Examples
+
 ### Example Compliant Yaml Thruster Configuration File 1 
 ```
 engine:
@@ -260,7 +261,7 @@ engine:
     orientation: "0.0 0.0 0.0"
 ```
 
-###Example Compliant Yaml Sensor Configuration File 1
+### Example Compliant Yaml Sensor Configuration File 1
 ```
 wamv_camera:
     - name: front_left_camera
@@ -289,7 +290,7 @@ lidar:
       P: ${radians(8)}
 ```
 
-###Example Compliant Yaml Sensor Configuration File 2
+### Example Compliant Yaml Sensor Configuration File 2
 ```
 # Removed all cameras
 
@@ -307,7 +308,7 @@ lidar:
       P: ${radians(8)}
 ```
 
-###Example Non-compliant Yaml Sensor Configuration File
+### Example Non-compliant Yaml Sensor Configuration File
 ```
 # Too many cameras
 wamv_camera:
