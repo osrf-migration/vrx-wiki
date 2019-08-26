@@ -7,24 +7,24 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
 ## Example 1: How to use generate_wamv.launch
 
-1. First be sure your VRX workspace is built and sourced. Then launch the example world:
+* First be sure your VRX workspace is built and sourced. Then launch the example world:
 
     ```
        $ roslaunch vrx_gazebo sandisland.launch
     ```
 
-2. Look at the WAM-V in sand island. It currently has the default thruster configuration and sensor configuration for `sandisland.launch` (as of June 6, 2019, the default configuration is the [H thruster configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) and no sensors). In Gazebo, click View => Transparent to see the thrusters.
+* Look at the WAM-V in sand island. It currently has the default thruster configuration and sensor configuration for `sandisland.launch` (as of June 6, 2019, the default configuration is the [H thruster configuration](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration) and no sensors). In Gazebo, click View => Transparent to see the thrusters.
 
     ![Default_Sensors_And_Thrusters.jpg](https://bitbucket.org/repo/BgXLzgM/images/1178967311-Default_Sensors_And_Thrusters.jpg)
 
-3. Close gazebo
-4. Make a directory for your custom WAM-V, eg:
+* Close gazebo
+* Make a directory for your custom WAM-V, eg:
 
     ```
        $ mkdir ~/my_wamv
     ```
 
-5. Scroll down this tutorial and copy the contents of **Example Compliant Yaml Thruster Configuration File 1**. Next, paste those contents into a new file.
+* Scroll down this tutorial and copy the contents of **Example Compliant Yaml Thruster Configuration File 1**. Next, paste those contents into a new file.
 
     ```
        $ gedit ~/my_wamv/thruster_config.yaml
@@ -32,7 +32,7 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
     Later, we will edit this file to customize your WAM-V.
 
-6. Scroll down this tutorial and copy the contents of **Example Compliant Yaml Sensor Configuration File 1**. Next, paste those contents into a new file.
+* Scroll down this tutorial and copy the contents of **Example Compliant Yaml Sensor Configuration File 1**. Next, paste those contents into a new file.
 
     ```
        $ gedit ~/my_wamv/sensor_config.yaml
@@ -40,7 +40,7 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
     Later, we will edit this file to customize your WAM-V.
 
-7. Run the script to generate your WAM-V's URDF with these newly specified thrusters and sensors. Note: on most systems, `$HOME` is `/home/<username>`. If this is not the case, you can change all uses of `$HOME` to `/home/<username>`.
+* Run the script to generate your WAM-V's URDF with these newly specified thrusters and sensors. Note: on most systems, `$HOME` is `/home/<username>`. If this is not the case, you can change all uses of `$HOME` to `/home/<username>`.
 
     ```
        $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv.urdf
@@ -54,117 +54,152 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
     * `wamv_target`: output, the full path to the WAM-V URDF, which will be generated
 
-8. See the following confirmation message in the terminal with no errors present 
+* See the following confirmation message in the terminal with no errors present 
 
-    ```
-       WAM-V urdf file successfully generated. File location: <wamv_target>
-    ```
+```
+[INFO] [1566845959.198003]:
+Using /home/tylerlum/my_wamv/thruster_config.yaml as the thruster configuration yaml file
 
-    When you see this message, you can press CTRL+C to continue.
+[INFO] [1566845959.208003]: 
+Using /home/tylerlum/my_wamv/sensor_config.yaml as the sensor configuration yaml file
 
-9. Launch the example world with your WAM-V:
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+
+WAM-V urdf file sucessfully generated. File location: /home/tylerlum/my_wamv/my_wamv.urdf
+================================================================================REQUIRED process [wamv_config/wamv_generator-2] has died!
+process has finished cleanly
+log file: /home/tylerlum/.ros/log/9b1fd6a0-c833-11e9-a434-dcfb48e97aeb/wamv_config-wamv_generator-2*.log
+Initiating shutdown!
+================================================================================
+```
+
+* Launch the example world with your WAM-V:
 
     ```
        $ roslaunch vrx_gazebo sandisland.launch urdf:=$HOME/my_wamv/my_wamv.urdf
     ```
 
-10. Look at the WAM-V in sand island. It should have your thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters.
+* Look at the WAM-V in sand island. It should have your thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters.
 
     ![Desired_Thruster_Config.jpg](https://bitbucket.org/repo/BgXLzgM/images/3459109275-Desired_Thruster_Config.jpg)
 
     ![Desired_Sensors.jpg](https://bitbucket.org/repo/BgXLzgM/images/1664943221-Desired_Sensors.jpg)
 
-11. Confirm that these are the thrusters and sensors you want in the places that you want
-12. Observe the ros topics being published and confirm they are the topics you want:
+* Confirm that these are the thrusters and sensors you want in the places that you want
+* Observe the ros topics being published and confirm they are the topics you want:
 
     ```
        $ rostopic list
     ```
 
-13. Close gazebo
+*  Close gazebo
 
 ## Example 2: How to Further Customize Your WAM-V
 
 Next, let's customize the WAM-V further.
 
-1. Scroll down this tutorial and copy the contents of **Example Compliant Yaml Thruster Configuration File 2**. Next, paste those contents into the `thruster_config.yaml` file. Note the addition of the third thruster.
+* Scroll down this tutorial and copy the contents of **Example Compliant Yaml Thruster Configuration File 2**. Next, paste those contents into the `thruster_config.yaml` file, replacing all previous text. Note the addition of the third thruster.
 
     ```
        $ gedit ~/my_wamv/thruster_config.yaml
     ```
 
-2. Scroll down this tutorial and copy the contents of **Example Compliant Yaml Sensor Configuration File 2**. Next, paste those contents into the `sensor_config.yaml` file. Note the removal of the cameras.
+* Scroll down this tutorial and copy the contents of **Example Compliant Yaml Sensor Configuration File 2**. Next, paste those contents into the `sensor_config.yaml` file, replacing all previous text. Note the removal of the cameras.
 
     ```
        $ gedit ~/my_wamv/sensor_config.yaml
     ```
 
-3. Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
+* Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
 
     ```
        $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv_2.urdf
     ```
 
-4. See the following confirmation message in the terminal with no errors present 
+* See the following confirmation message in the terminal with no errors present 
 
-    ```
-       WAM-V urdf file successfully generated. File location: <wamv_target>
-    ```
+```
+[INFO] [1566846607.783282]: 
+Using /home/tylerlum/my_wamv/thruster_config.yaml as the thruster configuration yaml file
 
-    When you see this message, you can press CTRL+C to continue.
+[INFO] [1566846607.792693]: 
+Using /home/tylerlum/my_wamv/sensor_config.yaml as the sensor configuration yaml file
 
-5. Launch the example world with your WAM-V:
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+
+WAM-V urdf file sucessfully generated. File location: /home/tylerlum/my_wamv/my_wamv_2.urdf
+================================================================================REQUIRED process [wamv_config/wamv_generator-2] has died!
+process has finished cleanly
+log file: /home/tylerlum/.ros/log/1db4cc0a-c835-11e9-a434-dcfb48e97aeb/wamv_config-wamv_generator-2*.log
+Initiating shutdown!
+================================================================================
+
+```
+
+* Launch the example world with your WAM-V:
 
     ```
        $ roslaunch vrx_gazebo sandisland.launch urdf:=$HOME/my_wamv/my_wamv_2.urdf
     ```
 
-6. Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters. Please note the missing cameras and additional thruster.
+* Look at the WAM-V in sand island. It should have your new thruster and sensor configurations. If everything went correctly and you used the example thruster and sensor configuration yaml files below, you should see the desired sensors and you can click View => Transparent to see the desired thrusters. Please note the missing cameras and additional thruster.
 
 ![Desired_Configuration_2.jpg](https://bitbucket.org/repo/BgXLzgM/images/442187015-Desired_Configuration_2.jpg)
 
 ## Example 3: Non-compliance
 Next, let's see how compliance works.
 
-1. Scroll down this tutorial and copy the contents of **Example Non-compliant Yaml Thruster Configuration File**. Next, paste those contents into the `thruster_config.yaml` file. Note the addition of the third thruster in a non-compliant position.
+* Scroll down this tutorial and copy the contents of **Example Non-compliant Yaml Thruster Configuration File**. Next, paste those contents into the `thruster_config.yaml` file, replacing all previous text. Note the addition of the third thruster in a non-compliant position.
 
     ```
        $ gedit ~/my_wamv/thruster_config.yaml
     ```
 
 
-2. Scroll down this tutorial and copy the contents of **Example Non-compliant Yaml Sensor Configuration File**. Next, paste those contents into the `sensor_config.yaml` file. Note the addition of 5 cameras.
+* Scroll down this tutorial and copy the contents of **Example Non-compliant Yaml Sensor Configuration File**. Next, paste those contents into the `sensor_config.yaml` file, replacing all previous text. Note the addition of 5 cameras.
 
     ```
        $ gedit ~/my_wamv/sensor_config.yaml
     ```
 
-3. Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
+* Next, we need to run `generate_wamv.launch` again to use these new yamls files to create a new urdf file.
 
     ```
        $ roslaunch vrx_gazebo generate_wamv.launch thruster_yaml:=$HOME/my_wamv/thruster_config.yaml  sensor_yaml:=$HOME/my_wamv/sensor_config.yaml wamv_target:=$HOME/my_wamv/my_wamv_3.urdf
     ```
 
-4. See the following messages in the terminal
+* See the following messages in the terminal
 
 ```
-/home/tylerlum/vrx_ws/src/vrx/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/bounding_boxes.yaml
-[ERROR] [1562803818.309181]: engine second_right is out of bounds
-[ERROR] [1562803818.310337]: engine second_right is at xyz=(-2.373776, -1.027135, 0.318237), it must fit in at least one of the following boxes with remaining space:
-[ERROR] [1562803818.311344]:   <Box name:thruster_compliance_port_aft x:[-1.75, -2.75] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:0>
-[ERROR] [1562803818.312320]:   <Box name:thruster_compliance_star_for x:[1.5, 0.5] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:1>
-[ERROR] [1562803818.313589]:   <Box name:thruster_compliance_port_for x:[1.5, 0.5] y:[1.5,0.5] z:[0.6,-0.6] remaining_space:1>
-[ERROR] [1562803818.315214]:   <Box name:thruster_compliance_star_aft x:[-1.75, -2.75] y:[-0.5,-1.5] z:[0.6,-0.6] remaining_space:0>
-[ERROR] [1562803818.316969]:   <Box name:thruster_compliance_middle x:[1.5, -1.0] y:[0.5,-0.5] z:[0.6,-0.6] remaining_space:1>
-/home/tylerlum/vrx_ws/src/vrx/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/bounding_boxes.yaml
-[ERROR] [1562803818.340480]: Too many wamv_camera requested
-[ERROR] [1562803818.342388]:   maximum of 3 wamv_camera allowed
+Using /home/tylerlum/my_wamv/thruster_config.yaml as the thruster configuration yaml file
+
+[ERROR] [1566846830.001315]: engine second_right is out of bounds
+[ERROR] [1566846830.001882]: engine second_right is at xyz=(-2.373776, -1.027135, 0.318237), it must fit in at least one of the following boxes with remaining space:
+[ERROR] [1566846830.002445]:   <Box name:thruster_compliance_port_aft x:[-1.75, -2.75] y:[1.5,0.5] z:[0.6,-0.6]                remaining_space:0>
+[ERROR] [1566846830.002985]:   <Box name:thruster_compliance_star_for x:[1.5, 0.5] y:[-0.5,-1.5] z:[0.6,-0.6]                remaining_space:1>
+[ERROR] [1566846830.003573]:   <Box name:thruster_compliance_port_for x:[1.5, 0.5] y:[1.5,0.5] z:[0.6,-0.6]                remaining_space:1>
+[ERROR] [1566846830.004085]:   <Box name:thruster_compliance_star_aft x:[-1.75, -2.75] y:[-0.5,-1.5] z:[0.6,-0.6]                remaining_space:0>
+[ERROR] [1566846830.004618]:   <Box name:thruster_compliance_middle x:[1.5, -1.0] y:[0.5,-0.5] z:[0.6,-0.6]                remaining_space:1>
+[INFO] [1566846830.006693]: 
+Using /home/tylerlum/my_wamv/sensor_config.yaml as the sensor configuration yaml file
+
+[ERROR] [1566846830.013150]: Too many wamv_camera requested
+[ERROR] [1566846830.013670]:   maximum of 3 wamv_camera allowed
 xacro: in-order processing became default in ROS Melodic. You can drop the option.
 
-WAM-V urdf file successfully generated. File location: /home/tylerlum/my_wamv/my_wamv_3.urdf
+[ERROR] [1566846830.477420]: 
+This sensor/thruster configuration is NOT compliant with the (current) VRX constraints. A urdf file will be created, but please note that the above errors must be fixed for this to be a valid configuration for the VRX competition.
+
+WAM-V urdf file sucessfully generated. File location: /home/tylerlum/my_wamv/my_wamv_3.urdf
+================================================================================REQUIRED process [wamv_config/wamv_generator-2] has died!
+process has finished cleanly
+log file: /home/tylerlum/.ros/log/a223962e-c835-11e9-a434-dcfb48e97aeb/wamv_config-wamv_generator-2*.log
+Initiating shutdown!
+================================================================================
+
 ```
 
-The URDF file is still created, but these error messages show why your configuration is not compliant. There are too many cameras and two thrusters that are too close together (more details about this in the Compliance section). When you see this message, you can press CTRL+C to continue.
+The URDF file is still created, but these error messages show why your configuration is not compliant. There are too many cameras and two thrusters that are too close together (more details about this in the Compliance section).
 
 Next, launch the example world with your WAM-V:
 
