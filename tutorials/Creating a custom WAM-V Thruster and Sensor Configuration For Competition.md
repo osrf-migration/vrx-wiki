@@ -48,9 +48,9 @@ In addition, this script also makes sure that the requested thruster and sensor 
 
     Parameters Explained:
 
-    * `thruster_yaml`: input, the full path of the thruster YAML configuration file
+    * `thruster_yaml`: input, the full path of the thruster YAML configuration file. If not given, uses the [default thruster yaml](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/example_thruster_config.yaml)
 
-    * `sensor_yaml`: input, the full path of the sensor YAML configuration file
+    * `sensor_yaml`: input, the full path of the sensor YAML configuration file. If not given, uses the [default sensor yaml](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/example_sensor_config.yaml)
 
     * `wamv_target`: output, the full path to the WAM-V URDF, which will be generated
 
@@ -215,8 +215,13 @@ Look at the WAM-V in sand island. It should have your new thruster and sensor co
 
 As of July 10, 2019 there are 3 main compliance rules
 
-* All sensors must be contained within one of the sensor bounding boxes. All thrusters must be contained within one of the thruster bounding boxes. The details of the bounding boxes can be found [here](TODO add link once merged). The image below shows the position of the bounding boxes. 
-TODO: add image of bounding boxes
+* All sensors must be contained within one of the sensor bounding boxes (details [here](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/bounding_boxes.yaml)). The image below shows the position of the bounding boxes as of July 10, 2019.
+
+![Sensor_Bounding_Boxes.png](https://bitbucket.org/repo/BgXLzgM/images/944675456-Sensor_Bounding_Boxes.png)
+
+*  All thrusters must be contained within one of the thruster bounding boxes (details [here](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/bounding_boxes.yaml)). The image below shows the position of the bounding boxes as of July 10, 2019.
+
+![Thruster_Bounding_Boxes.png](https://bitbucket.org/repo/BgXLzgM/images/3942344441-Thruster_Bounding_Boxes.png)
 
 * The number of each sensor and thruster in the configuration must be within the limit defined [here for sensors](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/sensor_compliance/numeric.yaml) and [here for thrusters](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/src/vrx_gazebo_python/generator_scripts/wamv_config/thruster_compliance/numeric.yaml). 
 
@@ -238,10 +243,6 @@ If the thruster/sensor configuration passes, the script creates two xacro files.
 Next, it calls a xacro command to generate the urdf at `wamv_target` using [this file](https://bitbucket.org/osrf/vrx/src/default/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro).
 
 # Important Cases
-
-* When calling `generate_wamv.launch`, if the `thruster_yaml` parameter is not given, then it uses the [default thruster yaml](TODO:put link to file here when merged)
-
-* When calling `generate_wamv.launch`, if the `sensor_yaml` parameter is not given, then it uses the [default sensor yaml](TODO:put link to file here when merged)
 
 * To setup a WAM-V with no thruster and no sensors, you can create empty files `empty_thruster_config.yaml` and `empty_sensor_config.yaml` and then pass them in as parameters to `generate_wamv.launch`
 
