@@ -28,5 +28,7 @@ We recommend following the tutorials in numerical order as each one builds off t
     * [Visualizing with RViz](https://bitbucket.org/osrf/vrx/wiki/tutorials/Visualizing%20with%20RViz): See the WAM-V and sensors in RViz.
     * [Changing Simulation Parameters](https://bitbucket.org/osrf/vrx/wiki/tutorials/ChangingPluginParameters): How to change model parameters (hydrodynamics, thrust, etc.) or environmental parameters (wind, waves, etc.) to customize your scenario.
     * [Creating a Custom Dock](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks): Create a new dock with your own shape and dimensions.
+    * [Waypoint visualization](https://bitbucket.org/osrf/vrx/wiki/tutorials/WaypointVisualization): Configure waypoint visualization markers inside Gazebo for station keeping or wayfinding tasks.
+
 
 1. [Troubleshooting](https://bitbucket.org/osrf/vrx/wiki/Troubleshooting): Diagnosing and fixing common problems with VRX.
