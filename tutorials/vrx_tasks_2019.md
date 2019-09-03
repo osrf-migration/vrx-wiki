@@ -114,13 +114,13 @@ There are two variants of this challenge.
 If you would like to change the color and shape of the symbols there are a couple of options.  
 
 1. If you have installed the VRX source, you can change the designated "correct" docking bay color and shape:
-  1. Edit the `vrx_gazebo/worlds/dock.world.xacro` file.  
-    1. Look for the `<bay>` tags and find the section with `<dock_allowed>true</dock_allowed>`
-    1. Change the strings in both the `<announce_symbol>` and `<symbol>` tags to your desired color and shape, e.g., `green_triangle`.
-  1. Rerun `catkin_make` to process the xacro file.
-  1. Restart the example.  You should now see the target bay marked with the desired placard and you should see that the same `<COLOR>_<SHAPE>` specification is published on the  `/vrx/scan_dock/placard_symbol`.
+   1. Edit the `vrx_gazebo/worlds/dock.world.xacro` file.  
+      1. Look for the `<bay>` tags and find the section with `<dock_allowed>true</dock_allowed>`
+      1. Change the strings in both the `<announce_symbol>` and `<symbol>` tags to your desired color and shape, e.g., `green_triangle`.
+   1. Rerun `catkin_make` to process the xacro file.
+   1. Restart the example.  You should now see the target bay marked with the desired placard and you should see that the same `<COLOR>_<SHAPE>` specification is published on the  `/vrx/scan_dock/placard_symbol`.
 1. Alternatively, if you would just like to change the color and shape without affecting the scoring plugin (which is how the system knows which is the "correct" bay), you can publish a ROS message to change the color and shape to a new random selection:
-  * `rostopic pub /vrx/dock_2018_placard1/shuffle std_msgs/Empty "{}"` 
+   * `rostopic pub /vrx/dock_2018_placard1/shuffle std_msgs/Empty "{}"` 
 
 
 
