@@ -19,7 +19,7 @@ The [system setup tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials) prov
 The VRX software support is provided for the following software environment:
 
 - Ubuntu Desktop 18.04 Bionic (64-bit)
-- Gazebo 9.9.0+ (<9.9.0 is not sufficient)
+- Gazebo 9.11.0+ (<9.11.0 is not sufficient)
 - ROS Melodic
 
 ### Peripherals ###
