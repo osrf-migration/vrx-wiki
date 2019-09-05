@@ -74,7 +74,7 @@ which calls the `ocean_waves` macro with using the default input parameters.
 
 Consider the case where we are testing a new algorithm and want to start with a flat ocean (no waves) before adding wave induced motion.  We could accomplish this a few different ways.
 
-One option is to change the default wave parameter values.  Edit the `wave_gazebo/world_models/ocean_waves/model.xacro` file, changing the gain value to zero, so it looks like this.  
+**Option 1: Change global default parameters.** One option is to change the default wave parameter values.  Edit the `wave_gazebo/world_models/ocean_waves/model.xacro` file, changing the gain value to zero, so it looks like this.  
 ```
  <xacro:macro name="ocean_waves" params="gain:=0.0 period:=5
                      direction_x:=1.0 direction_y:=0.0
@@ -82,7 +82,7 @@ One option is to change the default wave parameter values.  Edit the `wave_gazeb
 ```
 Now, for any world that uses the macro without explicitly setting the gain parameter, the value will be zero so all the wave amplitudes will be zero - a flat ocean.  Note, you will need to run `catkin_make` so that the changes take effect. 
 
-A second option is to explicitly set the parameters when calling the macro.  For example, edit the `vrx_gazebo/worlds/example_course.world.xacro` to set the gain parameter to zero when calling the macro like so...
+**Option 2: Change local parameters.**  A second option is to explicitly set the parameters when calling the macro.  For example, edit the `vrx_gazebo/worlds/example_course.world.xacro` to set the gain parameter to zero when calling the macro like so...
 ```
   <!--Waves-->
     <xacro:include filename="$(find wave_gazebo)/world_models/ocean_waves/model.xacro"/>
