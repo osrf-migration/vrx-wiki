@@ -88,7 +88,7 @@ Now, for any world that uses the macro without explicitly setting the gain param
     <xacro:include filename="$(find wave_gazebo)/world_models/ocean_waves/model.xacro"/>
     <xacro:ocean_waves gain="0.0"/>
 ```
-The execute `catkin_make` and when you run `roslaunch vrx_gazebo sandisland.launch` the ocean waves will all have zero amplitude. 
+Then execute `catkin_make` and when you run `roslaunch vrx_gazebo vrx.launch` (which uses the example_course world) the ocean waves will all have zero amplitude. 
 
 After testing in zero seastate, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the gain and/or peak period of the wave spectrum.  It might also be important to test with different wave directions to make sure that a particular solution isn't dependent on a particular wave direction.  Ideally, solutions would be tested over the range of possible seastate parameters - see current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge.
 
