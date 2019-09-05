@@ -7,7 +7,7 @@ This tutorial briefly describes where the base parameter files that are included
 | Description | File Location | Notes |
 |-------------|---------------|------ |
 | Hydrodynamic parameters (drag, added mass, etc.) | wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Current parameters based on FAU Publication https://doi.org/10.1016/j.oceaneng.2016.09.037 |
-| Wave characteristics (amplitude, period and direction for three constituents) |  wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro | Values correspond to same values used in visual texture |
+| Wave characteristics (peak period, gain, direction, etc.) | wave_gazebo/world_models/ocean_waves/model.xacro | See current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge. |
 | Propulsion characteristics (linear or nonlinear mapping and force limits) | wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 | Wind velocity and windage coefficients | vrx_gazebo/worlds/sandisland.world.xacro and vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 
@@ -54,29 +54,42 @@ NOTE: For another example, see vrx_gazebo/worlds/wind_test.world.xacro
 
 # Example: Changing the Wave Field #
 
-As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in `wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro`.  When we open the file we see a section that looks like this...
+As an illustrative example, we'll go through testing the simulation with different wave scenarios.  The wave field characteristics are defined in the `wave_gazebo/world_models/ocean_waves/model.xacro` file.  When we open the file we see a section that looks like this...
 
 ```
-	<!-- Waves x3 -->
-	<wave_n>3</wave_n>
-
-	<wave_amp0>0.06</wave_amp0>
-	<wave_period0>12.6</wave_period0>
-	<wave_direction0>-1 0</wave_direction0>
-
-	<wave_amp1>0.04</wave_amp1>
-	<wave_period1>3.7</wave_period1>
-	<wave_direction1>-0.7 0.7</wave_direction1>
-
-	<wave_amp2>0.03</wave_amp2>
-	<wave_period2>6.3</wave_period2>
-	<wave_direction2>0.7 0.7</wave_direction2>
+ <xacro:macro name="ocean_waves" params="gain:=0.1 period:=5
+                     direction_x:=1.0 direction_y:=0.0
+                     angle:=0.4">
 ```
 
-This specifies our Gerstner wave field as having three components, where each component has a user-specified  amplitude, period and direction.
+This specifies the `ocean_waves` macro with five optional input parameters.  This macro is used to add the ocean model to world descriptions within the VRX simulation.  For example, the `vrx_gazebo/worlds/example_course.world.xacro` file contains this snippet
 
-When we start testing a new algorithm, we may want to set all of these to zero, so that there is no influence from the wave field.  We could achieve that by setting the amplitude of each component wave to zero - or we could set the `wave_n` parameter to zero so there are no components.
+```
+    <!--Waves-->
+    <xacro:include filename="$(find wave_gazebo)/world_models/ocean_waves/model.xacro"/>
+    <xacro:ocean_waves/>
+```
 
-Alternatively, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the amplitude of the waves and/or changing the wave period.
+which calls the `ocean_waves` macro with using the default input parameters. 
+
+Consider the case where we are testing a new algorithm and want to start with a flat ocean (no waves) before adding wave induced motion.  We could accomplish this a few different ways.
+
+One option is to change the default wave parameter values.  Edit the `wave_gazebo/world_models/ocean_waves/model.xacro` file, changing the gain value to zero, so it looks like this.  
+```
+ <xacro:macro name="ocean_waves" params="gain:=0.0 period:=5
+                     direction_x:=1.0 direction_y:=0.0
+                     angle:=0.4">
+```
+Now, for any world that uses the macro without explicitly setting the gain parameter, the value will be zero so all the wave amplitudes will be zero - a flat ocean.  Note, you will need to run `catkin_make` so that the changes take effect. 
+
+A second option is to explicitly set the parameters when calling the macro.  For example, edit the `vrx_gazebo/worlds/example_course.world.xacro` to set the gain parameter to zero when calling the macro like so...
+```
+  <!--Waves-->
+    <xacro:include filename="$(find wave_gazebo)/world_models/ocean_waves/model.xacro"/>
+    <xacro:ocean_waves gain="0.0"/>
+```
+The execute `catkin_make` and when you run `roslaunch vrx_gazebo sandisland.launch` the ocean waves will all have zero amplitude. 
+
+After testing in zero seastate, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the gain and/or peak period of the wave spectrum.  It might also be important to test with different wave directions to make sure that a particular solution isn't dependent on a particular wave direction.  Ideally, solutions would be tested over the range of possible seastate parameters - see current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge.
 
 We've posted a [video](https://vimeo.com/257586610) showing how we would test with three different seastates - including how to break a buoy!
