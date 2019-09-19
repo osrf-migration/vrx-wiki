@@ -10,7 +10,7 @@ This tutorial briefly describes where the base parameter files that are included
 | Wave characteristics (peak period, gain, direction, etc.) | wave_gazebo/world_models/ocean_waves/model.xacro | See current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge. |
 | Propulsion characteristics (linear or nonlinear mapping and force limits) | wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro | Nonlinear mapping is based on experimental results from FAU https://doi.org/10.1016/j.oceaneng.2016.09.037 |
 | Wind velocity and windage coefficients | vrx_gazebo/worlds/sandisland.world.xacro and vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro | Windage coefficeints from same FAU report https://doi.org/10.1016/j.oceaneng.2016.09.037 |
-
+| Fog and Ambient visual conditions | vrx_gazebo/worlds/sandisland.xacro | See current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge.
 
 
 # Example: Changing the Wind #
@@ -93,3 +93,26 @@ Then execute `catkin_make` and when you run `roslaunch vrx_gazebo vrx.launch` (w
 After testing in zero seastate, we may want to stress our algorithm by increasing the seastate.  This can be accomplished by increasing the gain and/or peak period of the wave spectrum.  It might also be important to test with different wave directions to make sure that a particular solution isn't dependent on a particular wave direction.  Ideally, solutions would be tested over the range of possible seastate parameters - see current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge.
 
 We've posted a [video](https://vimeo.com/257586610) showing how we would test with three different seastates - including how to break a buoy!
+
+# Example: Changing Fog and Ambient Lighting #
+
+For more challenging visual conditions, change the [fog](http://sdformat.org/spec?ver=1.6&elem=scene#scene_fog] and [color of the ambient](http://sdformat.org/spec?ver=1.6&elem=scene#scene_ambient).  One way to do this is to edit the `vrx_gazebo/worlds/sandisland.xacro` file and add (or change) the fog and ambient tags within the <scene> definition.  For example, to add fog you might have the scene block look like this..
+```
+    <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+      <grid>0</grid>
+      <origin_visual>0</origin_visual>
+      <fog>
+        <type> linear</type>
+        <color> 0.7 0.7 0.7 1 </color>
+        <density> 0.0 </density>
+      </fog>
+      <ambient> 1.0 1.0 1.0 1 </ambient>-->
+    </scene>
+```
+
+See current version of the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation) for the envelope of values which used in the VRX challenge.
