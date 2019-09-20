@@ -17,7 +17,7 @@ Videos should be limited to no more than 5 minutes in length.
 
 ## Submission process
 
-In the spirit of prototyping, we ask that teams submit the link to their video using the same process you will use to submit your solutions in future phases of the challenge. Please see the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for detailed instructions.
+In the spirit of prototyping, we ask that teams submit the link to their video using the same process you will use to submit your solutions in future phases of the challenge. Please see the [submission process wiki](https://bitbucket.org/osrf/vrx/wiki/submission_process) for detailed instructions. If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.
 
 We expect to receive a single file from each competitor:
  
