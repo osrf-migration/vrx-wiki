@@ -24,7 +24,7 @@ We expect to receive a single file from each competitor:
  * `video_link.txt`: Contains only the URL to the team's online video submission
 
 
-## Important dates*****
+## Important dates
 
 | Date                          | Description                            |
 |-------------------------------|----------------------------------------|
@@ -34,7 +34,6 @@ We expect to receive a single file from each competitor:
 
 Note: We'll allocate an extra day in the schedule (September 24) for fixing any problems related with the content of `video_link.txt` (e.g.: A typo writing the URL of the video). Teams are not allowed to modify the video after the deadline on September 23.
 
-*** Note:** These dates are provisional.
 
 ## Prizes
 
