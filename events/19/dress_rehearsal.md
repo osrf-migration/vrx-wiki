@@ -17,7 +17,7 @@ To ensure that your system can adapt to previously-unseen scenarios, teams shoul
 
 We expect to receive three files from each competitor prior to this event: 
 
-* `dockerhub_image.txt`: Contains the name of the image to be pulled from DockerHub.
+* `dockerhub_image.txt`: Contains the name of the image to be pulled from DockerHub. If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.
 * `thruster_config.yaml`: Defines the WAM-V thruster configuration.
 * `sensor_config.yaml`: Defines the WAM-V sensor configuration.
 
