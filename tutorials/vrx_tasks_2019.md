@@ -135,6 +135,7 @@ If you would like to change the color and shape of the symbols there are a coupl
     * Notes:
         * The service name is `/vrx/scan_dock/color_sequence`
         * Allowable values are "red", "green", "blue" and "yellow"
+        * The service only returns once, that is you can only call the service one time.  The first time you call the service it returns true, even if the sequence is incorrect.  If the sequence is correct, the score is incremented by the colorBonusPOints value (typ. 10 points).  You can monitor the score with `rostopic echo  /vrx/task/info` 
 1. Dock in the bay displaying the symbol that corresponds to the correct color sequence.
 
 For further details on either task, see "4.3.2. Task 5: Scan-the-code and Dock" in the [Competition and Task Descriptions](https://bitbucket.org/osrf/vrx/downloads/VRX%202019%20Task%20Descriptions_v1.1.pdf), or refer to the [scan and dock scoring plugin](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/include/vrx_gazebo/scan_dock_scoring_plugin.hh)
