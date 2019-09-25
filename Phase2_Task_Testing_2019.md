@@ -10,7 +10,7 @@ The [VRX Tasks: Examples](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_task
 For this tutorial, all of your testing will be done locally, on the host machine or a local docker container.  For the actual competition, these solutions will be evaluated automatically.  If you are interested in testing that aspect of the evaluation, you can setup your own evaluation setup, equivalent to the one used in the competition, using the tools describe in the [vrx-docker repository](https://bitbucket.org/osrf/vrx-docker/src/default/).
 
 
-## Example Worlds ##
+## Example Trials ##
 
 We have generated three trials for each task that cover much of the allowable task and environment parameters.   These trials are notionally
 
@@ -18,4 +18,4 @@ We have generated three trials for each task that cover much of the allowable ta
 1. Medium - moderate task difficulty and environmental influence
 2. Hard - at or close to the limit of task difficulty and environmental factors.
 
-Our intention is to execute the evaluation of submissions to the Phase 2 challenge in using very similar (but not exactly the same) trials of each task.
+Our intention is to execute the evaluation of submissions to the Phase 2 challenge in using very similar (but not exactly the same) trials of each task.  Each trial consists of worlds and models to define the instance of the task and the operating environment.
