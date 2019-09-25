@@ -1,0 +1,1 @@
+The objective of this tutorial is to provide step-by-step guidance for local testing in preparation for [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal)
