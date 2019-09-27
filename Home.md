@@ -22,6 +22,8 @@ How to submit your solution for an event.
  * [Download logs](https://bitbucket.org/osrf/vrx/wiki/download_logs)
 How to download your log files after an event.
 
+ * [Results](https://bitbucket.org/osrf/vrx/wiki/VRX%202019%20Results).  Results for the VRX Challenge phases as they arrive.
+
 ## Additional Resources
 
  * [Maritime RobotX Website (General information)](https://www.robotx.org/)
