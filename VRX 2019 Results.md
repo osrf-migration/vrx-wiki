@@ -2,6 +2,11 @@
 
 ## Phase 1: Hello World ##
 
+For [Phase 1 of the VRX challenge](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld) teams were tasked with creating a video to demonstrate their ability to setup, provision and run the VRX virtual environment.  This first step, "Hello World", showed that teams are well on their way to being able to submit full solutions for the next step, [Phase 2: Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal).
+
+Below are links to the 15 videos submitted by student and faculty teams from universities around the world.  
+ We laughed, we cried, they it was better than Cats.
+
 Affiliation | Team  | Video URL
 ------------- | ------------- | ------------- 
  Embry-Riddle Aeronautical University|  ERAU_Minion | https://www.youtube.com/watch?v=e6H1vsERfyI  
