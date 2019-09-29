@@ -18,7 +18,7 @@ Affiliation | Team  | Video URL
   National University of Singapore | bumblebee | https://youtu.be/EGfL2FXSrlk  
   University of Sydney | USYD_RobotX | https://youtu.be/X4E_MOWlgK4  
   Florida Atlantic University | team_owltonomous | https://www.youtube.com/watch?v=WVvMmu9NS4A  
-  National Taiwan University | tang | https://www.youtube.com/watch?v=mr0nTw9GCyg&feature=youtu.be  
+  National Taiwan University | tang | https://www.youtube.com/watch?v=Y45Wb5cffdM  
   University of Florida's Machine Intelligence Laboratory | uf | https://drive.google.com/file/d/1Ma8OEIQ1_oqBvMVylgv7mwJDRbWZ7k6e/view?usp=sharing  
   Osaka Prefecture University | OUXT_Polaris | https://youtu.be/SaizmxDic7E  
   Northwestern Polytechnical University | Breaking Wave__NWPU | https://drive.google.com/file/d/1kmRmKGPFeY1SejOj46DQwwFGLMErIqqG/view?usp=sharing  
