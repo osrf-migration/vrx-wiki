@@ -104,6 +104,8 @@ There are two variants of this challenge.
 * In the first variant the correct dock is specified via a ROS message.  
 * In the second variant, the correct dock must be deduced from the Scan-the-Code sequence.
 
+Below are succinct steps to run the examples.  For more details on how successful docking is determined/scored and debugging suggestions, see [Docking Details](https://bitbucket.org/osrf/vrx/wiki/tutorials/docking_details)
+
 #### 5. Dock: Correct Dock Specified via ROS message ####
 
 1. Start the example: `roslaunch vrx_gazebo dock.launch verbose:=true`
