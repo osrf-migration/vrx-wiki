@@ -22,3 +22,7 @@ The Internal Activation Zone is used to determine when the WAM-V enters or exits
 The diagram below describes this sequence as state transitions during docking maneuvers.
 
 ![docking_states.png](https://bitbucket.org/repo/BgXLzgM/images/2431361064-docking_states.png)
+
+## Activation Zone Visualization ##
+
+The visual elements illustrating the Internal and External Activation Zones (red and green boxes in the image above) may be helpful for debugging.  These visual elements are included in the dock model (see `vrx_gazebo/models/dock_2018_dynamic/model.sdf.erb`.  They are included by default in our example dock, but can be removed by simply commenting out the XML block that starts with `<link name="bay_visualization">`
