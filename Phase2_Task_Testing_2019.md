@@ -73,6 +73,34 @@ Hard difficulty environment.  Five waypoints in a more challenging arrangement.
 
 ![wayfinding2.png](https://bitbucket.org/repo/BgXLzgM/images/1278469224-wayfinding2.png)
 
+## Task 3: Perception ##
+The three example worlds provided for the Perception task are as follows:
+
+* `perception0.world`: Easy environment.
+* `perception1.world`: Medium difficulty environment.
+* `perception2.world`: Hard difficulty environment.  
+
+### perception0.world ###
+
+### perception1.world ###
+
+### perception2.world ###
+
+## Task 4: Navigation ##
+The three example worlds provided for the Navigation task are as follows:
+
+* `nav_challenge0.world`: Easy environment.
+* `nav_challenge1.world`: Medium difficulty environment.
+* `nav_challenge2.world`: Hard difficulty environment.  
+
+### nav_challenge0.world ###
+
+### nav_challenge1.world ###
+
+### nav_challenge2.world ###
+
+
+
 ## Task 5: Dock ##
 
 Three example worlds are supplied to represent three potential trials of the Dock task.
