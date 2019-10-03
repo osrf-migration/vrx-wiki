@@ -20,6 +20,43 @@ We have generated three trials for each task that cover much of the allowable ta
 
 Our intention is to execute the evaluation of submissions to the Phase 2 challenge in using very similar (but not exactly the same) trials of each task.  Each trial consists of worlds and models to define the instance of the task and the operating environment.
 
+## Task 1: Stationkeeping ##
+Three example worlds are supplied to represent three potential trials of the Stationkeeping task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
+
+* `stationkeeping0.world`: Easy environment.
+* `stationkeeping1.world`: Medium difficulty environment.
+* `stationkeeping2.world`: Hard difficulty environment.  
+
+You should be able to run the individual examples as
+
+```
+WORLD=stationkeeping0.world
+roslaunch vrx_gazebo vrx.launch verbose:=true \
+	  paused:=false \
+	  wamv_locked:=true \
+	  world:=/home/developer/vrx_ws/src/vrx/vrx_gazebo/worlds/${WORLD}
+```
+where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
+
+### Stationkeeping World Variation ###
+
+The three stationkeeping worlds all have goals set relatively close to the WAM-V starting position. Due to the nature of the task, they vary primarily in terms of environmental factors.
+
+
+## Task 2: Wayfinding ##
+Three example worlds are supplied to represent three potential trials of the Wayfinding task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
+
+* `wayfinding0.world`: Easy environment. 
+* `wayfinding1.world`: Medium difficulty environment.
+* `wayfinding2.world`: Hard difficulty environment.  
+
+### wayfinding0.world ###
+
+### wayfinding1.world ###
+
+### wayfinding2.world ###
+
+
 
 ## Task 5: Dock ##
 
