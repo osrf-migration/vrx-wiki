@@ -105,13 +105,13 @@ The three example worlds provided for the Navigation task are as follows:
 
 Three example worlds are supplied to represent three potential trials of the Dock task.
 
-* `dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
+* `dock0.world`: Easy environment.  Correct bay is the red_cross directly ahead of the WAM-V in its initial position.
 * `dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
 * `dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
 
 ### dock0.world ###
 
-Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
+Easy environment.  Correct bay is the red_cross directly ahead of the WAM-V in its initial position.
 
 ![dock0.png](https://bitbucket.org/repo/BgXLzgM/images/81999219-dock0.png)
 
