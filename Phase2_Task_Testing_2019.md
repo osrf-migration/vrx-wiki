@@ -82,9 +82,15 @@ The three example worlds provided for the Perception task are as follows:
 
 ### perception0.world ###
 
+![perception_0.png](https://bitbucket.org/repo/BgXLzgM/images/851874491-perception_0.png)
+
 ### perception1.world ###
 
+![perception_1.png](https://bitbucket.org/repo/BgXLzgM/images/3018688757-perception_1.png)
+
 ### perception2.world ###
+
+![perception_2.png](https://bitbucket.org/repo/BgXLzgM/images/1612892141-perception_2.png)
 
 ## Task 4: Navigation ##
 The three example worlds provided for the Navigation task are as follows:
