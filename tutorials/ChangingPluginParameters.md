@@ -16,7 +16,7 @@ This tutorial briefly describes where the base parameter files that are included
 # Example: Changing the Wind #
 As an illustrative example, we'll go through testing our simulation with different wind conditions.  
 
- * The default wind parameters (speed, variability, direction, etc.) are defined in the [vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro]/xacros/(https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro) file.  The file defines an XML macro that is then used when defining Gazebo worlds to specify use of the usv_wind_plugin.  Changing parameters in this file will change the default wind conditions for the simulation.
+ * The default wind parameters (speed, variability, direction, etc.) are defined in the [vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro) file.  The file defines an XML macro that is then used when defining Gazebo worlds to specify use of the usv_wind_plugin.  Changing parameters in this file will change the default wind conditions for the simulation.
  * The models affected by the wind and how they are affected is defined in the specific world file.  For example, the [vrx_gazebo/worlds/sandisland.world.xacro](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/worlds/sandisland.world.xacro) file calls the usv_wind_gazebo macro defined in the usv_wind_plugin.xacro file and specifies that the wind forces should be applied to the `wamv` model with specific wind coefficients. If you view the sandisland.world.xacro file you will see lines like this...
 
 ```
