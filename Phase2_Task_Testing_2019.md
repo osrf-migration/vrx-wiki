@@ -20,12 +20,8 @@ We have generated three trials for each task that cover much of the allowable ta
 
 Our intention is to execute the evaluation of submissions to the Phase 2 challenge in using very similar (but not exactly the same) trials of each task.  Each trial consists of worlds and models to define the instance of the task and the operating environment.
 
-## Task 1: Stationkeeping ##
-Three example worlds are supplied to represent three potential trials of the Stationkeeping task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
-
-* `stationkeeping0.world`: Easy environment.
-* `stationkeeping1.world`: Medium difficulty environment.
-* `stationkeeping2.world`: Hard difficulty environment.  
+### Running Example Trials ###
+All examples are stored in the `vrx/vrx_gazebo/worlds` directory.
 
 You should be able to run the individual examples as
 
@@ -38,17 +34,26 @@ roslaunch vrx_gazebo vrx.launch verbose:=true \
 ```
 where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
 
+
+## Task 1: Stationkeeping ##
+The three example worlds provided for the Stationkeeping task are as follows:
+
+* `stationkeeping0.world`: Easy environment.
+* `stationkeeping1.world`: Medium difficulty environment.
+* `stationkeeping2.world`: Hard difficulty environment.  
+
 ### Stationkeeping World Variations ###
 
-The three stationkeeping worlds all have goals set relatively close to the WAM-V starting position. Due to the nature of the task, they vary primarily in terms of environmental factors.
-
+These three worlds all have goals set relatively close to the WAM-V starting position. Due to the nature of the task, they vary primarily in terms of environmental factors.
 
 ## Task 2: Wayfinding ##
-Three example worlds are supplied to represent three potential trials of the Wayfinding task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
+The three example worlds provided for the Wayfinding task are as follows:
 
 * `wayfinding0.world`: Easy environment. Three waypoints, relatively close together.
 * `wayfinding1.world`: Medium difficulty environment. Four waypoints, more widely dispersed.
 * `wayfinding2.world`: Hard difficulty environment.  Five waypoints in a more challenging arrangement.
+
+See below for screenshots showing the arrangement of waypoints in each example world.
 
 ### wayfinding0.world ###
 
@@ -70,22 +75,11 @@ Hard difficulty environment.  Five waypoints in a more challenging arrangement.
 
 ## Task 5: Dock ##
 
-Three example worlds are supplied to represent three potential trials of the Dock task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
+Three example worlds are supplied to represent three potential trials of the Dock task.
 
 * `dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
 * `dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
 * `dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
-
-You should be able to run the individual examples as
-
-```
-WORLD=dock0.world
-roslaunch vrx_gazebo vrx.launch verbose:=true \
-	  paused:=false \
-	  wamv_locked:=true \
-	  world:=/home/developer/vrx_ws/src/vrx/vrx_gazebo/worlds/${WORLD}
-```
-where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
 
 ### dock0.world ###
 
@@ -120,7 +114,6 @@ The three example trials for this task have the same environmental and dock layo
 ### scan_and_dock0.world ###
 
 ![scandock0.png](https://bitbucket.org/repo/BgXLzgM/images/2522946443-scandock0.png)
-
 
 ### scan_and_dock1.world ###
 
