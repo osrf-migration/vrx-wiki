@@ -90,13 +90,13 @@ In this world, there is up to one object per trial.
 
 ### perception1.world ###
 
-In this world, there is up to two objects per trial.
+In this world, there is up to two objects per trial and even repeated models.
 
 ![perception_1.png](https://bitbucket.org/repo/BgXLzgM/images/3018688757-perception_1.png)
 
 ### perception2.world ###
 
-In this world, there is up to five objects per trial, there are repeated elements and partial occlusions.
+In this world, there is up to five objects per trial, partial occlusions and objected at long distance.
 
 ![perception_2.png](https://bitbucket.org/repo/BgXLzgM/images/1612892141-perception_2.png)
 
