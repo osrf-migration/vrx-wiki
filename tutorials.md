@@ -13,6 +13,7 @@ We recommend following the tutorials in numerical order as each one builds off t
     * [Sand Island Basic](https://bitbucket.org/osrf/vrx/wiki/tutorials/Sand_Island_Basic): A simple base world, similar to the RobotX venue, with a WAM-V model.
     * [VRX](https://bitbucket.org/osrf/vrx/wiki/tutorials/ExampleVrx): Example of a specific WAM-V and sensor configuration similar to what teams have used for RobotX. Also illustrates using RViz.
     * [VRX Tasks 2019](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_tasks_2019): Individual tasks for 2019 VRX competition
+        * [Docking Details](https://bitbucket.org/osrf/vrx/wiki/tutorials/docking_details) describing how docking is evaluated and hints at debugging your docking solution.
 
 1. Simulation Interfaces: Connecting to VRX API
 
