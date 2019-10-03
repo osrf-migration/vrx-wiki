@@ -96,7 +96,7 @@ In this world, there is up to two objects per trial and even repeated models.
 
 ### perception2.world ###
 
-In this world, there is up to five objects per trial, partial occlusions and objectes at long distance.
+In this world, there is up to six objects per trial, partial occlusions and objects at long distance.
 
 ![perception_2.png](https://bitbucket.org/repo/BgXLzgM/images/1612892141-perception_2.png)
 
