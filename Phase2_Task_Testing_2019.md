@@ -49,3 +49,11 @@ Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in
 ### scan_and_dock1.world ###
 
  Medium difficulty environment.  Correct bay is the green_triangle.
+
+![dock1.png](https://bitbucket.org/repo/BgXLzgM/images/3348985337-dock1.png)
+
+### scan_and_dock2.world ###
+
+Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+
+![dock2.png](https://bitbucket.org/repo/BgXLzgM/images/448798662-dock2.png)
