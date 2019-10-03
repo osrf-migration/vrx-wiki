@@ -51,11 +51,13 @@ Three example worlds are supplied to represent three potential trials of the Way
 * `wayfinding2.world`: Hard difficulty environment.  
 
 ### wayfinding0.world ###
+![wayfinding0.png](https://bitbucket.org/repo/BgXLzgM/images/2037154785-wayfinding0.png)
 
 ### wayfinding1.world ###
+![wayfinding1.png](https://bitbucket.org/repo/BgXLzgM/images/664580863-wayfinding1.png)
 
 ### wayfinding2.world ###
-
+![wayfinding2.png](https://bitbucket.org/repo/BgXLzgM/images/2954688603-wayfinding2.png)
 
 
 ## Task 5: Dock ##
