@@ -39,3 +39,13 @@ roslaunch vrx_gazebo vrx.launch verbose:=true \
 	  world:=/home/developer/vrx_ws/src/vrx/vrx_gazebo/worlds/${WORLD}
 ```
 where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
+
+### scan_and_dock0.world ###
+
+Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
+
+![dock0.png](https://bitbucket.org/repo/BgXLzgM/images/81999219-dock0.png)
+
+### scan_and_dock1.world ###
+
+ Medium difficulty environment.  Correct bay is the green_triangle.
