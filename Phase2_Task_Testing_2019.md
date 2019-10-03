@@ -57,3 +57,7 @@ Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in
 Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
 
 ![dock2.png](https://bitbucket.org/repo/BgXLzgM/images/448798662-dock2.png)
+
+### Development and Debugging Recommendations ###
+
+The [VRX Tasks: Examples](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_tasks_2019#markdown-header-5-and-6-dock-and-scan-and-dock) wiki provides general notes on the API and [Docking Details](https://bitbucket.org/osrf/vrx/wiki/tutorials/docking_details) wiki describes the how successful docking is determined and how the docking state is provided to stdout.
