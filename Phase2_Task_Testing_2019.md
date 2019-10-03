@@ -38,7 +38,7 @@ roslaunch vrx_gazebo vrx.launch verbose:=true \
 ```
 where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
 
-### Stationkeeping World Variation ###
+### Stationkeeping World Variations ###
 
 The three stationkeeping worlds all have goals set relatively close to the WAM-V starting position. Due to the nature of the task, they vary primarily in terms of environmental factors.
 
@@ -46,17 +46,26 @@ The three stationkeeping worlds all have goals set relatively close to the WAM-V
 ## Task 2: Wayfinding ##
 Three example worlds are supplied to represent three potential trials of the Wayfinding task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
 
-* `wayfinding0.world`: Easy environment. 
-* `wayfinding1.world`: Medium difficulty environment.
-* `wayfinding2.world`: Hard difficulty environment.  
+* `wayfinding0.world`: Easy environment. Three waypoints, relatively close together.
+* `wayfinding1.world`: Medium difficulty environment. Four waypoints, more widely dispersed.
+* `wayfinding2.world`: Hard difficulty environment.  Five waypoints in a more challenging arrangement.
 
 ### wayfinding0.world ###
+
+Easy environment. Three waypoints, relatively close together.
+
 ![wayfinding0.png](https://bitbucket.org/repo/BgXLzgM/images/1116678533-wayfinding0.png)
 
 ### wayfinding1.world ###
+
+Medium difficulty environment. Four waypoints, more widely dispersed.
+
 ![wayfinding1.png](https://bitbucket.org/repo/BgXLzgM/images/33173320-wayfinding1.png)
 
 ### wayfinding2.world ###
+
+Hard difficulty environment.  Five waypoints in a more challenging arrangement.
+
 ![wayfinding2.png](https://bitbucket.org/repo/BgXLzgM/images/1278469224-wayfinding2.png)
 
 ## Task 5: Dock ##
