@@ -14,8 +14,28 @@ For this tutorial, all of your testing will be done locally, on the host machine
 
 We have generated three trials for each task that cover much of the allowable task and environment parameters.   These trials are notionally
 
-0. Easy - simplified task in negligible wave, wind and visual environmental factors.
+0. Easy - simplified task in negligible wave, wind and visual (fog) environmental factors.
 1. Medium - moderate task difficulty and environmental influence
 2. Hard - at or close to the limit of task difficulty and environmental factors.
 
 Our intention is to execute the evaluation of submissions to the Phase 2 challenge in using very similar (but not exactly the same) trials of each task.  Each trial consists of worlds and models to define the instance of the task and the operating environment.
+
+
+## Task 5: Dock ##
+
+Three example worlds are supplied to represent three potential trials of the Dock task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
+
+* `scan_and_dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
+* `scan_and_dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
+* `scan_and_dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+
+You should be able to run the individual examples as
+
+```
+WORLD=scan_and_dock0.world
+roslaunch vrx_gazebo vrx.launch verbose:=true \
+	  paused:=false \
+	  wamv_locked:=true \
+	  world:=/home/developer/vrx_ws/src/vrx/vrx_gazebo/worlds/${WORLD}
+```
+where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
