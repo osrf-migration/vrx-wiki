@@ -162,7 +162,7 @@ The [VRX Tasks: Examples](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_task
 
 The three example trials for this task have the same environmental and dock layout of Task 5: Dock, described above.  In each example world a RoboX Light Buoy is added and the system must find the light buoy, read the code, and infer the correct dock from the light sequence.  
 
-* `scan_and_dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.  Light buoy is immediately visible.
+* `scan_and_dock0.world`: Easy environment.  Correct bay is the red_cross (color sequence is "red" "green" "blue") directly ahead of the WAM-V in its initial position.  Light buoy is immediately visible.  
 * `scan_and_dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
 * `scan_and_dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
 
@@ -177,3 +177,19 @@ The three example trials for this task have the same environmental and dock layo
 ### scan_and_dock2.world ###
 
 ![scandock2.png](https://bitbucket.org/repo/BgXLzgM/images/426771738-scandock2.png)
+
+### Development and Debugging Recommendations ###
+
+Additional points are awarded when correctly reporting the color sequence through the ROS service API.  For example, for `scan_and_dock0.world` if you call the service with the correct color sequence:
+
+```
+rosservice call /vrx/scan_dock/color_sequence "red" "green" "blue"
+```
+
+1. The service will return `success: True` - the service returns this as long as the color sequence is valid (has three items, etc.)  Even if the sequence is incorrect ,it will return `success: True`
+2. In the Gazebo terminal stdout will report some debugging information, e.g.,
+```[ INFO] [1570143447.600037397, 12.694000000]: Color sequence submission received
+[ INFO] [1570143447.600102983, 12.694000000]: Received color sequence is correct.  Additional points will be scored.
+[Msg] Adding <10> points for correct reporting of color sequence
+```
+3. The score will be incremented, which you can see with ` rostopic echo /vrx/task/info`
