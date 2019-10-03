@@ -25,14 +25,14 @@ Our intention is to execute the evaluation of submissions to the Phase 2 challen
 
 Three example worlds are supplied to represent three potential trials of the Dock task.  These worlds are all in the `vrx/vrx_gazebo/worlds` directory.  
 
-* `scan_and_dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
-* `scan_and_dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
-* `scan_and_dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+* `dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
+* `dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
+* `dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
 
 You should be able to run the individual examples as
 
 ```
-WORLD=scan_and_dock0.world
+WORLD=dock0.world
 roslaunch vrx_gazebo vrx.launch verbose:=true \
 	  paused:=false \
 	  wamv_locked:=true \
@@ -40,19 +40,19 @@ roslaunch vrx_gazebo vrx.launch verbose:=true \
 ```
 where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.
 
-### scan_and_dock0.world ###
+### dock0.world ###
 
 Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.
 
 ![dock0.png](https://bitbucket.org/repo/BgXLzgM/images/81999219-dock0.png)
 
-### scan_and_dock1.world ###
+### dock1.world ###
 
  Medium difficulty environment.  Correct bay is the green_triangle.
 
 ![dock1.png](https://bitbucket.org/repo/BgXLzgM/images/3348985337-dock1.png)
 
-### scan_and_dock2.world ###
+### dock2.world ###
 
 Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
 
@@ -61,3 +61,24 @@ Hard difficulty environment.  There are two docks (four bays).  The correct bay 
 ### Development and Debugging Recommendations ###
 
 The [VRX Tasks: Examples](https://bitbucket.org/osrf/vrx/wiki/tutorials/vrx_tasks_2019#markdown-header-5-and-6-dock-and-scan-and-dock) wiki provides general notes on the API and [Docking Details](https://bitbucket.org/osrf/vrx/wiki/tutorials/docking_details) wiki describes the how successful docking is determined and how the docking state is provided to stdout.
+
+## Task 6: Scan-and-Dock ##
+
+The three example trials for this task have the same environmental and dock layout of Task 5: Dock, described above.  In each example world a RoboX Light Buoy is added and the system must find the light buoy, read the code, and infer the correct dock from the light sequence.  
+
+* `scan_and_dock0.world`: Easy environment.  Correct bay is the blue_circle directly ahead of the WAM-V in its initial position.  Light buoy is immediately visible.
+* `scan_and_dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
+* `scan_and_dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+
+### scan_and_dock0.world ###
+
+![scandock0.png](https://bitbucket.org/repo/BgXLzgM/images/2522946443-scandock0.png)
+
+
+### scan_and_dock1.world ###
+
+![scandock1.png](https://bitbucket.org/repo/BgXLzgM/images/2101582440-scandock1.png)
+
+### scan_and_dock2.world ###
+
+![scandock2.png](https://bitbucket.org/repo/BgXLzgM/images/426771738-scandock2.png)
