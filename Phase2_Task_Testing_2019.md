@@ -78,17 +78,25 @@ The three example worlds provided for the Perception task are as follows:
 
 * `perception0.world`: Easy environment.
 * `perception1.world`: Medium difficulty environment.
-* `perception2.world`: Hard difficulty environment.  
+* `perception2.world`: Hard difficulty environment.
+
+See below for screenshots showing the objects spawn in each trial.
 
 ### perception0.world ###
+
+In this world, there is up to one object per trial.
 
 ![perception_0.png](https://bitbucket.org/repo/BgXLzgM/images/851874491-perception_0.png)
 
 ### perception1.world ###
 
+In this world, there is up to two objects per trial.
+
 ![perception_1.png](https://bitbucket.org/repo/BgXLzgM/images/3018688757-perception_1.png)
 
 ### perception2.world ###
+
+In this world, there is up to five objects per trial, there are repeated elements and partial occlusions.
 
 ![perception_2.png](https://bitbucket.org/repo/BgXLzgM/images/1612892141-perception_2.png)
 
@@ -97,17 +105,25 @@ The three example worlds provided for the Navigation task are as follows:
 
 * `nav_challenge0.world`: Easy environment.
 * `nav_challenge1.world`: Medium difficulty environment.
-* `nav_challenge2.world`: Hard difficulty environment.  
+* `nav_challenge2.world`: Hard difficulty environment.
+
+See below for screenshots showing the arrangement of the navigation course in each example world.
 
 ### nav_challenge0.world ###
+
+This is very similar to the RobotX navigation channel.
 
 ![nav_0.png](https://bitbucket.org/repo/BgXLzgM/images/3581781577-nav_0.png)
 
 ### nav_challenge1.world ###
 
+This layout has low obstacle density.
+
 ![nav_1.png](https://bitbucket.org/repo/BgXLzgM/images/2459925737-nav_1.png)
 
 ### nav_challenge2.world ###
+
+This is the hardest layout! Medium obstacle density.
 
 ![nav_2.png](https://bitbucket.org/repo/BgXLzgM/images/3187437283-nav_2.png)
 
