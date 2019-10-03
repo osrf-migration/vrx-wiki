@@ -101,10 +101,15 @@ The three example worlds provided for the Navigation task are as follows:
 
 ### nav_challenge0.world ###
 
+![nav_0.png](https://bitbucket.org/repo/BgXLzgM/images/3581781577-nav_0.png)
+
 ### nav_challenge1.world ###
+
+![nav_1.png](https://bitbucket.org/repo/BgXLzgM/images/2459925737-nav_1.png)
 
 ### nav_challenge2.world ###
 
+![nav_2.png](https://bitbucket.org/repo/BgXLzgM/images/3187437283-nav_2.png)
 
 
 ## Task 5: Dock ##
