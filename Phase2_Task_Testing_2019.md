@@ -134,7 +134,7 @@ Three example worlds are supplied to represent three potential trials of the Doc
 
 * `dock0.world`: Easy environment.  Correct bay is the red_cross directly ahead of the WAM-V in its initial position.
 * `dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
-* `dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+* `dock2.world`: Hard difficulty environment.   The correct bay is red_triangle.
 
 ### dock0.world ###
 
@@ -150,9 +150,9 @@ Easy environment.  Correct bay is the red_cross directly ahead of the WAM-V in i
 
 ### dock2.world ###
 
-Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+Hard difficulty environment.  The correct bay is red_triangle.
 
-![dock2.png](https://bitbucket.org/repo/BgXLzgM/images/448798662-dock2.png)
+![dock2b.png](https://bitbucket.org/repo/BgXLzgM/images/2950511854-dock2b.png)
 
 ### Development and Debugging Recommendations ###
 
@@ -164,7 +164,7 @@ The three example trials for this task have the same environmental and dock layo
 
 * `scan_and_dock0.world`: Easy environment.  Correct bay is the red_cross (color sequence is "red" "green" "blue") directly ahead of the WAM-V in its initial position.  Light buoy is immediately visible.  
 * `scan_and_dock1.world`: Medium difficulty environment.  Correct bay is the green_triangle.
-* `scan_and_dock2.world`: Hard difficulty environment.  There are two docks (four bays).  The correct bay is red_triangle.
+* `scan_and_dock2.world`: Hard difficulty environment.   The correct bay is red_triangle.
 
 ### scan_and_dock0.world ###
 
@@ -176,7 +176,7 @@ The three example trials for this task have the same environmental and dock layo
 
 ### scan_and_dock2.world ###
 
-![scandock2.png](https://bitbucket.org/repo/BgXLzgM/images/426771738-scandock2.png)
+![scandock2b.png](https://bitbucket.org/repo/BgXLzgM/images/1386018359-scandock2b.png)
 
 ### Development and Debugging Recommendations ###
 
