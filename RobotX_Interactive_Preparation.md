@@ -1,3 +1,5 @@
+# Preparing for RobotX Interactive Tutorials and Hackathon #
+
 During the 2019 RobotX Interactive event participants will have the opportunity to participate in tutorials on the VRX simulation framework and a half hackathon based on the VRX simulation capabilities.  In order to successfully participate in these activities, individuals should prepare by completing the following tasks:
 
 * **Bring a Computer** Each participant should bring their own computer that satisfies the hardware and software [System Requirements for Running VRX](https://bitbucket.org/osrf/vrx/wiki/system_requirements).   Optionally, having a gamepad (e.g., Logitech F310) can make teloperation easier during development.
