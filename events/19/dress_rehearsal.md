@@ -13,6 +13,10 @@ A single system must be designed to solve any of the VRX 2019 tasks.
 
 To ensure that your system can adapt to previously-unseen scenarios, teams should test their system at least against all released sample tasks.
 
+To help you prepare, we've provided [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019) which includes eighteen example worlds for local testing to prepare for VRX 2019, Phase 2.  These example worlds are representative of the task configurations and environmental conditions specified in the task documentation.
+
+For the evaluation of your Phase 2 submissions, the solutions will be run through each of these example worlds, along with some new configurations that are not released prior to the Phase 2 deadline.  The objective of this approach is to allow teams to practice with some of the actual scenarios they will see in the Phase 2 competition, so that they can compare their local performance with the results from the phase.  We also introduce new, previously-unseen scenarios, to exercise the solutions ability to deal with new configurations and conditions.
+
 ## Submission process
 
 We expect to receive three files from each competitor prior to this event: 
