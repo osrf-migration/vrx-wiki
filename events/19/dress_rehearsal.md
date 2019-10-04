@@ -38,3 +38,9 @@ See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submiss
 Note: We'll allocate an extra day in the schedule (October 22) for fixing any problems related with the content of the submission files (e.g.: A noncompliant sensor or thruster configuration, a typo pointing to the DockerHub image, a problem with DockerHub permissions not letting Open Robotics to download your solution image). Teams are not allowed to modify the DockerHub image after the deadline on October 21.
 
 *** Note:** These dates are provisional.
+
+## Scoring and Results
+
+From the VRX Competition and Task Descriptins, “To be eligible for Phase 3, teams must submit their solution for automatic evaluation as described in the VRX Technical Guide”. So as long as a team provides the three files, they will move on to Phase 3.
+
+The submissions will be scored by the technical team and the scores will be made available to the teams, but the dress rehearsal score is not counted toward the final score - it is only for helping the teams get ready for the final.
