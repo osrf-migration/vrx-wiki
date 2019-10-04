@@ -8,3 +8,5 @@
     * The system requirements for VRX.
 2. [Gazebo Plugins](https://bitbucket.org/osrf/vrx/wiki/VRXGazeboPlugins)
     * Description of environmental and model plugins used in VRX
+1. RobotX Interactive
+    * [RobotX Interactive Preparation](https://bitbucket.org/osrf/vrx/wiki/RobotX_Interactive_Preparation): Information to get ready for tutorials and hackathon.
