@@ -1,0 +1,1 @@
+During the 2019 RobotX Interactive event participants will have the opportunity to
