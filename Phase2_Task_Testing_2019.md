@@ -118,8 +118,8 @@ rostopic echo /vrx/station_keeping/rms_error
 
 Note: As discussed in the current VRX Competition and Task Descriptions document, the following ROS API topics are only available for development/debugging, they will not be available to the team's software during scored runs of the competition.
 
-    * `/vrx/station_keeping/pose_error`
-    * `/vrx/station_keeping/rms_error`
+    * /vrx/station_keeping/pose_error
+    * /vrx/station_keeping/rms_error
 
 ### stationkeeping0.world ###
 
@@ -157,8 +157,8 @@ rostopic echo /vrx/wayfinding/mean_error
 
 Note: As discussed in the current VRX Competition and Task Descriptions document, the following ROS API topics are only available for development/debugging, they will not be available to the team's software during scored runs of the competition.
 
-    * `/vrx/wayfinding/min_errors`
-    * `/vrx/wayfinding/mean_error`
+    * /vrx/wayfinding/min_errors
+    * /vrx/wayfinding/mean_error
 
 ### wayfinding0.world ###
 
