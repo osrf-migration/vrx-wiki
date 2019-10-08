@@ -137,6 +137,19 @@ The three example worlds provided for the Wayfinding task are as follows:
 
 See below for screenshots showing the arrangement of waypoints in each example world.
 
+### Development and Debugging Tips ###
+
+The waypoints (goal poses) for each trial are available via ROS topic:
+```
+rostopic echo /vrx/wayfinding/waypoints 
+```
+
+The waypoint error metrics are also available, e.g.,
+```
+rostopic echo /vrx/wayfinding/min_errors 
+rostopic echo /vrx/wayfinding/mean_error 
+```
+
 ### wayfinding0.world ###
 
 Easy environment. Three waypoints, relatively close together.
