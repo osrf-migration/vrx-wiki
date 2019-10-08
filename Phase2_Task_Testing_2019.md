@@ -116,6 +116,11 @@ and the cummulative pose error with
 rostopic echo /vrx/station_keeping/rms_error  
 ```
 
+Note: As discussed in the current VRX Competition and Task Descriptions document, the following ROS API topics are only available for development/debugging, they will not be available to the team's software during scored runs of the competition.
+
+    * `/vrx/station_keeping/pose_error`
+    * `/vrx/station_keeping/rms_error`
+
 ### stationkeeping0.world ###
 
 ![sk0.png](https://bitbucket.org/repo/BgXLzgM/images/2774369190-sk0.png)
@@ -149,6 +154,11 @@ The waypoint error metrics are also available, e.g.,
 rostopic echo /vrx/wayfinding/min_errors 
 rostopic echo /vrx/wayfinding/mean_error 
 ```
+
+Note: As discussed in the current VRX Competition and Task Descriptions document, the following ROS API topics are only available for development/debugging, they will not be available to the team's software during scored runs of the competition.
+
+    * `/vrx/wayfinding/min_errors`
+    * `/vrx/wayfinding/mean_error`
 
 ### wayfinding0.world ###
 
