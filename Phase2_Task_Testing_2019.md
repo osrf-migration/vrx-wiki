@@ -42,9 +42,91 @@ The three example worlds provided for the Stationkeeping task are as follows:
 * `stationkeeping1.world`: Medium difficulty environment.
 * `stationkeeping2.world`: Hard difficulty environment.  
 
-### Stationkeeping World Variations ###
-
 These three worlds all have goals set relatively close to the WAM-V starting position. Due to the nature of the task, they vary primarily in terms of environmental factors.
+
+### Development and Debugging Tips ###
+
+Details of the ROS interface are provided in the VRX competition documents available on the [Documentation Wiki](https://bitbucket.org/osrf/vrx/wiki/documentation).
+
+For all tasks, monitoring the task information will tell you about the task and the current status, e.g.,
+```
+rostopic echo /vrx/task/info 
+name: "stationkeeping"
+state: "running"
+ready_time: 
+  secs: 10
+  nsecs:         0
+running_time: 
+  secs: 20
+  nsecs:         0
+elapsed_time: 
+  secs: 135
+  nsecs:         0
+remaining_time: 
+  secs: 165
+  nsecs:         0
+timed_out: False
+score: 10.3547826152
+---
+```
+
+The goal pose (x, y and yaw) is provided as a ROS topic, e.g.
+```
+rostopic echo /vrx/station_keeping/goal
+header: 
+  seq: 0
+  stamp: 
+    secs: 10
+    nsecs:         0
+  frame_id: ''
+pose: 
+  position: 
+    latitude: 21.31085
+    longitude: -157.8886
+    altitude: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.501213004674
+    w: 0.865323941623
+---
+```
+
+Note that the yaw component of the goal is provided as a quaternion in the ENU coordinate frame (see [REP-103](https://www.ros.org/reps/rep-0103.html)).  It may be desirable to determine the yaw angle from the quaterion.  There are a variety of tools to convert from quaternions to Euler angles.  Here is a Python example that uses the ROS tf module:
+```
+In [1]: from tf.transformations import euler_from_quaternion
+
+In [2]: # Quaternion in order of x, y, z, w
+
+In [3]: q = (0, 0, 0.501213004674, 0.865323941623)
+
+In [4]: yaw = euler_from_quaternion(q)[2]
+
+In [5]: print yaw
+1.05
+```
+Note that the yaw angle is in radians, ENU.
+
+You can monitor the instantaneous pose error with
+```
+ rostopic echo /vrx/station_keeping/pose_error 
+```
+and the cummulative pose error with
+```
+rostopic echo /vrx/station_keeping/rms_error  
+```
+
+### stationkeeping0.world ###
+
+![sk0.png](https://bitbucket.org/repo/BgXLzgM/images/2774369190-sk0.png)
+
+### stationkeeping1.world ###
+
+![SK1.png](https://bitbucket.org/repo/BgXLzgM/images/70001950-SK1.png)
+
+### stationkeeping2.world ###
+
+![sk2.png](https://bitbucket.org/repo/BgXLzgM/images/1018026200-sk2.png)
 
 ## Task 2: Wayfinding ##
 The three example worlds provided for the Wayfinding task are as follows:
