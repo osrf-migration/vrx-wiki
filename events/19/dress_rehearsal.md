@@ -27,7 +27,14 @@ We expect to receive three files from each competitor prior to this event:
 
 See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submission_process) in the wiki for instructions about how to submit these files.
 
-## Important dates*****
+Once you submit the pull request, the VRX technical team will do two things before merging (accepting) the submission:
+
+1. Check that the WAM-V thruster and sensor configuration complies with the configuration constraints described in the [VRX Technical Guide](https://bitbucket.org/osrf/vrx/wiki/documentation)
+2. Check that the DockerHub image is accessible by the `virtualrobotx` DockerHub user.
+
+Once those two requirements are met, the pull request will be merged and evaluation of the solutions will begin.  
+
+## Important dates
 
 | Date                          | Description                            |
 |-------------------------------|----------------------------------------|
@@ -37,7 +44,6 @@ See the [submission process section](https://bitbucket.org/osrf/vrx/wiki/submiss
 
 Note: We'll allocate an extra day in the schedule (October 22) for fixing any problems related with the content of the submission files (e.g.: A noncompliant sensor or thruster configuration, a typo pointing to the DockerHub image, a problem with DockerHub permissions not letting Open Robotics to download your solution image). Teams are not allowed to modify the DockerHub image after the deadline on October 21.
 
-*** Note:** These dates are provisional.
 
 ## Scoring and Results
 
