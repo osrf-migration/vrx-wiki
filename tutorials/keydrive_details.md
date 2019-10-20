@@ -47,3 +47,5 @@ roslaunch vrx_gazebo sandisland.launch thrust_config:=X
 ```
 roslaunch vrx_gazebo usv_keydrive.launch thrust_config:=X
 ```
+
+![key_drivex.png](https://bitbucket.org/repo/BgXLzgM/images/3768413413-key_drivex.png)
