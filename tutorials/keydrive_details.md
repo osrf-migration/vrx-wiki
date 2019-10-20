@@ -30,4 +30,20 @@ r/v : increase/decrease thruster angle change speed by 10%
 
 The basic setup from the [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving) example, and illustrated in the ROS graph above, work for the `H` and `T` [Propulsion Configurations](https://bitbucket.org/osrf/vrx/wiki/tutorials/PropulsionConfiguration).  
 
-For the holonomic 'X' configuration the topic names for the thrusters is a bit different
+For the holonomic 'X' configuration the topic names for the thrusters is a bit different:
+```
+/wamv/thrusters/right_front_thrust_angle
+/wamv/thrusters/right_front_thrust_cmd
+/wamv/thrusters/right_rear_thrust_angle
+/wamv/thrusters/right_rear_thrust_cmd
+
+```
+
+In this case we need to change the ROS interface between the teleop nodes and the simulated WAMV to include the extra `rear` modifier.  The launch file accepts a command line argument for this case:
+
+```
+roslaunch vrx_gazebo sandisland.launch thrust_config:=X
+```
+```
+roslaunch vrx_gazebo usv_keydrive.launch thrust_config:=X
+```
