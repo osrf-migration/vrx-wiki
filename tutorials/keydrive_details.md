@@ -6,8 +6,8 @@ For the WAM-V use-case we are using this at an even lower level.  We are using t
 ![key_drive.png](https://bitbucket.org/repo/BgXLzgM/images/1981347365-key_drive.png) 
 The custom `twist2thrust` node translates the published Twist messages as thrust messages for the left and right thrusters.  In effect, this is an open-loop velocity controller where
 
-1) Commanded forward velocity (Twist.linear.x) maps to the propulsion thrust commands
-2) Commanded yaw velocity (Twist.angular.z) maps to differential propulsion thrust commands.
+1. Commanded forward velocity (Twist.linear.x) maps to the propulsion thrust commands
+2. Commanded yaw velocity (Twist.angular.z) maps to differential propulsion thrust commands.
 
 In other words:
 
