@@ -84,10 +84,18 @@ hg status
 
 4 . Commit and push your changes to your fork:
 
+Commit your changes locally:
 ```
-hg ci -m"Team OSRF submission for 2019/rehearsal event." -u"Carlos Aguero"
+hg commit -m "Team OSRF submission for 2019/rehearsal event." -u"Carlos Aguero"
+```
+* The `-m TEXT` argument provides a commit message/comment.
+* The `-u USER` argument specifies the provided user as the committer.  You can omit this if you have configured mercurial for your user information.
+
+The push the local changes to the remote (online) repository.
+```
 hg push --new
 ```
+* The `--new` is requires since you are creating a new branch.
 
 5 . Open a pull request for `vrx-events` on this link:
 
