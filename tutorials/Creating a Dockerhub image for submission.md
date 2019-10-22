@@ -23,7 +23,7 @@ using an Nvidia GPU.
 
 * This Bash session is very barebones. It does not have a text editor yet, so we will install one now. From the created interactive Bash session, run `apt-get update && apt-get install -y nano` or replace `nano` with your text editor of choice.  
 
-* Use the text editor to edit `ros_entrypoint.sh`. Eg. `nano /ros_entrypoint.sh`. This is a script that is run immediately after your container has been built. Replace all the text with the following:
+* Use the text editor to edit `ros_entrypoint.bash`. Eg. `nano /ros_entrypoint.bash`. This is a script that is run immediately after your container has been built. Replace all the text with the following:
 
 ```
 #!/bin/bash
@@ -101,7 +101,7 @@ RUN apt-get update && apt-get install -y \
 COPY ./run_my_system.bash /
 
 # Use your ros_entrypoint
-COPY ./ros_entrypoint.sh /
+COPY ./ros_entrypoint.bash /
 ```
 
 * Run `gedit run_my_system.bash` to create your script. Copy the following text into the file
