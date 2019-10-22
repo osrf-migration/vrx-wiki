@@ -23,7 +23,7 @@ using an Nvidia GPU.
 
 * This Bash session is very barebones. It does not have a text editor yet, so we will install one now. From the created interactive Bash session, run `apt-get update && apt-get install -y nano` or replace `nano` with your text editor of choice.  
 
-* Use the text editor to edit `ros_entrypoint.bash`. Eg. `nano /ros_entrypoint.bash`. This is a script that is run immediately after your container has been built. Replace all the text with the following:
+* Use the text editor to edit `ros_entrypoint.sh`. Eg. `nano /ros_entrypoint.sh`. This is a script that is run immediately after your container has been built. Replace all the text with the following:
 
 ```
 #!/bin/bash
@@ -101,10 +101,10 @@ RUN apt-get update && apt-get install -y \
 COPY ./run_my_system.bash /
 
 # Use your ros_entrypoint
-COPY ./ros_entrypoint.bash /
+COPY ./ros_entrypoint.sh /
 ```
 
-* Run `gedit run_my_system.bash` to create your script. Copy the following text into the file
+* Run `gedit run_my_system.sh` to create your script. Copy the following text into the file
 
 ```
 #!/bin/bash
@@ -130,7 +130,7 @@ rostopic pub /right_thrust_cmd std_msgs/Float32 -r ${RATE} -- ${CMD}
 
 Then run `chmod +x run_my_system.bash` to make it executable.
 
-* Run `gedit ros_entrypoint.bash` to create your script. Copy the following text into the file
+* Run `gedit ros_entrypoint.sh` to create your script. Copy the following text into the file
 
 ```
 #!/bin/bash
@@ -142,7 +142,7 @@ source "/opt/ros/$ROS_DISTRO/setup.bash"
 /run_my_system.bash
 ```
 
-Then run `chmod +x ros_entrypoint.bash` to make it executable.
+Then run `chmod +x ros_entrypoint.sh` to make it executable.
 * Run `docker build --tag <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG> .` Eg. `docker build --tag tylerlum/vrx-competitor-example:v2.2019 .`
 
 * Run `docker run <USERNAME>/<IMAGE_REPOSITORY_NAME>:<TAG>` This will create a container with the image you created in the previous step, and then run `/run_my_system.bash`.
