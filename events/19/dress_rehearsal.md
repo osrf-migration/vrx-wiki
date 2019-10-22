@@ -47,6 +47,6 @@ Note: We'll allocate an extra day in the schedule (October 22) for fixing any pr
 
 ## Scoring and Results
 
-From the VRX Competition and Task Descriptins, “To be eligible for Phase 3, teams must submit their solution for automatic evaluation as described in the VRX Technical Guide”. So as long as a team provides the three files, they will move on to Phase 3.
+From the VRX Competition and Task Descriptions, “To be eligible for Phase 3, teams must submit their solution for automatic evaluation as described in the VRX Technical Guide”. So as long as a team provides the three files, they will move on to Phase 3.
 
 The submissions will be scored by the technical team and the scores will be made available to the teams, but the dress rehearsal score is not counted toward the final score - it is only for helping the teams get ready for the final.
