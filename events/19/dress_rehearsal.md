@@ -21,7 +21,7 @@ For the evaluation of your Phase 2 submissions, the solutions will be run throug
 
 We expect to receive three files from each competitor prior to this event: 
 
-* `dockerhub_image.txt`: Contains the name of the image to be pulled from DockerHub. **If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.**
+* `dockerhub_image.txt`: Contains the name of the image to be pulled from DockerHub. **If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.** Follow [this tutorial](https://bitbucket.org/osrf/vrx/wiki/tutorials/Creating%20a%20Dockerhub%20image%20for%20submission) for instructions about how to create your own Docker image.
 * `thruster_config.yaml`: Defines the WAM-V thruster configuration.
 * `sensor_config.yaml`: Defines the WAM-V sensor configuration.
 
