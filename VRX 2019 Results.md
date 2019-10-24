@@ -1,5 +1,29 @@
 # VRX 2019 Results #
 
+## Phase 2: Dress Rehearsal ##
+
+### Scoring Summary ###
+
+Coming Soon...
+
+### Configuration Summary ###
+So far we have been able to run the software for 11 of the 12 submitting teams for Phase 2.  Below is a summary of the configurations (propulsion and sensors) being used by the teams.
+
+Team | Thrusters | Cameras | Lidars | Lidar 1 | Lidar 2 | P3D
+------ | ------ | ------ | ------ | ------ | ------ | ------
+australis2 | 3 | 2 | 1 | 32_beam | NA | Y
+auviitk | 4 | 2 | 1 | 16_beam | NA | Y
+gt-marine-robotics | 4 | 1 | 1 | 32_beam | NA | Y
+NIROM | 4 | 3 | 2 | 32_beam | 16_beam | Y
+mcgill_robotics | 2 | 3 | 1 | 16_beam | NA | Y
+bumblebee | 4 | 3 | 2 | 32_beam | 32_beam | Y
+Team_Kanaloa | 4 | 2 | 1 | 16_beam | NA | Y
+tang | 3 | 3 | 1 | 16_beam | NA | Y
+uf | 4 | 3 | 1 | 16_beam | NA | Y
+owltonomous | 2 | 2 | 1 | 32_beam | NA | N
+usyd_robotx | 3 | 3 | 1 | 16_beam | NA | Y
+
+
 ## Phase 1: Hello World ##
 
 For [Phase 1 of the VRX challenge](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld) teams were tasked with creating a video to demonstrate their ability to setup, provision and run the VRX virtual environment.  This first step, "Hello World", showed that teams are well on their way to being able to submit full solutions for the next step, [Phase 2: Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal).
