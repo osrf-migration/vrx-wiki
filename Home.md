@@ -14,7 +14,7 @@ A set of tutorials to help you get started with VRX.
 
  * **October 21, 23:59 PST**, [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
 
- * **November 22, 23:59 PST**, Phase 3 - VRX Challenge: Details of how the VRX Finals will run.
+ * **November 22, 23:59 PST**, [Phase 3 - VRX Challenge](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge): Details of how the VRX Finals will run.
 
  * [Submission process](https://bitbucket.org/osrf/vrx/wiki/submission_process)
 How to submit your solution for an event.
