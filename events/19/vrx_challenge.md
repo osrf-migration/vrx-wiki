@@ -1,5 +1,4 @@
-Phase 3 - VRX Challenge
-
+# Phase 3 - VRX Challenge #
 The process and content of the Phase 3 will be very similar to the [Phase 2: Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal).
 
 ## What to expect ##
