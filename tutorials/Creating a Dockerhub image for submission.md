@@ -57,13 +57,13 @@ fi
 RATE=1
 CMD=2
 echo "Sending forward command"
-rostopic pub /left_thrust_cmd std_msgs/Float32 -r ${RATE} -- ${CMD} &
-rostopic pub /right_thrust_cmd std_msgs/Float32 -r ${RATE} -- ${CMD}
+rostopic pub /wamv/thrusters/left_thrust_cmd std_msgs/Float32 -r ${RATE} -- ${CMD} &
+rostopic pub /wamv/thrusters/right_thrust_cmd std_msgs/Float32 -r ${RATE} -- ${CMD}
 ```
 
 * Run `chmod +x /run_my_system.bash` to make it executable.
 
-* Run `/run_my_system.bash && rostopic echo /left_thrust_cmd` to test if the script works. You should receive `/left_thrust_cmd` data.
+* Run `/run_my_system.bash && rostopic echo /wamv/thrusters/left_thrust_cmd` to test if the script works. You should receive `/wamv/thrusters/left_thrust_cmd` data.
 
 * Run `exit` to leave this container.
 
