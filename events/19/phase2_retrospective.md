@@ -14,8 +14,13 @@ This "sensor" is not included in the Technical Guide, but the [Sensor Configurat
 
 For Phase 3 including the P3D sensor in the `sensor_config.yaml` file will result in a non-compliant configuration.
 
-## Dock Task Name ##
+## Dock and Scan-And-Dock Task Names ##
 
-The Task Naming in the VRX Competition and Task Descriptions document describe how the six individuals tasks (stationkeeping, wayfinding, etc.) are announced via the ROS interface.  In that document the "Dock" task corresponds to a [Task Msg](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) name of "scan".   This may have caused some confusion, since we probably intended to use the name "dock" to indicate this task.  However, we feel it is important to stick to the documentation as written.
+The Task Naming in the VRX Competition and Task Descriptions document describe how the six individuals tasks (stationkeeping, wayfinding, etc.) are announced via the ROS interface.  In that document the "Dock" task corresponds to a [Task Msg](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) name of "scan", and the "Scan and Dock" task corresponds to a Task Msg with the name "scan_and_dock".  There were two potential issues with this during Phase 2.
+
+First, there was a bug in the practice words released prior to Phase 2: [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019).  This bug caused Task Messages both the "Dock" and "Scan and Dock" tasks to have the name "scan_dock".  This was corrected with during evaluation of the Phase 2 submissions so that the task names were "scan" and "scan_and_dock" as specified in the competition documents.  These trials, with the correct names, have been released - see [PR#207](https://bitbucket.org/osrf/vrx/pull-requests/207/adding-worlds-and-models-used-in-phase2/diff).
+
+
+Second, the naming may have caused some confusion, since we probably intended to use use the Task Msg name "dock" to indicate this "Dock" task.  However, we feel it is important to stick to the documentation as written which specifies the Task Msg for the "Dock" task as "scan".  
 
 For Phase 3 we will not be changing the interface, so the Dock Task (Task 5) will continue to be announced in the Task Message using the name "scan".
