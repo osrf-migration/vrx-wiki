@@ -7,22 +7,22 @@
 Coming Soon...
 
 ### Configuration Summary ###
-So far we have been able to run the software for 11 of the 12 submitting teams for Phase 2.  Below is a summary of the configurations (propulsion and sensors) being used by the teams.
+We have been able to run the software for 1w of the 12 submitting teams for Phase 2.  Below is a summary of the configurations (propulsion and sensors) being used by the teams.
 
 Team | Thrusters | Cameras | Lidars | Lidar 1 | Lidar 2 | P3D
 ------ | ------ | ------ | ------ | ------ | ------ | ------
-australis2 | 3 | 2 | 1 | 32_beam | NA | Y
-auviitk | 4 | 2 | 1 | 16_beam | NA | Y
-gt-marine-robotics | 4 | 1 | 1 | 32_beam | NA | Y
-NIROM | 4 | 3 | 2 | 32_beam | 16_beam | Y
 mcgill_robotics | 2 | 3 | 1 | 16_beam | NA | Y
 bumblebee | 4 | 3 | 2 | 32_beam | 32_beam | Y
+gt-marine-robotics | 4 | 1 | 1 | 32_beam | NA | Y
+NIROM | 4 | 3 | 2 | 32_beam | 16_beam | Y
 Team_Kanaloa | 4 | 2 | 1 | 16_beam | NA | Y
-tang | 3 | 3 | 1 | 16_beam | NA | Y
-uf | 4 | 3 | 1 | 16_beam | NA | Y
 owltonomous | 2 | 2 | 1 | 32_beam | NA | N
+Erau_Minion | 2 | 3 | 2 | 32_beam | 32_beam | Y
+australis2 | 3 | 2 | 1 | 32_beam | NA | Y
 usyd_robotx | 3 | 3 | 1 | 16_beam | NA | Y
-
+auviitk | 4 | 2 | 1 | 16_beam | NA | Y
+uf | 4 | 3 | 1 | 16_beam | NA | Y
+tang | 3 | 3 | 1 | 16_beam | NA | Y
 
 ## Phase 1: Hello World ##
 
