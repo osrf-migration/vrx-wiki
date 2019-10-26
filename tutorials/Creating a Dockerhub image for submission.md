@@ -4,9 +4,16 @@ To participate in the VRX competition, teams must create a Docker image that run
 
 # What is Docker 
 
-A Docker image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files. A Docker container is a runtime instance of an image. Without Docker, evaluating a VRX team's software on different machines would require that the environment matches perfectly for the VRX team's system to run as expected, which is very prone to error. With Docker, if a VRX team's system works reliably on their machine, it will work reliably on any machine. 
+A Docker image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files. A Docker container is a runtime instance of an image. 
 
 To learn more about what Docker images and containers are, Docker has excellent [tutorials and explanations](https://docs.docker.com/get-started/).
+
+## Docker and VRX
+The VRX competition relies on Docker as a component of its automated evaluation system. After we receive submissions, we simulate the competition by running each submitted containers concurrently with a separate container that simulates the task environments. This has a number of advantages:
+* Teams have much greater control of their execution environment.
+* Docker creates an abstraction layer between submitted solutions and the host system where they will be evaluated:
+    * Teams don't have to know the details of the host system to ensure their software runs correctly.
+    * Likewise, the organizers don't have to know the details of the container environment.
 
 # Quick Start Instructions:
 
