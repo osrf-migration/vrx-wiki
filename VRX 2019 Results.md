@@ -2,6 +2,10 @@
 
 ## Phase 2: Dress Rehearsal ##
 
+### Logs ###
+
+All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/download_logs) for instructions.
+
 ### Scoring Summary ###
 
 ### Station keeping
