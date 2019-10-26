@@ -1,6 +1,6 @@
 # Overview
 
-This tutorial outlines the process for creating a Dockerhub image to be submitted for the VRX competition. This is required for creating a container that will run a VRX team's system to control their virtual autonomous boat for the automated evaluation.
+To participate in the VRX competition, teams must create a Docker image that runs their virtual autonomous system. This tutorial outlines the process for producing this image.
 
 # What is Docker 
 
