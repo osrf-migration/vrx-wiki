@@ -4,7 +4,107 @@
 
 ### Scoring Summary ###
 
-Coming Soon...
+### Station keeping
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    | 10.36  | 26.53  | 24.89  | 211.00 | 107.90 | 141.06 |
+bumblebee          |  0.39  |  2.53  |  9.64  |  19.56 |  6.12  |   9.30 |
+gt-marine-robotics |  0.92  |  0.27  |  1.82  |  43.65 |  4.41  |   5.59 |
+NIROM              |  0.22  |  0.42  |  2.31  |  24.49 |  5.56  |  11.09 |
+Team_Kanaloa       |  --    |  --    |  --    |   --   |  --    |   --   |
+owltonomous        |  8.96  | 18.49  | 30.93  | 203.64 | 103.45 |  88.22 |
+Erau_Minion        |  --    |  --    |  --    |   --   |   --   |   --   |
+australis2         |  0.14  |  0.49  |  7.96  |  72.46 |  13.27 |  26.26 |
+usyd_robotx        |  0.94  |  1.05  |  3.50  |  76.59 |  17.30 |  36.05 |
+auviitk            |  --    |  --    |  --    |   --   |   --   |   --   |
+uf                 |  0.98  |  1.01  |  1.26  |  67.36 |  13.58 |  28.38 |
+tang               |  --    |  --    |  --    |   --   |   --   |   --   |
+
+### Wayfinding
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    |  41.00 |  75.44 | 150.27 |  46.50 |  82.65 |  83.35 |
+bumblebee          |   0.10 |  21.71 |  31.54 |   0.12 |  15.84 |  17.19 |
+gt-marine-robotics |  40.81 |  75.25 | 150.20 |  46.30 |  82.86 |  83.34 |
+NIROM              |   0    |   0.03 |   0.18 |   0.03 |   0.03 |   0.03 |
+Team_Kanaloa       |   --   |   --   |   --   |   --   |   --   |   --   |
+owltonomous        |  41.00 |  75.45 | 150.27 |  46.50 |  82.62 |  83.36 |
+Erau_Minion        |   --   |   --   |   --   |   --   |   --   |   --   |
+australis2         |  41.14 |  75.24 | 150.21 |  46.53 |  82.24 |  83.35 |
+usyd_robotx        |   0.34 |   9.88 |  77.46 |   0.23 |   5.47 |   8.27 |
+auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
+uf                 |   0.40 |   0.54 |  28.62 |   0.50 |   0.76 |   0.52 |
+tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+
+### Perception
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    |   0    |   0    |   0    |   0    |   0    |   0    |
+bumblebee          |  10.18 |  12.56 |  33.19 |  12.22 |  16.76 |  23.87 |
+gt-marine-robotics |   0.81 |   6.59 |  37.21 |   0.80 |   8.77 |  35.18 |
+NIROM              |   0.11 |   0.20 |  44.93 |   0.15 |   4.81 |   6.98 |
+Team_Kanaloa       |   --   |   --   |   --   |   --   |   --   |   --   |
+owltonomous        |   0    |   0    |   0    |   0    |   0    |   0    |
+Erau_Minion        |   --   |   --   |   --   |   --   |   --   |   --   |
+australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
+usyd_robotx        | 182.70 | 349.21 | 349.13 | 182.84 | 516.41 | 173.58 |
+auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
+uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
+tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+
+### Navigation challenge
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    |   0    |   0    |   0    |   0    |   0    |   0    |
+bumblebee          |   0    |   0    |   0    |   0    |   0    |   0    |
+gt-marine-robotics |   0    | 402.6  |   0    | 169.11 |   0    |   0    |
+NIROM              | 108.14 |   0    |   0    | 110.44 |   0    |   0    |
+Team_Kanaloa       |   --   |   --   |   --   |   --   |   --   |   --   |
+owltonomous        |   0    |   0    |   0    |   0    |   0    |   0    |
+Erau_Minion        |   --   |   --   |   --   |   --   |   --   |   --   |
+australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
+usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
+auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
+uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
+tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+
+### Dock
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    |   0    |   0    |   0    |   0    |   0    |   0    |
+bumblebee          |   0    |   0    |   0    |   0    |   0    |   0    |
+gt-marine-robotics |  10    |  10    |  10    |  10    |  10    |  10    |
+NIROM              |   0    |   0    |   0    |   0    |   0    |   0    |
+Team_Kanaloa       |   --   |   --   |   --   |   --   |   --   |   --   |
+owltonomous        |   0    |   0    |   0    |   0    |   0    |   0    |
+Erau_Minion        |   --   |   --   |   --   |   --   |   --   |   --   |
+australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
+usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
+auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
+uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
+tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+
+### Scan and dock
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    |---     | ---    |---     |
+mcgill_robotics    |   0    |   0    |   0    |   0    |   0    |   0    |
+bumblebee          |   0    |   0    |   0    |   0    |   0    |   0    |
+gt-marine-robotics |  10    |   0    |   0    |   0    |   0    |   0    |
+NIROM              |  10    |  10    |   0    |  10    |   0    |   0    |
+Team_Kanaloa       |   --   |   --   |   --   |   --   |   --   |   --   |
+owltonomous        |   0    |   0    |   0    |   0    |   0    |   0    |
+Erau_Minion        |   --   |   --   |   --   |   --   |   --   |   --   |
+australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
+usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
+auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
+uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
+tang               |   --   |   --   |   --   |   --   |   --   |   --   |
 
 ### Configuration Summary ###
 We have been able to run the software for 1w of the 12 submitting teams for Phase 2.  Below is a summary of the configurations (propulsion and sensors) being used by the teams.
