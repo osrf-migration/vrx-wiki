@@ -1,6 +1,6 @@
 # Overview
 
-To participate in the VRX competition, teams must create a Docker image that runs their virtual autonomous system. This tutorial outlines the process for producing this image.
+To participate in the VRX competition, teams must create a Docker image that runs their virtual autonomous system. This tutorial outlines the steps required to produce this image.
 
 # What is Docker 
 
