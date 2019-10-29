@@ -3,6 +3,7 @@ This tutorial will allow you to verify that your submission is working as expect
 
 # Prerequisites
 We assume the following:
+
 * You have developed a solution to one or more VRX tasks.
 * You have created a Docker image containing your solution and uploaded it to Docker hub.
 * You have created the required files for a submission.
@@ -10,6 +11,7 @@ We assume the following:
 * Docker is installed on your system.
 
 # Step 1: Verify your dockerhub_image.txt file.
+
 * Change to the directory containing your `dockerhub_image.txt` file.
 * Run
 ```bash
