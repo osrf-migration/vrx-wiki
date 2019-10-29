@@ -17,7 +17,6 @@ We assume the following:
 * Change to the directory containing your `dockerhub_image.txt` file:
 
     ```bash
-    
     cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>    
     ```
 
