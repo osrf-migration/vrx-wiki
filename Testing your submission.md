@@ -10,6 +10,7 @@ We assume the following:
 * You have [created a Docker image containing your solution](https://bitbucket.org/osrf/vrx/wiki/tutorials/Creating%20a%20Dockerhub%20image%20for%20submission) and uploaded it to Docker hub.
 * You have created the [required files](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge) for a submission.
 * You have [forked and cloned the vrx-events repository](https://bitbucket.org/osrf/vrx/wiki/submission_process) to your home directory and added your files.
+* You are running on a system with an Nvidia graphics card. If this is not the case, you can still test your submission by leaving out the `-n` option wherever it appears below. Note, however, that without an Nvidia card, the simulation is likely to run slower than real-time. 
 
 # Prepare a local testing environment
 
@@ -46,8 +47,7 @@ cp -R ~/vrx-events/2019/phase3_vrx_challenge/$TEAM team_config/
 ./vrx_server/build_image.bash -n
 ```
 
-**Note:** The above command expects a system with an Nvidia graphics card. To build an image on a system without Nvidia graphics, remove the `-n` option. Without an Nvidia card, the simulation is likely to run slower than real-time. 
-
+**Note:** The above command expects a system with an Nvidia graphics card. To build an image on a system without Nvidia graphics, remove the `-n` option. 
 # Verify your `dockerhub_image.txt` file.
 
 1 . Test that your `dockerhub_image.txt` file contains the name of a reachable docker image (and version):
