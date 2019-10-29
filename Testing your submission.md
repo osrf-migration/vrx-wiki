@@ -33,3 +33,4 @@ cat dockerhub_image.txt | xargs docker pull
 If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
 # Verify your sensor configuration.
+We assume that you have created
