@@ -47,7 +47,7 @@ cp -R "~/vrx-events/2019/phase3_vrx_challenge/$TEAM" team_config/
 ./vrx_server/build_image.bash -n
 ```
 
-# Verify your `dockerhub_image.txt` file.
+# Verify your dockerhub_image.txt file.
 
 1 . Test that your dockerhub_image.txt file contains the name of a reachable docker image (and version):
 
