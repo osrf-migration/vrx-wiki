@@ -18,6 +18,7 @@ We assume the following:
 
     ```
     #!bash
+    
     cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>    
     ```
 
