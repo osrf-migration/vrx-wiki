@@ -27,6 +27,12 @@ hg clone https://bitbucket.org/osrf/vrx-docker
 
 This should create a new `vrx-docker` directory alongside the original `vrx` repository directory.
 
+3 . Source the your `bash.setup` file and change into the `vrx-docker` directory:
+```bash
+source ~/vrx_ws/devel/setup.bash
+cd vrx-docker
+```
+
 3 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
 
 ```bash
