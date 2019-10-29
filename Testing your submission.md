@@ -73,10 +73,34 @@ cat "generated/team_generated/$TEAM/compliant.txt"
 The output of the above should be **true** if your configuration passes compliance tests.
 
 # Verify your docker image is working
-1 . Define a TASK variable to indicate the task you wish to test against.
+1 . Define a TASK variable to indicate the task you wish to test against. 
+```bash
+TASK=stationkeeping
+```
+Other valid options include `wayfinding`, `perception`, `nav_challenge`, `dock`, and `scan_and_dock`.
 
-2 . Build example task worlds.
+2 . Build example task worlds using the `prepare_task_trials.bash` script included with `vrx-docker`:
+```bash
+./prepare_task_trials.bash $TASK
+```
 
-3 . Define a TRIAL variable to indicate which of the task worlds you would like to run.
+3 . Define a TRIAL variable to indicate which of the generated task worlds you would like to run.
+```bash
+TRIAL=0
+```
 
-4 . Use the run_trial script.
+4 . Use the `run_trial.bash` script to test your submission on the task and trial specified above:
+```bash
+./run_trial.bash -n $TEAM $TASK $TRIAL
+```
+This command will run your submission image and the `vrx-server` image at the same time and generate multiple log files which are saved in the `vrx-docker/generated/logs` directory.
+
+5 . View your score for the task:
+```bash
+cat generated/logs/$TEAM/$TASK/$TRIAL/trial_score.txt
+```
+
+6 . See a replay of your system's performance on the task and verify that it behaved as you expected:
+```bash
+roslaunch vrx_gazebo playback.launch log_file:=`pwd`/generated/logs/$TEAM/$TASK/$TRIAL/gazebo-server/state.log
+```
