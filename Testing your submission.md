@@ -12,21 +12,24 @@ We assume the following:
 * You have [forked and cloned the vrx-events repository](https://bitbucket.org/osrf/vrx/wiki/submission_process) to your home directory and added your files.
 
 
-# Step 1: Verify your dockerhub_image.txt file.
+# Verify your dockerhub_image.txt file.
 
-* Change to the directory containing your `dockerhub_image.txt` file:
+1 . Change to the directory containing your `dockerhub_image.txt` file:
+
+```
+#!bash
+
+cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
+```
+
+2 . Test that your file contains the name of a reachable docker image (and version):
+
+```
+#!bash
     
-    
-    ```bash
-    cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>    
-    ```
+cat dockerhub_image.txt | xargs docker pull
+```
 
-* Test that your file contains the name of a reachable docker image (and version):
+If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
-    ```bash
-    cat dockerhub_image.txt | xargs docker pull
-    ```
-
-* If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
-
-# Step 2: Verify your sensor configuration.
+# Verify your sensor configuration.
