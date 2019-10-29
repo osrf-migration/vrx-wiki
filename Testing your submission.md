@@ -16,9 +16,11 @@ We assume the following:
 
 * Change to the directory containing your `dockerhub_image.txt` file:
 
-    ```
-    cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
-    ```
+```
+#!bash
+
+cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
+```
 
 * Test that your file contains the name of a reachable docker image (and version):
 
