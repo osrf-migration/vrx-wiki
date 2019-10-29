@@ -60,11 +60,11 @@ cat "team_config/$TEAM/dockerhub_image.txt" | xargs docker pull
 2 . If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
 # Check propulsion and sensor compliance.
-1 . Run the prepare_team_wamv.bash script included with `vrx-docker` to set up your team's wamv configuration and check compliance: 
+1 . Run the prepare_team_wamv.bash script included with `vrx-docker` to set up your team's wamv configuration: 
 ```bash
 ./prepare_team_wamv.bash "$TEAM"
 ```
-Note that the `REQUIRED process [wamv_config/wamv_generator-2] has died!` message is expected.
+Note that this will produce a `REQUIRED process [wamv_config/wamv_generator-2] has died!` message, which is expected.
 
 2 . Check compliance:
 ```bash
