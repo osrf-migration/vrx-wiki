@@ -11,6 +11,34 @@ We assume the following:
 * You have created the [required files](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge) for a submission.
 * You have [forked and cloned the vrx-events repository](https://bitbucket.org/osrf/vrx/wiki/submission_process) to your home directory and added your files.
 
+# Prepare a local testing environment
+
+1 . Change into the `vrx_ws/src` directory you created when installing `vrx`.
+
+```bash
+cd ~/vrx_ws/src
+```
+
+2 . Clone the `vrx-docker` repository.
+
+```bash
+hg clone https://bitbucket.org/osrf/vrx-docker
+```
+
+This should create a new `vrx-docker` directory alongside the original `vrx` repository directory.
+
+3 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
+
+```bash
+cp -R ~/vrx-events/2019/phase3_vrx_challenge/<your_team_name> vrx-docker/team_config/
+```
+
+4 . Build the vrx-server docker image (may take 30-60 minutes the first time):
+```bash
+./vrx_server/build_image.bash -n
+```
+
+**Note:** The above command expects a system with an Nvidia graphics card. To build an image on a system without Nvidia graphics, remove the `-n` option. Without an Nvidia card, the simulation is likely to run slower than real-time. 
 
 # Verify your dockerhub_image.txt file.
 
@@ -33,4 +61,8 @@ cat dockerhub_image.txt | xargs docker pull
 If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
 # Verify your sensor configuration.
-We assume that you have created
+
+
+
+# Verify your docker image is working
+After completing the steps in the sections above
