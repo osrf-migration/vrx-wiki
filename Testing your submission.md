@@ -63,9 +63,14 @@ cat "team_config/$TEAM/dockerhub_image.txt" | xargs docker pull
 1 . Run the prepare_team_wamv.bash script included with `vrx-docker` to set up your team's wamv configuration and check compliance: 
 ```bash
 ./prepare_team_wamv.bash "$TEAM"
-cat "generated/team_generated/$TEAM/compliant.txt" 
 ```
-2 . The output of the above should be **true** if your configuration passes compliance tests.
+Note that the `REQUIRED process [wamv_config/wamv_generator-2] has died!` message is expected.
+
+2 . Check compliance:
+```bash
+cat "generated/team_generated/$TEAM/compliant.txt"
+```
+The output of the above should be **true** if your configuration passes compliance tests.
 
 # Verify your docker image is working
 1 . Define a TASK variable to indicate the task you wish to test against.
