@@ -39,7 +39,7 @@ Replace <your_team_name> with the team name you used when adding your submission
 4 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
 
 ```bash
-cp -R ~/vrx-events/2019/phase3_vrx_challenge/$TEAM team_config/
+cp -R "~/vrx-events/2019/phase3_vrx_challenge/$TEAM" team_config/
 ```
 
 4 . Build the vrx-server docker image (may take 30-60 minutes the first time):
@@ -47,22 +47,31 @@ cp -R ~/vrx-events/2019/phase3_vrx_challenge/$TEAM team_config/
 ./vrx_server/build_image.bash -n
 ```
 
-**Note:** The above command expects a system with an Nvidia graphics card. To build an image on a system without Nvidia graphics, remove the `-n` option. 
 # Verify your `dockerhub_image.txt` file.
 
-1 . Test that your `dockerhub_image.txt` file contains the name of a reachable docker image (and version):
+1 . Test that your dockerhub_image.txt file contains the name of a reachable docker image (and version):
 
 ```
 #!bash
     
-cat team_config/$TEAM/dockerhub_image.txt | xargs docker pull
+cat "team_config/$TEAM/dockerhub_image.txt" | xargs docker pull
 ```
 
 2 . If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
-# Verify your sensor configuration.
-
-
+# Check propulsion and sensor compliance.
+1 . Run the prepare_team_wamv.bash script included with `vrx-docker` to set up your team's wamv configuration and check compliance: 
+```bash
+./prepare_team_wamv.bash "$TEAM"
+cat "generated/team_generated/$TEAM/compliant.txt" 
+```
+2 . The output of the above should be **true** if your configuration passes compliance tests.
 
 # Verify your docker image is working
-After completing the steps in the sections above
+1 . Define a TASK variable to indicate the task you wish to test against.
+
+2 . Build example task worlds.
+
+3 . Define a TRIAL variable to indicate which of the task worlds you would like to run.
+
+4 . Use the run_trial script.
