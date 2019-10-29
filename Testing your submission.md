@@ -19,6 +19,7 @@ We assume the following:
     ```bash
     cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
     ```
+
     Substituting the name of your team for `<team_name>`.
 
 * Test that your file contains the name of a reachable docker image (and version):
