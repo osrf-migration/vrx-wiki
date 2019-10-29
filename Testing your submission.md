@@ -15,8 +15,14 @@ We assume the following:
 # Step 1: Verify your dockerhub_image.txt file.
 
 * Change to the directory containing your `dockerhub_image.txt` file.
-* Run
+```bash
+cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
+```
+Substituting the name of your team for `<team_name>`.
+* Test that your file contains the name of a reachable docker image (and version):
 ```bash
 cat dockerhub_image.txt | xargs docker pull
 ```
 * If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
+
+# Step 2: Verify your sensor configuration.
