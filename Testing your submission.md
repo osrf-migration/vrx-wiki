@@ -14,7 +14,7 @@ We assume the following:
 
 # Step 1: Verify your dockerhub_image.txt file.
 
-* Change to the directory containing your `dockerhub_image.txt` file:
+* Change to the directory containing your `dockerhub_image.txt` file (substitute the name of your team for `<team_name>`):
 
     ```bash
     cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
