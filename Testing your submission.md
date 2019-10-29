@@ -23,9 +23,9 @@ We assume the following:
 
 * Test that your file contains the name of a reachable docker image (and version):
 
-  ```bash
-  cat dockerhub_image.txt | xargs docker pull
-  ```
+    ```bash
+    cat dockerhub_image.txt | xargs docker pull
+    ```
 
 * If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
