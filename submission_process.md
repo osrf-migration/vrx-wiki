@@ -61,6 +61,10 @@ cd <teamname>
 
 3 . Copy all files required for the evaluation. Follow the instructions detailed in the event page for the complete list of files to be submitted.
 
+### Test your submission
+
+Before submitted your pull request we recommend that you test your submission to verify that it works as expected. Instructions for testing are available [here](https://bitbucket.org/osrf/vrx/wiki/Testing%20your%20submission).
+
 
 ### Submit your pull request
 
