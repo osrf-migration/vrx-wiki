@@ -27,16 +27,18 @@ hg clone https://bitbucket.org/osrf/vrx-docker
 
 This should create a new `vrx-docker` directory alongside the original `vrx` repository directory.
 
-3 . Source the your `bash.setup` file and change into the `vrx-docker` directory:
+3 . Source the your `bash.setup` file, change into the `vrx-docker` directory, and set the variable `TEAM` for later use:
 ```bash
 source ~/vrx_ws/devel/setup.bash
 cd vrx-docker
+TEAM=<your_team_name>
 ```
+Replace <your_team_name> with the team name you used when adding your submission files to the `vrx-events` directory.
 
-3 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
+4 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
 
 ```bash
-cp -R ~/vrx-events/2019/phase3_vrx_challenge/<your_team_name> vrx-docker/team_config/
+cp -R ~/vrx-events/2019/phase3_vrx_challenge/$TEAM team_config/
 ```
 
 4 . Build the vrx-server docker image (may take 30-60 minutes the first time):
@@ -46,25 +48,17 @@ cp -R ~/vrx-events/2019/phase3_vrx_challenge/<your_team_name> vrx-docker/team_co
 
 **Note:** The above command expects a system with an Nvidia graphics card. To build an image on a system without Nvidia graphics, remove the `-n` option. Without an Nvidia card, the simulation is likely to run slower than real-time. 
 
-# Verify your dockerhub_image.txt file.
+# Verify your `dockerhub_image.txt` file.
 
-1 . Change to the directory containing your `dockerhub_image.txt` file:
-
-```
-#!bash
-
-cd ~/vrx-events/2019/phase3_vrx_challenge/<team_name>
-```
-
-2 . Test that your file contains the name of a reachable docker image (and version):
+1 . Test that your `dockerhub_image.txt` file contains the name of a reachable docker image (and version):
 
 ```
 #!bash
     
-cat dockerhub_image.txt | xargs docker pull
+cat team_config/$TEAM/dockerhub_image.txt | xargs docker pull
 ```
 
-If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
+2 . If the contents of the file are correct, docker should begin to pull your image. Once you have verified this is working, you can exit out of the pull using `ctrl+c`.
 
 # Verify your sensor configuration.
 
