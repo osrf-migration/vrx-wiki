@@ -9,6 +9,7 @@ We assume the following:
 * You have developed a solution to one or more VRX tasks.
 * You have [created a Docker image containing your solution](https://bitbucket.org/osrf/vrx/wiki/tutorials/Creating%20a%20Dockerhub%20image%20for%20submission) and uploaded it to Docker hub.
 * You have created the [required files](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge) for a submission.
+* You have [cloned the vrx-events repository](https://bitbucket.org/osrf/vrx/wiki/submission_process) to your home directory and added your files.
 
 
 # Step 1: Verify your dockerhub_image.txt file.
