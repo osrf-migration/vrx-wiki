@@ -33,3 +33,9 @@ First, there was a bug in the practice words released prior to Phase 2: [Phase 2
 Second, the naming may have caused some confusion, since we probably intended to use use the Task Msg name "dock" to indicate this "Dock" task.  However, we feel it is important to stick to the documentation as written which specifies the Task Msg for the "Dock" task as "scan".  
 
 For Phase 3 we will not be changing the interface, so the Dock Task (Task 5) will continue to be announced in the Task Message using the name "scan".
+
+## Team Docker entry points ##
+
+While running the Phase 2 submissions, some of the team Docker images were not properly configured to run the [vrx-docker scripts](https://bitbucket.org/osrf/vrx-docker/src/default/). In particular, the main problem was that the team image was not executing its expected entry point. Some teams were relying on a  `.bashrc` that is parsed when running docker with the `-it` flag. However, the VRX `run_trial.bash` script is not using that option. See [here](https://bitbucket.org/osrf/vrx-docker/src/45323a4bbf7fe63d6a087fac44d710672f5ea771/run_trial.bash#lines-160) how we use `docker run` with your team image. Check out this tutorial for tips and instructions on how to create your Docker images.
+
+We contacted most of the teams while running Phase 2, but keep in mind that is your responsibility to guarantee that your image is properly configured for Phase 3.
