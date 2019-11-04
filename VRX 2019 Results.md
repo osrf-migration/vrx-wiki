@@ -23,7 +23,7 @@ australis2         |  0.14  |  0.49  |  7.96  |  72.46 |  13.27 |  26.26 |
 usyd_robotx        |  0.94  |  1.05  |  3.50  |  76.59 |  17.30 |  36.05 |
 auviitk            |  --    |  --    |  --    |   --   |   --   |   --   |
 uf                 |  0.98  |  1.01  |  1.26  |  67.36 |  13.58 |  28.38 |
-tang               |  --    |  --    |  --    |   --   |   --   |   --   |
+tang               | 10.23  | 26.40  | 24.59  | 211.05 | 107.91 | 140.85 |
 
 ### Wayfinding
 
@@ -40,7 +40,7 @@ australis2         |  41.14 |  75.24 | 150.21 |  46.53 |  82.24 |  83.35 |
 usyd_robotx        |   0.34 |   9.88 |  77.46 |   0.23 |   5.47 |   8.27 |
 auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
 uf                 |   0.40 |   0.54 |  28.62 |   0.50 |   0.76 |   0.52 |
-tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+tang               |   2.93 |  27.32 |  37.38 |   0.22 |  17.81 |  21.20 |
 
 ### Perception
 
@@ -57,7 +57,7 @@ australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
 usyd_robotx        | 182.70 | 349.21 | 349.13 | 182.84 | 516.41 | 173.58 |
 auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
 uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
-tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+tang               |   0    |   0    |   0    |   0    |   0    |   0    |
 
 ### Navigation challenge
 
@@ -74,7 +74,7 @@ australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
 usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
 auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
 uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
-tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+tang               |   0    |   0    |   0    |   0    |   0    |   0    |
 
 ### Dock
 
@@ -91,7 +91,7 @@ australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
 usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
 auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
 uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
-tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+tang               |   0    |   0    |   0    |   0    |   0    |   0    |
 
 ### Scan and dock
 
@@ -108,7 +108,7 @@ australis2         |   0    |   0    |   0    |   0    |   0    |   0    |
 usyd_robotx        |   0    |   0    |   0    |   0    |   0    |   0    |
 auviitk            |   --   |   --   |   --   |   --   |   --   |   --   |
 uf                 |   0    |   0    |   0    |   0    |   0    |   0    |
-tang               |   --   |   --   |   --   |   --   |   --   |   --   |
+tang               |   0    |   0    |   0    |   0    |   0    |   0    |
 
 ### Configuration Summary ###
 We have been able to run the software for 1w of the 12 submitting teams for Phase 2.  Below is a summary of the configurations (propulsion and sensors) being used by the teams.
