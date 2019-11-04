@@ -38,3 +38,13 @@ Once you submit the pull request, the VRX technical team will do two things befo
 2. Check that the DockerHub image is accessible by the virtualrobotx DockerHub user.
 
 Once those two requirements are met, the pull request will be merged and your submission is considered ready.
+
+## Important dates
+
+| Date                          | Description                            |
+|-------------------------------|----------------------------------------|
+| 2019, November 22, 23:59 PST  | Deadline for submitting your solution  |
+| 2019, November 25, 23:59 PST  | Deadline for submitting a correction   |
+| 2019, November 29             | Results published                      |
+
+Note: We'll allocate an extra day in the schedule (November 25) for fixing any problems related with the content of the submission files (e.g.: A noncompliant sensor or thruster configuration, a typo pointing to the DockerHub image, a problem with DockerHub permissions not letting Open Robotics to download your solution image). Teams are not allowed to modify the DockerHub image after the deadline on November 22.
