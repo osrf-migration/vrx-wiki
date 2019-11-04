@@ -25,12 +25,6 @@ We expect to receive three files from each competitor prior to this event:
 * `thruster_config.yaml`: Defines the WAM-V thruster configuration.
 * `sensor_config.yaml`: Defines the WAM-V sensor configuration.
 
-Once you submit the pull request, the VRX technical team will do two things before merging (accepting) the submission:
-
-Check that the WAM-V thruster and sensor configuration complies with the configuration constraints described in the VRX Technical Guide
-Check that the DockerHub image is accessible by the virtualrobotx DockerHub user.
-Once those two requirements are met, the pull request will be merged and evaluation of the solutions will begin.
-
 ### Submission process notes
 
 * **If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.** 
