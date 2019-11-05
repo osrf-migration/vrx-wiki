@@ -19,6 +19,12 @@ To help you prepare, we've provided [Phase 2 Task Testing](https://bitbucket.org
 
 For the evaluation of your Phase 3 submissions, the solutions will be run through new configurations that are not released prior to the Phase 3 deadline, to exercise the solutions ability to deal with new configurations and conditions.
 
+### Docker Optional Arguments
+
+Some features of docker require extra command line arguments. If your team would like to specify an extra command line argument when executing your submitted docker image, please let the VRX Technical Team know as soon as possible by creating a new issue in the issue tracker. We will deal with these requests on a case by case basis. For now we are only aware of one team that requires the extra `nvidia_runtime=true argument` for their solution - see [this PR](https://bitbucket.org/osrf/vrx-events/pull-requests/36/2019-rehearsal-team_nirom/diff). We will make every effort to be as flexible as we can with the team solutions while providing a fair competition for all.  
+
+We do not expect many teams to want or need the flexibility to add additional command line arguments, but in cases were it can allow teams to innovate without giving them a competitive advantage, we want to work to make that happen.
+
 ## Submission process
 
 We expect to receive three files from each competitor prior to this event: 
