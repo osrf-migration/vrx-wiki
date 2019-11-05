@@ -1,5 +1,5 @@
 # Summary
-This tutorial will allow you to verify that your submission is working as expect.
+This tutorial will allow you to verify that your submission is working as expected.
 
 # Prerequisites
 We assume the following:
