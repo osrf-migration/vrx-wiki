@@ -27,6 +27,10 @@ We expect to receive three files from each competitor prior to this event:
 * `thruster_config.yaml`: Defines the WAM-V thruster configuration.
 * `sensor_config.yaml`: Defines the WAM-V sensor configuration.
 
+### Submission testing
+
+We highly recommend that each team test their solution and the docker image by following the [Testing Your Submission](https://bitbucket.org/osrf/vrx/wiki/Testing%20your%20submission) wiki. This will allow teams to reproduce the evaluation and assessment system prior to submission. 
+
 ### Submission process notes
 
 * **If you're using a private DockerHub repository, please grant access to the `virtualrobotx` DockerHub user, which will be used by the organization to access your solution.** 
