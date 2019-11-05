@@ -2,6 +2,10 @@
 
 ## Phase 2: Dress Rehearsal ##
 
+### Lessons Learned ###
+
+[Phase 2 Retrospective and Lessons Learned](https://bitbucket.org/osrf/vrx/wiki/events/19/phase2_retrospective)
+
 ### Logs ###
 
 All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/download_logs) for instructions.
