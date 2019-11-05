@@ -15,6 +15,10 @@ In preparation for Phase 2 we released 3 trials for each of the 6 tasks - a tota
 
 After the Phase 2 deadline, all of the worlds and models used for the 36 trials (6 tasks, 6 trials each) have been made a part of the VRX repository (see [PR#207](https://bitbucket.org/osrf/vrx/pull-requests/207/adding-worlds-and-models-used-in-phase2/diff)).  Following the directions in [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019) teams can use these trials for testing their code in many different environmental conditions.  See descriptions of the [Phase 2 Trials](https://bitbucket.org/osrf/vrx/wiki/events/19/phase2_trials).
 
+## Stationkeeping - Distance to Goal ##
+
+In one of the practice worlds for the stationkeeping task the goal pose was far enough away from the initial WAM-V pose that the vessel couldn't reasonable transit to the goal during the 'Ready' state of the simulation.  This could result in a large error for that trial of the task which could skew the results.  For the finals the worlds will be setup so that the WAM-V can be expected to transit from the initial pose to near the goal pose in the ready-state-duration (typically 10 seconds).  See [this Forum post](https://robonationforum.vbulletin.net/forum/robotx/virtual-robotx-aa/2689-vrx-scoring) for more details.
+
 ## P3D Gazebo Plugin ##
 
 Going through the submissions for Phase 2, we noticed that the teams include the P3D plugin in their sensor_config.yaml file. The P3D plugin provides a ROS published ground truth - true, noiseless pose information from Gazebo.  During development it is often handy to know the true state of the system, but the system should estimate the state of the system from sensors - not use the ground truth directly in the solution.  
