@@ -1,6 +1,6 @@
 # Phase 2 Trials
 
-Descriptions of the scenarios used for Phase 2 evaluation and scoring.
+Descriptions of the scenarios used for Phase 2 evaluation and scoring.  These are a great way to test your software.  For each of the 6 tasks we generated 6 trials.  The first three trials were release for practice prior to Phase 2 - see [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019) and the remaining three tasks were new to the teams.  We encourage teams to use all 36 of these trials to prepare for the VRX Finals.
 
 # Task 1: Station Keeping
 
