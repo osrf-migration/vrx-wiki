@@ -28,7 +28,7 @@ hg clone https://bitbucket.org/osrf/vrx-docker
 
 This should create a new `vrx-docker` directory alongside the original `vrx` repository directory.
 
-3 . Source the your `bash.setup` file, change into the `vrx-docker` directory, and set the variable `TEAM` for later use:
+3 . Source your `bash.setup` file, change into the `vrx-docker` directory, and set the variable `TEAM` for later use:
 ```bash
 source ~/vrx_ws/devel/setup.bash
 cd vrx-docker
