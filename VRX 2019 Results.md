@@ -44,6 +44,23 @@ auviitk            |  --             |  --        |   --       |  --           |
 uf                 |  4              |  2         |   5        |  3            |  2    |   3           |
 tang               |  8              |  5         |   5        |  3            |  2    |   3           |
 
+### Ranking ###
+
+Team               | Total | Ranking | 
+----------------   | ------| ------  |
+NIROM              |  11   |   1     |
+bumblebee          |  15   |   2     |
+gt-marine-robotics |  17   |   3     | 
+UF                 |  19   |   4     |
+usyd_robotx        |  19   |   5     | 
+australis2         |  24   |   6     |
+tang               |  26   |   7     | 
+owltonomous        |  28   |   8     | 
+mcgill_robotics    |  31   |   9     | 
+auviitk            |  --   |   -     |  
+Erau_Minion        |  --   |   -     |
+Team_Kanaloa       |  --   |   -     |  
+
 ### Station keeping
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
