@@ -51,8 +51,8 @@ Team               | Total | Ranking |
 NIROM              |  11   |   1     |
 bumblebee          |  15   |   2     |
 gt-marine-robotics |  17   |   3     | 
-UF                 |  19   |   4     |
-usyd_robotx        |  19   |   5     | 
+usyd_robotx        |  19   |   4     |
+UF                 |  19   |   5     | 
 australis2         |  24   |   6     |
 tang               |  26   |   7     | 
 owltonomous        |  28   |   8     | 
