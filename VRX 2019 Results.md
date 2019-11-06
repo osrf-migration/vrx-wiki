@@ -12,6 +12,38 @@ All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/
 
 ### Scoring Summary ###
 
+Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
+----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
+mcgill_robotics    | 86.96           | 79.87      |   0        |  0            |  0    |   0           |
+bumblebee          |  7.92           | 14.42      | 108.78     |  0            |  0    |   0           |
+gt-marine-robotics |  9.44           | 79.79      |  89.36     |571.71         | 60.00 |  10.00        |
+NIROM              |  7.35           |  0.05      |  57.18     |218.58         |  0    |  30.00        |
+Team_Kanaloa       |  --             |  --        |   --       |  --           |  --   |   --          |
+owltonomous        | 75.62           | 79.87      |   0        |  0            |  0    |   0           |
+Erau_Minion        |  --             |  --        |   --       |  --           |  --   |   --          |
+australis2         | 20.10           | 79.79      |   0        |  0            |  0    |   0           |
+usyd_robotx        | 22.57           | 16.94      |1753.87     |  0            |  0    |   0           |
+auviitk            |  --             |  --        |   --       |  --           |  --   |   --          |
+uf                 | 18.76           |  5.22      |   0        |  0            |  0    |   0           |
+tang               | 86.84           | 17.81      |   0        |  0            |  0    |   0           |
+
+### Ranks Summary ###
+
+Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
+----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
+mcgill_robotics    |  9              |  9         |   5        |  3            |  2    |   3           |
+bumblebee          |  2              |  3         |   2        |  3            |  2    |   3           |
+gt-marine-robotics |  3              |  7         |   3        |  1            |  1    |   2           |
+NIROM              |  1              |  1         |   4        |  2            |  2    |   1           |
+Team_Kanaloa       |  --             |  --        |   --       |  --           |  --   |   --          |
+owltonomous        |  7              |  8         |   5        |  3            |  2    |   3           |
+Erau_Minion        |  --             |  --        |   --       |  --           |  --   |   --          |
+australis2         |  5              |  6         |   5        |  3            |  2    |   3           |
+usyd_robotx        |  6              |  4         |   1        |  3            |  2    |   3           |
+auviitk            |  --             |  --        |   --       |  --           |  --   |   --          |
+uf                 |  4              |  2         |   5        |  3            |  2    |   3           |
+tang               |  8              |  5         |   5        |  3            |  2    |   3           |
+
 ### Station keeping
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
