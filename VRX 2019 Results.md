@@ -16,7 +16,7 @@ Team               | Station keeping | Wayfinding | Perception | Nav challenge |
 ----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
 mcgill_robotics    | 86.96           | 79.87      |   0        |  0            |  0    |   0           |
 bumblebee          |  7.92           | 14.42      | 108.78     |  0            |  0    |   0           |
-gt-marine-robotics |  9.44           | 79.79      |  89.36     |571.71         | 60.00 |  10.00        |
+gt-marine-robotics |  9.44           | 79.79      |  89.36     |571.71         |  0    |  10.00        |
 NIROM              |  7.35           |  0.05      |  57.18     |218.58         |  0    |  30.00        |
 Team_Kanaloa       |  --             |  --        |   --       |  --           |  --   |   --          |
 owltonomous        | 75.62           | 79.87      |   0        |  0            |  0    |   0           |
@@ -31,32 +31,32 @@ tang               | 86.84           | 17.81      |   0        |  0            |
 
 Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
 ----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
-mcgill_robotics    |  9              |  9         |   5        |  3            |  2    |   3           |
-bumblebee          |  2              |  3         |   2        |  3            |  2    |   3           |
+mcgill_robotics    |  9              |  9         |   5        |  3            |  1    |   3           |
+bumblebee          |  2              |  3         |   2        |  3            |  1    |   3           |
 gt-marine-robotics |  3              |  7         |   3        |  1            |  1    |   2           |
-NIROM              |  1              |  1         |   4        |  2            |  2    |   1           |
+NIROM              |  1              |  1         |   4        |  2            |  1    |   1           |
 Team_Kanaloa       |  --             |  --        |   --       |  --           |  --   |   --          |
-owltonomous        |  7              |  8         |   5        |  3            |  2    |   3           |
+owltonomous        |  7              |  8         |   5        |  3            |  1    |   3           |
 Erau_Minion        |  --             |  --        |   --       |  --           |  --   |   --          |
-australis2         |  5              |  6         |   5        |  3            |  2    |   3           |
-usyd_robotx        |  6              |  4         |   1        |  3            |  2    |   3           |
+australis2         |  5              |  6         |   5        |  3            |  1    |   3           |
+usyd_robotx        |  6              |  4         |   1        |  3            |  1    |   3           |
 auviitk            |  --             |  --        |   --       |  --           |  --   |   --          |
-uf                 |  4              |  2         |   5        |  3            |  2    |   3           |
-tang               |  8              |  5         |   5        |  3            |  2    |   3           |
+uf                 |  4              |  2         |   5        |  3            |  1    |   3           |
+tang               |  8              |  5         |   5        |  3            |  1    |   3           |
 
 ### Ranking ###
 
 Team               | Total | Ranking | 
 ----------------   | ------| ------  |
-NIROM              |  11   |   1     |
-bumblebee          |  15   |   2     |
+NIROM              |  10   |   1     |
+bumblebee          |  14   |   2     |
 gt-marine-robotics |  17   |   3     | 
-usyd_robotx        |  19   |   4     |
-UF                 |  19   |   5     | 
-australis2         |  24   |   6     |
-tang               |  26   |   7     | 
-owltonomous        |  28   |   8     | 
-mcgill_robotics    |  31   |   9     | 
+usyd_robotx        |  18   |   4     |
+UF                 |  18   |   5     | 
+australis2         |  23   |   6     |
+tang               |  25   |   7     | 
+owltonomous        |  27   |   8     | 
+mcgill_robotics    |  30   |   9     | 
 auviitk            |  --   |   -     |  
 Erau_Minion        |  --   |   -     |
 Team_Kanaloa       |  --   |   -     |  
