@@ -36,7 +36,7 @@ TEAM=<your_team_name>
 ```
 Replace <your_team_name> with the team name you used when adding your submission files to the `vrx-events` directory.
 
-4 . Copy your submission files from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.
+4 . Copy your submission files (yaml config files and docker hub image name) from your local fork of the vrx-events repository to the `vrx-docker/team_config` folder.  For example, if you are testing the submission files for the [Phase 3 VRX Challenge](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge) in the [vrx-events](https://bitbucket.org/osrf/vrx-events/src/default/) repository
 
 ```bash
 cp -R "~/vrx-events/2019/phase3_vrx_challenge/$TEAM" team_config/
