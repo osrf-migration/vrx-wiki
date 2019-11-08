@@ -56,7 +56,7 @@ Once those two requirements are met, the pull request will be merged and your su
 | Date                          | Description                            |
 |-------------------------------|----------------------------------------|
 | 2019, November 22, 23:59 PST  | Deadline for submitting your solution  |
-| 2019, November 25, 23:59 PST  | Deadline for submitting a correction   |
+| 2019, November 23, 23:59 PST  | Deadline for submitting a correction   |
 | 2019, November 29             | Results published                      |
 
 Note: We'll allocate time in the schedule (until November 25) for fixing any problems related with the content of the submission files (e.g.: A noncompliant sensor or thruster configuration, a typo pointing to the DockerHub image, a problem with DockerHub permissions not letting Open Robotics to download your solution image). Teams are not allowed to modify the DockerHub image after the deadline on November 22.
