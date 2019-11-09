@@ -13,6 +13,7 @@ A set of tutorials to help you get started with VRX.
  * **September 23, 23:59 PST**, [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
 
  * **October 21, 23:59 PST**, [Phase 2 - Dress Rehearsal](https://bitbucket.org/osrf/vrx/wiki/events/19/dress_rehearsal): Details of the rehearsal tasks for VRX.
+    * [Phase 2 Retrospective and Lessons Learned](https://bitbucket.org/osrf/vrx/wiki/events/19/phase2_retrospective)
 
  * **November 22, 23:59 PST**, [Phase 3 - VRX Challenge](https://bitbucket.org/osrf/vrx/wiki/events/19/vrx_challenge): Details of how the VRX Finals will run.
 
