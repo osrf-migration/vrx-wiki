@@ -13,7 +13,15 @@ The [Scoring Summary](https://bitbucket.org/osrf/vrx/wiki/VRX%202019%20Results) 
 
 In preparation for Phase 2 we released 3 trials for each of the 6 tasks - a total of 18 practice simulations for teams to test their solutions: [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019).  In running the Phase 2 Dress Rehearsal we executed the submitted code against 6 trials for each task; the first 3 trials were equivalent to the practice trials and 3 new trials that were different than the original 3 practice trials.
 
-After the Phase 2 deadline, all of the worlds and models used for the 36 trials (6 tasks, 6 trials each) have been made a part of the VRX repository (see [PR#207](https://bitbucket.org/osrf/vrx/pull-requests/207/adding-worlds-and-models-used-in-phase2/diff)).  Following the directions in [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019) teams can use these trials for testing their code in many different environmental conditions.  See descriptions of the [Phase 2 Trials](https://bitbucket.org/osrf/vrx/wiki/events/19/phase2_trials).
+After the Phase 2 deadline, all of the worlds and models used for the 36 trials (6 tasks, 6 trials each) have been made a part of the VRX repository (see [PR#207](https://bitbucket.org/osrf/vrx/pull-requests/207/adding-worlds-and-models-used-in-phase2/diff) and [PR#213](https://bitbucket.org/osrf/vrx/pull-requests/213/refactor-vrx-worlds-location/diff)).  Following the directions in [Phase 2 Task Testing](https://bitbucket.org/osrf/vrx/wiki/Phase2_Task_Testing_2019) teams can use these trials for testing their code in many different environmental conditions.  For example,
+```
+WORLD=stationkeeping0.world
+roslaunch vrx_gazebo vrx.launch verbose:=true \
+      paused:=false \
+      wamv_locked:=true \
+      world:=${HOME}/vrx_ws/src/vrx/vrx_gazebo/worlds/2019_phase2/${WORLD}
+```
+ See descriptions of the [Phase 2 Trials](https://bitbucket.org/osrf/vrx/wiki/events/19/phase2_trials).
 
 ## Stationkeeping - Distance to Goal ##
 
