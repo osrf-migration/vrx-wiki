@@ -30,7 +30,7 @@ WORLD=stationkeeping0.world
 roslaunch vrx_gazebo vrx.launch verbose:=true \
 	  paused:=false \
 	  wamv_locked:=true \
-	  world:=${HOME}/vrx_ws/src/vrx/vrx_gazebo/worlds/${WORLD}
+	  world:=${HOME}/vrx_ws/src/vrx/vrx_gazebo/worlds/2019_practice/${WORLD}
 ```
 where you will want to change the value of the `WORLD` variable to match each of the worlds you want to run.  Also, note that the world files (e.g., stationkeeping0.world) are in the VRX workspace.  In the example above, the workspace is `${HOME}/vrx_ws`.  Yours might be different, e.g., `${HOME}/catkin_ws`, in which case you will need to make that change.
 
