@@ -23,11 +23,17 @@ The game continues as long as you are able to intercept the attackers.  As soon 
 
 Here is another [**demonstration scoring video**](https://vimeo.com/user5784414/review/376723116/7d5ebd63e2) to illustrate how intercepting attackers increases the score.
 
-As was done in the VRX challenge, the score is published as a [vrx_gazebo Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) message on the `/vrx/task/info` topic. 
+As was done in the VRX challenge, the score is published as a [vrx_gazebo Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) message on the `/vrx/task/info` topic.  The following fields of the Task message are populated:
+
+ * `name` is always "wamv_command".
+ * `state` is either "running" if the attackers have not yet reached the beach and then "finished" once an attacker has reached the beach.
+ * `score` is the current numerical score. 
 
 ### Objectives
 
-
+ * Generate a high score and report it on the shared document (honor system)
+ * Describe your solution
+ * Submit a highlight video
 
 ## Getting Started
 
@@ -56,4 +62,29 @@ A game is run by the wamv_commander node.  Once the simulation is up you can sta
 rosrun wamv_command wamv_command.py 
 ```
 
-###
+You can monitor your score and the game state with
+```
+rostopic echo /vrx/task/info
+```
+
+Teloperation using a gamepad.
+```
+roslaunch vrx_gazebo usv_joydrive.launch 
+```
+
+## Solution Progression
+
+1. Teleoperation
+2. Single defender
+3. Team defenders
+
+## Observing Attacker/Defender State
+
+The state of all of the models in the Gazebo world are published on on the ROS topic `/gazebo/model_states`.  This provides the true state of each model in the gazebo coordinate frame.  For WAMV Command challenge we will use the ground truth so that you system has complete, error-free knowledge of the defender and attacker states.
+
+We will provide an example of subscribing to this ROS topic for state information.
+
+
+## Expanding to Multiple Defenders
+
+Based on mutltivehicle tutorial.
