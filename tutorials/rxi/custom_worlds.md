@@ -5,15 +5,15 @@ Creating custom worlds will allow you to expand on the VRX simulation basics to 
 ## Examples
 
 * [Adding Course Elements](https://bitbucket.org/osrf/vrx/wiki/tutorials/Adding%20course%20elements)
-* [Create Custom Docks](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks)
 * [Randomized Obstacle Course](https://bitbucket.org/osrf/vrx/pull-requests/54/obstacle-course/diff)
+* [Create Custom Docks](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks)
 
 
 # Setup
 
 For this tutorial you will create you own ROS package called `rxi` to contain the custom world definition.  This ROS package should be in the same catkin workspace as the VRX packages.  The following instructions assume that your catkin workspace is named '~/vrx_ws'.
 
-Make a new directory for the ROS package, initialize the package by creating blank CMakelists.txt and package.xml files and build.
+Make a new directory for the ROS package, initialize the package by creating blank CMakeLists.txt and package.xml files and build.
 ```
 cd ~/vrx_ws/src/
 mkdir rxi
@@ -33,7 +33,7 @@ Optional: This is a good time to setup version control for your `rxi` package.  
 
 ### Copy working examples from the `vrx_gazebo` package
 
-Make new directories in your rxi package and copy exising launch and world files from the `vrx_gazebo` package to provide a working example.
+Make new directories in your rxi package and copy existing launch and world files from the `vrx_gazebo` package to provide a working example.
 ```
 cd ~/vrx_ws/src/rxi
 mkdir launch
@@ -54,7 +54,7 @@ The `rxi.world.xacro` file uses the [xacro](http://wiki.ros.org/xacro) (XML Macr
   ```
   <depend>xacro</depend>
   ```
-* Edit the `CMakeLists.txt` file and add the following lines at the bottome of the file:
+* Edit the `CMakeLists.txt` file and add the following lines at the bottom of the file:
 ```
 find_package(catkin REQUIRED COMPONENTS
   xacro)
@@ -90,7 +90,7 @@ source devel/setup.bash
 roslaunch rxi rxi.launch
 ```
 
-This shoudl generate a Gazebo window that looks something like this...
+This should generate a Gazebo window that looks something like this...
 ![rxi example](./images/rxilaunch.png)
 
 
@@ -139,7 +139,7 @@ Position the buoy in front of the WAM-V and then record the x and y position val
 
 ### Build a navigation course
 
-To exercise these new skils, build a simple navigation challenge course that we might use to practice for RobotX 2020.  
+To exercise these new skills, build a simple navigation challenge course that we might use to practice for RobotX 2020.  
 
 * Include two red buoys
 * Include two green buoys
@@ -223,7 +223,7 @@ Now you have used the python script to generate an SDF model file (`model.sdf`) 
 
 ### Customize
 
-Using the process described above, complete the following by modifying your `rxi.world.xacro` fild:
+Using the process described above, complete the following by modifying your `rxi.world.xacro` field:
 
 * Generate a new randomized obstacle field with
   * 10 of the `a5` buoys
@@ -235,5 +235,19 @@ When you start the simulation you should see something similar to the image belo
 
 ![rxi example](./images/obs_ten.png)
 
-## Generating a dock.
+## Generating a custom docks. 
 
+One component of RobotX that seems to change from year to year is the configuration of the dock structures.  The docks are constructed from common building blocks, but used to create different scenarios each year.  We don't know what the dock structures will look like for 2020, but we do have tools to quickly generate custom simulated dock structures from the building blocks.
+
+The [Create Custom Docks](https://bitbucket.org/osrf/vrx/wiki/tutorials/CreateDocks) tutorial illustrates using an embedded ruby script to generate custom dock configurations based on simple text input.  Work through the tutorial to come up with a custom dock shape and see if you can add it to our existing model to generate a practice world similar to the one shown below:
+
+![rxi example](./images/rxidock.png)
+
+Detail of the dock is shown in the following image:
+
+![rxi example](./images/dock.png)
+
+
+## Solution
+
+There is no unique solution to these tutorial tasks, but we've provided a working example of the [RXI ROS package](https://bitbucket.org/brian_bingham/rxi) to assist in working through the tasks.
