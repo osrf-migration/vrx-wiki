@@ -84,5 +84,5 @@ source devel/setup.bash
 roslaunch rxi rxi.launch
 ```
 
-![rxi example](rxilaunch.png)
+![rxi example](./images/rxilaunch.png)
 
