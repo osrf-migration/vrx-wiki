@@ -46,11 +46,11 @@ Now we will edit our new files so that we can verify they are a working starting
 
 The `rxi.world.xacro` file uses the [xacro](http://wiki.ros.org/xacro) (XML Macros) utility to generate a [Gazebo world](http://gazebosim.org/tutorials?tut=build_world) file.  The file currently creates the basic Sand Island environment, an ocean wave model and an ocean wind model.  In order to setup the package to process the xacro file we'll want to do the following within the `rxi` package:
 
-1. Edit the `package.xml` file and add the following line:
-```
-<depend>xacro</depend>
-```
-2. Edit the `CMakeLists.txt` file and add the following lines at the bottome of the file:
+* Edit the `package.xml` file and add the following line:
+  ```
+  <depend>xacro</depend>
+  ```
+* Edit the `CMakeLists.txt` file and add the following lines at the bottome of the file:
 ```
 find_package(catkin REQUIRED COMPONENTS
   xacro)
@@ -67,7 +67,7 @@ xacro_add_files(
 install(DIRECTORY worlds/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/worlds)
 ```
-3. Re-make with
+* Re-make with
 ```
 catkin_make
 ```
