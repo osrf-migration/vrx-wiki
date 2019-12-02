@@ -13,12 +13,17 @@ The attackers spawn roughly 100 m from the beach and approach the beach with a c
 
 ![Screenshot from 2019-12-01 16-30-24b.png](https://bitbucket.org/repo/BgXLzgM/images/1272893178-Screenshot%20from%202019-12-01%2016-30-24b.png)
 
-
-
-
 The game is over when one of the attackers reaches the beach.  An attacker reaches the beach when it gets within roughly 5 m of the shoreline.
 
 The game consists of a series of levels, starting at level 1.  When you intercept all the attackers in a level the next level begins by respawning attackers at random locations 100 m from the beach.  The number of attackers in each level is equal to the level number (so in level 2 you will have 2 attackers, etc.)  The speed of the attackers also increases with each level.
+
+Here is a [**demonstration video**](https://vimeo.com/user5784414/review/376721424/5a2d3df4eb) illustrating how the number and speed of the attackers increases with each level.  Notice that at the end of the video the attackers are able to make it to the beach and the game is over.   
+
+The game continues as long as you are able to intercept the attackers.  As soon as any attacker reaches the beach the game is over and all the attackers stop in place. 
+
+### Objectives
+
+
 
 ## Getting Started
 
@@ -41,3 +46,10 @@ First we will launch the simulation environment with a single WAM-V USV in the w
 ```
 roslaunch wamv_command wamv_command.launch verbose:=true
 ```
+
+A game is run by the wamv_commander node.  Once the simulation is up you can start the node with
+```
+rosrun wamv_command wamv_command.py 
+```
+
+###
