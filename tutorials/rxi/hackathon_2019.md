@@ -21,6 +21,10 @@ Here is a [**demonstration video**](https://vimeo.com/user5784414/review/3767214
 
 The game continues as long as you are able to intercept the attackers.  As soon as any attacker reaches the beach the game is over and all the attackers stop in place. 
 
+Here is another [**demonstration scoring video**](https://vimeo.com/user5784414/review/376723116/7d5ebd63e2) to illustrate how intercepting attackers increases the score.
+
+As was done in the VRX challenge, the score is published as a [vrx_gazebo Task](https://bitbucket.org/osrf/vrx/src/default/vrx_gazebo/msg/Task.msg) message on the `/vrx/task/info` topic. 
+
 ### Objectives
 
 
