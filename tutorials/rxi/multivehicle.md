@@ -1,5 +1,7 @@
 # RXI Tutorial: Operating Multivehicles
 
+Operating more than one robot can be challenging, but using namespaces and remapping can help when working with multiple robots.  In this tutorial we will spawn two WAM-V robots within a Gazebo simulation and demonstrate how namespaces can be used to teleoperate the two robots independently.  If time allows, we will work on a leader-follower configuration where a follower WAM-V automatically drives toward the teleoperated leader robot.  
+
 ## Resources ##
 
 * [ROS Names](http://wiki.ros.org/Names) documentation
