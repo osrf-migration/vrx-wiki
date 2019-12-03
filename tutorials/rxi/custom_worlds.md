@@ -17,7 +17,7 @@ Make a new directory for the ROS package, initialize the package by creating bla
 ```
 cd ~/vrx_ws/src/
 mkdir rxi
-catkin_create_pkg rxi
+catkin_create_pkg rxi --rosdistro melodic
 cd ~/vrx_ws
 catkin_make
 ```
