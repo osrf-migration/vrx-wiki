@@ -127,7 +127,7 @@ You should see that the buoy is located at the origin of the gazebo coordinate f
 
 The [<pose>](http://sdformat.org/spec?ver=1.6&elem=model) tag specifies the position and orientation of the model, so in the example above the buoy is located at the origin of the gazebo coordinate frame.  We can change the position by editing the values with the pose tag.
 
-For visually composing a scene it is often convenient to drag the objects using the [translate tool](http://gazebosim.org/tutorials?tut=build_world#Translation].  You can select the buoy model, then select the translate tool and move the buoy where you would like.  Here is a [short video](https://www.youtube.com/watch?v=x_qNg6sN6wk) illustrating the process.  
+For visually composing a scene it is often convenient to drag the objects using the [translate tool](http://gazebosim.org/tutorials?tut=build_world#Translation).  You can select the buoy model, then select the translate tool and move the buoy where you would like.  Here is a [short video](https://www.youtube.com/watch?v=x_qNg6sN6wk) illustrating the process.  
 
 You can also edit the pose property of the model directly in the Gazebo client.  Select the model in the list of models and expand the properties pane below.  Then you can edit the x and y values to move the model.
 
