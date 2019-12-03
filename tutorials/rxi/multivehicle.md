@@ -32,8 +32,12 @@ roslaunch rxi rxi_multi.launch verbose:=true
 
 The optional `verbose:=true` argument can help with debugging.  Also, if the system is running slowly, you can change the default world model by editing the `rxi_multi.launch` file to substitute the following default world.
 ```
+<arg name="world" default="$(find vrx_gazebo)/worlds/sandisland.world" />
+```
+
 
 This should generate a Gazebo window that looks something like this...
+
 ![rxi example](./images/rxilaunch.png)
 
 ### Teleop
