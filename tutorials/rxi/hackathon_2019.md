@@ -56,15 +56,15 @@ Your performance in the RXI Challenge is more than just the game score.  The pur
 
 #### High scores
 
-Generate a high score and report it on the [shared leaderboard](Coming Soon).
+Generate a high score and report it on the [shared leaderboard](https://docs.google.com/spreadsheets/d/1fvYe2w-jMXbQlqDLx7OO0jIWo6Y0uX9KVVEgFyEDzQI/edit?usp=sharing).
 
 #### Describe your solution
 
-Share a description of your solution by posting a few slides describing the approach.  Share the slides by posting a link on the shared leaderboard.  Time will be made at the end of the event to discuss some of the innovative solutions.
+Share a description of your solution by posting a few slides describing the approach.  Share the slides by posting a link on the [shared leaderboard](https://docs.google.com/spreadsheets/d/1fvYe2w-jMXbQlqDLx7OO0jIWo6Y0uX9KVVEgFyEDzQI/edit?usp=sharing).  Time will be made at the end of the event to discuss some of the innovative solutions.
 
 #### Generate a highlight video
 
-A concise way to convey your performance is to capture a video of the simulation running to highlight various aspects of the solution.  Include a link to your highlight video in the shared leaderboard.
+A concise way to convey your performance is to capture a video of the simulation running to highlight various aspects of the solution.  Include a link to your highlight video in the [shared leaderboard](https://docs.google.com/spreadsheets/d/1fvYe2w-jMXbQlqDLx7OO0jIWo6Y0uX9KVVEgFyEDzQI/edit?usp=sharing).
 
 ## Getting Started
 
