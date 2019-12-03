@@ -91,6 +91,7 @@ roslaunch rxi rxi.launch
 ```
 
 This should generate a Gazebo window that looks something like this...
+
 ![rxi example](./images/rxilaunch.png)
 
 
