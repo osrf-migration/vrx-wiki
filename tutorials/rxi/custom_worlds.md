@@ -248,6 +248,18 @@ Detail of the dock is shown in the following image:
 ![rxi example](./images/dock.png)
 
 
-## Solution
+## Working Example 
 
 There is no unique solution to these tutorial tasks, but we've provided a working example of the [RXI ROS package](https://bitbucket.org/brian_bingham/rxi) to assist in working through the tasks.
+
+Following these steps should provide a functioning solution:
+
+* Clone the repository in your VRX catkin workspace and make
+```
+cd ~/vrx_ws/src
+git clone git@bitbucket.org:brian_bingham/rxi.git
+cd ~/vrx_ws
+catkin_make
+source devel/setup.bash
+```
+* Start the simulation: `roslaunch rxi rxi.launch verbose:=true`
