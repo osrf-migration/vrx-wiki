@@ -78,7 +78,7 @@ catkin_make
 
 When you build the package the `rxi.world.xacro` file is processed, generating the `rxi.world` file that is installed in the system. (To see where try  `find ~/vrx_ws -name "rxi.world"`).
 
-### Modify launch file and test.
+### Modify the launch file and test.
 
 Next we will edit the `rxi.launch` file so that it uses the generated `rxi.world` file.
 
