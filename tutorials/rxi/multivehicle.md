@@ -101,7 +101,7 @@ Edit our new `defender_keydrive.launch`
 ```
 * Place the closing `</group>` tag at the end of the file, just before the `</launch>` tag.
 * Examining the `<remap>` tags within the nodes you will see that the topics have been specifically put in the `/wamv` namespace.  In order for the namespace grouping to take affect, we need to remove this specification, so we remove the `/wamv` prefix from the `to` arguments in all the `<remap>` sections.
-  * We can do this by searching for `/wamv/thrusters/` and replacing with `thrusters/`
+    * We can do this by searching for `/wamv/thrusters/` and replacing with `thrusters/`
 * Run the teleoperation nodes with
 ```
 roslaunch rxi defender_keydrive.launch 
@@ -166,8 +166,8 @@ source devel/setup.bash
 
 * Start the simulation: `roslaunch rxi rxi_multi.launch verbose:=true`
 * Start the keyboard teleop in two different namespaces:
-  * `roslaunch rxi defender_keydrive.launch namespace:=defender_a`
-  * `roslaunch rxi defender_keydrive.launch namespace:=defender_b`
+    * `roslaunch rxi defender_keydrive.launch namespace:=defender_a`
+    * `roslaunch rxi defender_keydrive.launch namespace:=defender_b`
 * Optional: Examine the ROS graph: `rosrun rqt_graph rqt_graph`
 
 
