@@ -202,10 +202,10 @@ rosrun vrx_gazebo generate_avoid_obstacles_buoys --a3 1 --a5 1 --a7 1 --surmark4
 
 Now you should have both `model.config` and `model.sdf` files in the `rxi/models/rxi_obstacles/` directory.
 
-### Export Gazebo models from RXI package
+### Export Gazebo models from the RXI package
 
 We'll need to modify the RXI ROS package so that the models are available to Gazebo.
-* Edit the `package.xml` file so that at the end (before the closing `</package>` tag) the following lines are include:
+* Edit the `package.xml` file so that at the end (before the closing `</package>` tag) the following lines are included:
 ```
   <depend version_gte="2.5.17">gazebo_ros</depend>
   <export>
