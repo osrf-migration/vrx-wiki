@@ -83,6 +83,9 @@ When you build the package the `rxi.world.xacro` file is processed, generating t
 Next we will edit the `rxi.launch` file so that it uses the generated `rxi.world` file.
 
 * Edit `rxi.launch` and change the default value of the world argument to point to the new `rxi.world` file in the `rxi` ROS package.
+* To do this:
+    * You'll need to change the argument after `find` from `vrx_gazebo` to `rxi`.
+    * You'll also need to change the file name from `example_world.world` to `rxi.world`.
 
 * Test your new launch file with...
 ```
