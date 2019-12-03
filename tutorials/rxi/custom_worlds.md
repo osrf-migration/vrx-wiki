@@ -76,7 +76,7 @@ install(DIRECTORY worlds/
 catkin_make
 ```
 
-When you build package the `rxi.world.xacro` file is processed, generating the `rxi.world` file that is installed in the system. (To see where try  `find ~/vrx_ws -name "rxi.world"`).
+When you build the package the `rxi.world.xacro` file is processed, generating the `rxi.world` file that is installed in the system. (To see where try  `find ~/vrx_ws -name "rxi.world"`).
 
 ### Modify launch file and test.
 
