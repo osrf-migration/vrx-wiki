@@ -221,7 +221,7 @@ install(DIRECTORY models/
 ```
 ### Add the new `rxi_obstacles` model to your world.
 
-Now you have used the Python script to generate an SDF model file (`model.sdf`) and included it in your RXI package.  The model is available to Gazebo so you should be able to add it to your world using the methods described above.  Once you have included the model in your `rxi.world.xacro` file, you should see something like the following.
+Now you have used the Python script to generate an SDF model file (`model.sdf`) and included it in your RXI package.  The model is available to Gazebo so you should be able to add it to your world using the methods described above. Once you have included the model in your `rxi.world.xacro` file, you should see something like the following.
 
 ![rxi example](./images/obs_one.png)
 
