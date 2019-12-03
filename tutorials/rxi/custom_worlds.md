@@ -156,11 +156,11 @@ When you are done, you should be able to `roslaunch rxi rxi.launch` and start a 
 
 ## Generating a randomized obstacle field
 
-Above we learned out to build a world by assembling model instances.  This is very useful for creating practice worlds to exercise and test your solutions.  As we learn about the RobotX 2020 tasks, many teams will want to create simulated representations of those tasks to start working on solutions.
+Above we learned how to build a world by assembling model instances.  This is very useful for creating practice worlds to exercise and test your solutions.  As we learn about the RobotX 2020 tasks, many teams will want to create simulated representations of those tasks to start working on solutions.
 
 
 ### Example: Generating random obstacle field model
-We may also want a way to quickly generate randomized worlds so that we can practice with lots of different scenarios for a particular task.  For RobotX 2018 the UF team created a python program to generate a randomized obstacle field model.  Notes on this contribution to VRX are in [PR#54](https://bitbucket.org/osrf/vrx/pull-requests/54/obstacle-course/diff).
+We may also want a way to quickly generate randomized worlds so that we can practice with lots of different scenarios for a particular task.  For RobotX 2018 the UF team created a Python program to generate a randomized obstacle field model.  Notes on this contribution to VRX are in [PR#54](https://bitbucket.org/osrf/vrx/pull-requests/54/obstacle-course/diff).
 
 The program makes use of a number of command line arguments to output an SDF model file to standard out.  Review the usage notes for the program with
 ```
