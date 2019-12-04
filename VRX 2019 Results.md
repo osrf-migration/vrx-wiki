@@ -1,4 +1,25 @@
+[TOC]
+
 # VRX 2019 Results #
+
+## Phase 3: VRX Challenge ##
+
+### Summary of submission configurations
+
+Team | Thrusters | Cameras | Lidars | Lidar 1 | Lidar 2 | P3D
+------ | ------ | ------ | ------ | ------ | ------ | ------
+mcgill_robotics | 4 | 3 | 1 | 16_beam | NA | N
+bumblebee | 4 | 3 | 2 | 32_beam | 32_beam | N
+gt-marine-robotics | 4 | 1 | 1 | 32_beam | NA | N
+NIROM | 4 | 3 | 2 | 32_beam | 32_beam | N
+Team_Kanaloa | 4 | 2 | 1 | 16_beam | NA | N
+owltonomous | 2 | 2 | 1 | 32_beam | NA | N
+australis2 | 3 | 2 | 1 | 32_beam | NA | N
+Minion | 2 | 3 | 2 | 32_beam | 32_beam | N
+usyd_robotx | 3 | 3 | 1 | 32_beam | NA | N
+uf | 4 | 3 | 1 | 32_beam | NA | N
+tang | 3 | 3 | 1 | 16_beam | NA | N
+
 
 ## Phase 2: Dress Rehearsal ##
 
