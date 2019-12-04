@@ -146,7 +146,7 @@ If all goes well you should have both telop systems interacting with the gazebo 
 
 ![rxi example](./images/rosgraph_multi.png)
 
-And here is a short [video clip](coming soon) illustrating moving the two USVs via keyboard.
+And here is a short [demonstration video](https://vimeo.com/377209480) illustrating moving the two USVs via keyboard.
 
 
 ## Working Example
@@ -169,5 +169,3 @@ source devel/setup.bash
     * `roslaunch rxi defender_keydrive.launch namespace:=defender_a`
     * `roslaunch rxi defender_keydrive.launch namespace:=defender_b`
 * Optional: Examine the ROS graph: `rosrun rqt_graph rqt_graph`
-
-
