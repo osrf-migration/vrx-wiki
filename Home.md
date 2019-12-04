@@ -8,6 +8,11 @@ VRX documents, system requirements and theory of operation for Gazebo plugins.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
+## RobotX Interactive Forum
+
+* Tutorial 1: [Building Custom RobotX Worlds](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/custom_worlds)
+* Tutorial 2: [Simulating Multiple USVs](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/multivehicle)
+
 ## VRX Challenge 2019 Events and Deadlines
 
  * **September 23, 23:59 PST**, [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
