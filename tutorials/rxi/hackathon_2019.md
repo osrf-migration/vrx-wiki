@@ -1,3 +1,5 @@
+[TOC]
+
 # WAMV Command Challenge
 
 For the 2019 RobotX Interactive event the challenge is based upon the classic game  [Missile Command](https://en.wikipedia.org/wiki/Missile_Command).  
