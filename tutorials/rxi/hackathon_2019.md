@@ -18,11 +18,13 @@ The game is over when one of the attackers reaches the beach.  An attacker reach
 
 The game consists of a series of levels, starting at level 1.  When you intercept all the attackers in a leve,  the next level begins by respawning attackers at random locations 100 m from the beach.  The number of attackers in each level is equal to the level number (so in level 2 you will have 2 attackers, etc.)  The speed of the attackers also increases with each level.
 
-Here is a [**demonstration video**](https://vimeo.com/user5784414/review/376721424/5a2d3df4eb) illustrating how the number and speed of the attackers increases with each level.  Notice that at the end of the video the attackers are able to make it to the beach and the game is over.   
+### Demonstration Videos
 
-The game continues as long as you are able to intercept the attackers.  As soon as any attacker reaches the beach the game is over and all the attackers stop in place. 
+* [**WAMV Command Demo**](https://vimeo.com/376721424) illustrating how the number and speed of the attackers increases with each level.  Notice that at the end of the video the attackers are able to make it to the beach and the game is over.   The game continues as long as you are able to intercept the attackers.  As soon as any attacker reaches the beach the game is over and all the attackers stop in place. 
 
-Here is another [**demonstration scoring video**](https://vimeo.com/user5784414/review/376723116/7d5ebd63e2) to illustrate how intercepting attackers increases the score.
+* [**WAMV Command Scoring Demo**](https://vimeo.com/376723116) showing how intercepting attackers increases the score.  In the video the defender is being teleoperated.
+
+* [**WAMV Command: Two Defenders**](https://vimeo.com/377202478) illustrating two demonstration modes with two WAMV defenders.
 
 ### Interfaces and Customization
 
