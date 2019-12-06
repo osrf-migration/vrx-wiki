@@ -13,6 +13,7 @@ A set of tutorials to help you get started with VRX.
 * [RobotX Interactive Preparation](https://bitbucket.org/osrf/vrx/wiki/RobotX_Interactive_Preparation): Information to get ready for tutorials and hackathon.
 * Tutorial 1: [Building Custom RobotX Worlds](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/custom_worlds)
 * Tutorial 2: [Simulating Multiple USVs](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/multivehicle)
+* [Hackathon - WAMV Command](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/hackathon_2019)
 
 ## VRX Challenge 2019 Events and Deadlines
 
