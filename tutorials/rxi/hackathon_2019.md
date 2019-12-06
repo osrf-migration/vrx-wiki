@@ -79,7 +79,7 @@ The following instructions assume you have a functioning VRX simulation evironme
 Clone the wamv_command git repository.  This should be in the same ROS workspace as the VRX force code, e.g., `~/vrx_ws/src`
 ```
 cd ~/vrx_ws/src
-git clone git@bitbucket.org:brian_bingham/wamv_command.git
+git clone https://brian_bingham@bitbucket.org/brian_bingham/wamv_command.git
 ```
 
 Build the ROS package with `catkin_make`
