@@ -4,6 +4,10 @@
 
 ## Phase 3: VRX Challenge ##
 
+### Logs ###
+
+All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/download_logs) for instructions.
+
 ### Scoring Summary ###
 
 Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
