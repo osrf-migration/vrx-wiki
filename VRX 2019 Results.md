@@ -146,7 +146,7 @@ tang               | 10     |  0     |  0     |   0    |  0     |  10    |
 McGill             |  0     |  0     |  0     |   0    |  0     |   0    |
 owltonomous        |  0     |  0     |  0     |   0    |  0     |   0    |
 Team_Kanaloa       |  0     |  0     |  0     |   0    |  0     |   0    |
-Erau_Minion*       |  0     |  0     |  0     |   0    |  0     |   0    |
+Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
 
 (*) Team Erau_Minion has been evaluated for scoring purposes but not for ranking purposes.
 
