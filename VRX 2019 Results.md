@@ -4,6 +4,152 @@
 
 ## Phase 3: VRX Challenge ##
 
+### Scoring Summary ###
+
+Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
+----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
+bumblebee          |  0.90           |  0.41      |   2.67     | 920.61        | 60    |  80           |
+uf                 |  0.11           | 16.20      |   2.72     | 798.22        | 30    |  30           |
+usyd_robotx        |  0.19           |  5.14      |   6.47     | 591.59        | 50    | 100           |
+australis2         |  1.01           | 34.28      |   8.42     |1080           |  0    |  0            |
+gt-marine-robotics |  0.44           |  0.10      |   2.48     | 319.91        | 40    | 140           |
+NIROM              |  0.16           |  0         |   0.78     | 684.76        | 60    |  70           |
+tang               |  5.15           | 46.47      |   7.95     | 983.36        |  0    |  20           |
+McGill             |  9.38           | 11.51      |  10        |1080           |  0    |   0           |
+owltonomous        |  2.11           | 95.46      |  10        |1080           |  0    |   0           |
+Team_Kanaloa       | 13.32           | 95.20      |  10        |1080           |  0    |   0           |
+Erau_Minion*       | 17.97           | 65.88      |   --       |   --          |  --   |   --          |
+
+### Ranks Summary ###
+
+Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
+----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
+bumblebee          |  5              |  3         |   3        |  5            |  1.5  |   3           |
+uf                 |  1              |  6         |   4        |  4            |  5    |   5           |
+usyd_robotx        |  3              |  4         |   5        |  2            |  3    |   2           |
+australis2         |  6              |  7         |   7        |  8.5          |  8    |   8.5         |
+gt-marine-robotics |  4              |  2         |   2        |  1            |  4    |   1           |
+NIROM              |  2              |  1         |   1        |  3            |  1.5  |   4           |
+tang               |  8              |  8         |   6        |  6            |  8    |   6           |
+McGill             |  9              |  5         |   9        |  8.5          |  8    |   8.5         |
+owltonomous        |  7              | 10         |   9        |  8.5          |  8    |   8.5         |
+Team_Kanaloa       | 10              |  9         |   9        |  8.5          |  8    |   8.5         |
+Erau_Minion*       |  --             |  --        |   --       |  --           |  --   |   --          |
+
+### Ranking ###
+
+Team               | Total | Ranking | 
+----------------   | ------| ------  |
+bumblebee          |  20.5 |   4     |
+uf                 |  25   |   5     |
+usyd_robotx        |  19   |   3     | 
+australis2         |  45   |   7     |
+gt-marine-robotics |  14   |   2     | 
+NIROM              |  12.5 |   1     |
+tang               |  42   |   6     | 
+McGill             |  48   |   8     | 
+owltonomous        |  51   |   9     | 
+Team_Kanaloa       |  53   |   10    |  
+Erau_Minion*       |  --   |   -     |
+
+### Station keeping
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    | ---    | ---    | ---    |
+bumblebee          |  0.78  |  0.59  |  1.45  |   0.79 |  0.59  |  1.20  |
+uf                 |  0.02  |  0.04  |  0.35  |   0.04 |  0.10  |  0.11  |
+usyd_robotx        |  0.08  |  0.08  |  0.57  |   0.02 |  0.22  |  0.15  |
+australis2         |  0.03  |  0.10  |  5.63  |   0.05 |  0.15  |  0.09  |
+gt-marine-robotics |  0.67  |  0.37  |  0.82  |   0.04 |  0.33  |  0.39  |
+NIROM              |  0.01  |  0.01  |  0.87  |   0.01 |  0.01  |  0.03  |
+tang               |  6.16  |  1.22  |  6.69  |   6.11 |  5.57  |  5.16  |
+McGill             |  3.25  | 10.19  |  9.64  |  11.61 | 11.30  | 10.28  |
+owltonomous        |  1.89  |  2.80  |  3.46  |   0.83 |  2.74  |  0.96  |
+Team_Kanaloa       |  7.77  | 34.02  | 13.03  |   3.46 |  8.12  | 13.52  |
+Erau_Minion*       | 10.58  | 25.36  |  --    |   --   |  --    |   --   |
+
+### Wayfinding
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    | ---    | ---    | ---    |
+bumblebee          |  0.70  |  0.32  |  0.30  |   0.63 |  0.29  |  0.21  |
+uf                 |  0.22  |  5.95  | 31.47  |   0.22 |  0.09  | 59.25  |
+usyd_robotx        |  0.04  | 23.73  |  6.92  |   0.04 |  0.05  |  0.04  |
+australis2         |  0.31  | 13.54  |134.39  |   0.03 |  8.57  | 48.82  |
+gt-marine-robotics |  0.06  |  0.14  |  0.08  |   0.03 |  0.16  |  0.15  |
+NIROM              |  0     |  0     |  0.01  |   0    |  0     |  0     |
+tang               | 10.73  | 31.49  |168.34  |  13.82 | 17.16  | 37.28  |
+McGill             |  0.18  | 17.24  | 27.93  |   0.82 |  0.54  | 22.32  |
+owltonomous        | 39.50  | 73.12  |172.01  |  43.71 | 99.82  |144.58  |
+Team_Kanaloa       | 39.30  | 73.17  |171.03  |  43.57 | 99.79  |144.35  |
+Erau_Minion*       | 34.17  | 97.60  |  --    |   --   |  --    |  --    |
+
+### Perception
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    |---     | ---    | ---    | ---    | ---    |
+bumblebee          |  0.15  |  2.64  |  4.45  |   0.14 |  2.61  |   6.05 |
+uf                 |  3.39  |  1.33  |  4.78  |   0.06 |  2.55  |   4.19 |
+usyd_robotx        |  4.67  |  5.00  |  6.71  |   7.33 |  7.00  |   8.12 |
+australis2         | 10.00  |  6.26  |  8.83  |   6.68 |  8.75  |  10.00 |
+gt-marine-robotics |  0.07  |  1.36  |  5.93  |   0.07 |  2.55  |   4.91 |
+NIROM              |  0.14  |  0.14  |  2.01  |   0.01 |  0.15  |   2.12 |
+tang               | 10.00  |  8.00  |  7.65  |   7.33 |  8.00  |   6.71 |
+McGill             | 10.00  | 10.00  | 10.00  |  10.00 | 10.00  |  10.00 |
+owltonomous        | 10.00  | 10.00  | 10.00  |  10.00 | 10.00  |  10.00 |
+Team_Kanaloa       | 10.00  | 10.00  | 10.00  |  10.00 | 10.00  |  10.00 |
+Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
+
+### Navigation challenge
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
+bumblebee          | 55.52  |166.67  |240.00  |  51.75 |166.67  | 240.00 |
+uf                 | 53.97  | 51.17  |240.00  |  46.41 |166.67  | 240.00 |
+usyd_robotx        | 23.99  | 31.46  |240.00  |  24.10 | 32.04  | 240.00 |
+australis2         |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
+gt-marine-robotics | 14.26  | 15.57  | 22.33  |  13.02 | 14.73  | 240.00 |
+NIROM              | 33.50  |166.67  | 59.22  |  18.70 |166.67  | 240.00 |
+tang               |133.33  |166.67  |240.00  |  36.69 |166.67  | 240.00 |
+McGill             |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
+owltonomous        |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
+Team_Kanaloa       |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
+Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
+
+### Dock
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
+bumblebee          |  0     |  0     | 20     |  20    | 20     |   0    |
+uf                 |  0     | 20     |  0     |  10    |  0     |   0    |
+usyd_robotx        |  0     | 20     | 10     |  20    |  0     |   0    |
+australis2         |  0     |  0     |  0     |   0    |  0     |   0    |
+gt-marine-robotics | 20     |  0     | 20     |   0    |  0     |   0    |
+NIROM              | 20     | 20     |  0     |  20    |  0     |   0    |
+tang               |  0     |  0     |  0     |   0    |  0     |   0    |
+McGill             |  0     |  0     |  0     |   0    |  0     |   0    |
+owltonomous        |  0     |  0     |  0     |   0    |  0     |   0    |
+Team_Kanaloa       |  0     |  0     |  0     |   0    |  0     |   0    |
+Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
+
+### Scan and dock
+
+Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
+----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
+bumblebee          | 30     | 10     |  0     |  20    | 10     |  10    |
+uf                 | 10     | 10     |  0     |   0    |  0     |  10    |
+usyd_robotx        | 30     | 20     | 10     |  30    | 10     |   0    |
+australis2         |  0     |  0     |  0     |   0    |  0     |   0    |
+gt-marine-robotics | 30     | 30     | 30     |  10    | 30     |  10    |
+NIROM              | 30     |  0     | 30     |  10    |  0     |   0    |
+tang               | 10     |  0     |  0     |   0    |  0     |  10    |
+McGill             |  0     |  0     |  0     |   0    |  0     |   0    |
+owltonomous        |  0     |  0     |  0     |   0    |  0     |   0    |
+Team_Kanaloa       |  0     |  0     |  0     |   0    |  0     |   0    |
+Erau_Minion*       |  0     |  0     |  0     |   0    |  0     |   0    |
+
+(*) Team Erau_Minion has been evaluated for scoring purposes but not for ranking purposes.
+
 ### Summary of submission configurations
 
 Team | Thrusters | Cameras | Lidars | Lidar 1 | Lidar 2 | P3D
