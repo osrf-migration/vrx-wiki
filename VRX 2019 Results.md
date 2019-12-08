@@ -50,7 +50,7 @@ tang               |  42   |   6     |
 McGill             |  48   |   8     | 
 owltonomous        |  51   |   9     | 
 Team_Kanaloa       |  53   |   10    |  
-Erau_Minion*       |  --   |   -     |
+Erau_Minion*       |  --   |   --    |
 
 ### Station keeping
 
