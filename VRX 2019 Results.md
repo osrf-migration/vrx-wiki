@@ -4,6 +4,10 @@
 
 ## Phase 3: VRX Challenge ##
 
+### VRX 2019 Results Announcement ###
+
+At RobotX Interactive in Singapore we announced the results of the VRX Challenge and showed a number of highlight videos.  That presentation is available [here](https://docs.google.com/presentation/d/1T973NH3gl0vwSOGsWJ_bgWjndYqu0xSdtzhedv5RP9w/edit?usp=sharing).
+
 ### Overall Ranking ###
 
 The following table includes the overall VRX Challenge ranking for each team.  The "Total" is the sum of the rank scores for each task.
