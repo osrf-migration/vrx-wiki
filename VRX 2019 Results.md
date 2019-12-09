@@ -4,27 +4,27 @@
 
 ## Phase 3: VRX Challenge ##
 
-### Logs ###
+### Overall Ranking ###
 
-All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/download_logs) for instructions.
+The following table includes the overall VRX Challenge ranking for each team.  The "Total" is the sum of the rank scores for each task.
 
-### Scoring Summary ###
+Team               | Affiliation | Total | Ranking | 
+----------------   | ----------- | ------| ------  |
+NIROM              |  Korea Advanced Institute of Science and Technology (KAIST) | 12.5 |   1     |
+gt-marine-robotics |  Georgia Institute of Technology | 14   |   2     | 
+usyd_robotx        |  University of Sydney | 19   |   3     | 
+bumblebee          |  National University of Singapore | 20.5 |   4     |
+uf                 |  University of Florida's Machine Intelligence Laboratory | 25   |   5     |
+tang               |  National Taiwan University | 42   |   6     | 
+australis2         |  Flinders University | 45   |   6     |
+McGill             |  McGill University | 48   |   6     | 
+owltonomous        |  Florida Atlantic University | 51   |   6     | 
+Team_Kanaloa       | University of Hawaii at Manoa |  53   |   6    |  
+Erau_Minion*       | Embry-Riddle Aeronautical University | --   |   6    |
 
-Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
-----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
-bumblebee          |  0.90           |  0.41      |   2.67     | 920.61        | 60    |  80           |
-uf                 |  0.11           | 16.20      |   2.72     | 798.22        | 30    |  30           |
-usyd_robotx        |  0.19           |  5.14      |   6.47     | 591.59        | 50    | 100           |
-australis2         |  1.01           | 34.28      |   8.42     |1080           |  0    |  0            |
-gt-marine-robotics |  0.44           |  0.10      |   2.48     | 319.91        | 40    | 140           |
-NIROM              |  0.16           |  0         |   0.78     | 684.76        | 60    |  70           |
-tang               |  5.15           | 46.47      |   7.95     | 983.36        |  0    |  20           |
-McGill             |  9.38           | 11.51      |  10        |1080           |  0    |   0           |
-owltonomous        |  2.11           | 95.46      |  10        |1080           |  0    |   0           |
-Team_Kanaloa       | 13.32           | 95.20      |  10        |1080           |  0    |   0           |
-Erau_Minion*       | 17.97           | 65.88      |   --       |   --          |  --   |   --          |
+### Ranking by Task ###
 
-### Ranks Summary ###
+The following table includes the rank score for each of the six VRX tasks.  The rank score is for each task is derived from the task score as described in the [VRX Competition and Task Descriptions document](https://bitbucket.org/osrf/vrx/wiki/documentation).
 
 Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
 ----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
@@ -40,23 +40,31 @@ owltonomous        |  7              | 10         |   9        |  8.5          |
 Team_Kanaloa       | 10              |  9         |   9        |  8.5          |  8    |   8.5         |
 Erau_Minion*       |  --             |  --        |   --       |  --           |  --   |   --          |
 
-### Ranking ###
 
-Team               | Total | Ranking | 
-----------------   | ------| ------  |
-bumblebee          |  20.5 |   4     |
-uf                 |  25   |   5     |
-usyd_robotx        |  19   |   3     | 
-australis2         |  45   |   7     |
-gt-marine-robotics |  14   |   2     | 
-NIROM              |  12.5 |   1     |
-tang               |  42   |   6     | 
-McGill             |  48   |   8     | 
-owltonomous        |  51   |   9     | 
-Team_Kanaloa       |  53   |   10    |  
-Erau_Minion*       |  --   |   --    |
+### Scoring by Task ###
 
-### Station keeping
+The table below reports the overall score for each team on each of the six VRX 2019 tasks.  Each task score represents the summary of task performance over six trial runs for each task.  The details of how each task is scored are available in the  [VRX Competition and Task Descriptions document](https://bitbucket.org/osrf/vrx/wiki/documentation).
+
+Team               | Station keeping | Wayfinding | Perception | Nav challenge | Dock  | Scan and dock |
+----------------   | ------------    |--------    | --------   | ---------     | ---   | ---------     |
+bumblebee          |  0.90           |  0.41      |   2.67     | 920.61        | 60    |  80           |
+uf                 |  0.11           | 16.20      |   2.72     | 798.22        | 30    |  30           |
+usyd_robotx        |  0.19           |  5.14      |   6.47     | 591.59        | 50    | 100           |
+australis2         |  1.01           | 34.28      |   8.42     |1080           |  0    |  0            |
+gt-marine-robotics |  0.44           |  0.10      |   2.48     | 319.91        | 40    | 140           |
+NIROM              |  0.16           |  0         |   0.78     | 684.76        | 60    |  70           |
+tang               |  5.15           | 46.47      |   7.95     | 983.36        |  0    |  20           |
+McGill             |  9.38           | 11.51      |  10        |1080           |  0    |   0           |
+owltonomous        |  2.11           | 95.46      |  10        |1080           |  0    |   0           |
+Team_Kanaloa       | 13.32           | 95.20      |  10        |1080           |  0    |   0           |
+Erau_Minion*       | 17.97           | 65.88      |   --       |   --          |  --   |   --          |
+
+
+### Individual Task Scores
+
+The scores for each of six runs for each of the six tasks are reported below.
+
+#### Station keeping
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    |---     | ---    | ---    | ---    | ---    |
@@ -72,7 +80,7 @@ owltonomous        |  1.89  |  2.80  |  3.46  |   0.83 |  2.74  |  0.96  |
 Team_Kanaloa       |  7.77  | 34.02  | 13.03  |   3.46 |  8.12  | 13.52  |
 Erau_Minion*       | 10.58  | 25.36  |  --    |   --   |  --    |   --   |
 
-### Wayfinding
+#### Wayfinding
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    |---     | ---    | ---    | ---    | ---    |
@@ -88,7 +96,7 @@ owltonomous        | 39.50  | 73.12  |172.01  |  43.71 | 99.82  |144.58  |
 Team_Kanaloa       | 39.30  | 73.17  |171.03  |  43.57 | 99.79  |144.35  |
 Erau_Minion*       | 34.17  | 97.60  |  --    |   --   |  --    |  --    |
 
-### Perception
+#### Perception
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    |---     | ---    | ---    | ---    | ---    |
@@ -104,7 +112,7 @@ owltonomous        | 10.00  | 10.00  | 10.00  |  10.00 | 10.00  |  10.00 |
 Team_Kanaloa       | 10.00  | 10.00  | 10.00  |  10.00 | 10.00  |  10.00 |
 Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
 
-### Navigation challenge
+#### Navigation challenge
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
@@ -120,7 +128,7 @@ owltonomous        |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
 Team_Kanaloa       |133.33  |166.67  |240.00  | 133.33 |166.67  | 240.00 |
 Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
 
-### Dock
+#### Dock
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
@@ -136,7 +144,7 @@ owltonomous        |  0     |  0     |  0     |   0    |  0     |   0    |
 Team_Kanaloa       |  0     |  0     |  0     |   0    |  0     |   0    |
 Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
 
-### Scan and dock
+#### Scan and dock
 
 Team               | Run 0  |  Run 1 | Run 2  | Run 3  | Run 4  | Run 5  |
 ----------------   | ---    | ---    | ---    | ---    | ---    | ---    |
@@ -154,7 +162,13 @@ Erau_Minion*       |  --    |  --    |  --    |   --   |  --    |   --   |
 
 (*) Team Erau_Minion has been evaluated for scoring purposes but not for ranking purposes.
 
+### Logs ###
+
+All logs are available. See [this tutorial](https://bitbucket.org/osrf/vrx/wiki/download_logs) for instructions.
+
 ### Summary of submission configurations
+
+The following table summarizes the propulsion and sensor configurations used by the VRX teams.
 
 Team | Thrusters | Cameras | Lidars | Lidar 1 | Lidar 2 | P3D
 ------ | ------ | ------ | ------ | ------ | ------ | ------
