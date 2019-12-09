@@ -8,14 +8,9 @@ VRX documents, system requirements and theory of operation for Gazebo plugins.
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
-## RobotX Interactive Forum
-
-* [RobotX Interactive Preparation](https://bitbucket.org/osrf/vrx/wiki/RobotX_Interactive_Preparation): Information to get ready for tutorials and hackathon.
-* Tutorial 1: [Building Custom RobotX Worlds](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/custom_worlds)
-* Tutorial 2: [Simulating Multiple USVs](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/multivehicle)
-* [Hackathon - WAMV Command](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/hackathon_2019)
-
 ## VRX Challenge 2019 Events and Deadlines
+
+ * [**Results 2019**](https://bitbucket.org/osrf/vrx/wiki/VRX%202019%20Results).  Results for the VRX Challenge phases as they arrive.
 
  * **September 23, 23:59 PST**, [Phase 1 - Hello World](https://bitbucket.org/osrf/vrx/wiki/events/19/phase1_helloworld): Details of the first milestone for VRX.
 
@@ -30,7 +25,14 @@ How to submit your solution for an event.
  * [Download logs](https://bitbucket.org/osrf/vrx/wiki/download_logs)
 How to download your log files after an event.
 
- * [Results](https://bitbucket.org/osrf/vrx/wiki/VRX%202019%20Results).  Results for the VRX Challenge phases as they arrive.
+
+
+## RobotX Interactive Forum
+
+* [RobotX Interactive Preparation](https://bitbucket.org/osrf/vrx/wiki/RobotX_Interactive_Preparation): Information to get ready for tutorials and hackathon.
+* Tutorial 1: [Building Custom RobotX Worlds](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/custom_worlds)
+* Tutorial 2: [Simulating Multiple USVs](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/multivehicle)
+* [Hackathon - WAMV Command](https://bitbucket.org/osrf/vrx/wiki/tutorials/rxi/hackathon_2019)
 
 ## Additional Resources
 
