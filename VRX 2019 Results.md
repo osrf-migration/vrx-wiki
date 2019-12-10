@@ -8,6 +8,8 @@
 
 At RobotX Interactive in Singapore we announced the results of the VRX Challenge and showed a number of highlight videos.  That presentation is available [here](https://docs.google.com/presentation/d/1T973NH3gl0vwSOGsWJ_bgWjndYqu0xSdtzhedv5RP9w/edit?usp=sharing).
 
+The [Final Standings](https://robotx.org/2019/12/06/2019-virtual-robotx-competition-final-standings/) are listed on the RobotX website.
+
 ### Overall Ranking ###
 
 The following table includes the overall VRX Challenge ranking for each team.  The "Total" is the sum of the rank scores for each task.
