@@ -22,4 +22,5 @@ If you use the VRX simulation in your work, please cite our summary publication,
   Year                     = {2019},
   Address                  = {Seattle, WA},
   Month                    = {October}
+}
 ```
