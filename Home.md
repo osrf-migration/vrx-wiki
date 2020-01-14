@@ -5,6 +5,19 @@ This is the entry point for teams participating in the VRX.  For programmatic in
 ## [Documentation](https://bitbucket.org/osrf/vrx/wiki/documentation)
 VRX documents, system requirements and theory of operation for Gazebo plugins. 
 
+OCEANS 2019 conference paper, "Toward Maritime Robotic Simulation in Gazebo".
+```
+@InProceedings{bingham19toward,
+  Title                    = {Toward Maritime Robotic Simulation in Gazebo},
+  Author                   = {Brian Bingham and Carlos Aguero and Michael McCarrin and Joseph Klamo and Joshua Malia and Kevin Allen and Tyler Lum and Marshall Rawson and Rumman Waqar},
+  Booktitle                = {Proceedings of MTS/IEEE OCEANS Conference},
+  Year                     = {2019},
+  Address                  = {Seattle, WA},
+  Month                    = {October}
+}
+```
+
+
 ## [Tutorials](https://bitbucket.org/osrf/vrx/wiki/tutorials)
 A set of tutorials to help you get started with VRX.
 
