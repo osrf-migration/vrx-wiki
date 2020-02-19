@@ -31,6 +31,7 @@ range: 189.372650146
 bearing: 0.219589501619
 elevation: -0.0155547577888
 ---
+```
 
 And here's the [message definition](https://bitbucket.org/osrf/vrx/src/acoustic_pinger_plugin/usv_msgs/msg/RangeBearing.msg).
 
