@@ -58,7 +58,8 @@ Click the `Add` button, select the `By topic` tab, and select `/wamv/sensors/pin
 
 Now, select the WAM-V, hit `t` (translate), and drag and drop the WAM-V next to the entrance gate.
 
+![gazebo_pinger.png](https://bitbucket.org/repo/BgXLzgM/images/4120592019-gazebo_pinger.png)
 
 You should visualize in RViz a blue arrow showing the location of the beacon according to your acoustic sensor.
 
-```
+![rviz_pinger.png](https://bitbucket.org/repo/BgXLzgM/images/2069800313-rviz_pinger.png)
