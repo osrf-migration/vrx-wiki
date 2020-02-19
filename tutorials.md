@@ -20,6 +20,7 @@ We recommend following the tutorials in numerical order as each one builds off t
 1. Simulation Interfaces: Connecting to VRX API
 
     * [Driving](https://bitbucket.org/osrf/vrx/wiki/tutorials/Driving): Methods for making the WAM-V move using teleoperation (keyboard or gamepad) or programmatically.
+    * [Acoustic pingers](https://bitbucket.org/osrf/vrx/wiki/tutorials/acoustic_pingers): Instructions for interfacing with the sonar sensor.
 
 1. Customizing WAM-V and Environment:
 
