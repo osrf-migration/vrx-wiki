@@ -36,4 +36,29 @@ elevation: -0.0155547577888
 And here's the [message definition](https://bitbucket.org/osrf/vrx/src/acoustic_pinger_plugin/usv_msgs/msg/RangeBearing.msg).
 
 Note that the sensor gives you a value in spherical coordinates: a distance (range) and two angles (bearing and elevation). The value that you'll get from the sensor includes some noise.
+
+# Change the pinger location and visualize sensor measurements in RViz
+
+The topic `/wamv/sensors/pingers/pinger/set_pinger_position` allows you to change the beacon location. You need to publish a Vector3 message. [Here](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Vector3.html)'s the message definition.
+
+For simplicity, we have included a launch file that places the acoustic beacon under one of the entrance gate. Additionally, this launch file publishes RViz markers in the location where the beacon is detected. Let's start by launching `pinger.launch`. Type in a new terminal:
+
+```
+roslaunch vrx_gazebo pinger.launch
+```
+
+Now, let's start RViz. Type in a new terminal:
+
+```
+roslaunch wamv_gazebo localization_example.launch &
+roslaunch wamv_gazebo rviz_vrx.launch
+```
+
+Click the `Add` button, select the `By topic` tab, and select `/wamv/sensors/pingers/pinger/marker/signal/Marker`, and then, hit OK.
+
+Now, select the WAM-V, hit `t` (translate), and drag and drop the WAM-V next to the entrance gate.
+
+
+You should visualize in RViz a blue arrow showing the location of the beacon according to your acoustic sensor.
+
 ```
