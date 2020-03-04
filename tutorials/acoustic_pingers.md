@@ -41,6 +41,12 @@ Note that the sensor gives you a value in spherical coordinates: a distance (ran
 
 The topic `/wamv/sensors/pingers/pinger/set_pinger_position` allows you to change the beacon location. You need to publish a Vector3 message. [Here](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Vector3.html)'s the message definition.
 
+For example, to change the pinger location to the origin, you would run:
+
+```
+rostopic pub -r 10 /wamv/sensors/pingers/pinger/set_pinger_position geometry_msgs/Vector3 -- 0 0 0
+```
+
 For simplicity, we have included a launch file that places the acoustic beacon under one of the entrance gate. Additionally, this launch file publishes RViz markers in the location where the beacon is detected. Let's start by launching `pinger.launch`. Type in a new terminal:
 
 ```
